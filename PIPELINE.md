@@ -30,9 +30,11 @@ reviews and posts.
    from srih8991@gmail.com, so an **owner message** is one that is newer than
    `plan/inbox_state.json.last_message_id`, is **not** listed in `sent_ids`, and isn't signed
    "— Claude". For each owner message, oldest first, act on it:
-   - `PAUSE` / "stop" → reply "Paused" in the thread, commit the state, end the run (and tell the
-     owner they can pause the scheduled task itself in Claude).
-   - `RESUME` → continue normally.
+   - `PAUSE` / "stop" → set `"paused": true` in `inbox_state.json`, reply "Paused until you reply
+     RESUME" in the thread, commit, end the run (mention they can also pause the scheduled task in Claude).
+   - `RESUME` → set `"paused": false` and continue normally.
+   After processing: if `paused` is still true, commit the inbox state and end the run quietly
+   (no email).
    - `REDO Vxxx: <notes>` → produce Vxxx again this run, applying the notes (overrides the queue).
    - `SKIP Vxxx` → mark Skipped in `status.csv`.
    - Anything else (feedback, preferences, "more like V004") → append a dated line to
