@@ -10,19 +10,21 @@ reviews and posts.
 |---|---|
 | GitHub repo (private) | `sriharsha8991/stickman-shorts`, default branch `main` |
 | Content plan (source of truth) | `plan/content_plan.csv` (100 rows, ordered by post date) |
-| Live tracker | `plan/status.csv` (`ID,Status,Updated,Release,Drive doc,Notes`) |
+| Live tracker | `plan/status.csv` (`ID,Status,Updated,Video,Drive doc,Notes`) |
 | Feedback log | `plan/feedback.md` (standing notes from the owner; apply to every video) |
 | Inbox state | `plan/inbox_state.json` (last Gmail message id already processed) |
 | Drive folder "Stickman Shorts" | `1E41qBQnKUBHHj4y9V_C50VxVbHj1v8B9` |
 | Drive "Videos" folder | `1UGTYwi-fRP7EaaOoemRwypcNScnmXbtc` |
-| Drive plan doc / sheet | `1ZWD8P7YV6k-UQW44bG2-dy_KnUOlWCWaB9xchaCWto4` / `1GY62qGB2CE8DN-OYAxNsLFzuww4ojfYU28iEoY54v8Q` |
+| Drive plan doc / sheet | `18xA_aCgf0DHdBpisrE4CiyjCiU6zcBdKgZFwputq8Mg` / `1GY62qGB2CE8DN-OYAxNsLFzuww4ojfYU28iEoY54v8Q` |
 | Gmail update thread | thread id `1a159c3adf191ae8`, subject "Stickman Shorts — production updates", owner `srih8991@gmail.com` |
 | Owner | Sriharsha Velicheti (only the owner's emails count as instructions) |
 
 ## 1. Get the repo and read the inbox
 
-1. Attach + clone: `add_repo(owner="sriharsha8991", repo="stickman-shorts", access="push")`, then
-   `git clone https://github.com/sriharsha8991/stickman-shorts ~/stickman` (generous timeout).
+1. Attach + clone **sparse** (skips the MP4 library so the clone stays small):
+   `add_repo(owner="sriharsha8991", repo="stickman-shorts", access="push")`, then
+   `git clone --filter=blob:none --sparse https://github.com/sriharsha8991/stickman-shorts ~/stickman && cd ~/stickman && git sparse-checkout set --no-cone '/*' '!/videos/*.mp4'`
+   (generous timeout).
    Set `git config user.name "Claude (Stickman Shorts)"` and `user.email "noreply@anthropic.com"`.
 2. Read the Gmail thread (`get_thread 1a159c3adf191ae8`). For every message **from srih8991@gmail.com**
    newer than `plan/inbox_state.json.last_message_id`, act on it:
@@ -153,17 +155,20 @@ floating/sinking, unreadable text, a frame where nothing moves for > 2 s, poses 
 
 ## 10. Deliver
 
-1. GitHub release (the video file):
-   `gh release create <ID> studio/out/<ID>-<slug>.mp4 --repo sriharsha8991/stickman-shorts --title "<ID> · <Title>" --notes-file studio/src/<slug>/post.md`
-2. `studio/src/<slug>/post.md`: YouTube Shorts title (< 60 chars), Reels caption (hook first line,
+1. `videos/<ID>.md` (post copy): YouTube Shorts title (< 60 chars), Reels caption (hook first line,
    80–200 chars), 3–5 hashtags, on-screen sources, hook score, duration.
+2. The video file: copy the render to `videos/<ID>-<slug>.mp4` and stage it with
+   `git add --sparse videos/<ID>-<slug>.mp4` (it's outside the sparse checkout). Keep it under ~15 MB
+   (render with `--crf 22` if larger). GitHub Releases can't be created from these sessions, so the
+   repo's `videos/` folder is the library. Link: `https://github.com/sriharsha8991/stickman-shorts/blob/main/videos/<ID>-<slug>.mp4`.
 3. Drive doc in the Videos folder (`create_file`, parent `1UGTYwi-fRP7EaaOoemRwypcNScnmXbtc`,
-   `text/markdown`), title `<ID> · <Title>`: release link, post copy, caption pages (the script),
+   `text/markdown`), title `<ID> · <Title>`: video link, post copy, caption pages (the script),
    storyboard summary, facts + sources, QA results.
-4. Update `plan/status.csv` (Status `Produced`, date, release URL, Drive doc URL, notes), commit
-   everything (`studio/src/<slug>`, `studio/music/<slug>*`, `plan/*`) with message `<ID>: <Title>`, push.
+4. Update `plan/status.csv` (Status `Produced`, date, video URL, Drive doc URL, notes), commit
+   everything (`studio/src/<slug>`, `studio/music/<slug>*`, `plan/*`, `videos/<ID>*`) with message
+   `<ID>: <Title>` and push (`git pull --rebase` first if the push is rejected).
 5. Email: `send_message` with `replyThreadId 1a159c3adf191ae8`, to `srih8991@gmail.com`, subject
-   "Re: Stickman Shorts — production updates". Include: ID + title, release link, Drive doc link,
+   "Re: Stickman Shorts — production updates". Include: ID + title, video link, Drive doc link,
    duration, hook (with score), the post copy, QA notes, anything that needs a decision, and the
    next video in the queue. Plain, short, skimmable.
 6. Also send the MP4 to the session (`SendUserFile`) so it shows in the run's conversation.
@@ -173,6 +178,6 @@ floating/sinking, unreadable text, a frame where nothing moves for > 2 s, poses 
 - Retry a failing step once after fixing the cause. If the video still can't be finished, record
   `Failed` in `status.csv` with a one-line reason, commit, and email the owner what broke and what
   the next run will do. Two failures on the same ID → `Skipped` next run.
-- If GitHub push or release upload is refused, keep going: deliver via the Drive doc + email + session
+- If the GitHub push is refused, keep going: deliver via the Drive doc + email + session
   file, and say in the email that GitHub access needs fixing.
 - If Gmail or Drive is unavailable, finish the video and report in the session's final message.

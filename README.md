@@ -11,7 +11,7 @@ A Claude scheduled task fires every 8 hours and follows [`PIPELINE.md`](PIPELINE
 1. reads owner replies in the Gmail thread "Stickman Shorts — production updates" (PAUSE / REDO / SKIP / feedback)
 2. picks the next video from [`plan/content_plan.csv`](plan/content_plan.csv)
 3. verifies facts → scores hooks (≥ 55) → storyboards → builds scenes → composes an original score → renders → QA
-4. uploads the MP4 as a GitHub Release, files a Drive doc (script, captions, post copy, sources), updates
+4. commits the MP4 to `videos/`, files a Drive doc (script, captions, post copy, sources), updates
    [`plan/status.csv`](plan/status.csv), and replies in the Gmail thread
 
 Nothing is posted automatically: the owner reviews and posts.
@@ -21,6 +21,7 @@ Nothing is posted automatically: the owner reviews and posts.
 ```
 PIPELINE.md            the per-run procedure (the automation follows this)
 setup.sh               rebuilds the toolchain in a fresh container (~1 min)
+videos/                rendered MP4s + post copy (runs clone sparse and skip the MP4s)
 plan/                  content_plan.csv + .xlsx (100 videos), status.csv, feedback.md, topics.py (generator)
 studio/                Remotion project
   src/stickman/        stick-figure engine (from nispa/stickman-video, fonts bundled locally)
