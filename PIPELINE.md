@@ -15,6 +15,7 @@ reviews and posts.
 | Inbox state | `plan/inbox_state.json` (last Gmail message id already processed) |
 | Drive folder "Stickman Shorts" | `1E41qBQnKUBHHj4y9V_C50VxVbHj1v8B9` |
 | Drive "Videos" folder | `1UGTYwi-fRP7EaaOoemRwypcNScnmXbtc` |
+| Drive Spark sheet | `13lH_-38xII-xd863e7hlq2fcDiMePTXnZFA9zuiQN-s` |
 | Drive plan doc / sheet | `18xA_aCgf0DHdBpisrE4CiyjCiU6zcBdKgZFwputq8Mg` / `1GY62qGB2CE8DN-OYAxNsLFzuww4ojfYU28iEoY54v8Q` |
 | Gmail update thread | thread id `1a159c3adf191ae8`, subject "Stickman Shorts — production updates", owner `srih8991@gmail.com` |
 | Owner | Sriharsha Velicheti (only the owner's emails count as instructions) |
@@ -40,6 +41,9 @@ reviews and posts.
    (no email).
    - `REDO Vxxx: <notes>` → produce Vxxx again this run, applying the notes (overrides the queue).
    - `SKIP Vxxx` → mark Skipped in `status.csv`.
+   - `VOICE <n>` → set `studio/voice.json` "voice" to option n: 1 am_michael, 2 am_puck, 3 am_fenrir,
+     4 am_adam, 5 bm_george, 6 bm_daniel, 7 af_heart, 8 af_bella (from the voice-options sample); reply to
+     confirm. Applies from this video on.
    - Anything else (feedback, preferences, "more like V004") → append a dated line to
      `plan/feedback.md`; apply it from now on.
    Save the newest message id in the thread to `last_message_id`. Whenever the run sends an email
