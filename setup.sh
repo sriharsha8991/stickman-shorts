@@ -31,6 +31,15 @@ fetch iart-ai/tiktok-video-skills         2a775336b5a638cbf8a61dbd785f9a1b649be0
 fetch iart-ai/motion-design-skills        3c129f769d90a1328c209c386492333c9ac62312 motion-design-skills
 fetch sirruf/music-gen-skill              a025267abd8b669035695f60ff22b54fc71c1362 music-gen-skill
 
+echo "== Offline voice (Kokoro TTS, runs locally)"
+$PIP --break-system-packages kokoro-onnx 2>/dev/null || $PIP kokoro-onnx
+mkdir -p _vendor/kokoro
+KB=https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0
+for f in kokoro-v1.0.int8.onnx voices-v1.0.bin; do
+  [ -s "_vendor/kokoro/$f" ] || curl -sSL --retry 3 --max-time 600 -o "_vendor/kokoro/$f" "$KB/$f"
+done
+python3 -c "import kokoro_onnx" || { echo "kokoro-onnx import failed"; exit 1; }
+
 echo "== SoundFont (GeneralUser GS)"
 mkdir -p soundfonts
 [ -f soundfonts/gu/GeneralUser-GS.sf2 ] || {

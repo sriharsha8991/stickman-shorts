@@ -18,6 +18,9 @@ reviews and posts.
 | Drive plan doc / sheet | `18xA_aCgf0DHdBpisrE4CiyjCiU6zcBdKgZFwputq8Mg` / `1GY62qGB2CE8DN-OYAxNsLFzuww4ojfYU28iEoY54v8Q` |
 | Gmail update thread | thread id `1a159c3adf191ae8`, subject "Stickman Shorts — production updates", owner `srih8991@gmail.com` |
 | Owner | Sriharsha Velicheti (only the owner's emails count as instructions) |
+| Host character | **Spark** — `studio/src/shared/mascot.tsx` (in every video; see "Spark rules") |
+| Channel voice | `studio/voice.json` (Kokoro `am_michael` @ 1.1×, offline). Never change it unless the owner asks. |
+| Voice + Spark reference | `studio/src/v000-meet-spark/` (V000, the channel trailer) |
 
 ## 1. Get the repo and read the inbox
 
@@ -46,8 +49,11 @@ reviews and posts.
 
 ## 2. Pick the video
 
-- If a REDO was requested, that's the video. Otherwise: the first row of `content_plan.csv` whose
-  ID is not `Produced` or `Skipped` in `status.csv`.
+- If a REDO was requested by email, that's the video. Otherwise, any ID with Status `Redo` in
+  `status.csv` (lowest first: these are early videos being remade with Spark + voice). Otherwise the
+  first row of `content_plan.csv` whose ID is not `Produced` or `Skipped` in `status.csv`.
+- A remake keeps the row's topic and verified facts but is rebuilt with Spark and the voiceover; save it
+  as `videos/<ID>-<slug>-v2.mp4`, title its Drive doc `<ID> · <Title> (v2)`, and set Status `Produced`.
 - If `status.csv` shows the same ID `Failed` twice already, mark it `Skipped` and take the next one.
 - If all 100 are done: email "All 100 produced" with a summary and stop.
 - Slug: `v0NN-short-kebab-title` (e.g. `v003-streak-hostage`). Composition id = PascalCase of the slug.
@@ -88,10 +94,10 @@ Skills to read before writing (all in `$SKILLS`):
    Rewrite and re-score (max 3 rounds) until one scores **≥ 55 (WORKABLE)**. If none reaches 55 after
    3 rounds, use the best and say so in the email.
 2. Three hook layers at 0:00: first frame that works muted, text overlay, caption line.
-3. Script pages for kinetic captions (4–7 words each) following the format below; total length from
-   the row (±5 s). Keep the plan's mechanism, metaphor, twist and payoff unless the facts changed them.
+3. Script the narration (it becomes `voice.txt` in step 5b): short spoken lines following the format
+   below; total length from the row (±5 s). Keep the plan's mechanism, metaphor, twist and payoff unless the facts changed them.
 4. Write `studio/src/<slug>/storyboard.md`: motion language (one personality: Playful/Energetic/
-   Premium/Corporate), BPM, bar grid, scenes with frame ranges, beats, interrupts every 2–4 s
+   Premium/Corporate), where Spark is and what he does in each scene, scenes anchored to spoken lines, beats, interrupts every 2–4 s
    (uneven), one "wow" moment, loop/bookend.
 
 Format playbook:
@@ -102,6 +108,19 @@ Format playbook:
 - **Mini Origin Doc** (35–45 s): year card → the accident/decision → consequence → today's twist.
 - **Versus Fight**: two labelled figures face off; 2–3 rounds; the surprising winner; the lesson.
 
+## 5b. Voiceover (offline, Spark's voice)
+
+1. Write `studio/src/<slug>/voice.txt`: the spoken script, one caption line per row (4–10 words),
+   conversational, Spark speaking as the host ("I", "you"). The hook line is row 1. Aim for 2.4–2.8
+   words per second of the target length. `[pause 0.5]` on its own row adds a beat of silence.
+   Write numbers as they should be spoken ("two hundred thousand") when digits would be misread.
+2. `python3 tools/voiceover.py --slug <slug> --script studio/src/<slug>/voice.txt`
+   → `studio/public/<slug>/voice.wav`, `studio/src/<slug>/voice.ts` (VOICE_CUES with per-word frames,
+   MOUTH lip-sync curve, `mouthAt`, `vStart`, `vEnd`) and `timeline.ts`. The video length is the voice
+   length: `DURATION = VOICE_FRAMES`.
+3. Anchor every beat to spoken words: `const W = (cue, word) => VOICE_CUES[cue].words[word].s` (see
+   V000). If you edit the script, re-run the tool; the anchors follow.
+
 ## 6. Build the scenes
 
 ```bash
@@ -110,16 +129,30 @@ python3 $ENGINE/scripts/new_video.py --project studio --slug <slug> --size 1080x
 rm studio/src/<slug>/S01Example.tsx
 ```
 
-- Write `Sxx<Name>.tsx` scenes; wire them in `studio/src/<slug>/Video.tsx` (`SCENES`, `DURATION`;
-  no voiceover, so `DURATION` = end of last scene). Set the composition's `music` default to 0.55 in
-  `studio/src/Root.tsx`.
-- Reuse `studio/src/shared/kit.tsx` (Kinetic captions, punch-in zoom, Phone, SlotMachine, Night/Day
+- Write `Sxx<Name>.tsx` scenes; wire them in `studio/src/<slug>/Video.tsx` (`SCENES`,
+  `DURATION = VOICE_FRAMES`, scene `from` values at cue starts). In `studio/src/Root.tsx` set the
+  composition's defaultProps to `{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }`
+  (music ducks under the voice automatically).
+- Captions: `<VoiceCaptions f={globalFrame} cues={VOICE_CUES} hi={[keywords]} />` from
+  `shared/kit.tsx` (words appear as they're spoken). Render it in every scene's `html` with the
+  global frame (`from + f`) so captions never jump between scenes.
+
+**Spark rules (account consistency):**
+- Spark (`<Spark>` from `../shared/mascot`) appears in every video as the host: on screen for the hook
+  and the payoff at minimum, ideally throughout. Scale 1.8–2.1. He is the only teal character.
+- While he's on screen during speech: `talk={(t) => mouthAt(from + t)}`. Light his bulb with
+  `bulbPulse` on the twist/reveal word (the "aha"). Use `mood` for reactions (shock, smug, sad…).
+- Other roles stay plain engine figures with labels (YOU = orange, AI = blue, etc.). Spark explains,
+  points, reacts, and uses props; he never pretends to be a real person.
+- Keep his look exactly as defined in `mascot.tsx` (glasses, bulb antenna, yellow sneakers). Never
+  restyle him per video.
+- Reuse `studio/src/shared/kit.tsx` (VoiceCaptions, punch-in zoom, Phone, SlotMachine, Night/Day
   backgrounds, Heart…) via `import … from "../shared/kit"`. Study `studio/src/scroll-trap/` (V002) as the
   quality reference and `studio/src/ai-one-bug/` (V001) for the POV style. **Don't copy their
   layouts**: every video needs its own metaphor, props and staging (YouTube originality rules).
 - Vertical rules: centre x = 540, safe zone x 90–990 / y 250–1500, ground ≈ y 1290, title zone
   y 260–620, action y 650–1290, captions ≈ y 1420. Characters scale 1.5–1.7. One hero per frame.
-- Every scene start lands on a bar line of the score (at 120 BPM, 1 bar = 60 frames at 30 fps).
+- Scene starts and big hits land on spoken words (cue/word frames from voice.ts); the music is a bed underneath.
 - `cd studio && npx tsc --noEmit` must pass.
 
 ## 7. Visual check (gate)
@@ -143,11 +176,16 @@ floating/sinking, unreadable text, a frame where nothing moves for > 2 s, poses 
    loop-friendly ending), then
    `python3 studio/music/<slug>_score.py && python3 tools/render_midi.py studio/music/<slug>.mid studio/public/<slug>/music.mp3 --reverb --length <seconds>`.
    Check per-bar RMS shows the intended dynamics and the peak is around -2 dB.
+   The score is a bed under the voice: keep it sparse (no busy melody while Spark talks), put energy in
+   the gaps and on the reveal.
 3. Render: `cd studio && npx remotion render <Comp> out/<ID>-<slug>.mp4 --concurrency=$(nproc)`
-   (run in the background if long; never exceed the CPU count).
+   (run in the background if long; never exceed the CPU count), then master the loudness:
+   `bash tools/master_audio.sh studio/out/<ID>-<slug>.mp4 studio/out/<ID>-<slug>-m.mp4` (−14 LUFS)
+   and deliver the `-m` file.
 4. QA: `ffprobe` = 1080×1920, duration as planned, audio present; `python3 $ENGINE/scripts/check_render.py`
    (no clipped samples; big hits stand out); extract and look at the first and last frames (loop seam)
-   and 3 mid frames. Fix and re-render if anything fails. You can't hear audio: say so in the email.
+   and 3 mid frames. Speech must sit ≥ 5 dB above the music-only gaps (compare RMS inside vs outside
+   VOICE_CUES). Fix and re-render if anything fails. You can't hear audio: say so in the email.
 
 ## 9. Guardrails (always)
 

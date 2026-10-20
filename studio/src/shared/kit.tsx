@@ -307,3 +307,56 @@ export const Kinetic: React.FC<{ f: number; pages: Page[]; end: number; y?: numb
     </div>
   );
 };
+
+// ---------------------------------------------------------------------------
+// Voice-synced captions: render ONCE at the Video level (global frames). Each spoken line from
+// voice.ts is a caption page; each word pops in when it is spoken and the word being spoken is
+// highlighted. `hi` = words that stay yellow (keywords).
+// ---------------------------------------------------------------------------
+export type VoiceCue = { text: string; startFrame: number; endFrame: number; words: { w: string; s: number; e: number }[] };
+
+export const VoiceCaptions: React.FC<{ f: number; cues: VoiceCue[]; hi?: string[]; y?: number; size?: number }> = ({
+  f,
+  cues,
+  hi = [],
+  y = 1420,
+  size = 66,
+}) => {
+  const idx = cues.findIndex((c, i) => f >= c.startFrame - 2 && f < (cues[i + 1]?.startFrame ?? c.endFrame + 12) - 2);
+  if (idx < 0) return null;
+  const cue = cues[idx];
+  const until = Math.min(cues[idx + 1]?.startFrame ?? cue.endFrame + 12, cue.endFrame + 24);
+  const out = interpolate(f, [until - 5, until], [1, 0], clamp);
+  const keys = new Set(hi.map((w) => w.toLowerCase()));
+  return (
+    <div style={{ position: "absolute", left: 90, width: 900, top: y, transform: "translateY(-50%)", textAlign: "center", lineHeight: 1.12, opacity: out }}>
+      {cue.words.map((wd, i) => {
+        const d = f - wd.s;
+        if (d < -1) return null;
+        const p = spring({ frame: d + 1, fps: FPS, config: { damping: 11, mass: 0.55, stiffness: 190 } });
+        const speaking = f >= wd.s && f < wd.e + 2;
+        const key = keys.has(wd.w.toLowerCase().replace(/[^a-z0-9₹%=]/g, ""));
+        return (
+          <span
+            key={i}
+            style={{
+              display: "inline-block",
+              margin: "0 13px",
+              transform: `scale(${interpolate(p, [0, 1], [0.55, 1]) * (speaking ? 1.07 : 1)})`,
+              opacity: interpolate(p, [0, 0.4], [0, 1], clamp),
+              fontFamily: FONT.body,
+              fontWeight: 800,
+              fontSize: size,
+              color: speaking ? "#7ef0e4" : key ? COL.yellow : "#ffffff",
+              WebkitTextStroke: `11px ${COL.ink}`,
+              paintOrder: "stroke fill",
+              textShadow: "0 6px 0 rgba(0,0,0,0.25)",
+            }}
+          >
+            {wd.w}
+          </span>
+        );
+      })}
+    </div>
+  );
+};
