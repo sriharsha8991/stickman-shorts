@@ -44,7 +44,7 @@ export const S01_SFX: SfxCue[] = [
 ];
 
 // --- props -------------------------------------------------------------------
-const PriceTag: React.FC = () => (
+export const PriceTag: React.FC = () => (
   <g>
     <path d="M -70 -40 L 50 -40 L 85 0 L 50 40 L -70 40 Z" fill="#fff6d6" {...K} />
     <circle cx={58} cy={0} r={8} fill={COL.paper} {...K} strokeWidth={4} />
@@ -52,7 +52,7 @@ const PriceTag: React.FC = () => (
   </g>
 );
 
-const AiBot: React.FC<{ f: number }> = ({ f }) => (
+export const AiBot: React.FC<{ f: number }> = ({ f }) => (
   <g>
     <line x1={0} y1={-62} x2={0} y2={-42} stroke={COL.ink} strokeWidth={5} />
     <circle cx={0} cy={-66} r={7} fill={COL.red} {...K} strokeWidth={4} />

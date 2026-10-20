@@ -5,6 +5,7 @@ import { Video as AiOneBug, DURATION as AiOneBug_DURATION } from "./ai-one-bug/V
 import { Video as ScrollTrap, DURATION as ScrollTrap_DURATION } from "./scroll-trap/Video";
 import { Video as StreakHostage, DURATION as StreakHostage_DURATION } from "./streak-hostage/Video";
 import { Video as V000MeetSpark, DURATION as V000MeetSpark_DURATION } from "./v000-meet-spark/Video";
+import { BrandingStills } from "./branding/Branding";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -46,6 +47,7 @@ export const RemotionRoot: React.FC = () => {
         height={1920}
         defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
       />
+      <BrandingStills />
       {/* stickman-video:compositions */}
     </>
   );
