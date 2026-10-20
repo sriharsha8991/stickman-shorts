@@ -208,15 +208,17 @@ floating/sinking, unreadable text, a frame where nothing moves for > 2 s, poses 
 2. The video file: copy the render to `videos/<ID>-<slug>.mp4` and stage it with
    `git add --sparse videos/<ID>-<slug>.mp4` (it's outside the sparse checkout). Keep it under ~15 MB
    (render with `--crf 22` if larger). GitHub Releases can't be created from these sessions, so the
-   repo's `videos/` folder is the library. Link: `https://github.com/sriharsha8991/stickman-shorts/blob/main/videos/<ID>-<slug>.mp4`.
+   repo's `videos/` folder is the library. Two links per video:
+   - **Download (one tap):** `https://github.com/sriharsha8991/stickman-shorts/raw/main/videos/<file>.mp4`
+   - Watch page: `https://github.com/sriharsha8991/stickman-shorts/blob/main/videos/<file>.mp4`
 3. Drive doc in the Videos folder (`create_file`, parent `1UGTYwi-fRP7EaaOoemRwypcNScnmXbtc`,
-   `text/markdown`), title `<ID> · <Title>`: video link, post copy, caption pages (the script),
+   `text/markdown`), title `<ID> · <Title>`: download link (raw) + watch link, post copy, caption pages (the script),
    storyboard summary, facts + sources, QA results.
 4. Update `plan/status.csv` (Status `Produced`, date, video URL, Drive doc URL, notes), commit
    everything (`studio/src/<slug>`, `studio/music/<slug>*`, `plan/*`, `videos/<ID>*`) with message
    `<ID>: <Title>` and push (`git pull --rebase` first if the push is rejected).
 5. Email: `send_message` with `replyThreadId 1a159c3adf191ae8`, to `srih8991@gmail.com`, subject
-   "Re: Stickman Shorts — production updates". Include: ID + title, video link, Drive doc link,
+   "Re: Stickman Shorts — production updates". Put a prominent **"⬇ Download MP4"** button/link (the raw link) at the very top, then: ID + title, watch link, Drive doc link,
    duration, hook (with score), the post copy, QA notes, anything that needs a decision, and the
    next video in the queue. Plain, short, skimmable.
 6. Also send the MP4 to the session (`SendUserFile`) so it shows in the run's conversation.
