@@ -1,0 +1,10 @@
+node_modules/
+studio/out/
+studio/public/*/sfx/
+studio/public/*/music.mp3
+studio/public/*/voice.*
+_vendor/
+soundfonts/
+*.wav
+__pycache__/
+.DS_Store
