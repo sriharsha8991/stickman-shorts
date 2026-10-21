@@ -1,0 +1,134 @@
+{
+  "fps": 30,
+  "durationInFrames": 1131,
+  "seconds": 37.69,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 2.781,
+      "startFrame": 6,
+      "endFrame": 83,
+      "words": 8,
+      "text": "You lose the seven AM fight with yourself."
+    },
+    {
+      "i": 1,
+      "start": 2.941,
+      "end": 5.523,
+      "startFrame": 88,
+      "endFrame": 166,
+      "words": 6,
+      "text": "Your plan says: I'll exercise more."
+    },
+    {
+      "i": 2,
+      "start": 5.683,
+      "end": 8.861,
+      "startFrame": 170,
+      "endFrame": 266,
+      "words": 8,
+      "text": "So every morning's a fresh decision. Snooze wins."
+    },
+    {
+      "i": 3,
+      "start": 9.021,
+      "end": 10.877,
+      "startFrame": 271,
+      "endFrame": 326,
+      "words": 5,
+      "text": "The fix: one if-then sentence."
+    },
+    {
+      "i": 4,
+      "start": 11.037,
+      "end": 13.299,
+      "startFrame": 331,
+      "endFrame": 399,
+      "words": 8,
+      "text": "If it's seven AM and the coffee's made,"
+    },
+    {
+      "i": 5,
+      "start": 13.459,
+      "end": 14.973,
+      "startFrame": 404,
+      "endFrame": 449,
+      "words": 6,
+      "text": "then I walk for ten minutes."
+    },
+    {
+      "i": 6,
+      "start": 15.133,
+      "end": 17.416,
+      "startFrame": 454,
+      "endFrame": 522,
+      "words": 7,
+      "text": "Now the moment itself pulls the trigger."
+    },
+    {
+      "i": 7,
+      "start": 17.576,
+      "end": 19.24,
+      "startFrame": 527,
+      "endFrame": 577,
+      "words": 4,
+      "text": "You're not adding willpower."
+    },
+    {
+      "i": 8,
+      "start": 19.4,
+      "end": 21.064,
+      "startFrame": 582,
+      "endFrame": 632,
+      "words": 4,
+      "text": "You're removing a decision."
+    },
+    {
+      "i": 9,
+      "start": 21.224,
+      "end": 24.595,
+      "startFrame": 637,
+      "endFrame": 738,
+      "words": 6,
+      "text": "Across ninety-four tests: a medium-to-large boost."
+    },
+    {
+      "i": 10,
+      "start": 24.755,
+      "end": 27.699,
+      "startFrame": 743,
+      "endFrame": 831,
+      "words": 6,
+      "text": "In one study, ninety-one percent exercised,"
+    },
+    {
+      "i": 11,
+      "start": 27.859,
+      "end": 30.504,
+      "startFrame": 836,
+      "endFrame": 915,
+      "words": 8,
+      "text": "versus about one in three without a plan."
+    },
+    {
+      "i": 12,
+      "start": 30.664,
+      "end": 34.248,
+      "startFrame": 920,
+      "endFrame": 1027,
+      "words": 7,
+      "text": "Mostly short-term, self-reported. A nudge, not magic."
+    },
+    {
+      "i": 13,
+      "start": 34.408,
+      "end": 36.925,
+      "startFrame": 1032,
+      "endFrame": 1108,
+      "words": 7,
+      "text": "So write yours: if blank, then blank."
+    }
+  ],
+  "chapters": []
+}
