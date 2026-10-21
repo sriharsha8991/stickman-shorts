@@ -46,6 +46,10 @@ reviews and posts.
    - `VOICE <n>` → set `studio/voice.json` "voice" to option n: 1 am_michael, 2 am_puck, 3 am_fenrir,
      4 am_adam, 5 bm_george, 6 bm_daniel, 7 af_heart, 8 af_bella (from the voice-options sample); reply to
      confirm. Applies from this video on.
+   - `ADD Hxx` → queue idea Hxx from `plan/hacks_ideas.csv` (life & productivity hacks idea bank):
+     add an `Hxx,Queued` row to `status.csv`; step 2 produces Queued rows after Redo rows and before
+     the next plan row. Treat its facts as a starting point and re-verify them in step 4; keep its
+     caveat on screen. Files use the Hxx ID (`videos/Hxx-<slug>.mp4`, slug `hxx-...`).
    - Anything else (feedback, preferences, "more like V004") → append a dated line to
      `plan/feedback.md`; apply it from now on.
    Save the newest message id in the thread to `last_message_id`. Whenever the run sends an email
@@ -56,7 +60,8 @@ reviews and posts.
 ## 2. Pick the video
 
 - If a REDO was requested by email, that's the video. Otherwise, any ID with Status `Redo` in
-  `status.csv` (lowest first: these are early videos being remade with Spark + voice). Otherwise the
+  `status.csv` (lowest first: these are early videos being remade with Spark + voice). Then any ID with
+  Status `Queued` (owner-added ideas, oldest first). Otherwise the
   first row of `content_plan.csv` whose ID is not `Produced` or `Skipped` in `status.csv`.
 - A remake keeps the row's topic and verified facts but is rebuilt with Spark and the voiceover; save it
   as `videos/<ID>-<slug>-v2.mp4`, title its Drive doc `<ID> · <Title> (v2)`, and set Status `Produced`.
