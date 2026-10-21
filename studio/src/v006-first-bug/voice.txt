@@ -1,0 +1,19 @@
+Every bug you fix has a name older than computers.
+September ninth, nineteen forty-seven. Harvard.
+A computer the size of a room,
+packed with clicking relay switches.
+Something's wrong. The engineers go hunting.
+And there, stuck inside a relay,
+a moth. A real one.
+They taped it into the logbook:
+first actual case of bug being found.
+[pause 0.4]
+But read that again. Actual.
+The joke only works if bug already meant a glitch.
+Back in eighteen seventy-eight,
+Thomas Edison was calling little faults bugs.
+So the moth didn't invent the word.
+It just made it famous.
+That logbook, moth and all, is in the Smithsonian.
+So next time your code breaks,
+check for moths.

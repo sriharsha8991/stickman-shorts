@@ -1,0 +1,170 @@
+{
+  "fps": 30,
+  "durationInFrames": 1300,
+  "seconds": 43.33,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.357,
+      "startFrame": 6,
+      "endFrame": 101,
+      "words": 10,
+      "text": "Every bug you fix has a name older than computers."
+    },
+    {
+      "i": 1,
+      "start": 3.517,
+      "end": 6.717,
+      "startFrame": 106,
+      "endFrame": 202,
+      "words": 5,
+      "text": "September ninth, nineteen forty-seven. Harvard."
+    },
+    {
+      "i": 2,
+      "start": 6.877,
+      "end": 8.947,
+      "startFrame": 206,
+      "endFrame": 268,
+      "words": 7,
+      "text": "A computer the size of a room,"
+    },
+    {
+      "i": 3,
+      "start": 9.107,
+      "end": 11.048,
+      "startFrame": 273,
+      "endFrame": 331,
+      "words": 5,
+      "text": "packed with clicking relay switches."
+    },
+    {
+      "i": 4,
+      "start": 11.208,
+      "end": 13.853,
+      "startFrame": 336,
+      "endFrame": 416,
+      "words": 6,
+      "text": "Something's wrong. The engineers go hunting."
+    },
+    {
+      "i": 5,
+      "start": 14.013,
+      "end": 15.891,
+      "startFrame": 420,
+      "endFrame": 477,
+      "words": 6,
+      "text": "And there, stuck inside a relay,"
+    },
+    {
+      "i": 6,
+      "start": 16.051,
+      "end": 17.715,
+      "startFrame": 482,
+      "endFrame": 531,
+      "words": 5,
+      "text": "a moth. A real one."
+    },
+    {
+      "i": 7,
+      "start": 17.875,
+      "end": 19.517,
+      "startFrame": 536,
+      "endFrame": 586,
+      "words": 6,
+      "text": "They taped it into the logbook:"
+    },
+    {
+      "i": 8,
+      "start": 19.677,
+      "end": 22.045,
+      "startFrame": 590,
+      "endFrame": 661,
+      "words": 7,
+      "text": "first actual case of bug being found."
+    },
+    {
+      "i": 9,
+      "start": 22.605,
+      "end": 24.525,
+      "startFrame": 678,
+      "endFrame": 736,
+      "words": 5,
+      "text": "But read that again. Actual."
+    },
+    {
+      "i": 10,
+      "start": 24.685,
+      "end": 27.565,
+      "startFrame": 741,
+      "endFrame": 827,
+      "words": 10,
+      "text": "The joke only works if bug already meant a glitch."
+    },
+    {
+      "i": 11,
+      "start": 27.725,
+      "end": 29.347,
+      "startFrame": 832,
+      "endFrame": 880,
+      "words": 4,
+      "text": "Back in eighteen seventy-eight,"
+    },
+    {
+      "i": 12,
+      "start": 29.507,
+      "end": 32.387,
+      "startFrame": 885,
+      "endFrame": 972,
+      "words": 7,
+      "text": "Thomas Edison was calling little faults bugs."
+    },
+    {
+      "i": 13,
+      "start": 32.547,
+      "end": 34.552,
+      "startFrame": 976,
+      "endFrame": 1037,
+      "words": 7,
+      "text": "So the moth didn't invent the word."
+    },
+    {
+      "i": 14,
+      "start": 34.712,
+      "end": 36.163,
+      "startFrame": 1041,
+      "endFrame": 1085,
+      "words": 5,
+      "text": "It just made it famous."
+    },
+    {
+      "i": 15,
+      "start": 36.323,
+      "end": 39.139,
+      "startFrame": 1090,
+      "endFrame": 1174,
+      "words": 9,
+      "text": "That logbook, moth and all, is in the Smithsonian."
+    },
+    {
+      "i": 16,
+      "start": 39.299,
+      "end": 41.176,
+      "startFrame": 1179,
+      "endFrame": 1235,
+      "words": 6,
+      "text": "So next time your code breaks,"
+    },
+    {
+      "i": 17,
+      "start": 41.336,
+      "end": 42.573,
+      "startFrame": 1240,
+      "endFrame": 1277,
+      "words": 3,
+      "text": "check for moths."
+    }
+  ],
+  "chapters": []
+}
