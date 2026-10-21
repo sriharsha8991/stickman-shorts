@@ -1,0 +1,134 @@
+{
+  "fps": 30,
+  "durationInFrames": 1051,
+  "seconds": 35.02,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.805,
+      "startFrame": 6,
+      "endFrame": 114,
+      "words": 11,
+      "text": "You planned one episode. So why are you on episode four?"
+    },
+    {
+      "i": 1,
+      "start": 3.965,
+      "end": 5.416,
+      "startFrame": 119,
+      "endFrame": 162,
+      "words": 4,
+      "text": "You never pressed play."
+    },
+    {
+      "i": 2,
+      "start": 5.576,
+      "end": 8.648,
+      "startFrame": 167,
+      "endFrame": 259,
+      "words": 10,
+      "text": "The show ended, and a tiny countdown chose for you."
+    },
+    {
+      "i": 3,
+      "start": 8.808,
+      "end": 11.283,
+      "startFrame": 264,
+      "endFrame": 338,
+      "words": 6,
+      "text": "That's autoplay. It flips the default."
+    },
+    {
+      "i": 4,
+      "start": 11.443,
+      "end": 13.277,
+      "startFrame": 343,
+      "endFrame": 398,
+      "words": 3,
+      "text": "Keep watching? Automatic."
+    },
+    {
+      "i": 5,
+      "start": 13.437,
+      "end": 15.293,
+      "startFrame": 403,
+      "endFrame": 459,
+      "words": 5,
+      "text": "Stopping? That's now your job."
+    },
+    {
+      "i": 6,
+      "start": 15.453,
+      "end": 16.84,
+      "startFrame": 464,
+      "endFrame": 505,
+      "words": 3,
+      "text": "Defaults are powerful."
+    },
+    {
+      "i": 7,
+      "start": 17.0,
+      "end": 20.904,
+      "startFrame": 510,
+      "endFrame": 627,
+      "words": 13,
+      "text": "In one study, forty-two percent said yes when they had to opt in."
+    },
+    {
+      "i": 8,
+      "start": 21.064,
+      "end": 23.283,
+      "startFrame": 632,
+      "endFrame": 698,
+      "words": 6,
+      "text": "When yes was the default? Eighty-two."
+    },
+    {
+      "i": 9,
+      "start": 23.443,
+      "end": 25.512,
+      "startFrame": 703,
+      "endFrame": 765,
+      "words": 6,
+      "text": "So that countdown isn't a timer."
+    },
+    {
+      "i": 10,
+      "start": 25.672,
+      "end": 26.717,
+      "startFrame": 770,
+      "endFrame": 802,
+      "words": 3,
+      "text": "It's a nudge."
+    },
+    {
+      "i": 11,
+      "start": 26.877,
+      "end": 28.947,
+      "startFrame": 806,
+      "endFrame": 868,
+      "words": 6,
+      "text": "Turn autoplay off in your settings,"
+    },
+    {
+      "i": 12,
+      "start": 29.107,
+      "end": 31.901,
+      "startFrame": 873,
+      "endFrame": 957,
+      "words": 9,
+      "text": "and pick your last episode before you press play."
+    },
+    {
+      "i": 13,
+      "start": 32.061,
+      "end": 34.259,
+      "startFrame": 962,
+      "endFrame": 1028,
+      "words": 7,
+      "text": "Because the next one starts in five..."
+    }
+  ],
+  "chapters": []
+}
