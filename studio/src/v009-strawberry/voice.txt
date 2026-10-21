@@ -1,0 +1,9 @@
+POV: the AI that writes your code
+says strawberry has two r's.
+It never reads letters. Only chunks.
+One tokenizer sees: str, aw, berry.
+The r's hide inside the bricks.
+Newer models often get it right.
+Old trick: make it spell it first.
+S, t, r, a, w, b, e, r, r, y.
+Three r's.

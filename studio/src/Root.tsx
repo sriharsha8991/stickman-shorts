@@ -14,6 +14,8 @@ import { Video as V006FirstBug, DURATION as V006FirstBug_DURATION } from "./v006
 import { Video as V007Autoplay, DURATION as V007Autoplay_DURATION } from "./v007-autoplay/Video";
 import { Video as V008FreeDelivery, DURATION as V008FreeDelivery_DURATION } from "./v008-free-delivery/Video";
 import { Video as H0110kSteps, DURATION as H0110kSteps_DURATION } from "./h01-10k-steps/Video";
+import { Video as V009Strawberry, DURATION as V009Strawberry_DURATION } from "./v009-strawberry/Video";
+import { Video as H12IfThen, DURATION as H12IfThen_DURATION } from "./h12-if-then/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -123,6 +125,24 @@ export const RemotionRoot: React.FC = () => {
         id="H0110kSteps"
         component={H0110kSteps}
         durationInFrames={H0110kSteps_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="V009Strawberry"
+        component={V009Strawberry}
+        durationInFrames={V009Strawberry_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.2, sfx: 0.5, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="H12IfThen"
+        component={H12IfThen}
+        durationInFrames={H12IfThen_DURATION}
         fps={30}
         width={1080}
         height={1920}

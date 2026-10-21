@@ -1,0 +1,89 @@
+{
+  "fps": 30,
+  "durationInFrames": 676,
+  "seconds": 22.53,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 2.44,
+      "startFrame": 6,
+      "endFrame": 73,
+      "words": 7,
+      "text": "POV: the AI that writes your code"
+    },
+    {
+      "i": 1,
+      "start": 2.6,
+      "end": 4.477,
+      "startFrame": 78,
+      "endFrame": 134,
+      "words": 5,
+      "text": "says strawberry has two r's."
+    },
+    {
+      "i": 2,
+      "start": 4.637,
+      "end": 7.027,
+      "startFrame": 139,
+      "endFrame": 211,
+      "words": 6,
+      "text": "It never reads letters. Only chunks."
+    },
+    {
+      "i": 3,
+      "start": 7.187,
+      "end": 10.323,
+      "startFrame": 216,
+      "endFrame": 310,
+      "words": 6,
+      "text": "One tokenizer sees: str, aw, berry."
+    },
+    {
+      "i": 4,
+      "start": 10.483,
+      "end": 12.509,
+      "startFrame": 314,
+      "endFrame": 375,
+      "words": 6,
+      "text": "The r's hide inside the bricks."
+    },
+    {
+      "i": 5,
+      "start": 12.669,
+      "end": 14.845,
+      "startFrame": 380,
+      "endFrame": 445,
+      "words": 6,
+      "text": "Newer models often get it right."
+    },
+    {
+      "i": 6,
+      "start": 15.005,
+      "end": 17.117,
+      "startFrame": 450,
+      "endFrame": 514,
+      "words": 7,
+      "text": "Old trick: make it spell it first."
+    },
+    {
+      "i": 7,
+      "start": 17.277,
+      "end": 20.52,
+      "startFrame": 518,
+      "endFrame": 616,
+      "words": 10,
+      "text": "S, t, r, a, w, b, e, r, r, y."
+    },
+    {
+      "i": 8,
+      "start": 20.68,
+      "end": 21.768,
+      "startFrame": 620,
+      "endFrame": 653,
+      "words": 2,
+      "text": "Three r's."
+    }
+  ],
+  "chapters": []
+}
