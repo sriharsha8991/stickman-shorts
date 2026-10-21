@@ -1,7 +1,9 @@
 # Stickman Shorts — production runbook
 
-This is the procedure every scheduled run follows. **One run = one finished video.** Follow the
-steps in order; don't skip the gates. Nothing here ever posts to Instagram or YouTube: a human
+This is the procedure every scheduled run follows. **One run = two finished videos** (owner, 2026-10-21).
+Do steps 1 and 3 once, then steps 2 and 4–10 for the first video, then again for the second (pick the
+next eligible row after the first). One email per run covering both videos (two download buttons at the
+top), one Drive doc and one commit per video. Follow the steps in order; don't skip the gates. Nothing here ever posts to Instagram or YouTube: a human
 reviews and posts.
 
 ## 0. Fixed references
@@ -217,15 +219,15 @@ floating/sinking, unreadable text, a frame where nothing moves for > 2 s, poses 
 4. Update `plan/status.csv` (Status `Produced`, date, video URL, Drive doc URL, notes), commit
    everything (`studio/src/<slug>`, `studio/music/<slug>*`, `plan/*`, `videos/<ID>*`) with message
    `<ID>: <Title>` and push (`git pull --rebase` first if the push is rejected).
-5. Email: `send_message` with `replyThreadId 1a159c3adf191ae8`, to `srih8991@gmail.com`, subject
-   "Re: Stickman Shorts — production updates". Put a prominent **"⬇ Download MP4"** button/link (the raw link) at the very top, then: ID + title, watch link, Drive doc link,
+5. Email (once per run, after both videos): `send_message` with `replyThreadId 1a159c3adf191ae8`, to `srih8991@gmail.com`, subject
+   "Re: Stickman Shorts — production updates". Put a prominent **"⬇ Download MP4"** button/link per video (the raw links) at the very top, then for each video: ID + title, watch link, Drive doc link,
    duration, hook (with score), the post copy, QA notes, anything that needs a decision, and the
    next video in the queue. Plain, short, skimmable.
 6. Also send the MP4 to the session (`SendUserFile`) so it shows in the run's conversation.
 
 ## 11. If something fails
 
-- Retry a failing step once after fixing the cause. If the video still can't be finished, record
+- Retry a failing step once after fixing the cause. If a video still can't be finished (the other video of the run still ships), record
   `Failed` in `status.csv` with a one-line reason, commit, and email the owner what broke and what
   the next run will do. Two failures on the same ID → `Skipped` next run.
 - If the GitHub push is refused, keep going: deliver via the Drive doc + email + session

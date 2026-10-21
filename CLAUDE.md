@@ -3,7 +3,7 @@
 Automated vertical (9:16) stick-figure shorts for Instagram Reels and YouTube Shorts, built with
 Remotion and the `stickman-video` engine.
 
-- **Producing a video?** Follow `PIPELINE.md` step by step. One run = one finished video.
+- **Producing a video?** Follow `PIPELINE.md` step by step. One run = two finished videos.
 - Plan: `plan/content_plan.csv` (100 videos) · tracker: `plan/status.csv` · owner feedback: `plan/feedback.md`.
 - Toolchain: `bash setup.sh && source env.sh` (skills land in `_vendor/`, never commit it).
 - Every video is hosted by **Spark** (`studio/src/shared/mascot.tsx`) and narrated with the offline channel voice
