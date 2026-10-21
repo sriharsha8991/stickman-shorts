@@ -1,0 +1,152 @@
+{
+  "fps": 30,
+  "durationInFrames": 1178,
+  "seconds": 39.26,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 1.736,
+      "startFrame": 6,
+      "endFrame": 52,
+      "words": 3,
+      "text": "Cash versus UPI."
+    },
+    {
+      "i": 1,
+      "start": 1.896,
+      "end": 4.968,
+      "startFrame": 57,
+      "endFrame": 149,
+      "words": 11,
+      "text": "Why does a five hundred rupee note hurt to hand over,"
+    },
+    {
+      "i": 2,
+      "start": 5.128,
+      "end": 8.051,
+      "startFrame": 154,
+      "endFrame": 242,
+      "words": 9,
+      "text": "but a five hundred rupee tap feels like nothing?"
+    },
+    {
+      "i": 3,
+      "start": 8.211,
+      "end": 9.469,
+      "startFrame": 246,
+      "endFrame": 284,
+      "words": 3,
+      "text": "Round one: cash."
+    },
+    {
+      "i": 4,
+      "start": 9.629,
+      "end": 12.189,
+      "startFrame": 289,
+      "endFrame": 366,
+      "words": 8,
+      "text": "You count out the notes. Every one stings."
+    },
+    {
+      "i": 5,
+      "start": 12.349,
+      "end": 14.355,
+      "startFrame": 370,
+      "endFrame": 431,
+      "words": 7,
+      "text": "Researchers call it the pain of paying."
+    },
+    {
+      "i": 6,
+      "start": 14.515,
+      "end": 15.88,
+      "startFrame": 435,
+      "endFrame": 476,
+      "words": 3,
+      "text": "Round two: UPI."
+    },
+    {
+      "i": 7,
+      "start": 16.04,
+      "end": 18.024,
+      "startFrame": 481,
+      "endFrame": 541,
+      "words": 5,
+      "text": "Tap. Ding. Done. Zero pain."
+    },
+    {
+      "i": 8,
+      "start": 18.184,
+      "end": 21.619,
+      "startFrame": 546,
+      "endFrame": 649,
+      "words": 11,
+      "text": "A two thousand eight study: people offered more for a meal"
+    },
+    {
+      "i": 9,
+      "start": 21.779,
+      "end": 23.805,
+      "startFrame": 653,
+      "endFrame": 714,
+      "words": 6,
+      "text": "when paying by card, not cash."
+    },
+    {
+      "i": 10,
+      "start": 23.965,
+      "end": 27.827,
+      "startFrame": 719,
+      "endFrame": 835,
+      "words": 9,
+      "text": "A twenty twenty-four survey: three in four UPI users"
+    },
+    {
+      "i": 11,
+      "start": 27.987,
+      "end": 29.949,
+      "startFrame": 840,
+      "endFrame": 898,
+      "words": 7,
+      "text": "say they spend more because of it."
+    },
+    {
+      "i": 12,
+      "start": 30.109,
+      "end": 31.539,
+      "startFrame": 903,
+      "endFrame": 946,
+      "words": 4,
+      "text": "So who really wins?"
+    },
+    {
+      "i": 13,
+      "start": 31.699,
+      "end": 34.365,
+      "startFrame": 951,
+      "endFrame": 1031,
+      "words": 7,
+      "text": "Cash. That sting was protecting your wallet."
+    },
+    {
+      "i": 14,
+      "start": 34.525,
+      "end": 35.784,
+      "startFrame": 1036,
+      "endFrame": 1074,
+      "words": 4,
+      "text": "Put the sting back."
+    },
+    {
+      "i": 15,
+      "start": 35.944,
+      "end": 38.504,
+      "startFrame": 1078,
+      "endFrame": 1155,
+      "words": 7,
+      "text": "Once a week, scroll your UPI history."
+    }
+  ],
+  "chapters": []
+}
