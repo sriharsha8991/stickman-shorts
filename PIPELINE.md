@@ -1,8 +1,9 @@
 # Stickman Shorts — production runbook
 
-This is the procedure every scheduled run follows. **One run = two finished videos** (owner, 2026-10-21).
-Do steps 1 and 3 once, then steps 2 and 4–10 for the first video, then again for the second (pick the
-next eligible row after the first). One email per run covering both videos (two download buttons at the
+This is the procedure every scheduled run follows. **One run = two finished videos** (owner, 2026-10-21):
+**video A from the 100-video plan** (`plan/content_plan.csv`) and **video B from the life & productivity
+hacks idea bank** (`plan/hacks_ideas.csv`) (owner, 2026-10-21). Do steps 1 and 3 once, then steps 2 and
+4–10 for video A, then again for video B (step 2 says how each slot is picked). One email per run covering both videos (two download buttons at the
 top), one Drive doc and one commit per video. Follow the steps in order; don't skip the gates. Nothing here ever posts to Instagram or YouTube: a human
 reviews and posts.
 
@@ -46,10 +47,9 @@ reviews and posts.
    - `VOICE <n>` → set `studio/voice.json` "voice" to option n: 1 am_michael, 2 am_puck, 3 am_fenrir,
      4 am_adam, 5 bm_george, 6 bm_daniel, 7 af_heart, 8 af_bella (from the voice-options sample); reply to
      confirm. Applies from this video on.
-   - `ADD Hxx` → queue idea Hxx from `plan/hacks_ideas.csv` (life & productivity hacks idea bank):
-     add an `Hxx,Queued` row to `status.csv`; step 2 produces Queued rows after Redo rows and before
-     the next plan row. Treat its facts as a starting point and re-verify them in step 4; keep its
-     caveat on screen. Files use the Hxx ID (`videos/Hxx-<slug>.mp4`, slug `hxx-...`).
+   - `ADD Hxx` → queue idea Hxx from `plan/hacks_ideas.csv`: add an `Hxx,Queued` row to `status.csv`;
+     it jumps the hacks queue (slot B, step 2).
+   - `REDO Hxx: <notes>` works like REDO Vxxx but for slot B; `SKIP Hxx` marks a hack Skipped.
    - Anything else (feedback, preferences, "more like V004") → append a dated line to
      `plan/feedback.md`; apply it from now on.
    Save the newest message id in the thread to `last_message_id`. Whenever the run sends an email
@@ -59,15 +59,34 @@ reviews and posts.
 
 ## 2. Pick the video
 
-- If a REDO was requested by email, that's the video. Otherwise, any ID with Status `Redo` in
-  `status.csv` (lowest first: these are early videos being remade with Spark + voice). Then any ID with
-  Status `Queued` (owner-added ideas, oldest first). Otherwise the
-  first row of `content_plan.csv` whose ID is not `Produced` or `Skipped` in `status.csv`.
+Every run has two slots. Both IDs live in the same `status.csv`.
+
+**Slot A: the 100-video plan (Vxxx).** An emailed `REDO Vxxx`, else any V ID with Status `Redo` in
+`status.csv` (lowest first: early videos being remade with Spark + voice), else the first row of
+`content_plan.csv` whose ID is not `Produced` or `Skipped`.
+
+**Slot B: life & productivity hacks (Hxx, from `plan/hacks_ideas.csv`).** An emailed `REDO Hxx`, else
+any H ID with Status `Redo`, else any H ID with Status `Queued` (owner's `ADD Hxx`, oldest first), else
+the next idea by **category rotation**: take the category after the last produced hack's
+(Move → Focus → Reset → Move…; the first hack is Move) and pick its lowest H ID not `Produced`/`Skipped`;
+if that category is used up, take the next category. Hack rows:
+- The row's Verified finding / Sources are a starting point, not a pass: re-verify them in step 4 and
+  keep the row's Caveat in the script or on screen.
+- `Health-edu` rows show "Education, not medical advice" on screen (like the finance line), use
+  "linked to" for observational findings, and never promise cures or treatment.
+- Myth rows suit Myth vs Reality; keep the row's Format unless the facts change it.
+- Files and docs use the H ID: `studio/src/hxx-<slug>/`, composition `HxxSlug`, `videos/Hxx-<slug>.mp4`,
+  `videos/Hxx.md`, Drive doc `Hxx · <Title>`, status row `Hxx,Produced,…`, commit `Hxx: <Title>`.
+
+**Fallbacks.** If one queue is exhausted (or its video fails twice in the same run), make both videos
+from the other queue that run and say so in the email. Slots A and B must never look or sound alike:
+different background world, palette, staging and music mood.
 - A remake keeps the row's topic and verified facts but is rebuilt with Spark and the voiceover; save it
   as `videos/<ID>-<slug>-v2.mp4`, title its Drive doc `<ID> · <Title> (v2)`, and set Status `Produced`.
 - If `status.csv` shows the same ID `Failed` twice already, mark it `Skipped` and take the next one.
 - If all 100 are done: email "All 100 produced" with a summary and stop.
-- Slug: `v0NN-short-kebab-title` (e.g. `v003-streak-hostage`). Composition id = PascalCase of the slug.
+- Slug: `v0NN-short-kebab-title` (e.g. `v003-streak-hostage`) or `hNN-short-kebab-title` for hacks.
+  Composition id = PascalCase of the slug.
 
 ## 3. Build the toolchain (~1 min)
 
@@ -225,9 +244,9 @@ floating/sinking, unreadable text, a frame where nothing moves for > 2 s, poses 
    everything (`studio/src/<slug>`, `studio/music/<slug>*`, `plan/*`, `videos/<ID>*`) with message
    `<ID>: <Title>` and push (`git pull --rebase` first if the push is rejected).
 5. Email (once per run, after both videos): `send_message` with `replyThreadId 1a159c3adf191ae8`, to `srih8991@gmail.com`, subject
-   "Re: Stickman Shorts — production updates". Put a prominent **"⬇ Download MP4"** button/link per video (the raw links) at the very top, then for each video: ID + title, watch link, Drive doc link,
+   "Re: Stickman Shorts — production updates". Put a prominent **"⬇ Download MP4"** button/link per video (the raw links) at the very top, then for each video (plan video first, then the hack): ID + title, watch link, Drive doc link,
    duration, hook (with score), the post copy, QA notes, anything that needs a decision, and the
-   next video in the queue. Plain, short, skimmable.
+   next plan video and next hack in the queue. Plain, short, skimmable.
 6. Also send the MP4 to the session (`SendUserFile`) so it shows in the run's conversation.
 
 ## 11. If something fails
