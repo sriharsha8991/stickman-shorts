@@ -9,6 +9,7 @@ import { BrandingStills } from "./branding/Branding";
 import { Video as V001AiOneBug, DURATION as V001AiOneBug_DURATION } from "./v001-ai-one-bug/Video";
 import { Video as V002ScrollTrap, DURATION as V002ScrollTrap_DURATION } from "./v002-scroll-trap/Video";
 import { Video as V004UpiPain, DURATION as V004UpiPain_DURATION } from "./v004-upi-pain/Video";
+import { Video as V005DemoDay, DURATION as V005DemoDay_DURATION } from "./v005-demo-day/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -73,6 +74,15 @@ export const RemotionRoot: React.FC = () => {
         id="V004UpiPain"
         component={V004UpiPain}
         durationInFrames={V004UpiPain_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="V005DemoDay"
+        component={V005DemoDay}
+        durationInFrames={V005DemoDay_DURATION}
         fps={30}
         width={1080}
         height={1920}

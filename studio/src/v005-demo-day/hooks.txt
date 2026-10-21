@@ -1,0 +1,5 @@
+POV: your demo worked five minutes ago. Now 200 people are watching it crash.
+You rehearsed the demo 10 times. Why does it break the second 200 people watch?
+Your code worked 5 minutes ago. Why does it crash the moment your boss is watching?
+You lose the room in 3 seconds when the demo freezes. Why does it always happen live?
+It worked on your machine at 2:55. At 3:00, on stage, why is your laptop on fire?
