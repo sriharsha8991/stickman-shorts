@@ -1,0 +1,9 @@
+You asked AI to fix one bug.
+Just this one. Tiny. Right here.
+AI said: sure! And while I'm here...
+new framework. Renamed everything. Deleted the tests.
+Now your build fails with forty-seven errors.
+And the original bug?
+Still. There.
+Next time, tell it what not to touch.
+Every. Single. Time.

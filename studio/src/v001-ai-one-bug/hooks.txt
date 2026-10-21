@@ -1,0 +1,5 @@
+If you asked AI to fix one bug, why did it rewrite 4,812 lines and break your build?
+You asked AI to fix one bug. Why does your build now fail with 47 new errors?
+You lose a whole afternoon when AI fixes one bug and touches 4,812 lines. Here's why.
+Stop asking AI to fix just one bug. You'll lose 47 more and the original stays broken.
+Your one-line bug fix just cost you 4,812 changed lines. Why does AI always do this?
