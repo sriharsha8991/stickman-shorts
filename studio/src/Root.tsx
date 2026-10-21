@@ -12,6 +12,8 @@ import { Video as V004UpiPain, DURATION as V004UpiPain_DURATION } from "./v004-u
 import { Video as V005DemoDay, DURATION as V005DemoDay_DURATION } from "./v005-demo-day/Video";
 import { Video as V006FirstBug, DURATION as V006FirstBug_DURATION } from "./v006-first-bug/Video";
 import { Video as V007Autoplay, DURATION as V007Autoplay_DURATION } from "./v007-autoplay/Video";
+import { Video as V008FreeDelivery, DURATION as V008FreeDelivery_DURATION } from "./v008-free-delivery/Video";
+import { Video as H0110kSteps, DURATION as H0110kSteps_DURATION } from "./h01-10k-steps/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -103,6 +105,24 @@ export const RemotionRoot: React.FC = () => {
         id="V007Autoplay"
         component={V007Autoplay}
         durationInFrames={V007Autoplay_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="V008FreeDelivery"
+        component={V008FreeDelivery}
+        durationInFrames={V008FreeDelivery_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="H0110kSteps"
+        component={H0110kSteps}
+        durationInFrames={H0110kSteps_DURATION}
         fps={30}
         width={1080}
         height={1920}

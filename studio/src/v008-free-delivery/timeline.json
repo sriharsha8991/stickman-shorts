@@ -1,0 +1,134 @@
+{
+  "fps": 30,
+  "durationInFrames": 1059,
+  "seconds": 35.27,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.229,
+      "startFrame": 6,
+      "endFrame": 97,
+      "words": 10,
+      "text": "You spent a hundred and fifty rupees to save forty."
+    },
+    {
+      "i": 1,
+      "start": 3.389,
+      "end": 6.568,
+      "startFrame": 102,
+      "endFrame": 197,
+      "words": 7,
+      "text": "Delivery is forty. Free above one ninety-nine."
+    },
+    {
+      "i": 2,
+      "start": 6.728,
+      "end": 8.328,
+      "startFrame": 202,
+      "endFrame": 250,
+      "words": 3,
+      "text": "Your cart? Forty-nine."
+    },
+    {
+      "i": 3,
+      "start": 8.488,
+      "end": 11.411,
+      "startFrame": 255,
+      "endFrame": 342,
+      "words": 10,
+      "text": "So in go chips, and a candle you don't need."
+    },
+    {
+      "i": 4,
+      "start": 11.571,
+      "end": 13.448,
+      "startFrame": 347,
+      "endFrame": 403,
+      "words": 5,
+      "text": "That's the zero price effect."
+    },
+    {
+      "i": 5,
+      "start": 13.608,
+      "end": 16.68,
+      "startFrame": 408,
+      "endFrame": 500,
+      "words": 8,
+      "text": "In one study: a fancy truffle, fifteen cents."
+    },
+    {
+      "i": 6,
+      "start": 16.84,
+      "end": 18.696,
+      "startFrame": 505,
+      "endFrame": 561,
+      "words": 5,
+      "text": "A basic chocolate, one cent."
+    },
+    {
+      "i": 7,
+      "start": 18.856,
+      "end": 20.328,
+      "startFrame": 566,
+      "endFrame": 610,
+      "words": 4,
+      "text": "Most picked the truffle."
+    },
+    {
+      "i": 8,
+      "start": 20.488,
+      "end": 22.28,
+      "startFrame": 615,
+      "endFrame": 668,
+      "words": 6,
+      "text": "Then both got one cent cheaper."
+    },
+    {
+      "i": 9,
+      "start": 22.44,
+      "end": 23.997,
+      "startFrame": 673,
+      "endFrame": 720,
+      "words": 5,
+      "text": "The basic one went free."
+    },
+    {
+      "i": 10,
+      "start": 24.157,
+      "end": 27.4,
+      "startFrame": 725,
+      "endFrame": 822,
+      "words": 8,
+      "text": "Its share jumped from twenty-seven to sixty-nine percent."
+    },
+    {
+      "i": 11,
+      "start": 27.56,
+      "end": 30.013,
+      "startFrame": 827,
+      "endFrame": 900,
+      "words": 8,
+      "text": "Free is the priciest word in your cart."
+    },
+    {
+      "i": 12,
+      "start": 30.173,
+      "end": 32.733,
+      "startFrame": 905,
+      "endFrame": 982,
+      "words": 9,
+      "text": "Ask: would I buy this if delivery were free?"
+    },
+    {
+      "i": 13,
+      "start": 32.893,
+      "end": 34.515,
+      "startFrame": 987,
+      "endFrame": 1035,
+      "words": 5,
+      "text": "If not, pay the forty."
+    }
+  ],
+  "chapters": []
+}
