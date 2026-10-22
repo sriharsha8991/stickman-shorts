@@ -315,12 +315,15 @@ export const Kinetic: React.FC<{ f: number; pages: Page[]; end: number; y?: numb
 // ---------------------------------------------------------------------------
 export type VoiceCue = { text: string; startFrame: number; endFrame: number; words: { w: string; s: number; e: number }[] };
 
-export const VoiceCaptions: React.FC<{ f: number; cues: VoiceCue[]; hi?: string[]; y?: number; size?: number }> = ({
+// x/w: caption box (defaults = vertical 1080 layout; for 16:9 use x={260} w={1400} y={975} size={54})
+export const VoiceCaptions: React.FC<{ f: number; cues: VoiceCue[]; hi?: string[]; y?: number; size?: number; x?: number; w?: number }> = ({
   f,
   cues,
   hi = [],
   y = 1420,
   size = 66,
+  x = 90,
+  w = 900,
 }) => {
   const idx = cues.findIndex((c, i) => f >= c.startFrame - 2 && f < (cues[i + 1]?.startFrame ?? c.endFrame + 12) - 2);
   if (idx < 0) return null;
@@ -329,7 +332,7 @@ export const VoiceCaptions: React.FC<{ f: number; cues: VoiceCue[]; hi?: string[
   const out = interpolate(f, [until - 5, until], [1, 0], clamp);
   const keys = new Set(hi.map((w) => w.toLowerCase()));
   return (
-    <div style={{ position: "absolute", left: 90, width: 900, top: y, transform: "translateY(-50%)", textAlign: "center", lineHeight: 1.12, opacity: out }}>
+    <div style={{ position: "absolute", left: x, width: w, top: y, transform: "translateY(-50%)", textAlign: "center", lineHeight: 1.12, opacity: out }}>
       {cue.words.map((wd, i) => {
         const d = f - wd.s;
         if (d < -1) return null;

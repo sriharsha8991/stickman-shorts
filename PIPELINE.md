@@ -50,6 +50,8 @@ reviews and posts.
    - `ADD Hxx` → queue idea Hxx from `plan/hacks_ideas.csv`: add an `Hxx,Queued` row to `status.csv`;
      it jumps the hacks queue (slot B, step 2).
    - `REDO Hxx: <notes>` works like REDO Vxxx but for slot B; `SKIP Hxx` marks a hack Skipped.
+   - Long-form commands (`LONG PAUSE`, `LONG RESUME`, `REDO/SKIP Lxxx`, `ADD L:`) belong to `LONGFORM.md`:
+     skip them here (the long-form run handles them).
    - Anything else (feedback, preferences, "more like V004") → append a dated line to
      `plan/feedback.md`; apply it from now on.
    Save the newest message id in the thread to `last_message_id`. Whenever the run sends an email
