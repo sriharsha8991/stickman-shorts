@@ -24,6 +24,8 @@ import { Video as H26CoffeeCutoff, DURATION as H26CoffeeCutoff_DURATION } from "
 import { Video as V011FridayFix, DURATION as V011FridayFix_DURATION } from "./v011-friday-fix/Video";
 import { Video as H02StepSweetSpot, DURATION as H02StepSweetSpot_DURATION } from "./h02-step-sweet-spot/Video";
 import { Video as L001FeedDecides, DURATION as L001FeedDecides_DURATION } from "./l001-feed-decides/Video";
+import { Video as V012DecoyPopcorn, DURATION as V012DecoyPopcorn_DURATION } from "./v012-decoy-popcorn/Video";
+import { Video as H13Habit21Days, DURATION as H13Habit21Days_DURATION } from "./h13-habit-21-days/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -200,6 +202,24 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         defaultProps={{ music: 0.28, sfx: 0.6, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="V012DecoyPopcorn"
+        component={V012DecoyPopcorn}
+        durationInFrames={V012DecoyPopcorn_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="H13Habit21Days"
+        component={H13Habit21Days}
+        durationInFrames={H13Habit21Days_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
       />
       {/* stickman-video:compositions */}
           <Composition id="SparkSheet" component={SparkSheet} durationInFrames={60} fps={30} width={1920} height={1080} />

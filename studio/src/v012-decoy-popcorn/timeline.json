@@ -1,0 +1,143 @@
+{
+  "fps": 30,
+  "durationInFrames": 1088,
+  "seconds": 36.27,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 2.419,
+      "startFrame": 6,
+      "endFrame": 73,
+      "words": 7,
+      "text": "You think you chose the large popcorn."
+    },
+    {
+      "i": 1,
+      "start": 2.579,
+      "end": 4.328,
+      "startFrame": 77,
+      "endFrame": 130,
+      "words": 6,
+      "text": "The medium chose it for you."
+    },
+    {
+      "i": 2,
+      "start": 4.488,
+      "end": 7.283,
+      "startFrame": 135,
+      "endFrame": 218,
+      "words": 6,
+      "text": "Small, one fifty. Large, three fifty."
+    },
+    {
+      "i": 3,
+      "start": 7.443,
+      "end": 10.109,
+      "startFrame": 223,
+      "endFrame": 303,
+      "words": 9,
+      "text": "Tough call. Now add a medium for three thirty."
+    },
+    {
+      "i": 4,
+      "start": 10.269,
+      "end": 12.616,
+      "startFrame": 308,
+      "endFrame": 378,
+      "words": 7,
+      "text": "Suddenly the large feels like a steal."
+    },
+    {
+      "i": 5,
+      "start": 12.776,
+      "end": 14.376,
+      "startFrame": 383,
+      "endFrame": 431,
+      "words": 5,
+      "text": "That medium is a decoy."
+    },
+    {
+      "i": 6,
+      "start": 14.536,
+      "end": 17.565,
+      "startFrame": 436,
+      "endFrame": 527,
+      "words": 9,
+      "text": "Nobody buys it. It makes the large look smart."
+    },
+    {
+      "i": 7,
+      "start": 17.725,
+      "end": 20.563,
+      "startFrame": 532,
+      "endFrame": 617,
+      "words": 8,
+      "text": "One class test used a real magazine ad."
+    },
+    {
+      "i": 8,
+      "start": 20.723,
+      "end": 23.347,
+      "startFrame": 622,
+      "endFrame": 700,
+      "words": 9,
+      "text": "Print only cost the same as print plus web."
+    },
+    {
+      "i": 9,
+      "start": 23.507,
+      "end": 25.491,
+      "startFrame": 705,
+      "endFrame": 765,
+      "words": 7,
+      "text": "Nobody picked it. But with it there,"
+    },
+    {
+      "i": 10,
+      "start": 25.651,
+      "end": 27.784,
+      "startFrame": 770,
+      "endFrame": 834,
+      "words": 5,
+      "text": "eighty-four percent took the combo."
+    },
+    {
+      "i": 11,
+      "start": 27.944,
+      "end": 29.565,
+      "startFrame": 838,
+      "endFrame": 887,
+      "words": 4,
+      "text": "Without it? Just thirty-two."
+    },
+    {
+      "i": 12,
+      "start": 29.725,
+      "end": 31.453,
+      "startFrame": 892,
+      "endFrame": 944,
+      "words": 6,
+      "text": "It works best when you're torn."
+    },
+    {
+      "i": 13,
+      "start": 31.613,
+      "end": 33.256,
+      "startFrame": 948,
+      "endFrame": 998,
+      "words": 5,
+      "text": "So cross out the decoy,"
+    },
+    {
+      "i": 14,
+      "start": 33.416,
+      "end": 35.507,
+      "startFrame": 1002,
+      "endFrame": 1065,
+      "words": 7,
+      "text": "and compare the two you'd actually buy."
+    }
+  ],
+  "chapters": []
+}
