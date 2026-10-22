@@ -14,6 +14,9 @@ YouTube: a human reviews and posts.
 | Tracker | `plan/status.csv` (same file as the Shorts; rows `Lxxx`) |
 | Profanity policy notes | `plan/longform_policy.md` |
 | Retention gate | `tools/beat_check.py` (no stretch > 5 s without a visual change) |
+| Writing craft | `WRITING.md` (sourced rules from top creators + attention psychology: read before every script) |
+| Spark acting | `studio/src/shared/mascot.tsx` (15 moods) + `studio/src/shared/gestures.ts` (gesture library); reference sheet: `npx remotion still SparkSheet out/spark-sheet.png --frame=20` |
+| Thumbnails | `studio/src/thumbs/LongThumbs.tsx` (compositions `ThumbLxxx`, 1280×720), PNGs in `videos/thumbs/` |
 | Everything else | as `PIPELINE.md` §0 (Drive folders, Gmail thread `1a159c3adf191ae8`, owner, Spark, voice) |
 
 ## 1. Gate: is a long-form run due? (cheap; do this first)
@@ -47,7 +50,10 @@ handled by the Shorts run; this run only respects `inbox_state.paused`. Save the
 ## 3. Pick the topic
 
 An emailed `REDO Lxxx`, else an L row with Status `Redo` in `status.csv`, else the first row of
-`longform_plan.csv` whose ID isn't `Produced`/`Skipped`. Two `Failed` on the same ID → `Skipped`, take the next.
+`longform_plan.csv` whose ID isn't `Produced`/`Skipped`. The row is a full brief: title + A/B titles, thumbnail
+text and concept, hook, promise, misconception, a narrated chapter plan, re-hooks, wow moments, Spark acting,
+visual world, retention devices, ending, verified facts with sources, cautions, risk flag and length. Build from it,
+but re-verify every fact on the day (§5), and if a fact changed, change the script rather than the facts. Two `Failed` on the same ID → `Skipped`, take the next.
 If none is left: email the owner six new researched topic suggestions (pillars as the plan) and stop.
 Slug `l0NN-short-kebab-title`; composition id = PascalCase of the slug (e.g. `L001FeedDecides`).
 
@@ -64,6 +70,11 @@ starting list, not the full list. Each on-screen number shows a short source lin
 Risk flags as PIPELINE §4 (Finance-edu / Health-edu / Policy-check / Security-edu / Legal-edu lines on screen).
 
 ## 6. Script, pacing and pauses (gate)
+
+- **Read `WRITING.md` first and apply all of it**: packaging first, misconception first, BUT/THEREFORE beats,
+  curiosity-driven open loops, a re-hook every ~60–90 s plus a big one near 3:00, one concrete example per idea,
+  write for the ear, pay off fast, end on awe. Draft the hook three ways, read each aloud, keep the one that
+  makes you want the answer most, and score it (≥ 55).
 
 - **Length 3–6 min** (row's target ± 0.5 min) at **120–140 words per minute**, measured over the whole
   voiceover including pauses: `wpm = spoken words ÷ (VOICE_FRAMES / 1800)`. That's roughly 360–840 words.
@@ -99,6 +110,10 @@ camera punch-in or cut → SFX accent), with uneven spacing and no dead air. Plu
 - A scene change (new staging or background state) at least every 20–40 s. A short chapter card (≤ 1.5 s)
   sits on each chapter's pause.
 - One "wow" moment per chapter, and Spark's bulb on each chapter's aha.
+- **Spark acts every line** (WRITING.md §D.21): an expression (`mood`) plus a gesture from `shared/gestures.ts`
+  on every spoken beat, built with `gestureKeys()` (anticipation + holds), with `nod/hop/wave/shake` layers on
+  emphasis. Never the same gesture twice in a row, and at least 8 different moods per video. The plan row's
+  'Spark acting' column is the starting script for his performance.
 - One visual world per video (its own metaphor, palette and props), different from the latest Shorts and the
   previous long-form video.
 
@@ -149,9 +164,12 @@ PNG and fix overlaps, off-safe-zone items and unreadable text (as PIPELINE §7).
 
 ## 11. Thumbnail
 
-Add a `<Comp>Thumb` composition (1280×720, 1 frame): Spark plus the video's metaphor and 3–4 big words, high
-contrast, no profanity, no logos. `npx remotion still <Comp>Thumb out/<ID>-thumb.png`, then commit as
-`videos/<ID>-thumb.png`.
+The plan already has a first thumbnail for each row (`videos/thumbs/<ID>-thumb.png`, made by
+`studio/src/thumbs/LongThumbs.tsx`). After the video exists, update that entry so the thumbnail matches what
+the video really shows: same world and palette, Spark's face large with the row's mood and gesture, one object,
+2–4 words that add tension, no profanity, no logos (WRITING.md §A). Also make **two alternates** for Test &
+Compare (`<ID>-thumb-b.png`, `-c.png`): a different expression or word angle. Render them with
+`npx remotion still Thumb<ID> …` and commit them to `videos/thumbs/`.
 
 ## 12. Deliver
 
@@ -164,11 +182,12 @@ contrast, no profanity, no logos. `npx remotion still <Comp>Thumb out/<ID>-thumb
    `git pull --rebase` first if rejected. The Shorts run pushes too; if `Root.tsx` conflicts, keep both sets of compositions.
 5. Email: `send_message` to `srih8991@gmail.com`, `replyThreadId 1a159c3adf191ae8`, subject
    "Re: Stickman Shorts — production updates". Put a **"⬇ Download MP4 · LONG-FORM <ID>"** button at the top, then
-   title, watch link, Drive doc, thumbnail link, duration, wpm, hook + score, chapters, description, QA notes,
+   **"⬇ Thumbnail" buttons** (raw links to the 3 PNGs), then title + the 2 alternate titles, watch link, Drive doc,
+   duration, wpm, hook + score, chapters, description, QA notes,
    decisions needed, the next long-form topic and the next due time (start + 40 h). Sign it "— Claude".
    Append the returned id to `plan/inbox_state.json` `sent_ids` **and** set `longform_state.last_message_id`;
    commit and push.
-6. `SendUserFile` the MP4 and thumbnail.
+6. `SendUserFile` the MP4 and the thumbnails.
 
 ## 13. Guardrails and failures
 

@@ -1,3 +1,5 @@
+import { LONG_THUMBS, LongThumb } from "./thumbs/LongThumbs";
+import { SparkSheet } from "./shared/SparkSheet";
 import "./index.css";
 import React from "react";
 import { Composition } from "remotion";
@@ -169,6 +171,10 @@ export const RemotionRoot: React.FC = () => {
         defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
       />
       {/* stickman-video:compositions */}
+          <Composition id="SparkSheet" component={SparkSheet} durationInFrames={60} fps={30} width={1920} height={1080} />
+          {LONG_THUMBS.map((c) => (
+        <Composition key={c.id} id={`Thumb${c.id}`} component={() => <LongThumb cfg={c} />} durationInFrames={1} fps={30} width={1280} height={720} />
+      ))}
     </>
   );
 };

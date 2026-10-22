@@ -18,7 +18,19 @@ export const SPARK_COLOR = "#0fb5a6";
 export const SPARK_DARK = "#0a7f75";
 export const BULB_ON = "#ffd23f";
 
-export type Mood = "neutral" | "happy" | "shock" | "sad" | "smug" | "angry";
+// Expressions. The first six are the originals; the rest were added 2026-10-22 (owner asked for more
+// gestures and expressions). Spark's look (teal, glasses, bulb, sneakers) is unchanged.
+export type Mood =
+  | "neutral" | "happy" | "shock" | "sad" | "smug" | "angry"
+  | "curious" // one brow up, eyes up, small "o"
+  | "excited" // big grin, big pupils with sparkles, blush
+  | "worried" // brows up in the middle, wobbly mouth, sweat drop
+  | "wink" // right eye closed, smirk
+  | "laugh" // eyes ^ ^, open laugh, blush
+  | "thinking" // eyes up-left, mouth pulled to the side
+  | "skeptical" // one brow down, flat side mouth
+  | "mindblown" // huge eyes, open mouth, burst lines around the head
+  | "determined"; // brows down + small confident smile
 
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 
@@ -41,8 +53,11 @@ const Head: React.FC<{
   const cycle = 96 + (blinkSeed % 3) * 14;
   const ph = (f + blinkSeed * 37) % cycle;
   const blink = ph < 4 ? 1 - Math.abs(ph - 2) / 2 : 0;
-  const eyeH = (mood === "shock" ? 6.2 : 4.6) * (1 - blink * 0.9);
-  const px = look * 2.4;
+  const big = mood === "shock" || mood === "mindblown" || mood === "excited";
+  const eyeH = (big ? 6.2 : 4.6) * (1 - blink * 0.9);
+  const px = look * 2.4 + (mood === "thinking" ? -2.4 : 0);
+  const py = mood === "curious" || mood === "thinking" ? -2.2 : 0;
+  const closedEye = (cx: number) => (mood === "laugh" ? true : mood === "wink" && cx > 0);
   const o = Math.max(0, Math.min(1, talk));
   // mouth: closed smile/line when silent, open ellipse while speaking
   const mouthY = 11 * s;
@@ -82,8 +97,15 @@ const Head: React.FC<{
       {[-9.5, 9.5].map((cx) => (
         <g key={cx}>
           <circle cx={cx * s} cy={-3 * s} r={8 * s} fill="#ffffff" stroke={COL.ink} strokeWidth={2.6 * s} />
-          <ellipse cx={(cx + px) * s} cy={-2.5 * s} rx={2.8 * s} ry={eyeH * 0.62 * s} fill={COL.ink} />
-          {blink > 0.5 && <line x1={(cx - 6) * s} y1={-3 * s} x2={(cx + 6) * s} y2={-3 * s} stroke={COL.ink} strokeWidth={2.4 * s} />}
+          {closedEye(cx) ? (
+            <path d={`M${(cx - 5) * s},${-1.5 * s} Q${cx * s},${-7 * s} ${(cx + 5) * s},${-1.5 * s}`} stroke={COL.ink} strokeWidth={2.4 * s} fill="none" strokeLinecap="round" />
+          ) : (
+            <>
+              <ellipse cx={(cx + px) * s} cy={(-2.5 + py) * s} rx={(big ? 3.3 : 2.8) * s} ry={eyeH * 0.62 * s} fill={COL.ink} />
+              {mood === "excited" && <circle cx={(cx + px + 1.2) * s} cy={(-4 + py) * s} r={1.1 * s} fill="#fff" />}
+              {blink > 0.5 && <line x1={(cx - 6) * s} y1={-3 * s} x2={(cx + 6) * s} y2={-3 * s} stroke={COL.ink} strokeWidth={2.4 * s} />}
+            </>
+          )}
         </g>
       ))}
       {/* brows for mood */}
@@ -99,6 +121,44 @@ const Head: React.FC<{
       {mood === "smug" && (
         <path d={`M${-15 * s},${-14 * s} L${-4 * s},${-15 * s} M${4 * s},${-17 * s} L${15 * s},${-14 * s}`} stroke={COL.ink} strokeWidth={2.4 * s} strokeLinecap="round" />
       )}
+      {mood === "curious" && (
+        <path d={`M${-15 * s},${-14 * s} L${-4 * s},${-14 * s} M${4 * s},${-18 * s} Q${9.5 * s},${-22 * s} ${15 * s},${-17 * s}`} stroke={COL.ink} strokeWidth={2.4 * s} fill="none" strokeLinecap="round" />
+      )}
+      {(mood === "excited" || mood === "laugh") && (
+        <path d={`M${-15 * s},${-17 * s} Q${-9.5 * s},${-20 * s} ${-4 * s},${-17 * s} M${4 * s},${-17 * s} Q${9.5 * s},${-20 * s} ${15 * s},${-17 * s}`} stroke={COL.ink} strokeWidth={2.4 * s} fill="none" strokeLinecap="round" />
+      )}
+      {mood === "worried" && (
+        <path d={`M${-15 * s},${-12 * s} L${-5 * s},${-17 * s} M${15 * s},${-12 * s} L${5 * s},${-17 * s}`} stroke={COL.ink} strokeWidth={2.6 * s} strokeLinecap="round" />
+      )}
+      {mood === "thinking" && (
+        <path d={`M${-15 * s},${-17 * s} L${-4 * s},${-15 * s} M${4 * s},${-15 * s} L${15 * s},${-15 * s}`} stroke={COL.ink} strokeWidth={2.4 * s} strokeLinecap="round" />
+      )}
+      {mood === "skeptical" && (
+        <path d={`M${-15 * s},${-18 * s} Q${-9.5 * s},${-21 * s} ${-4 * s},${-17 * s} M${4 * s},${-13 * s} L${15 * s},${-15 * s}`} stroke={COL.ink} strokeWidth={2.6 * s} fill="none" strokeLinecap="round" />
+      )}
+      {(mood === "determined" || mood === "wink") && (
+        <path d={`M${-16 * s},${-15 * s} L${-4 * s},${-12.5 * s} M${16 * s},${-15 * s} L${4 * s},${-12.5 * s}`} stroke={COL.ink} strokeWidth={2.6 * s} strokeLinecap="round" />
+      )}
+      {mood === "mindblown" && (
+        <path d={`M${-15 * s},${-19 * s} Q${-9.5 * s},${-24 * s} ${-4 * s},${-19 * s} M${4 * s},${-19 * s} Q${9.5 * s},${-24 * s} ${15 * s},${-19 * s}`} stroke={COL.ink} strokeWidth={2.4 * s} fill="none" strokeLinecap="round" />
+      )}
+      {/* cheeks / sweat / burst */}
+      {(mood === "happy" || mood === "excited" || mood === "laugh" || mood === "wink") && (
+        <>
+          <ellipse cx={-15 * s} cy={7 * s} rx={3.6 * s} ry={2.2 * s} fill="#ff8fa3" opacity={0.75} />
+          <ellipse cx={15 * s} cy={7 * s} rx={3.6 * s} ry={2.2 * s} fill="#ff8fa3" opacity={0.75} />
+        </>
+      )}
+      {mood === "worried" && (
+        <path d={`M${19 * s},${-12 * s} q ${3 * s} ${5 * s} 0 ${7 * s} q ${-3 * s} ${-2 * s} 0 ${-7 * s} Z`} fill="#8fd3ff" stroke={COL.ink} strokeWidth={1.4 * s} transform={`translate(0 ${(f % 30) * 0.12 * s})`} />
+      )}
+      {mood === "mindblown" &&
+        Array.from({ length: 10 }, (_, i) => {
+          const a = (i / 10) * Math.PI * 2 + 0.3;
+          const r1 = R + 6 * s + Math.sin(f * 0.5 + i) * 2 * s;
+          const r2 = r1 + 9 * s;
+          return <line key={`mb${i}`} x1={Math.cos(a) * r1} y1={Math.sin(a) * r1} x2={Math.cos(a) * r2} y2={Math.sin(a) * r2} stroke={BULB_ON} strokeWidth={2.6 * s} strokeLinecap="round" />;
+        })}
       {/* mouth */}
       {o > 0.06 ? (
         <g>
@@ -111,6 +171,21 @@ const Head: React.FC<{
         <path d={`M${-6 * s},${mouthY + 4 * s} Q0,${mouthY - 2 * s} ${6 * s},${mouthY + 4 * s}`} stroke={COL.ink} strokeWidth={2.4 * s} fill="none" strokeLinecap="round" />
       ) : mood === "angry" ? (
         <line x1={-6 * s} y1={mouthY + 1 * s} x2={6 * s} y2={mouthY + 1 * s} stroke={COL.ink} strokeWidth={2.4 * s} strokeLinecap="round" />
+      ) : mood === "mindblown" ? (
+        <ellipse cx={0} cy={mouthY + 2 * s} rx={5.5 * s} ry={6.5 * s} fill="#3b1d1d" stroke={COL.ink} strokeWidth={1.8 * s} />
+      ) : mood === "curious" ? (
+        <circle cx={1 * s} cy={mouthY + 1 * s} r={2.6 * s} fill="#3b1d1d" stroke={COL.ink} strokeWidth={1.6 * s} />
+      ) : mood === "laugh" || mood === "excited" ? (
+        <g>
+          <path d={`M${-8 * s},${mouthY - 2 * s} Q0,${mouthY + 11 * s} ${8 * s},${mouthY - 2 * s} Z`} fill="#3b1d1d" stroke={COL.ink} strokeWidth={2 * s} strokeLinejoin="round" />
+          <ellipse cx={0} cy={mouthY + 4.5 * s} rx={3.4 * s} ry={1.8 * s} fill="#e86a6a" />
+        </g>
+      ) : mood === "worried" ? (
+        <path d={`M${-6 * s},${mouthY + 2 * s} q ${3 * s} ${-3 * s} ${6 * s} 0 q ${3 * s} ${3 * s} ${6 * s} 0`} stroke={COL.ink} strokeWidth={2.2 * s} fill="none" strokeLinecap="round" transform={`translate(${-3 * s} 0)`} />
+      ) : mood === "thinking" || mood === "skeptical" ? (
+        <path d={`M${-2 * s},${mouthY + 1 * s} L${7 * s},${mouthY - (mood === "thinking" ? 1.5 : 0) * s}`} stroke={COL.ink} strokeWidth={2.4 * s} strokeLinecap="round" />
+      ) : mood === "wink" || mood === "determined" ? (
+        <path d={`M${-6 * s},${mouthY} Q${2 * s},${mouthY + 5 * s} ${7 * s},${mouthY - 2.5 * s}`} stroke={COL.ink} strokeWidth={2.4 * s} fill="none" strokeLinecap="round" />
       ) : (
         <path
           d={`M${-7 * s},${mouthY - 1 * s} Q0,${mouthY + (mood === "happy" || mood === "smug" ? 7 : 4) * s} ${7 * s},${mouthY - 1 * s}`}

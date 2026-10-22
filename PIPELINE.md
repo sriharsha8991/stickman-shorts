@@ -99,6 +99,10 @@ cd ~/stickman && bash setup.sh && source env.sh
 `setup.sh` installs Python deps, the seven skills (pinned) into `_vendor/`, the GeneralUser GS
 SoundFont, `npm ci`, and points Remotion at a local Chromium when its download is blocked.
 
+Read **`WRITING.md`** (the channel's sourced craft guide) before writing any script, and apply it to every Short.
+Spark now has 15 moods (`mascot.tsx`) and a gesture library (`shared/gestures.ts`). Use at least 5 different
+moods and a gesture change on every spoken line.
+
 Skills to read before writing (all in `$SKILLS`):
 - `stickman-video/SKILL.md`, `references/engine-api.md`, `references/animation-style.md`, `references/pitfalls.md`
 - `storytelling-skills/skills/storytelling-hooks/SKILL.md` (+ `patterns.md`)
