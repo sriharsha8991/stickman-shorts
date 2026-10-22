@@ -9,7 +9,7 @@ YouTube: a human reviews and posts.
 
 | What | Where |
 |---|---|
-| Topic plan | `plan/longform_plan.csv` (IDs `L001`…; new 3–6 min topics in the channel pillars) |
+| Topic plan | `plan/longform_plan.csv` (IDs `L001`…, 10 detailed narrated briefs). Drive mirrors: sheet `1DevWe_keQNiaSs_NCi1oL3OI7KLIf-RDS-ZyfE3ti24`, narrated doc `18qpmXQVUacVxDAKTKR2Gr-zm7LSHNkb9IeQXGsaOQCs` (update the sheet's Status when a video ships) |
 | Cadence state | `plan/longform_state.json` (`interval_hours` 40, `last_started_utc`, `last_id`, `last_message_id`, `paused`) |
 | Tracker | `plan/status.csv` (same file as the Shorts; rows `Lxxx`) |
 | Profanity policy notes | `plan/longform_policy.md` |
