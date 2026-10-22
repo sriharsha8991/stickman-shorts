@@ -116,8 +116,14 @@ def main():
             continue
         m = re.fullmatch(r"\[pause\s+([\d.]+)\]", r)
         if m:
-            chunks.append(np.zeros(int(float(m.group(1)) * sr), np.float32))
-            t += float(m.group(1))
+            # A pause row REPLACES the line gap before it (it doesn't add to it), so the silence the
+            # viewer hears is exactly the pause value (long-form rule: pauses 0.5-1.0 s, never longer).
+            pz = float(m.group(1))
+            if cues and len(chunks) > 1 and chunks[-1].size == int(a.gap * sr) and not chunks[-1].any():
+                chunks.pop()
+                t -= a.gap
+            chunks.append(np.zeros(int(pz * sr), np.float32))
+            t += pz
             continue
         audio, sr = k.create(r, voice=a.voice, speed=a.speed, lang=cfg.get("lang", "en-us"))
         audio = audio.astype(np.float32)

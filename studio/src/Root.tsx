@@ -20,6 +20,7 @@ import { Video as V009Strawberry, DURATION as V009Strawberry_DURATION } from "./
 import { Video as H12IfThen, DURATION as H12IfThen_DURATION } from "./h12-if-then/Video";
 import { Video as V010RedDot, DURATION as V010RedDot_DURATION } from "./v010-red-dot/Video";
 import { Video as H26CoffeeCutoff, DURATION as H26CoffeeCutoff_DURATION } from "./h26-coffee-cutoff/Video";
+import { Video as L001FeedDecides, DURATION as L001FeedDecides_DURATION } from "./l001-feed-decides/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -169,6 +170,15 @@ export const RemotionRoot: React.FC = () => {
         width={1080}
         height={1920}
         defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="L001FeedDecides"
+        component={L001FeedDecides}
+        durationInFrames={L001FeedDecides_DURATION}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{ music: 0.28, sfx: 0.6, voice: "voice.wav", captions: false }}
       />
       {/* stickman-video:compositions */}
           <Composition id="SparkSheet" component={SparkSheet} durationInFrames={60} fps={30} width={1920} height={1080} />

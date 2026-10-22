@@ -85,6 +85,8 @@ Risk flags as PIPELINE §4 (Finance-edu / Health-edu / Policy-check / Security-e
   `--gap` within 0.5–1.0 and `--speed` within 0.95–1.0, nothing else.
 - **Pauses 0.5–1.0 s, never longer:** the line gap is the default pause; add `[pause 1.0]` rows after each big
   reveal and at every chapter break. Never stack two pause rows; never a pause > 1.0 s.
+  (Since 2026-10-22 a `[pause x]` row *replaces* the line gap before it in `voiceover.py`, so the silence is exactly
+  x s: `[pause 1.0]` = 1.0 s, not gap + 1.0.)
 - **Structure** (Mechanism Reveal, stretched):
   1. **Hook, 0–7 s**: the cold open, a question that works muted plus a text overlay (5 hooks scored with
      `hookscore.py`, use one ≥ 55, as PIPELINE §5.1).

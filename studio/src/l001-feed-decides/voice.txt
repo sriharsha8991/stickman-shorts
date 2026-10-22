@@ -1,0 +1,106 @@
+# HOOK
+You think you choose what you watch.
+But most of your last ten videos?
+A machine probably picked them.
+[pause 1.0]
+# PROMISE
+Hi, I'm Spark. Let's open that machine up.
+By the end, you'll know what it reads,
+how it picks from a mountain of videos,
+why your feed can shrink around you,
+and three taps that retrain it.
+[pause 1.0]
+# CH1 The pick you didn't make
+Picture this. You open the app for one video.
+Just one. You know exactly which.
+It ends, and the next one is already there.
+Then another. And another.
+Forty minutes later, check the counter.
+Choices you actually made? One.
+Every other video was offered to you.
+By the home feed. By the up next list.
+Back in twenty eighteen, YouTube's product chief
+reportedly said about seventy percent
+of watch time came from recommendations.
+So who's doing all that choosing?
+[pause 1.0]
+# CH2 What it reads
+Most people think it just shows what's popular.
+Or that it only counts views.
+But YouTube's own help page lists the signals.
+And they're mostly about you.
+Signal one: your watch history.
+Two: what you search for.
+Three: the channels you subscribe to.
+Four and five: your likes and dislikes.
+Six: every time you tap "Not interested."
+Seven: "Don't recommend channel."
+And eight is the sneaky one.
+Sometimes, it asks you to rate a video.
+Why ask, if it already knows what you watched?
+Because watch time can't tell if you were happy.
+You can watch something for an hour and hate it.
+So the survey checks the machine's own guess.
+It's not reading your mind.
+It's reading what you do.
+[pause 1.0]
+But knowing you is only half the job.
+It still has to choose.
+# CH3 The ranking race
+Here's a simplified picture.
+Think of a talent show with an endless line.
+In a twenty sixteen paper, YouTube engineers described two steps.
+Step one: from an enormous pile of videos,
+grab a few hundred that might fit you.
+Step two: give every one of those a score.
+Only the top few make the final.
+That's your screen.
+So what was that score chasing?
+Not clicks. Clicks reward clickbait,
+videos people don't even finish.
+The paper aimed for expected watch time instead.
+And today, YouTube says surveys help measure satisfaction too.
+So the race isn't "most popular wins."
+It's "most likely to keep you watching."
+[pause 1.0]
+# CH4 The loop
+And here's the part nobody tells you.
+That race runs again every time you come back,
+using what you did last time.
+Watch three cooking videos, you'll likely see more cooking.
+Watch those, and the next guess leans harder.
+You watch, it learns, it offers more of that.
+The circle can get smaller and smaller.
+That's why two people can open the same app
+and see two completely different worlds.
+It's not evil, and it doesn't trap everyone.
+It's just doing its job: guessing well.
+But that means your quick taps are votes.
+Even the ones you didn't mean.
+[pause 1.0]
+So can you vote back? Yes. With three taps.
+# CH5 Retrain it
+Tap one: open your watch history.
+You can pause it, edit it, or delete it.
+Clear out the videos you regret.
+Tap two: on a video you don't want,
+open its menu and choose "Not interested."
+Tap three: if a whole channel isn't for you,
+choose "Don't recommend channel."
+Bonus move: search for what you actually want.
+Your searches are signals too.
+None of this is hidden. It's all in your hands.
+[pause 1.0]
+# RECAP
+So, quick recap.
+It reads your history, searches, likes and taps.
+It scores a few hundred videos for you.
+It shows what it thinks will keep you watching.
+And every tap teaches it.
+You're not just watching the feed.
+You're training it.
+Three taps this week,
+and the feed starts working for you.
+[pause 1.0]
+# END
+I'm Spark. Stay curious.

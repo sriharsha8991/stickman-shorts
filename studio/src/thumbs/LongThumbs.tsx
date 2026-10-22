@@ -35,21 +35,25 @@ const Phone: React.FC<{ x: number; y: number; w: number; h: number; children?: R
 );
 
 const ArtFeed: React.FC = () => (
+  // matches L001's world (2026-10-22 render): neon control room, the recommender's red eye inside the phone,
+  // cyan rings
   <g>
-    <Phone x={780} y={300} w={300} h={420} glow="#ff2d55">
-      <ellipse cx={930} cy={470} rx={110} ry={64} fill="#fff" {...K} strokeWidth={7} />
-      <circle cx={930} cy={470} r={46} fill="#ff2d55" stroke={COL.ink} strokeWidth={6} />
-      <circle cx={930} cy={470} r={20} fill={COL.ink} />
-      <circle cx={944} cy={456} r={8} fill="#fff" />
+    {[0, 1, 2].map((i) => (
+      <rect key={i} x={560 + i * 250} y={60} width={220} height={620} rx={10} fill="rgba(63,224,255,0.08)" stroke="#3fe0ff" strokeOpacity={0.25} strokeWidth={3} />
+    ))}
+    <Phone x={780} y={290} w={300} h={420} glow="#ff2d55">
+      <rect x={798} y={312} width={264} height={376} rx={28} fill="#0d1538" />
+      {[0, 1].map((i) => (
+        <circle key={i} cx={930} cy={470} r={95 + i * 26} fill="none" stroke={i ? "#ff4fd8" : "#3fe0ff"} strokeWidth={6} strokeDasharray="50 28" />
+      ))}
+      <ellipse cx={930} cy={470} rx={100} ry={60} fill="#fff" {...K} strokeWidth={7} />
+      <circle cx={930} cy={470} r={42} fill="#ff2d55" stroke={COL.ink} strokeWidth={6} />
+      <circle cx={930} cy={470} r={19} fill={COL.ink} />
+      <circle cx={943} cy={457} r={8} fill="#fff" />
       {[0, 1, 2].map((i) => (
-        <rect key={i} x={820} y={580 + i * 40} width={220} height={26} rx={8} fill={["#ffd166", "#8ecae6", "#c3f0ca"][i]} stroke={COL.ink} strokeWidth={4} />
+        <rect key={i} x={820} y={580 + i * 34} width={220} height={24} rx={8} fill={["#ff9f1c", "#2ec4b6", "#7b2ff7"][i]} stroke={COL.ink} strokeWidth={4} />
       ))}
     </Phone>
-    {/* tiny YOU on a conveyor of cards */}
-    <rect x={540} y={660} width={250} height={22} rx={11} fill="#3a3f55" {...K} strokeWidth={5} />
-    {[0, 1, 2].map((i) => (
-      <rect key={i} x={560 + i * 72} y={612} width={56} height={46} rx={8} fill={["#ffd166", "#8ecae6", "#ffadad"][i]} stroke={COL.ink} strokeWidth={4} />
-    ))}
   </g>
 );
 
@@ -290,7 +294,9 @@ const ArtStatic: React.FC = () => (
 );
 
 export const LONG_THUMBS: Cfg[] = [
-  { id: "L001", bg: ["#0b1030", "#2a0f3d"], l1: "IT CHOSE", l2: "FOR YOU", hot: 2, accent: "#ff2d55", mood: "worried", gesture: "pointSide", art: ArtFeed },
+  { id: "L001", bg: ["#0b1030", "#141c4a"], l1: "IT CHOSE", l2: "FOR YOU", hot: 2, accent: "#ff2d55", mood: "worried", gesture: "pointSide", art: ArtFeed },
+  { id: "L001b", bg: ["#0b1030", "#20124a"], l1: "YOU DIDN'T", l2: "PICK THIS", hot: 2, accent: "#ff2d55", mood: "shock", gesture: "recoil", art: ArtFeed },
+  { id: "L001c", bg: ["#0b1030", "#123a5a"], l1: "IT'S", l2: "READING YOU", hot: 2, accent: "#3fe0ff", mood: "skeptical", gesture: "armsCrossed", art: ArtFeed },
   { id: "L002", bg: ["#fff4e0", "#e8dcff"], l1: "IT'S", l2: "GUESSING", hot: 2, accent: "#7b2ff7", mood: "curious", gesture: "leanIn", art: ArtTokens },
   { id: "L003", bg: ["#c8f7e6", "#ffd2c2"], l1: "SAME PRICE.", l2: "LESS PAIN?", hot: 2, accent: "#ff5a5f", mood: "skeptical", gesture: "armsCrossed", art: ArtSlices },
   { id: "L004", bg: ["#e9f9d8", "#ffd8b8"], l1: "21 DAYS?", l2: "NOPE.", hot: 2, accent: "#e5322d", mood: "wink", gesture: "handsHips", art: ArtCalendar },
