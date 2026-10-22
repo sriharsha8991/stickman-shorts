@@ -13,7 +13,8 @@ YouTube: a human reviews and posts.
 | Cadence state | `plan/longform_state.json` (`interval_hours` 40, `last_started_utc`, `last_id`, `last_message_id`, `paused`) |
 | Tracker | `plan/status.csv` (same file as the Shorts; rows `Lxxx`) |
 | Profanity policy notes | `plan/longform_policy.md` |
-| Retention gate | `tools/beat_check.py` (no stretch > 5 s without a visual change) |
+| Retention gate | `tools/beat_check.py` (no stretch > 5 s without a visual change, no stretch > 7 s without a screen transition) |
+| Camera, transitions, Spark staging | `studio/src/shared/camera.tsx` (`camAt`, `drift`, `Transition`, `sparkAt`); demo composition `CameraDemo` |
 | Writing craft | `WRITING.md` (sourced rules from top creators + attention psychology: read before every script) |
 | Spark acting | `studio/src/shared/mascot.tsx` (15 moods) + `studio/src/shared/gestures.ts` (gesture library); reference sheet: `npx remotion still SparkSheet out/spark-sheet.png --frame=20` |
 | Thumbnails | `studio/src/thumbs/LongThumbs.tsx` (compositions `ThumbLxxx`, 1280×720), PNGs in `videos/thumbs/` |
@@ -76,13 +77,14 @@ Risk flags as PIPELINE §4 (Finance-edu / Health-edu / Policy-check / Security-e
   write for the ear, pay off fast, end on awe. Draft the hook three ways, read each aloud, keep the one that
   makes you want the answer most, and score it (≥ 55).
 
-- **Length 3–6 min** (row's target ± 0.5 min) at **120–140 words per minute**, measured over the whole
-  voiceover including pauses: `wpm = spoken words ÷ (VOICE_FRAMES / 1800)`. That's roughly 360–840 words.
-  If wpm > 140 → add pauses or cut words; if < 120 → tighten. Re-run the voice and re-measure.
-- **Voice pacing (measured 2026-10-22):** the channel voice at its Shorts speed (1.1×) talks at about 190 wpm,
-  far too fast. For long-form, run the voiceover with **`--speed 0.95 --gap 0.8`**: same voice, slightly slower,
-  0.8 s between caption lines (≈ 137 wpm on a test script). Keep caption lines at 6–9 words. To tune, move
-  `--gap` within 0.5–1.0 and `--speed` within 0.95–1.0, nothing else.
+- **Length 3–6 min** (row's target ± 0.5 min) at **130–135 words per minute** (owner, 2026-10-22: L001 at 124 wpm
+  felt slow; "can hit up to 135"), measured over the whole voiceover including pauses and the end-card tail:
+  `wpm = spoken words ÷ (VOICE_FRAMES / 1800)`. Accept 128–138; never above 140. That's roughly 400–800 words
+  (≈ 650 for 5 min). If wpm is high → add a pause row or cut words; if low → tighten the gap. Re-run and re-measure.
+- **Voice pacing (measured 2026-10-22 on the L001 script):** `--speed 0.95 --gap 0.8` gave 124 wpm (too slow);
+  `--speed 1.0 --gap 0.6` gave 137 wpm (135 with a 4 s end-card tail). Default for long-form:
+  **`--speed 1.0 --gap 0.65 --tail 4.0`** (≈ 132–134 wpm). Keep caption lines at 6–9 words. To tune, move `--gap`
+  within 0.5–0.8 and `--speed` within 0.97–1.03, nothing else.
 - **Pauses 0.5–1.0 s, never longer:** the line gap is the default pause; add `[pause 1.0]` rows after each big
   reveal and at every chapter break. Never stack two pause rows; never a pause > 1.0 s.
   (Since 2026-10-22 a `[pause x]` row *replaces* the line gap before it in `voiceover.py`, so the silence is exactly
@@ -104,7 +106,7 @@ Risk flags as PIPELINE §4 (Finance-edu / Health-edu / Policy-check / Security-e
   ("damn", "hell"), which the page lists as full-ad eligible, or none. Details and sources: `plan/longform_policy.md`.
   The Shorts stay clean.
 
-## 7. Storyboard: a change every 3–5 seconds (gate)
+## 7. Storyboard: a change every 3–5 s, a transition every 5–7 s (gate)
 
 `studio/src/<slug>/storyboard.md` has one row per beat, anchored to spoken words, with **a new visual element,
 sound cue or text callout every 3–5 seconds**. Rotate the types (new prop or character action → text callout →
@@ -119,13 +121,37 @@ camera punch-in or cut → SFX accent), with uneven spacing and no dead air. Plu
 - One visual world per video (its own metaphor, palette and props), different from the latest Shorts and the
   previous long-form video.
 
+### 7b. Camera, transitions, wow and Spark staging (owner, 2026-10-22, after L001)
+
+L001 had small changes every few seconds but the *screen* rarely changed and Spark stood in one spot all video.
+From L002 on, plan these in the storyboard (a `Cam / transition` and a `Spark place` column) and build them with
+`studio/src/shared/camera.tsx`:
+- **A screen transition every 5–7 s** (big, whole-frame change), rotating kinds, never the same kind twice in a row:
+  a `Transition` overlay (`slice`, `whip`, `iris`, `flash`, `shutter`; swap the staging under it on `at`), a camera
+  **zoom in** on a detail (z 1.3–1.8, `e: "snap"`) or **zoom out** to reveal the whole system, a **zoom-through**
+  (z → 3 into an object + `flash`, come out inside it), a cut to a new staging/background, or Spark walking across
+  the frame. Chapter cards count as transitions. Gate: `beat_check.py --cut-max 7` (mean frame change ≥ 8).
+- **The camera is never frozen:** wrap every scene's camera in `drift()` (slow 3 % push) on top of `camAt()` shots
+  and `punch()` on hits. At least 3 deliberate camera moves per chapter (in, out, re-frame).
+- **Spark moves and changes size** (`sparkAt`): wide shots at s 1.3–1.5 (feet on the ground), a **medium close-up**
+  (s 2.2–2.8) or **close-up** (s 3.0–3.6, waist-up, bottom corner) at least **once per chapter**, for asides,
+  whispers, the open loop and the aha, or a camera push-in on his face (z 1.6–2.0 at his head). He changes side
+  (left third ↔ right third) at least once per chapter and never stays in the same place and size for more than
+  ~20 s. He walks (not slides) when he crosses: pair the move with `walkCycle` or a hop.
+- **Wow every chapter, built as a moment** (2–4 s, with a transition or camera move, an SFX hit and a music lift):
+  a zoom-through into an object revealing what's inside, a pull-back that shows the thing was a tiny part of a giant
+  system, a transformation (object → machine), a number that slams in with flash + shake, a slow-mo push-in with
+  letterbox (`Letterbox`), a split-screen or before/after. List them in the storyboard with timestamps.
+- Keep text readable: captions stay in screen space (they don't zoom); keep important callouts out of the frame
+  edges when the camera is zoomed (`camAt` clamps the edges, but zooms crop the sides).
+
 ## 8. Build the scenes (16:9)
 
 ```bash
 cd ~/stickman && source env.sh
 python3 $ENGINE/scripts/new_video.py --project studio --slug <slug> --size 1920x1080
 rm studio/src/<slug>/S01Example.tsx
-python3 tools/voiceover.py --slug <slug> --script studio/src/<slug>/voice.txt --speed 0.95 --gap 0.8
+python3 tools/voiceover.py --slug <slug> --script studio/src/<slug>/voice.txt --speed 1.0 --gap 0.65 --tail 4.0
 ```
 - **One scene file per chapter** (`S01Hook.tsx`, `S02<Name>.tsx`, …); each scene starts on its chapter's first
   cue frame. Wire them in `Video.tsx` (copy the pattern from `studio/src/h26-coffee-cutoff/Video.tsx`), with
@@ -156,9 +182,13 @@ PNG and fix overlaps, off-safe-zone items and unreadable text (as PIPELINE §7).
    (go up to crf 28 if needed). Always end with `-movflags +faststart`.
 5. QA (all must pass; fix and re-render if not):
    - `ffprobe`: 1920×1080, duration 3–6 min, audio present.
-   - wpm 120–140 (from §6); no pause row > 1.0 s.
-   - `python3 tools/beat_check.py studio/out/<ID>-<slug>-m.mp4 --max 5` exits 0 (no stretch > 5 s without
-     a visual change). Report its `median_gap_s`.
+   - wpm 130–135 (accept 128–138, from §6); no pause row > 1.0 s.
+   - `python3 tools/beat_check.py studio/out/<ID>-<slug>-m.mp4 --max 5 --cut-max 7` exits 0: no stretch > 5 s
+     without a visual change AND no stretch > 7 s without a screen transition. Report `median_gap_s`,
+     `transitions` and `median_transition_gap_s`. To fix a slow stretch without a full re-render, render just those
+     frames (`--frames=a-b --muted`) and splice them in with ffmpeg (cut pieces with `-ss`/`-frames:v`, join with the
+     concat demuxer, then encode once; a multi-`trim` filter graph runs out of memory).
+   - Spark check: in the contact sheets he appears at ≥ 2 sizes and on both sides of the frame in every chapter.
    - `check_render.py` (measure the stereo peak; the checker's mono downmix can over-read it); speech ≥ 5 dB above
      the music-only gaps.
    - Look at the first frame, the last frame and the first frame of every chapter.
@@ -177,7 +207,7 @@ Compare (`<ID>-thumb-b.png`, `-c.png`): a different expression or word angle. Re
 
 1. `videos/<ID>.md`: YouTube title (< 70 chars, no profanity), description (2–3 lines, then **chapters** as
    `0:00 Intro`, `m:ss <chapter>`… from the cue frames, then sources), 3–5 hashtags, a pinned-comment idea,
-   hook + score, duration, wpm, beat-check median gap.
+   hook + score, duration, wpm, beat-check median gap, transitions count + median transition gap.
 2. `videos/<ID>-<slug>.mp4` + thumbnail (`git add --sparse`). Links as PIPELINE §10.2.
 3. Drive doc `<ID> · <Title>` in the Videos folder (as PIPELINE §10.3), with the chapters + timestamps.
 4. `plan/status.csv` row `<ID>,Produced,…`. Set `longform_state.last_id`, commit `<ID>: <Title>`, push.
