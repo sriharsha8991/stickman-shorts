@@ -1,0 +1,134 @@
+{
+  "fps": 30,
+  "durationInFrames": 1175,
+  "seconds": 39.14,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.571,
+      "startFrame": 6,
+      "endFrame": 107,
+      "words": 11,
+      "text": "Your three PM coffee could be stealing an hour of sleep."
+    },
+    {
+      "i": 1,
+      "start": 3.731,
+      "end": 5.117,
+      "startFrame": 112,
+      "endFrame": 154,
+      "words": 4,
+      "text": "And you wouldn't notice."
+    },
+    {
+      "i": 2,
+      "start": 5.277,
+      "end": 8.563,
+      "startFrame": 158,
+      "endFrame": 257,
+      "words": 8,
+      "text": "All day, a sleepy signal builds up: adenosine."
+    },
+    {
+      "i": 3,
+      "start": 8.723,
+      "end": 11.731,
+      "startFrame": 262,
+      "endFrame": 352,
+      "words": 9,
+      "text": "Caffeine plugs its receptors, so you don't feel it."
+    },
+    {
+      "i": 4,
+      "start": 11.891,
+      "end": 14.963,
+      "startFrame": 357,
+      "endFrame": 449,
+      "words": 8,
+      "text": "The catch: caffeine's half-life is about four hours."
+    },
+    {
+      "i": 5,
+      "start": 15.123,
+      "end": 17.661,
+      "startFrame": 454,
+      "endFrame": 530,
+      "words": 8,
+      "text": "For some people it's two. For others, eight."
+    },
+    {
+      "i": 6,
+      "start": 17.821,
+      "end": 20.275,
+      "startFrame": 535,
+      "endFrame": 608,
+      "words": 11,
+      "text": "So part of that cup is still in you at bedtime."
+    },
+    {
+      "i": 7,
+      "start": 20.435,
+      "end": 24.104,
+      "startFrame": 613,
+      "endFrame": 723,
+      "words": 10,
+      "text": "In a small study, twelve people took four hundred milligrams"
+    },
+    {
+      "i": 8,
+      "start": 24.264,
+      "end": 25.949,
+      "startFrame": 728,
+      "endFrame": 778,
+      "words": 4,
+      "text": "six hours before bed."
+    },
+    {
+      "i": 9,
+      "start": 26.109,
+      "end": 27.944,
+      "startFrame": 783,
+      "endFrame": 838,
+      "words": 7,
+      "text": "They lost over an hour of sleep,"
+    },
+    {
+      "i": 10,
+      "start": 28.104,
+      "end": 29.64,
+      "startFrame": 843,
+      "endFrame": 889,
+      "words": 4,
+      "text": "and mostly didn't notice."
+    },
+    {
+      "i": 11,
+      "start": 29.8,
+      "end": 32.36,
+      "startFrame": 894,
+      "endFrame": 971,
+      "words": 9,
+      "text": "That's a big dose, and bodies vary a lot."
+    },
+    {
+      "i": 12,
+      "start": 32.52,
+      "end": 36.061,
+      "startFrame": 976,
+      "endFrame": 1082,
+      "words": 10,
+      "text": "So try a cut-off: last cup eight hours before bed."
+    },
+    {
+      "i": 13,
+      "start": 36.221,
+      "end": 38.376,
+      "startFrame": 1087,
+      "endFrame": 1151,
+      "words": 6,
+      "text": "Bed at eleven? Coffee by three."
+    }
+  ],
+  "chapters": []
+}

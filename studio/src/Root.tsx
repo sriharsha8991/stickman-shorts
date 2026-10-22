@@ -16,6 +16,8 @@ import { Video as V008FreeDelivery, DURATION as V008FreeDelivery_DURATION } from
 import { Video as H0110kSteps, DURATION as H0110kSteps_DURATION } from "./h01-10k-steps/Video";
 import { Video as V009Strawberry, DURATION as V009Strawberry_DURATION } from "./v009-strawberry/Video";
 import { Video as H12IfThen, DURATION as H12IfThen_DURATION } from "./h12-if-then/Video";
+import { Video as V010RedDot, DURATION as V010RedDot_DURATION } from "./v010-red-dot/Video";
+import { Video as H26CoffeeCutoff, DURATION as H26CoffeeCutoff_DURATION } from "./h26-coffee-cutoff/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -143,6 +145,24 @@ export const RemotionRoot: React.FC = () => {
         id="H12IfThen"
         component={H12IfThen}
         durationInFrames={H12IfThen_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="V010RedDot"
+        component={V010RedDot}
+        durationInFrames={V010RedDot_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="H26CoffeeCutoff"
+        component={H26CoffeeCutoff}
+        durationInFrames={H26CoffeeCutoff_DURATION}
         fps={30}
         width={1080}
         height={1920}
