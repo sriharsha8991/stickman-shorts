@@ -85,6 +85,24 @@ something on screen every few seconds while you do it.** Clickbait is fine *only
 28. **Learn from the spikes.** Rewatch spikes mark the moments people replayed or shared (YouTube Help 9314415).
     Note in the email which beats should spike, and ask the owner for retention screenshots.
 
+## G. Retention v2 for Shorts (owner, 2026-10-23)
+Week-one analytics: 37.4% stayed to watch, 62.6% swiped away, every Short stalled at ~1K views (the seed
+test), 96.5% of views from the Shorts feed, audience 74% male and ~60% aged 25–44. Goal: stayed-to-watch above
+50% and viewers held 20–27 s. Each Short follows the beat sheet in `plan/retention_v2.csv` when its ID is there.
+29. **22–30 s, no exceptions for Shorts.** Holding a viewer 20–27 s should mean they watched almost all of it.
+    Cut anything that doesn't serve the payoff, even true and interesting facts.
+30. **Frame 0 is the best moment.** The strongest number or image is already on screen and moving at frame 0:
+    no walk-in, no title card, no "you've heard…". Viewers decide in under ~2 s and most watch muted, so the
+    overlay (≤ 6 words) is up from frame 0 for ≥ 2 s and says the same thing as the spoken hook
+    (Opus Clip hook guide, creator advice: https://www.opus.pro/blog/youtube-shorts-hook-formulas).
+31. **Beat sheet:** 0–2.5 s cold open + power-up FX · 2.5–6 s open loop (a promise, never answered there) ·
+    6–14 s escalate (BUT/THEREFORE, one number per line, new visual every 2–3 s) · ~14 s re-hook (twist + sound
+    hit + mood flip) · 16–24 s payoff that closes the loop · 24–27 s one action in ≤ 8 words, then cut
+    mid-sentence back into frame 0 (no outro). Each Short is tested on a small seed audience first and only
+    pushed wider if it holds them (vidIQ: https://vidiq.com/blog/post/youtube-shorts-algorithm/).
+32. **Talk to a working professional**: office, deadlines, salary, code review, the commute. That's who watches.
+33. **Series tag** "Hidden Mechanism #NN" small in a corner, and Spark's same sign-off pose on the last frame.
+
 ## Myths we never repeat
 - "Humans have an 8-second attention span, less than a goldfish": no underlying study exists (BBC, 2017; WSJ, 2017).
 - "Open loops work because of the Zeigarnik effect": it failed a 2025 meta-analysis; resumption (Ovsiankina) holds.

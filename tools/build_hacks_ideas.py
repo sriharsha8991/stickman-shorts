@@ -366,6 +366,10 @@ add(RESET, "Myth vs Reality", "Fake it till you make it (the smile study)", "SMI
 
 
 def main():
+    sys.path.insert(0, os.path.join(ROOT, "plan"))
+    from retention_v2 import apply  # retention v2 hooks (2026-10-23) survive a rebuild
+
+    apply(R, COLS)
     out_csv = os.path.join(ROOT, "plan", "hacks_ideas.csv")
     with open(out_csv, "w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)

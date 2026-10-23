@@ -30,7 +30,9 @@ WIDTHS = {"ID": 7, "Status": 11, "Phase": 13, "Post date": 11, "Pillar": 22, "Fo
           "Twist": 34, "Payoff / takeaway": 32, "Loop / bookend": 22, "Length (s)": 8, "Primary goal": 12,
           "Facts to verify": 44, "Risk flag": 26, "Music mood": 32, "Notes": 30}
 
-rows = build_rows()
+from retention_v2 import apply_dicts  # retention v2 hooks (2026-10-23)
+
+rows = apply_dicts(build_rows())
 wb = Workbook()
 
 # ---------------------------------------------------------------- Content Plan

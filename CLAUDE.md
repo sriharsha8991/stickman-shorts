@@ -8,6 +8,7 @@ Remotion and the `stickman-video` engine.
 - Plan: `plan/content_plan.csv` (100 videos) · tracker: `plan/status.csv` · owner feedback: `plan/feedback.md`.
 - Idea bank: `plan/hacks_ideas.csv` (life & productivity hacks, researched; built by `tools/build_hacks_ideas.py`; Drive sheet "Stickman Shorts — Life & productivity hacks (idea bank)"). Every run makes one hack video (slot B, PIPELINE.md step 2); owner can jump the queue with `ADD Hxx`.
 - Toolchain: `bash setup.sh && source env.sh` (skills land in `_vendor/`, never commit it).
+- **Retention v2 (2026-10-23):** Shorts are 22–30 s with the best moment at frame 0; per-video beat sheets for V013–V035 and every unproduced hack in `plan/retention_v2.csv` (source `plan/retention_v2.py`, which also patches both plan CSVs; the builders call it). Hooks open with an anime-style power-up from `studio/src/shared/powerup.tsx` (demo `PowerUpDemo`).
 - **Writing craft:** `WRITING.md` (sourced rules from top creators + attention psychology) applies to every script.
 - **Spark acting:** 15 moods in `mascot.tsx`, gestures in `studio/src/shared/gestures.ts`, reference sheet composition `SparkSheet`. Owner asked (2026-10-22) for more gestures and expressions: Spark acts every line.
 - Every video is hosted by **Spark** (`studio/src/shared/mascot.tsx`) and narrated with the offline channel voice

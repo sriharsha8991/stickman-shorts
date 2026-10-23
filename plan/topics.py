@@ -678,7 +678,9 @@ if __name__ == "__main__":
     import csv
     import os
 
-    rows = build_rows()
+    from retention_v2 import apply_dicts  # retention v2 hooks (2026-10-23) survive a rebuild
+
+    rows = apply_dicts(build_rows())
     here = os.path.dirname(os.path.abspath(__file__))
     with open(os.path.join(here, "content_plan.csv"), "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=COLUMNS)

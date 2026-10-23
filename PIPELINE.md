@@ -135,13 +135,25 @@ Skills to read before writing (all in `$SKILLS`):
 4. Write `studio/src/<slug>/storyboard.md`: motion language (one personality: Playful/Energetic/
    Premium/Corporate), where Spark is and what he does in each scene, scenes anchored to spoken lines, beats, interrupts every 2–4 s
    (uneven), one "wow" moment, loop/bookend.
+5. **Retention v2 (owner, 2026-10-23).** If the ID has a row in `plan/retention_v2.csv`, that row wins over
+   the plan row for the overlay, spoken hook (= `voice.txt` row 1), cold open, open loop, re-hook, loop and
+   length; keep the plan's mechanism, twist and payoff. All Shorts: **22–30 s** (WRITING.md §G), best image at
+   frame 0, open loop by 6 s, re-hook ~14 s, cut back into frame 0. Hookscore the row's hook first; only
+   rewrite it if it scores < 55 (keep the same promise).
+6. **Power-up hook (anime energy).** Open with the row's `Power-up FX` preset from `shared/powerup.tsx`
+   (`charge | impact | beam | dash | clash | meter`): `<PowerUp layer="back">` before Spark, `layer="front"`
+   after, `hits={powerHits(kind, 0)}` on the Stage, the hook word/slam on `POWER_PEAK[kind]`, mood flip +
+   `bulbPulse` on the peak. Optional echo of the same preset at the re-hook. Never the same preset as the
+   previous produced video (swap with another kind if so). Hacks with no row default to `charge` for Move,
+   `dash` for Focus, `meter` for Reset. Reference: `PowerUpDemo` composition. Generic shonen-anime language
+   only: no copied characters, hair, costumes, named attacks, catchphrases or "power level" memes (§9).
 
 Format playbook:
 - **Mechanism Reveal**: hook → setup → reveal of the hidden system (wow) → receipt/proof → payoff → loop.
-- **POV Meme** (15–22 s): POV title slams at 0:00 → escalation in 2–3 beats → punchline → callback.
+- **POV Meme** (22 s): POV title slams at 0:00 → escalation in 2–3 beats → punchline → callback.
 - **Myth vs Reality**: MYTH stamped → the believable version → hard cut/wipe → REALITY with proof → payoff.
 - **Number Reveal**: the number is teased, counted up with a riser, lands on a hit, then what it means.
-- **Mini Origin Doc** (35–45 s): year card → the accident/decision → consequence → today's twist.
+- **Mini Origin Doc** (≤ 28 s since retention v2): year card → the accident/decision → consequence → today's twist.
 - **Versus Fight**: two labelled figures face off; 2–3 rounds; the surprising winner; the lesson.
 
 ## 5b. Voiceover (offline, Spark's voice)
@@ -229,7 +241,9 @@ floating/sinking, unreadable text, a frame where nothing moves for > 2 s, poses 
 - SEBI: education only for money topics (see step 4). No paid promotion of brokers/AMCs.
 - YouTube originality: different metaphor, staging and music every video; never the same format two
   videos in a row unless the plan says so.
-- No copyrighted characters, logos, mascots or song lyrics; music and SFX are original.
+- No copyrighted characters, logos, mascots or song lyrics; music and SFX are original. Anime-style power-up
+  effects (shared/powerup.tsx) are generic visual language; never recreate a specific show's characters,
+  moves, poses, names or sounds.
 - Never post to social platforms; never email anyone except the owner; never delete Drive files or
   GitHub history.
 
