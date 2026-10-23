@@ -28,6 +28,8 @@ import { Video as V012DecoyPopcorn, DURATION as V012DecoyPopcorn_DURATION } from
 import { Video as H13Habit21Days, DURATION as H13Habit21Days_DURATION } from "./h13-habit-21-days/Video";
 import { Video as V013AiWontTakeJob, DURATION as V013AiWontTakeJob_DURATION } from "./v013-ai-wont-take-job/Video";
 import { Video as H27WeekendSleepDebt, DURATION as H27WeekendSleepDebt_DURATION } from "./h27-weekend-sleep-debt/Video";
+import { Video as V014ScratchCard, DURATION as V014ScratchCard_DURATION } from "./v014-scratch-card/Video";
+import { Video as H03HuffBursts, DURATION as H03HuffBursts_DURATION } from "./h03-huff-bursts/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -236,6 +238,24 @@ export const RemotionRoot: React.FC = () => {
         id="H27WeekendSleepDebt"
         component={H27WeekendSleepDebt}
         durationInFrames={H27WeekendSleepDebt_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="V014ScratchCard"
+        component={V014ScratchCard}
+        durationInFrames={V014ScratchCard_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="H03HuffBursts"
+        component={H03HuffBursts}
+        durationInFrames={H03HuffBursts_DURATION}
         fps={30}
         width={1080}
         height={1920}

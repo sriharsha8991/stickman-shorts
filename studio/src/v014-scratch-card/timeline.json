@@ -1,0 +1,134 @@
+{
+  "fps": 30,
+  "durationInFrames": 1068,
+  "seconds": 35.59,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.272,
+      "startFrame": 6,
+      "endFrame": 98,
+      "words": 9,
+      "text": "You paid two hundred rupees. Here's your scratch card."
+    },
+    {
+      "i": 1,
+      "start": 3.432,
+      "end": 4.947,
+      "startFrame": 103,
+      "endFrame": 148,
+      "words": 4,
+      "text": "Better luck next time."
+    },
+    {
+      "i": 2,
+      "start": 5.107,
+      "end": 7.155,
+      "startFrame": 153,
+      "endFrame": 215,
+      "words": 8,
+      "text": "So why do you scratch the next one?"
+    },
+    {
+      "i": 3,
+      "start": 7.315,
+      "end": 9.683,
+      "startFrame": 219,
+      "endFrame": 290,
+      "words": 6,
+      "text": "Some cards pay. Some are empty."
+    },
+    {
+      "i": 4,
+      "start": 9.843,
+      "end": 11.912,
+      "startFrame": 295,
+      "endFrame": 357,
+      "words": 8,
+      "text": "And you never know which one is next."
+    },
+    {
+      "i": 5,
+      "start": 12.072,
+      "end": 15.571,
+      "startFrame": 362,
+      "endFrame": 467,
+      "words": 9,
+      "text": "In the fifties, a psychologist tested this on pigeons."
+    },
+    {
+      "i": 6,
+      "start": 15.731,
+      "end": 18.355,
+      "startFrame": 472,
+      "endFrame": 551,
+      "words": 7,
+      "text": "Random rewards kept them pecking the longest,"
+    },
+    {
+      "i": 7,
+      "start": 18.515,
+      "end": 20.776,
+      "startFrame": 555,
+      "endFrame": 623,
+      "words": 6,
+      "text": "even after the food stopped coming."
+    },
+    {
+      "i": 8,
+      "start": 20.936,
+      "end": 23.197,
+      "startFrame": 628,
+      "endFrame": 696,
+      "words": 7,
+      "text": "Same pull that keeps slot machines busy."
+    },
+    {
+      "i": 9,
+      "start": 23.357,
+      "end": 25.32,
+      "startFrame": 701,
+      "endFrame": 760,
+      "words": 6,
+      "text": "The empty card isn't a glitch."
+    },
+    {
+      "i": 10,
+      "start": 25.48,
+      "end": 28.339,
+      "startFrame": 764,
+      "endFrame": 850,
+      "words": 8,
+      "text": "The rules even say not every card wins."
+    },
+    {
+      "i": 11,
+      "start": 28.499,
+      "end": 29.971,
+      "startFrame": 855,
+      "endFrame": 899,
+      "words": 5,
+      "text": "That maybe is the hook."
+    },
+    {
+      "i": 12,
+      "start": 30.131,
+      "end": 32.797,
+      "startFrame": 904,
+      "endFrame": 984,
+      "words": 10,
+      "text": "So pick your app for the payment, not the scratch."
+    },
+    {
+      "i": 13,
+      "start": 32.957,
+      "end": 34.835,
+      "startFrame": 989,
+      "endFrame": 1045,
+      "words": 5,
+      "text": "Now, about that next card..."
+    }
+  ],
+  "chapters": []
+}

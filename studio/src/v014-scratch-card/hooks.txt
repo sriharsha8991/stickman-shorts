@@ -1,0 +1,7 @@
+You paid 200 rupees and got a scratch card. Why is it empty?
+Why does your payment app hand you a scratch card that's usually empty?
+Better luck next time? That empty card is doing its job. Why?
+You scratch every card after you pay. Why do the empty ones never stop you?
+That empty scratch card isn't a bug. Why does your app want you to lose?
+You paid ₹200, scratched the card, got nothing. Why do you still scratch the next one?
+You paid 200 rupees. Better luck next time. Why do you never stop scratching?
