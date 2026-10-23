@@ -1,0 +1,89 @@
+{
+  "fps": 30,
+  "durationInFrames": 803,
+  "seconds": 26.75,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 5.0,
+      "startFrame": 6,
+      "endFrame": 150,
+      "words": 15,
+      "text": "You scratch every card after you pay and win almost nothing. Why don't you stop?"
+    },
+    {
+      "i": 1,
+      "start": 5.16,
+      "end": 7.528,
+      "startFrame": 155,
+      "endFrame": 226,
+      "words": 7,
+      "text": "That's not bad luck. It's the design."
+    },
+    {
+      "i": 2,
+      "start": 7.688,
+      "end": 10.632,
+      "startFrame": 231,
+      "endFrame": 319,
+      "words": 9,
+      "text": "Some cards pay. Some don't. You never know which."
+    },
+    {
+      "i": 3,
+      "start": 10.792,
+      "end": 14.035,
+      "startFrame": 324,
+      "endFrame": 421,
+      "words": 9,
+      "text": "In the fifties, pigeons got food after random pecks."
+    },
+    {
+      "i": 4,
+      "start": 14.195,
+      "end": 16.925,
+      "startFrame": 426,
+      "endFrame": 508,
+      "words": 7,
+      "text": "Random rewards kept them pecking the longest."
+    },
+    {
+      "i": 5,
+      "start": 17.085,
+      "end": 19.624,
+      "startFrame": 513,
+      "endFrame": 589,
+      "words": 8,
+      "text": "That's a slot machine. In your payment app."
+    },
+    {
+      "i": 6,
+      "start": 19.784,
+      "end": 22.429,
+      "startFrame": 594,
+      "endFrame": 673,
+      "words": 8,
+      "text": "Even the rules say not every card wins."
+    },
+    {
+      "i": 7,
+      "start": 22.589,
+      "end": 24.701,
+      "startFrame": 678,
+      "endFrame": 741,
+      "words": 8,
+      "text": "So pay for the thing, not the scratch."
+    },
+    {
+      "i": 8,
+      "start": 24.861,
+      "end": 25.992,
+      "startFrame": 746,
+      "endFrame": 780,
+      "words": 2,
+      "text": "Now scratch..."
+    }
+  ],
+  "chapters": []
+}

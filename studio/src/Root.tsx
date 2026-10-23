@@ -31,6 +31,8 @@ import { Video as V013AiWontTakeJob, DURATION as V013AiWontTakeJob_DURATION } fr
 import { Video as H27WeekendSleepDebt, DURATION as H27WeekendSleepDebt_DURATION } from "./h27-weekend-sleep-debt/Video";
 import { Video as V013AiWontTakeJobV2, DURATION as V013AiWontTakeJobV2_DURATION } from "./v013-ai-wont-take-job-v2/Video";
 import { Video as H03HuffBursts, DURATION as H03HuffBursts_DURATION } from "./h03-huff-bursts/Video";
+import { Video as V014ScratchCard, DURATION as V014ScratchCard_DURATION } from "./v014-scratch-card/Video";
+import { Video as H14WillpowerBattery, DURATION as H14WillpowerBattery_DURATION } from "./h14-willpower-battery/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -257,6 +259,24 @@ export const RemotionRoot: React.FC = () => {
         id="H03HuffBursts"
         component={H03HuffBursts}
         durationInFrames={H03HuffBursts_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="V014ScratchCard"
+        component={V014ScratchCard}
+        durationInFrames={V014ScratchCard_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="H14WillpowerBattery"
+        component={H14WillpowerBattery}
+        durationInFrames={H14WillpowerBattery_DURATION}
         fps={30}
         width={1080}
         height={1920}
