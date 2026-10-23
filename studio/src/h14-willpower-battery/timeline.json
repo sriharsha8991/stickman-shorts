@@ -1,0 +1,98 @@
+{
+  "fps": 30,
+  "durationInFrames": 836,
+  "seconds": 27.85,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 2.547,
+      "startFrame": 6,
+      "endFrame": 76,
+      "words": 8,
+      "text": "You plan your day around a willpower battery."
+    },
+    {
+      "i": 1,
+      "start": 2.707,
+      "end": 5.736,
+      "startFrame": 81,
+      "endFrame": 172,
+      "words": 7,
+      "text": "Twenty-three labs found almost no drain. Why?"
+    },
+    {
+      "i": 2,
+      "start": 5.896,
+      "end": 8.264,
+      "startFrame": 177,
+      "endFrame": 248,
+      "words": 7,
+      "text": "The test: one hard task, then another."
+    },
+    {
+      "i": 3,
+      "start": 8.424,
+      "end": 10.899,
+      "startFrame": 253,
+      "endFrame": 327,
+      "words": 7,
+      "text": "If willpower drains, round two should crash."
+    },
+    {
+      "i": 4,
+      "start": 11.059,
+      "end": 13.107,
+      "startFrame": 332,
+      "endFrame": 393,
+      "words": 6,
+      "text": "Two thousand one hundred people later..."
+    },
+    {
+      "i": 5,
+      "start": 13.267,
+      "end": 14.909,
+      "startFrame": 398,
+      "endFrame": 447,
+      "words": 5,
+      "text": "the drain was about zero."
+    },
+    {
+      "i": 6,
+      "start": 15.069,
+      "end": 18.056,
+      "startFrame": 452,
+      "endFrame": 542,
+      "words": 8,
+      "text": "A bigger test in twenty twenty-one? Same result."
+    },
+    {
+      "i": 7,
+      "start": 18.216,
+      "end": 21.011,
+      "startFrame": 546,
+      "endFrame": 630,
+      "words": 7,
+      "text": "It's one setup, and scientists still argue."
+    },
+    {
+      "i": 8,
+      "start": 21.171,
+      "end": 25.139,
+      "startFrame": 635,
+      "endFrame": 754,
+      "words": 10,
+      "text": "So stop rationing willpower. Make hard tasks easy to start."
+    },
+    {
+      "i": 9,
+      "start": 25.299,
+      "end": 27.091,
+      "startFrame": 759,
+      "endFrame": 813,
+      "words": 4,
+      "text": "Battery, a hundred percent..."
+    }
+  ],
+  "chapters": []
+}
