@@ -26,6 +26,8 @@ import { Video as H02StepSweetSpot, DURATION as H02StepSweetSpot_DURATION } from
 import { Video as L001FeedDecides, DURATION as L001FeedDecides_DURATION } from "./l001-feed-decides/Video";
 import { Video as V012DecoyPopcorn, DURATION as V012DecoyPopcorn_DURATION } from "./v012-decoy-popcorn/Video";
 import { Video as H13Habit21Days, DURATION as H13Habit21Days_DURATION } from "./h13-habit-21-days/Video";
+import { Video as V013AiWontTakeJob, DURATION as V013AiWontTakeJob_DURATION } from "./v013-ai-wont-take-job/Video";
+import { Video as H27WeekendSleepDebt, DURATION as H27WeekendSleepDebt_DURATION } from "./h27-weekend-sleep-debt/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -216,6 +218,24 @@ export const RemotionRoot: React.FC = () => {
         id="H13Habit21Days"
         component={H13Habit21Days}
         durationInFrames={H13Habit21Days_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="V013AiWontTakeJob"
+        component={V013AiWontTakeJob}
+        durationInFrames={V013AiWontTakeJob_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="H27WeekendSleepDebt"
+        component={H27WeekendSleepDebt}
+        durationInFrames={H27WeekendSleepDebt_DURATION}
         fps={30}
         width={1080}
         height={1920}
