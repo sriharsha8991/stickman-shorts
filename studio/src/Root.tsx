@@ -34,6 +34,8 @@ import { Video as V013AiWontTakeJobV2, DURATION as V013AiWontTakeJobV2_DURATION 
 import { Video as H03HuffBursts, DURATION as H03HuffBursts_DURATION } from "./h03-huff-bursts/Video";
 import { Video as V014ScratchCard, DURATION as V014ScratchCard_DURATION } from "./v014-scratch-card/Video";
 import { Video as H14WillpowerBattery, DURATION as H14WillpowerBattery_DURATION } from "./h14-willpower-battery/Video";
+import { Video as V015LikeRegret, DURATION as V015LikeRegret_DURATION } from "./v015-like-regret/Video";
+import { Video as H28CyclicSigh, DURATION as H28CyclicSigh_DURATION } from "./h28-cyclic-sigh/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -287,6 +289,24 @@ export const RemotionRoot: React.FC = () => {
         id="H14WillpowerBattery"
         component={H14WillpowerBattery}
         durationInFrames={H14WillpowerBattery_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="V015LikeRegret"
+        component={V015LikeRegret}
+        durationInFrames={V015LikeRegret_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="H28CyclicSigh"
+        component={H28CyclicSigh}
+        durationInFrames={H28CyclicSigh_DURATION}
         fps={30}
         width={1080}
         height={1920}

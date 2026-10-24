@@ -1,0 +1,5 @@
+You can't stop checking likes. Why did the Like button's builder lock his own phone in 2017?
+You can't stop checking likes? The guy who built the Like button locked his own phone in 2017. Why?
+You can't stop checking likes? Neither could the man who built the button. Why?
+# retention_v2 row hook (scored 39, WEAK): He helped build the Like button. Then locked it out of his own phone.
+# USED (68, WORKABLE): You can't stop checking likes? The guy who built the Like button locked his own phone in 2017. Why?
