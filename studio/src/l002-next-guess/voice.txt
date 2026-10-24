@@ -1,0 +1,107 @@
+Every word this AI writes is a guess.
+But nobody tells you how it picks,
+and why it doesn't stop to check.
+Most people think it searches a database.
+Or that it plans the whole answer first.
+Neither is true, and that's the fun part.
+By the end, you'll explain it in one sentence.
+And you'll use it better because of it.
+[pause 1.0]
+Start with the keyboard on your phone.
+Type "I'm running", and it suggests "late".
+It guessed the next word from what came before.
+That's the whole trick. Seriously.
+Now blow that keyboard up to skyscraper size.
+And feed it a mountain of text.
+Books, websites, code, conversations.
+It reads a sentence, hides the next bit,
+guesses, checks, and nudges itself a tiny bit.
+Over and over, an enormous number of times.
+That's training: getting better at the next bit.
+OpenAI's GPT-4 report says it plainly.
+Pre-trained to predict the next token.
+Wait. Token? Not word?
+[pause 1.0]
+Here's the first surprise.
+It doesn't read words at all.
+Text gets chopped into chunks called tokens.
+Some tokens are whole words. Some are pieces.
+In English, one token is about four characters.
+Roughly three quarters of a word.
+So a hundred tokens is about seventy-five words.
+Then every chunk becomes a number.
+The model only ever sees the numbers.
+Remember the AI that couldn't count the r's in strawberry?
+One tokenizer splits it into str, aw, berry.
+The letters hide inside the chunks.
+That's one reason counting letters trips it up.
+Okay. So it reads chunks.
+Now watch what happens when it writes.
+[pause 1.0]
+Give it this: the cat sat on the...
+It doesn't know the answer. It scores the options.
+Mat gets a tall bar. Floor, a shorter one.
+Moon gets a tiny one.
+Then it picks one chunk. Say, mat.
+And sticks it on the end of the sentence.
+And then it runs the whole thing again.
+New sentence, new scores, new pick.
+Score. Pick. Stick. Again.
+Score. Pick. Stick. Faster and faster.
+That's what you're watching when the text streams in.
+It never wrote the sentence.
+It wrote the next piece, again and again.
+[pause 1.0]
+It doesn't draft the answer, then reveal it.
+Each chunk is locked in the moment it's picked.
+But here's the question that should bug you.
+How does it know which earlier words matter?
+[pause 1.0]
+In twenty seventeen, a paper landed with a cheeky title.
+Attention Is All You Need.
+The idea: every word looks at the other words,
+and decides which ones matter to it.
+Take this sentence.
+The trophy didn't fit in the suitcase,
+because it was too big.
+What was too big? You knew instantly.
+The trophy.
+Attention is how a model can link it back to trophy.
+And it ditched the older read-one-word-at-a-time designs.
+Fun fact: it trained in three and a half days.
+On eight GPUs.
+But careful: that was a translation model.
+Not ChatGPT. It was the blueprint.
+The T in GPT? It stands for Transformer.
+So now it knows what matters, and it scores the options.
+But how it picks changes everything.
+[pause 1.0]
+Meet the temperature dial.
+Turn it low, and it plays it safe.
+It nearly always takes the tallest bar.
+Turn it up, and the short bars get a chance.
+In OpenAI's API, the dial runs from zero to two.
+Same prompt. Low temperature.
+The cat sat on the mat.
+High temperature.
+The cat sat on the moon, in tiny jazz shoes.
+Low for facts and code. Higher for brainstorming.
+Same engine, different personality.
+Which leaves one uncomfortable question.
+[pause 1.0]
+Why does it sound so sure when it's wrong?
+Because it's built to sound likely, not to check.
+A confident sentence is often a likely sentence.
+And in twenty twenty-five, OpenAI researchers wrote
+that training and tests reward guessing
+over admitting, I'm not sure.
+That's a whole video of its own. Soon.
+[pause 1.0]
+So here's your one sentence.
+It predicts the next chunk, over and over.
+Which makes your context the steering wheel.
+One: give it context. Who, what, and for whom.
+Two: ask for options, not one answer.
+Three: check the facts it states.
+It isn't magic. It's prediction.
+Feed it context, and it predicts better.

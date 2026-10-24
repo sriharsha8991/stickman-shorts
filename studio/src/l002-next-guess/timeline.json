@@ -1,0 +1,899 @@
+{
+  "fps": 30,
+  "durationInFrames": 9375,
+  "seconds": 312.49,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 2.76,
+      "startFrame": 6,
+      "endFrame": 83,
+      "words": 8,
+      "text": "Every word this AI writes is a guess."
+    },
+    {
+      "i": 1,
+      "start": 3.31,
+      "end": 5.251,
+      "startFrame": 99,
+      "endFrame": 158,
+      "words": 7,
+      "text": "But nobody tells you how it picks,"
+    },
+    {
+      "i": 2,
+      "start": 5.801,
+      "end": 7.935,
+      "startFrame": 174,
+      "endFrame": 238,
+      "words": 7,
+      "text": "and why it doesn't stop to check."
+    },
+    {
+      "i": 3,
+      "start": 8.485,
+      "end": 10.959,
+      "startFrame": 255,
+      "endFrame": 329,
+      "words": 7,
+      "text": "Most people think it searches a database."
+    },
+    {
+      "i": 4,
+      "start": 11.509,
+      "end": 13.963,
+      "startFrame": 345,
+      "endFrame": 419,
+      "words": 8,
+      "text": "Or that it plans the whole answer first."
+    },
+    {
+      "i": 5,
+      "start": 14.513,
+      "end": 17.201,
+      "startFrame": 435,
+      "endFrame": 516,
+      "words": 8,
+      "text": "Neither is true, and that's the fun part."
+    },
+    {
+      "i": 6,
+      "start": 17.751,
+      "end": 20.439,
+      "startFrame": 533,
+      "endFrame": 613,
+      "words": 9,
+      "text": "By the end, you'll explain it in one sentence."
+    },
+    {
+      "i": 7,
+      "start": 20.989,
+      "end": 23.058,
+      "startFrame": 630,
+      "endFrame": 692,
+      "words": 8,
+      "text": "And you'll use it better because of it."
+    },
+    {
+      "i": 8,
+      "start": 24.058,
+      "end": 26.085,
+      "startFrame": 722,
+      "endFrame": 783,
+      "words": 7,
+      "text": "Start with the keyboard on your phone."
+    },
+    {
+      "i": 9,
+      "start": 26.635,
+      "end": 29.301,
+      "startFrame": 799,
+      "endFrame": 879,
+      "words": 7,
+      "text": "Type \"I'm running\", and it suggests \"late\"."
+    },
+    {
+      "i": 10,
+      "start": 29.851,
+      "end": 32.369,
+      "startFrame": 896,
+      "endFrame": 971,
+      "words": 9,
+      "text": "It guessed the next word from what came before."
+    },
+    {
+      "i": 11,
+      "start": 32.919,
+      "end": 35.137,
+      "startFrame": 988,
+      "endFrame": 1054,
+      "words": 5,
+      "text": "That's the whole trick. Seriously."
+    },
+    {
+      "i": 12,
+      "start": 35.687,
+      "end": 38.567,
+      "startFrame": 1071,
+      "endFrame": 1157,
+      "words": 8,
+      "text": "Now blow that keyboard up to skyscraper size."
+    },
+    {
+      "i": 13,
+      "start": 39.117,
+      "end": 41.144,
+      "startFrame": 1174,
+      "endFrame": 1234,
+      "words": 7,
+      "text": "And feed it a mountain of text."
+    },
+    {
+      "i": 14,
+      "start": 41.694,
+      "end": 44.169,
+      "startFrame": 1251,
+      "endFrame": 1325,
+      "words": 4,
+      "text": "Books, websites, code, conversations."
+    },
+    {
+      "i": 15,
+      "start": 44.719,
+      "end": 47.492,
+      "startFrame": 1342,
+      "endFrame": 1425,
+      "words": 8,
+      "text": "It reads a sentence, hides the next bit,"
+    },
+    {
+      "i": 16,
+      "start": 48.042,
+      "end": 51.221,
+      "startFrame": 1441,
+      "endFrame": 1537,
+      "words": 8,
+      "text": "guesses, checks, and nudges itself a tiny bit."
+    },
+    {
+      "i": 17,
+      "start": 51.771,
+      "end": 54.864,
+      "startFrame": 1553,
+      "endFrame": 1646,
+      "words": 8,
+      "text": "Over and over, an enormous number of times."
+    },
+    {
+      "i": 18,
+      "start": 55.414,
+      "end": 58.038,
+      "startFrame": 1662,
+      "endFrame": 1741,
+      "words": 8,
+      "text": "That's training: getting better at the next bit."
+    },
+    {
+      "i": 19,
+      "start": 58.588,
+      "end": 62.193,
+      "startFrame": 1758,
+      "endFrame": 1866,
+      "words": 6,
+      "text": "OpenAI's GPT-4 report says it plainly."
+    },
+    {
+      "i": 20,
+      "start": 62.743,
+      "end": 65.133,
+      "startFrame": 1882,
+      "endFrame": 1954,
+      "words": 6,
+      "text": "Pre-trained to predict the next token."
+    },
+    {
+      "i": 21,
+      "start": 65.683,
+      "end": 67.581,
+      "startFrame": 1970,
+      "endFrame": 2027,
+      "words": 4,
+      "text": "Wait. Token? Not word?"
+    },
+    {
+      "i": 22,
+      "start": 68.581,
+      "end": 70.309,
+      "startFrame": 2057,
+      "endFrame": 2109,
+      "words": 4,
+      "text": "Here's the first surprise."
+    },
+    {
+      "i": 23,
+      "start": 70.859,
+      "end": 72.673,
+      "startFrame": 2126,
+      "endFrame": 2180,
+      "words": 6,
+      "text": "It doesn't read words at all."
+    },
+    {
+      "i": 24,
+      "start": 73.223,
+      "end": 76.039,
+      "startFrame": 2197,
+      "endFrame": 2281,
+      "words": 7,
+      "text": "Text gets chopped into chunks called tokens."
+    },
+    {
+      "i": 25,
+      "start": 76.589,
+      "end": 79.789,
+      "startFrame": 2298,
+      "endFrame": 2394,
+      "words": 8,
+      "text": "Some tokens are whole words. Some are pieces."
+    },
+    {
+      "i": 26,
+      "start": 80.339,
+      "end": 83.517,
+      "startFrame": 2410,
+      "endFrame": 2506,
+      "words": 8,
+      "text": "In English, one token is about four characters."
+    },
+    {
+      "i": 27,
+      "start": 84.067,
+      "end": 86.073,
+      "startFrame": 2522,
+      "endFrame": 2582,
+      "words": 6,
+      "text": "Roughly three quarters of a word."
+    },
+    {
+      "i": 28,
+      "start": 86.623,
+      "end": 90.036,
+      "startFrame": 2599,
+      "endFrame": 2701,
+      "words": 8,
+      "text": "So a hundred tokens is about seventy-five words."
+    },
+    {
+      "i": 29,
+      "start": 90.586,
+      "end": 92.677,
+      "startFrame": 2718,
+      "endFrame": 2780,
+      "words": 6,
+      "text": "Then every chunk becomes a number."
+    },
+    {
+      "i": 30,
+      "start": 93.227,
+      "end": 95.744,
+      "startFrame": 2797,
+      "endFrame": 2872,
+      "words": 7,
+      "text": "The model only ever sees the numbers."
+    },
+    {
+      "i": 31,
+      "start": 96.294,
+      "end": 99.878,
+      "startFrame": 2889,
+      "endFrame": 2996,
+      "words": 10,
+      "text": "Remember the AI that couldn't count the r's in strawberry?"
+    },
+    {
+      "i": 32,
+      "start": 100.428,
+      "end": 103.948,
+      "startFrame": 3013,
+      "endFrame": 3118,
+      "words": 8,
+      "text": "One tokenizer splits it into str, aw, berry."
+    },
+    {
+      "i": 33,
+      "start": 104.498,
+      "end": 106.61,
+      "startFrame": 3135,
+      "endFrame": 3198,
+      "words": 6,
+      "text": "The letters hide inside the chunks."
+    },
+    {
+      "i": 34,
+      "start": 107.16,
+      "end": 109.784,
+      "startFrame": 3215,
+      "endFrame": 3294,
+      "words": 8,
+      "text": "That's one reason counting letters trips it up."
+    },
+    {
+      "i": 35,
+      "start": 110.334,
+      "end": 112.275,
+      "startFrame": 3310,
+      "endFrame": 3368,
+      "words": 5,
+      "text": "Okay. So it reads chunks."
+    },
+    {
+      "i": 36,
+      "start": 112.825,
+      "end": 115.129,
+      "startFrame": 3385,
+      "endFrame": 3454,
+      "words": 7,
+      "text": "Now watch what happens when it writes."
+    },
+    {
+      "i": 37,
+      "start": 116.129,
+      "end": 118.348,
+      "startFrame": 3484,
+      "endFrame": 3550,
+      "words": 8,
+      "text": "Give it this: the cat sat on the..."
+    },
+    {
+      "i": 38,
+      "start": 118.898,
+      "end": 122.077,
+      "startFrame": 3567,
+      "endFrame": 3662,
+      "words": 9,
+      "text": "It doesn't know the answer. It scores the options."
+    },
+    {
+      "i": 39,
+      "start": 122.627,
+      "end": 125.656,
+      "startFrame": 3679,
+      "endFrame": 3770,
+      "words": 9,
+      "text": "Mat gets a tall bar. Floor, a shorter one."
+    },
+    {
+      "i": 40,
+      "start": 126.206,
+      "end": 127.785,
+      "startFrame": 3786,
+      "endFrame": 3834,
+      "words": 5,
+      "text": "Moon gets a tiny one."
+    },
+    {
+      "i": 41,
+      "start": 128.335,
+      "end": 130.724,
+      "startFrame": 3850,
+      "endFrame": 3922,
+      "words": 7,
+      "text": "Then it picks one chunk. Say, mat."
+    },
+    {
+      "i": 42,
+      "start": 131.274,
+      "end": 133.706,
+      "startFrame": 3938,
+      "endFrame": 4011,
+      "words": 9,
+      "text": "And sticks it on the end of the sentence."
+    },
+    {
+      "i": 43,
+      "start": 134.256,
+      "end": 136.432,
+      "startFrame": 4028,
+      "endFrame": 4093,
+      "words": 8,
+      "text": "And then it runs the whole thing again."
+    },
+    {
+      "i": 44,
+      "start": 136.982,
+      "end": 139.243,
+      "startFrame": 4109,
+      "endFrame": 4177,
+      "words": 6,
+      "text": "New sentence, new scores, new pick."
+    },
+    {
+      "i": 45,
+      "start": 139.793,
+      "end": 141.756,
+      "startFrame": 4194,
+      "endFrame": 4253,
+      "words": 4,
+      "text": "Score. Pick. Stick. Again."
+    },
+    {
+      "i": 46,
+      "start": 142.306,
+      "end": 145.101,
+      "startFrame": 4269,
+      "endFrame": 4353,
+      "words": 6,
+      "text": "Score. Pick. Stick. Faster and faster."
+    },
+    {
+      "i": 47,
+      "start": 145.651,
+      "end": 148.168,
+      "startFrame": 4370,
+      "endFrame": 4445,
+      "words": 9,
+      "text": "That's what you're watching when the text streams in."
+    },
+    {
+      "i": 48,
+      "start": 148.718,
+      "end": 150.489,
+      "startFrame": 4462,
+      "endFrame": 4515,
+      "words": 5,
+      "text": "It never wrote the sentence."
+    },
+    {
+      "i": 49,
+      "start": 151.039,
+      "end": 153.641,
+      "startFrame": 4531,
+      "endFrame": 4609,
+      "words": 8,
+      "text": "It wrote the next piece, again and again."
+    },
+    {
+      "i": 50,
+      "start": 154.641,
+      "end": 157.308,
+      "startFrame": 4639,
+      "endFrame": 4719,
+      "words": 8,
+      "text": "It doesn't draft the answer, then reveal it."
+    },
+    {
+      "i": 51,
+      "start": 157.858,
+      "end": 160.439,
+      "startFrame": 4736,
+      "endFrame": 4813,
+      "words": 9,
+      "text": "Each chunk is locked in the moment it's picked."
+    },
+    {
+      "i": 52,
+      "start": 160.989,
+      "end": 163.229,
+      "startFrame": 4830,
+      "endFrame": 4897,
+      "words": 8,
+      "text": "But here's the question that should bug you."
+    },
+    {
+      "i": 53,
+      "start": 163.779,
+      "end": 166.254,
+      "startFrame": 4913,
+      "endFrame": 4988,
+      "words": 8,
+      "text": "How does it know which earlier words matter?"
+    },
+    {
+      "i": 54,
+      "start": 167.254,
+      "end": 171.222,
+      "startFrame": 5018,
+      "endFrame": 5137,
+      "words": 10,
+      "text": "In twenty seventeen, a paper landed with a cheeky title."
+    },
+    {
+      "i": 55,
+      "start": 171.772,
+      "end": 173.585,
+      "startFrame": 5153,
+      "endFrame": 5208,
+      "words": 5,
+      "text": "Attention Is All You Need."
+    },
+    {
+      "i": 56,
+      "start": 174.135,
+      "end": 177.122,
+      "startFrame": 5224,
+      "endFrame": 5314,
+      "words": 9,
+      "text": "The idea: every word looks at the other words,"
+    },
+    {
+      "i": 57,
+      "start": 177.672,
+      "end": 179.976,
+      "startFrame": 5330,
+      "endFrame": 5399,
+      "words": 7,
+      "text": "and decides which ones matter to it."
+    },
+    {
+      "i": 58,
+      "start": 180.526,
+      "end": 181.891,
+      "startFrame": 5416,
+      "endFrame": 5457,
+      "words": 3,
+      "text": "Take this sentence."
+    },
+    {
+      "i": 59,
+      "start": 182.441,
+      "end": 184.532,
+      "startFrame": 5473,
+      "endFrame": 5536,
+      "words": 7,
+      "text": "The trophy didn't fit in the suitcase,"
+    },
+    {
+      "i": 60,
+      "start": 185.082,
+      "end": 186.533,
+      "startFrame": 5552,
+      "endFrame": 5596,
+      "words": 5,
+      "text": "because it was too big."
+    },
+    {
+      "i": 61,
+      "start": 187.083,
+      "end": 189.429,
+      "startFrame": 5612,
+      "endFrame": 5683,
+      "words": 7,
+      "text": "What was too big? You knew instantly."
+    },
+    {
+      "i": 62,
+      "start": 189.979,
+      "end": 190.982,
+      "startFrame": 5699,
+      "endFrame": 5729,
+      "words": 2,
+      "text": "The trophy."
+    },
+    {
+      "i": 63,
+      "start": 191.532,
+      "end": 194.881,
+      "startFrame": 5746,
+      "endFrame": 5846,
+      "words": 11,
+      "text": "Attention is how a model can link it back to trophy."
+    },
+    {
+      "i": 64,
+      "start": 195.431,
+      "end": 198.823,
+      "startFrame": 5863,
+      "endFrame": 5965,
+      "words": 7,
+      "text": "And it ditched the older read-one-word-at-a-time designs."
+    },
+    {
+      "i": 65,
+      "start": 199.373,
+      "end": 202.232,
+      "startFrame": 5981,
+      "endFrame": 6067,
+      "words": 10,
+      "text": "Fun fact: it trained in three and a half days."
+    },
+    {
+      "i": 66,
+      "start": 202.782,
+      "end": 204.318,
+      "startFrame": 6083,
+      "endFrame": 6130,
+      "words": 3,
+      "text": "On eight GPUs."
+    },
+    {
+      "i": 67,
+      "start": 204.868,
+      "end": 207.684,
+      "startFrame": 6146,
+      "endFrame": 6231,
+      "words": 7,
+      "text": "But careful: that was a translation model."
+    },
+    {
+      "i": 68,
+      "start": 208.234,
+      "end": 211.114,
+      "startFrame": 6247,
+      "endFrame": 6333,
+      "words": 6,
+      "text": "Not ChatGPT. It was the blueprint."
+    },
+    {
+      "i": 69,
+      "start": 211.664,
+      "end": 215.333,
+      "startFrame": 6350,
+      "endFrame": 6460,
+      "words": 8,
+      "text": "The T in GPT? It stands for Transformer."
+    },
+    {
+      "i": 70,
+      "start": 215.883,
+      "end": 219.531,
+      "startFrame": 6477,
+      "endFrame": 6586,
+      "words": 11,
+      "text": "So now it knows what matters, and it scores the options."
+    },
+    {
+      "i": 71,
+      "start": 220.081,
+      "end": 222.321,
+      "startFrame": 6602,
+      "endFrame": 6670,
+      "words": 6,
+      "text": "But how it picks changes everything."
+    },
+    {
+      "i": 72,
+      "start": 223.321,
+      "end": 225.135,
+      "startFrame": 6700,
+      "endFrame": 6754,
+      "words": 4,
+      "text": "Meet the temperature dial."
+    },
+    {
+      "i": 73,
+      "start": 225.685,
+      "end": 227.754,
+      "startFrame": 6771,
+      "endFrame": 6833,
+      "words": 8,
+      "text": "Turn it low, and it plays it safe."
+    },
+    {
+      "i": 74,
+      "start": 228.304,
+      "end": 230.821,
+      "startFrame": 6849,
+      "endFrame": 6925,
+      "words": 7,
+      "text": "It nearly always takes the tallest bar."
+    },
+    {
+      "i": 75,
+      "start": 231.371,
+      "end": 234.145,
+      "startFrame": 6941,
+      "endFrame": 7024,
+      "words": 10,
+      "text": "Turn it up, and the short bars get a chance."
+    },
+    {
+      "i": 76,
+      "start": 234.695,
+      "end": 239.132,
+      "startFrame": 7041,
+      "endFrame": 7174,
+      "words": 10,
+      "text": "In OpenAI's API, the dial runs from zero to two."
+    },
+    {
+      "i": 77,
+      "start": 239.682,
+      "end": 241.879,
+      "startFrame": 7190,
+      "endFrame": 7256,
+      "words": 4,
+      "text": "Same prompt. Low temperature."
+    },
+    {
+      "i": 78,
+      "start": 242.429,
+      "end": 244.008,
+      "startFrame": 7273,
+      "endFrame": 7320,
+      "words": 6,
+      "text": "The cat sat on the mat."
+    },
+    {
+      "i": 79,
+      "start": 244.558,
+      "end": 245.902,
+      "startFrame": 7337,
+      "endFrame": 7377,
+      "words": 2,
+      "text": "High temperature."
+    },
+    {
+      "i": 80,
+      "start": 246.452,
+      "end": 249.439,
+      "startFrame": 7394,
+      "endFrame": 7483,
+      "words": 10,
+      "text": "The cat sat on the moon, in tiny jazz shoes."
+    },
+    {
+      "i": 81,
+      "start": 249.989,
+      "end": 253.295,
+      "startFrame": 7500,
+      "endFrame": 7599,
+      "words": 8,
+      "text": "Low for facts and code. Higher for brainstorming."
+    },
+    {
+      "i": 82,
+      "start": 253.845,
+      "end": 256.32,
+      "startFrame": 7615,
+      "endFrame": 7690,
+      "words": 4,
+      "text": "Same engine, different personality."
+    },
+    {
+      "i": 83,
+      "start": 256.87,
+      "end": 259.494,
+      "startFrame": 7706,
+      "endFrame": 7785,
+      "words": 5,
+      "text": "Which leaves one uncomfortable question."
+    },
+    {
+      "i": 84,
+      "start": 260.494,
+      "end": 262.947,
+      "startFrame": 7815,
+      "endFrame": 7888,
+      "words": 9,
+      "text": "Why does it sound so sure when it's wrong?"
+    },
+    {
+      "i": 85,
+      "start": 263.497,
+      "end": 266.42,
+      "startFrame": 7905,
+      "endFrame": 7993,
+      "words": 9,
+      "text": "Because it's built to sound likely, not to check."
+    },
+    {
+      "i": 86,
+      "start": 266.97,
+      "end": 270.362,
+      "startFrame": 8009,
+      "endFrame": 8111,
+      "words": 8,
+      "text": "A confident sentence is often a likely sentence."
+    },
+    {
+      "i": 87,
+      "start": 270.912,
+      "end": 274.411,
+      "startFrame": 8127,
+      "endFrame": 8232,
+      "words": 7,
+      "text": "And in twenty twenty-five, OpenAI researchers wrote"
+    },
+    {
+      "i": 88,
+      "start": 274.961,
+      "end": 277.606,
+      "startFrame": 8249,
+      "endFrame": 8328,
+      "words": 6,
+      "text": "that training and tests reward guessing"
+    },
+    {
+      "i": 89,
+      "start": 278.156,
+      "end": 280.161,
+      "startFrame": 8345,
+      "endFrame": 8405,
+      "words": 5,
+      "text": "over admitting, I'm not sure."
+    },
+    {
+      "i": 90,
+      "start": 280.711,
+      "end": 283.25,
+      "startFrame": 8421,
+      "endFrame": 8498,
+      "words": 8,
+      "text": "That's a whole video of its own. Soon."
+    },
+    {
+      "i": 91,
+      "start": 284.25,
+      "end": 286.063,
+      "startFrame": 8528,
+      "endFrame": 8582,
+      "words": 5,
+      "text": "So here's your one sentence."
+    },
+    {
+      "i": 92,
+      "start": 286.613,
+      "end": 289.323,
+      "startFrame": 8598,
+      "endFrame": 8680,
+      "words": 8,
+      "text": "It predicts the next chunk, over and over."
+    },
+    {
+      "i": 93,
+      "start": 289.873,
+      "end": 292.454,
+      "startFrame": 8696,
+      "endFrame": 8774,
+      "words": 7,
+      "text": "Which makes your context the steering wheel."
+    },
+    {
+      "i": 94,
+      "start": 293.004,
+      "end": 296.119,
+      "startFrame": 8790,
+      "endFrame": 8884,
+      "words": 9,
+      "text": "One: give it context. Who, what, and for whom."
+    },
+    {
+      "i": 95,
+      "start": 296.669,
+      "end": 299.314,
+      "startFrame": 8900,
+      "endFrame": 8979,
+      "words": 7,
+      "text": "Two: ask for options, not one answer."
+    },
+    {
+      "i": 96,
+      "start": 299.864,
+      "end": 301.869,
+      "startFrame": 8996,
+      "endFrame": 9056,
+      "words": 6,
+      "text": "Three: check the facts it states."
+    },
+    {
+      "i": 97,
+      "start": 302.419,
+      "end": 304.723,
+      "startFrame": 9073,
+      "endFrame": 9142,
+      "words": 5,
+      "text": "It isn't magic. It's prediction."
+    },
+    {
+      "i": 98,
+      "start": 305.273,
+      "end": 307.94,
+      "startFrame": 9158,
+      "endFrame": 9238,
+      "words": 7,
+      "text": "Feed it context, and it predicts better."
+    }
+  ],
+  "chapters": []
+}

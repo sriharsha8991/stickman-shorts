@@ -58,24 +58,32 @@ const ArtFeed: React.FC = () => (
 );
 
 const ArtTokens: React.FC = () => (
+  // matches L002's world (2026-10-23 render): cream paper, a speech bubble with a slot reel in the blank landing on
+  // MAT (gold), a probability bar chart of the options, token bricks
   <g>
-    <path d="M 560 330 h 640 a 40 40 0 0 1 40 40 v 170 a 40 40 0 0 1 -40 40 h -470 l -60 60 v -60 h -110 a 40 40 0 0 1 -40 -40 v -170 a 40 40 0 0 1 40 -40 z" fill="#fff" {...K} />
-    <text x={600} y={420} fontFamily={FONT.title} fontWeight={900} fontSize={60} fill={COL.ink}>
-      THE CAT SAT ON THE…
+    <path d="M 560 300 h 650 a 40 40 0 0 1 40 40 v 150 a 40 40 0 0 1 -40 40 h -480 l -60 60 v -60 h -110 a 40 40 0 0 1 -40 -40 v -150 a 40 40 0 0 1 40 -40 z" fill="#fff" {...K} />
+    <text x={580} y={430} fontFamily={FONT.title} fontWeight={900} fontSize={56} fill={COL.ink}>
+      The cat sat on the
     </text>
-    <rect x={985} y={470} width={230} height={70} rx={14} fill="#7b2ff7" {...K} strokeWidth={6} />
-    <text x={1100} y={523} textAnchor="middle" fontFamily={FONT.comic} fontSize={58} fill="#fff">
-      MAT?
+    <rect x={1050} y={345} width={185} height={130} rx={16} fill="#ffc83d" {...K} strokeWidth={6} />
+    <text x={1142} y={436} textAnchor="middle" fontFamily={FONT.title} fontWeight={900} fontSize={70} fill={COL.ink}>
+      MAT
     </text>
-    <text x={790} y={525} textAnchor="middle" fontFamily={FONT.comic} fontSize={44} fill="#a98bff">
-      HAT? MOON?
+    <text x={1142} y={340} textAnchor="middle" fontFamily={FONT.title} fontWeight={900} fontSize={40} fill="#7b2ff7" opacity={0.5}>
+      MOON
     </text>
-    {/* dice */}
-    <g transform="translate(700 640) rotate(-12)">
-      <rect x={-50} y={-50} width={100} height={100} rx={18} fill="#fff" {...K} strokeWidth={7} />
-      {[[-22, -22], [22, 22], [0, 0], [22, -22], [-22, 22]].map(([a, b], i) => (
-        <circle key={i} cx={a} cy={b} r={9} fill={COL.ink} />
-      ))}
+    {/* bar chart */}
+    {[0.55, 0.22, 0.15, 0.05].map((p, i) => (
+      <g key={i}>
+        <rect x={880 + i * 90} y={700 - p * 220} width={70} height={p * 220} rx={8} fill={i === 0 ? "#ffc83d" : i % 2 ? "#3ee6b0" : "#7b2ff7"} stroke={COL.ink} strokeWidth={5} />
+      </g>
+    ))}
+    <line x1={860} x2={1240} y1={700} y2={700} stroke={COL.ink} strokeWidth={6} />
+    <g transform="translate(700 650) rotate(-8)">
+      <rect x={-90} y={-40} width={180} height={80} rx={16} fill="#7b2ff7" {...K} strokeWidth={6} />
+      <text x={0} y={18} textAnchor="middle" fontFamily={FONT.title} fontWeight={900} fontSize={52} fill="#fff">
+        token
+      </text>
     </g>
   </g>
 );
@@ -298,6 +306,8 @@ export const LONG_THUMBS: Cfg[] = [
   { id: "L001b", bg: ["#0b1030", "#20124a"], l1: "YOU DIDN'T", l2: "PICK THIS", hot: 2, accent: "#ff2d55", mood: "shock", gesture: "recoil", art: ArtFeed },
   { id: "L001c", bg: ["#0b1030", "#123a5a"], l1: "IT'S", l2: "READING YOU", hot: 2, accent: "#3fe0ff", mood: "skeptical", gesture: "armsCrossed", art: ArtFeed },
   { id: "L002", bg: ["#fff4e0", "#e8dcff"], l1: "IT'S", l2: "GUESSING", hot: 2, accent: "#7b2ff7", mood: "curious", gesture: "leanIn", art: ArtTokens },
+  { id: "L002b", bg: ["#f6efe0", "#ece0c6"], l1: "ONE WORD", l2: "AT A TIME", hot: 2, accent: "#7b2ff7", mood: "mindblown", gesture: "mindBlown", bulb: true, art: ArtTokens },
+  { id: "L002c", bg: ["#efe6ff", "#d9c8ff"], l1: "IT DOESN'T", l2: "KNOW YET", hot: 2, accent: "#ff5a4e", mood: "skeptical", gesture: "armsCrossed", art: ArtTokens },
   { id: "L003", bg: ["#c8f7e6", "#ffd2c2"], l1: "SAME PRICE.", l2: "LESS PAIN?", hot: 2, accent: "#ff5a5f", mood: "skeptical", gesture: "armsCrossed", art: ArtSlices },
   { id: "L004", bg: ["#e9f9d8", "#ffd8b8"], l1: "21 DAYS?", l2: "NOPE.", hot: 2, accent: "#e5322d", mood: "wink", gesture: "handsHips", art: ArtCalendar },
   { id: "L005", bg: ["#1f1235", "#4a1d6e"], l1: "6 CASES.", l2: "0 REAL.", hot: 2, accent: "#ffd23f", mood: "shock", gesture: "recoil", art: ArtFake },
