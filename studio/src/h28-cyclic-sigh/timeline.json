@@ -1,0 +1,107 @@
+{
+  "fps": 30,
+  "durationInFrames": 854,
+  "seconds": 28.46,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.037,
+      "startFrame": 6,
+      "endFrame": 91,
+      "words": 8,
+      "text": "Stop. Your next five minutes could beat meditation."
+    },
+    {
+      "i": 1,
+      "start": 3.197,
+      "end": 5.885,
+      "startFrame": 96,
+      "endFrame": 177,
+      "words": 8,
+      "text": "In one study, a double sigh did. Why?"
+    },
+    {
+      "i": 2,
+      "start": 6.045,
+      "end": 7.688,
+      "startFrame": 181,
+      "endFrame": 231,
+      "words": 7,
+      "text": "It's all in how you breathe out."
+    },
+    {
+      "i": 3,
+      "start": 7.848,
+      "end": 11.155,
+      "startFrame": 235,
+      "endFrame": 335,
+      "words": 11,
+      "text": "A month. A hundred and eight people. Five minutes a day."
+    },
+    {
+      "i": 4,
+      "start": 11.315,
+      "end": 13.555,
+      "startFrame": 339,
+      "endFrame": 407,
+      "words": 6,
+      "text": "Mindfulness lifted their mood a little."
+    },
+    {
+      "i": 5,
+      "start": 13.715,
+      "end": 15.613,
+      "startFrame": 411,
+      "endFrame": 468,
+      "words": 5,
+      "text": "Cyclic sighing lifted it more."
+    },
+    {
+      "i": 6,
+      "start": 15.773,
+      "end": 17.8,
+      "startFrame": 473,
+      "endFrame": 534,
+      "words": 7,
+      "text": "Breathe in. Sip a little more air."
+    },
+    {
+      "i": 7,
+      "start": 17.96,
+      "end": 19.624,
+      "startFrame": 539,
+      "endFrame": 589,
+      "words": 6,
+      "text": "Then a long, slow breath out."
+    },
+    {
+      "i": 8,
+      "start": 19.784,
+      "end": 23.112,
+      "startFrame": 594,
+      "endFrame": 693,
+      "words": 8,
+      "text": "Small trial, not preregistered, and not a treatment."
+    },
+    {
+      "i": 9,
+      "start": 23.272,
+      "end": 25.725,
+      "startFrame": 698,
+      "endFrame": 772,
+      "words": 7,
+      "text": "But it's free. Try five minutes today."
+    },
+    {
+      "i": 10,
+      "start": 25.885,
+      "end": 27.699,
+      "startFrame": 777,
+      "endFrame": 831,
+      "words": 6,
+      "text": "Breathe in, sip a little more..."
+    }
+  ],
+  "chapters": []
+}

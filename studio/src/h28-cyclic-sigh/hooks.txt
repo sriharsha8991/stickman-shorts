@@ -1,0 +1,5 @@
+You meditate for calm? Stop. In one study, 5 minutes of sighing beat it. Here's why.
+Stop wasting your 5 calm minutes. In one study, a double sigh beat meditation. Why?
+You meditate to calm down? 5 minutes of sighing beat it in one study. But how?
+# retention_v2 row hook (scored ~45, WEAK): Five minutes of breathing beat meditation in one study.
+# USED (68, WORKABLE): Stop. Your next 5 minutes could beat meditation. In one study, a double sigh did. Why?
