@@ -1,0 +1,98 @@
+{
+  "fps": 30,
+  "durationInFrames": 875,
+  "seconds": 29.15,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 2.163,
+      "startFrame": 6,
+      "endFrame": 65,
+      "words": 5,
+      "text": "You stand after lunch? Stop."
+    },
+    {
+      "i": 1,
+      "start": 2.323,
+      "end": 5.245,
+      "startFrame": 70,
+      "endFrame": 157,
+      "words": 9,
+      "text": "A two-minute walk beat standing by more than double."
+    },
+    {
+      "i": 2,
+      "start": 5.405,
+      "end": 7.987,
+      "startFrame": 162,
+      "endFrame": 240,
+      "words": 7,
+      "text": "Round one: standing beats sitting. A little."
+    },
+    {
+      "i": 3,
+      "start": 8.147,
+      "end": 11.027,
+      "startFrame": 244,
+      "endFrame": 331,
+      "words": 9,
+      "text": "Round two: walking hits more than twice as hard."
+    },
+    {
+      "i": 4,
+      "start": 11.187,
+      "end": 14.088,
+      "startFrame": 336,
+      "endFrame": 423,
+      "words": 10,
+      "text": "Why? Working leg muscles pull sugar out of your blood."
+    },
+    {
+      "i": 5,
+      "start": 14.248,
+      "end": 17.768,
+      "startFrame": 427,
+      "endFrame": 533,
+      "words": 9,
+      "text": "In one lab study, two-minute strolls every twenty minutes"
+    },
+    {
+      "i": 6,
+      "start": 17.928,
+      "end": 20.253,
+      "startFrame": 538,
+      "endFrame": 608,
+      "words": 8,
+      "text": "cut the sugar spike by about a quarter."
+    },
+    {
+      "i": 7,
+      "start": 20.413,
+      "end": 23.72,
+      "startFrame": 612,
+      "endFrame": 712,
+      "words": 8,
+      "text": "Short lab studies, though. Not a diabetes treatment."
+    },
+    {
+      "i": 8,
+      "start": 23.88,
+      "end": 27.059,
+      "startFrame": 716,
+      "endFrame": 812,
+      "words": 9,
+      "text": "So after lunch, stroll two minutes every half hour."
+    },
+    {
+      "i": 9,
+      "start": 27.219,
+      "end": 28.392,
+      "startFrame": 817,
+      "endFrame": 852,
+      "words": 3,
+      "text": "The meter dips—"
+    }
+  ],
+  "chapters": []
+}

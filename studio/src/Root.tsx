@@ -35,6 +35,8 @@ import { Video as H03HuffBursts, DURATION as H03HuffBursts_DURATION } from "./h0
 import { Video as V014ScratchCard, DURATION as V014ScratchCard_DURATION } from "./v014-scratch-card/Video";
 import { Video as H14WillpowerBattery, DURATION as H14WillpowerBattery_DURATION } from "./h14-willpower-battery/Video";
 import { Video as V015LikeRegret, DURATION as V015LikeRegret_DURATION } from "./v015-like-regret/Video";
+import { Video as V016TwoWeeks, DURATION as V016TwoWeeks_DURATION } from "./v016-two-weeks/Video";
+import { Video as H04WalkVsStand, DURATION as H04WalkVsStand_DURATION } from "./h04-walk-vs-stand/Video";
 import { Video as H28CyclicSigh, DURATION as H28CyclicSigh_DURATION } from "./h28-cyclic-sigh/Video";
 // stickman-video:imports
 
@@ -307,6 +309,24 @@ export const RemotionRoot: React.FC = () => {
         id="H28CyclicSigh"
         component={H28CyclicSigh}
         durationInFrames={H28CyclicSigh_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="V016TwoWeeks"
+        component={V016TwoWeeks}
+        durationInFrames={V016TwoWeeks_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="H04WalkVsStand"
+        component={H04WalkVsStand}
+        durationInFrames={H04WalkVsStand_DURATION}
         fps={30}
         width={1080}
         height={1920}
