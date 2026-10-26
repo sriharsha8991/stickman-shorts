@@ -1,0 +1,116 @@
+{
+  "fps": 30,
+  "durationInFrames": 887,
+  "seconds": 29.56,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 2.44,
+      "startFrame": 6,
+      "endFrame": 73,
+      "words": 8,
+      "text": "You said two days. It's been two weeks."
+    },
+    {
+      "i": 1,
+      "start": 2.6,
+      "end": 4.947,
+      "startFrame": 78,
+      "endFrame": 148,
+      "words": 10,
+      "text": "Why? And why will you fail the next one too?"
+    },
+    {
+      "i": 2,
+      "start": 5.107,
+      "end": 8.136,
+      "startFrame": 153,
+      "endFrame": 244,
+      "words": 8,
+      "text": "Students guessed their thesis would take thirty-four days."
+    },
+    {
+      "i": 3,
+      "start": 8.296,
+      "end": 9.64,
+      "startFrame": 249,
+      "endFrame": 289,
+      "words": 3,
+      "text": "It took fifty-six."
+    },
+    {
+      "i": 4,
+      "start": 9.8,
+      "end": 12.317,
+      "startFrame": 294,
+      "endFrame": 370,
+      "words": 7,
+      "text": "Even their worst-case guess was too fast."
+    },
+    {
+      "i": 5,
+      "start": 12.477,
+      "end": 14.845,
+      "startFrame": 374,
+      "endFrame": 445,
+      "words": 8,
+      "text": "Fewer than one in three finished on time."
+    },
+    {
+      "i": 6,
+      "start": 15.005,
+      "end": 17.459,
+      "startFrame": 450,
+      "endFrame": 524,
+      "words": 8,
+      "text": "The twist? They knew they'd been late before."
+    },
+    {
+      "i": 7,
+      "start": 17.619,
+      "end": 19.453,
+      "startFrame": 529,
+      "endFrame": 584,
+      "words": 5,
+      "text": "Just remembering didn't fix it."
+    },
+    {
+      "i": 8,
+      "start": 19.613,
+      "end": 22.109,
+      "startFrame": 588,
+      "endFrame": 663,
+      "words": 8,
+      "text": "Linking the last job to this one did."
+    },
+    {
+      "i": 9,
+      "start": 22.269,
+      "end": 25.363,
+      "startFrame": 668,
+      "endFrame": 761,
+      "words": 8,
+      "text": "Before you estimate, open your last similar ticket."
+    },
+    {
+      "i": 10,
+      "start": 25.523,
+      "end": 27.251,
+      "startFrame": 766,
+      "endFrame": 818,
+      "words": 6,
+      "text": "How long did that one take?"
+    },
+    {
+      "i": 11,
+      "start": 27.411,
+      "end": 28.797,
+      "startFrame": 822,
+      "endFrame": 864,
+      "words": 4,
+      "text": "Now, how long for—"
+    }
+  ],
+  "chapters": []
+}
