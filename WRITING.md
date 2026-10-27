@@ -89,7 +89,7 @@ something on screen every few seconds while you do it.** Clickbait is fine *only
 Week-one analytics: 37.4% stayed to watch, 62.6% swiped away, every Short stalled at ~1K views (the seed
 test), 96.5% of views from the Shorts feed, audience 74% male and ~60% aged 25–44. Goal: stayed-to-watch above
 50% and viewers held 20–27 s. Each Short follows the beat sheet in `plan/retention_v2.csv` when its ID is there.
-29. **22–30 s, no exceptions for Shorts.** Holding a viewer 20–27 s should mean they watched almost all of it.
+29. **(Updated 2026-10-27: length now follows the format, see §H and PIPELINE §5.5; the old rule follows.) 22–30 s, no exceptions for Shorts.** Holding a viewer 20–27 s should mean they watched almost all of it.
     Cut anything that doesn't serve the payoff, even true and interesting facts.
 30. **Frame 0 is the best moment.** The strongest number or image is already on screen and moving at frame 0:
     no walk-in, no title card, no "you've heard…". Viewers decide in under ~2 s and most watch muted, so the

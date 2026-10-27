@@ -1,0 +1,16 @@
+Order,ID,Series,Spoken hook (0-2 s),Overlay (<=4 words),Payoff,Length (s),Key source (re-verify)
+1,V101,10-second test,Bat and ball cost ₹110. Ball?,₹110. BALL = ?,Most say ₹10; it's ₹5. About half of Ivy League students got it wrong,15,Frederick 2005 J Econ Perspectives (CRT)
+2,V025,Your brain did this,Why do you finish movies you hate?,PAID ₹400. HATE IT.,Sunk cost: money already spent shouldn't decide the next 2 hours,30,Arkes & Blumer 1985 OBHDP
+3,V102,Your brain did this,Walked in. Forgot why. Blame the door.,WHY AM I HERE?,Doorways split memory into scenes; go back through the door,25,"Radvansky, Krawietz & Tamplin 2011 QJEP"
+4,V026,Designed to get you,'Only 2 left!' Your brain just panicked.,ONLY 2 LEFT!,Scarcity makes things feel more valuable (cookie-jar study); check if the count ever moves,30,"Worchel, Lee & Adewole 1975 JPSP"
+5,V103,Your brain did this,Your pocket buzzed. Your phone didn't.,BZZT? NOTHING.,Phantom vibrations: 68% of hospital staff in one survey,20,Rothberg et al. 2010 BMJ c6914
+6,V021,Designed to get you,Lose ₹500. Win ₹500. Not equal.,-₹500 > +₹500,Losses weigh about twice as much as gains,30,Kahneman & Tversky 1979; Tversky & Kahneman 1992
+7,V104,Your brain did this,You'd pay more for your wobbly shelf.,MY SHELF = PRICELESS,People who assembled the boxes would pay 63% more for them,25,"Norton, Mochon & Ariely 2011/2012 JCP"
+8,V018,Your brain did this,Typing… stopped. Why does this hurt?,typing…,Not knowing can stress you more than knowing it's bad,20,de Berker et al. 2016 Nature Communications
+9,V105,10-second test,Try to tickle yourself. Go.,TICKLE YOURSELF,Your brain predicts your own touch and cancels it,15,"Blakemore, Wolpert & Frith 1998 Nature Neuroscience"
+10,V028,Myth check,Low battery. Higher cab fare?,5% BATTERY = ₹₹?,An Uber economist said low-battery riders accept surges more; Uber says it doesn't price on battery,30,Keith Chen on NPR 2016; Uber statement
+11,H20,Myth check,Is your phone stealing your focus?,PHONE = DUMBER?,The famous 'brain drain' result didn't hold up well; keep it out of reach anyway,30,Ward et al. 2017 + replications (hack row)
+12,V024,Designed to get you,You paused two seconds. It noticed.,IT SAW YOU PAUSE,"Feeds learn from how long you linger, not just likes",30,Platform statements on ranking signals
+13,V020,Designed to get you,"'No thanks, I hate saving money.' Rude?","NO, I HATE MONEY",Confirmshaming: a dark pattern found across shopping sites,25,Mathur et al. 2019 CSCW
+14,V106,Your brain did this,Noisy party. Someone says your name.,YOUR NAME?!,About a third of people catch their own name in the ear they're ignoring,20,Moray 1959; Wood & Cowan 1995
+15,H29,Myth check,Your alarm isn't what wakes your brain.,LIGHT > ALARM,Morning light sets your body clock (Health-edu line on screen),30,Hack row sources

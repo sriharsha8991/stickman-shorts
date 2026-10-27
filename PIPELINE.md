@@ -62,6 +62,14 @@ reviews and posts.
 
 ## 2. Pick the video
 
+**Sprint slate v3 first (owner, 2026-10-27, strategy doc "Stickman Shorts — Growth strategy to 100K views").**
+While `plan/slate_v3.csv` has a row whose ID is not `Produced`/`Skipped` in `status.csv`, the run makes the
+lowest-`Order` such row (V or H), ignoring the alternation below (owner REDO/Redo still go first). Its spoken
+hook, overlay, payoff, length and series **win over** `retention_v2.csv` and the plan row; the plan/hack row
+supplies the facts to verify. Re-verify every fact on the day (step 4); if the slate's payoff turns out wrong,
+change the payoff, not the facts. New topics V101–V106 were appended to `content_plan.csv` by hand (don't
+regenerate it with `plan/topics.py` without keeping them). When the slate is used up, continue below.
+
 Every run makes **one** Short. Overrides first: an emailed `REDO Vxxx`/`REDO Hxx`, then any `Redo` row, then
 an owner `ADD Hxx` (`Queued`). Otherwise **alternate**: look at the last produced Short in `status.csv` (last
 V or H row with Status `Produced`, ignoring L rows): if it was an H, this run is a plan video (slot A); if it
@@ -143,7 +151,8 @@ Skills to read before writing (all in `$SKILLS`):
    (uneven), one "wow" moment, loop/bookend.
 5. **Retention v2 (owner, 2026-10-23).** If the ID has a row in `plan/retention_v2.csv`, that row wins over
    the plan row for the overlay, spoken hook (= `voice.txt` row 1), cold open, open loop, re-hook, loop and
-   length; keep the plan's mechanism, twist and payoff. All Shorts: **22–30 s** (WRITING.md §G), best image at
+   length; keep the plan's mechanism, twist and payoff. All Shorts: length by format since 2026-10-27 (10-second test 13–20 s, stories 25–40 s; our best three
+   were 35–37 s), best image at
    frame 0, open loop by 6 s, re-hook ~14 s, cut back into frame 0. Hookscore the row's hook first; only
    rewrite it if it scores < 55 (keep the same promise).
 6. **First 10 seconds + clarity (owner, 2026-10-27; overrides anything above that conflicts).** Channel analytics
@@ -160,7 +169,10 @@ Skills to read before writing (all in `$SKILLS`):
    - **Voice craft:** `af_heart` @ 1.0×; 4–9 words per line; a line break before the twist (the gap is the
      pause); questions end with "?", emphasis comes from short sentences, not from caps. Read the first
      three lines aloud in your head: if a stranger couldn't repeat the point after 10 s, rewrite.
-   - Aim ~2.3 words/s: 22–30 s = 50–68 words.
+   - Aim ~2.3 words/s: 15 s ≈ 35 words, 30 s ≈ 68 words, 40 s ≈ 90 words.
+   - **Series**: every Short belongs to one series from the slate (Your brain did this · Designed to get you ·
+     10-second test · Myth check), shown as a small corner tag after 10 s, and ends with a question for the
+     comments (also put in the post copy as the pinned comment).
 7. **Power-up hook (anime energy, optional now).** Open with the row's `Power-up FX` preset from `shared/powerup.tsx`
    (`charge | impact | beam | dash | clash | meter`): `<PowerUp layer="back">` before Spark, `layer="front"`
    after, `hits={powerHits(kind, 0)}` on the Stage, the hook word/slam on `POWER_PEAK[kind]`, mood flip +
