@@ -43,6 +43,7 @@ import { Video as L003PayInFour, DURATION as L003PayInFour_DURATION } from "./l0
 import { Video as V017CrossedPrice, DURATION as V017CrossedPrice_DURATION } from "./v017-crossed-price/Video";
 import { Video as H15FreshStart, DURATION as H15FreshStart_DURATION } from "./h15-fresh-start/Video";
 import { Video as V101BatBall, DURATION as V101BatBall_DURATION } from "./v101-bat-ball/Video";
+import { Video as V025PaidToStay, DURATION as V025PaidToStay_DURATION } from "./v025-paid-to-stay/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -368,6 +369,15 @@ export const RemotionRoot: React.FC = () => {
         id="V101BatBall"
         component={V101BatBall}
         durationInFrames={V101BatBall_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="V025PaidToStay"
+        component={V025PaidToStay}
+        durationInFrames={V025PaidToStay_DURATION}
         fps={30}
         width={1080}
         height={1920}
