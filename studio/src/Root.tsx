@@ -38,6 +38,7 @@ import { Video as V015LikeRegret, DURATION as V015LikeRegret_DURATION } from "./
 import { Video as V016TwoWeeks, DURATION as V016TwoWeeks_DURATION } from "./v016-two-weeks/Video";
 import { Video as H04WalkVsStand, DURATION as H04WalkVsStand_DURATION } from "./h04-walk-vs-stand/Video";
 import { Video as H28CyclicSigh, DURATION as H28CyclicSigh_DURATION } from "./h28-cyclic-sigh/Video";
+import { Video as L003PayInFour, DURATION as L003PayInFour_DURATION } from "./l003-pay-in-four/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -331,6 +332,15 @@ export const RemotionRoot: React.FC = () => {
         width={1080}
         height={1920}
         defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="L003PayInFour"
+        component={L003PayInFour}
+        durationInFrames={L003PayInFour_DURATION}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{ music: 0.24, sfx: 0.6, voice: "voice.wav", captions: false }}
       />
       {/* stickman-video:compositions */}
           <Composition id="SparkSheet" component={SparkSheet} durationInFrames={60} fps={30} width={1920} height={1080} />

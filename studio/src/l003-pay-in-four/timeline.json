@@ -1,0 +1,755 @@
+{
+  "fps": 30,
+  "durationInFrames": 8129,
+  "seconds": 270.94,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.165,
+      "startFrame": 6,
+      "endFrame": 95,
+      "words": 9,
+      "text": "Stop. Before you split your next purchase into four,"
+    },
+    {
+      "i": 1,
+      "start": 3.815,
+      "end": 7.399,
+      "startFrame": 114,
+      "endFrame": 222,
+      "words": 11,
+      "text": "know this: your brain is judging a quarter of the price."
+    },
+    {
+      "i": 2,
+      "start": 8.049,
+      "end": 10.417,
+      "startFrame": 241,
+      "endFrame": 313,
+      "words": 8,
+      "text": "Splitting a bill doesn't make it any smaller."
+    },
+    {
+      "i": 3,
+      "start": 11.067,
+      "end": 13.478,
+      "startFrame": 332,
+      "endFrame": 404,
+      "words": 8,
+      "text": "So why does it feel so much smaller?"
+    },
+    {
+      "i": 4,
+      "start": 14.128,
+      "end": 17.371,
+      "startFrame": 424,
+      "endFrame": 521,
+      "words": 8,
+      "text": "Most people think no interest means basically free."
+    },
+    {
+      "i": 5,
+      "start": 18.021,
+      "end": 20.815,
+      "startFrame": 541,
+      "endFrame": 624,
+      "words": 8,
+      "text": "The price stays the same. The feeling doesn't."
+    },
+    {
+      "i": 6,
+      "start": 21.465,
+      "end": 25.028,
+      "startFrame": 644,
+      "endFrame": 751,
+      "words": 12,
+      "text": "By the end, you'll know the brain trick behind pay in four,"
+    },
+    {
+      "i": 7,
+      "start": 25.678,
+      "end": 28.238,
+      "startFrame": 770,
+      "endFrame": 847,
+      "words": 8,
+      "text": "what the data says about stacking these plans,"
+    },
+    {
+      "i": 8,
+      "start": 28.888,
+      "end": 31.661,
+      "startFrame": 867,
+      "endFrame": 950,
+      "words": 8,
+      "text": "and a ten-second check before you ever split."
+    },
+    {
+      "i": 9,
+      "start": 32.661,
+      "end": 35.072,
+      "startFrame": 980,
+      "endFrame": 1052,
+      "words": 6,
+      "text": "Picture a checkout page at midnight."
+    },
+    {
+      "i": 10,
+      "start": 35.722,
+      "end": 37.983,
+      "startFrame": 1072,
+      "endFrame": 1140,
+      "words": 4,
+      "text": "Headphones. Four thousand rupees."
+    },
+    {
+      "i": 11,
+      "start": 38.633,
+      "end": 40.681,
+      "startFrame": 1159,
+      "endFrame": 1220,
+      "words": 7,
+      "text": "You wince. That's a lot of money."
+    },
+    {
+      "i": 12,
+      "start": 41.331,
+      "end": 43.571,
+      "startFrame": 1240,
+      "endFrame": 1307,
+      "words": 7,
+      "text": "Then a button slides in right underneath."
+    },
+    {
+      "i": 13,
+      "start": 44.221,
+      "end": 47.421,
+      "startFrame": 1327,
+      "endFrame": 1423,
+      "words": 7,
+      "text": "Four payments of one thousand. Zero interest."
+    },
+    {
+      "i": 14,
+      "start": 48.071,
+      "end": 50.119,
+      "startFrame": 1442,
+      "endFrame": 1504,
+      "words": 6,
+      "text": "And the wince just melts away."
+    },
+    {
+      "i": 15,
+      "start": 50.769,
+      "end": 53.031,
+      "startFrame": 1523,
+      "endFrame": 1591,
+      "words": 6,
+      "text": "Here's how the classic version works."
+    },
+    {
+      "i": 16,
+      "start": 53.681,
+      "end": 55.515,
+      "startFrame": 1610,
+      "endFrame": 1665,
+      "words": 5,
+      "text": "You pay one quarter today."
+    },
+    {
+      "i": 17,
+      "start": 56.165,
+      "end": 58.427,
+      "startFrame": 1685,
+      "endFrame": 1753,
+      "words": 6,
+      "text": "Then three more, every two weeks."
+    },
+    {
+      "i": 18,
+      "start": 59.077,
+      "end": 61.487,
+      "startFrame": 1772,
+      "endFrame": 1845,
+      "words": 7,
+      "text": "Six weeks later, it's all paid off."
+    },
+    {
+      "i": 19,
+      "start": 62.137,
+      "end": 65.017,
+      "startFrame": 1864,
+      "endFrame": 1951,
+      "words": 7,
+      "text": "So what actually changed? Not the price."
+    },
+    {
+      "i": 20,
+      "start": 65.667,
+      "end": 67.758,
+      "startFrame": 1970,
+      "endFrame": 2033,
+      "words": 5,
+      "text": "Something changed inside your head."
+    },
+    {
+      "i": 21,
+      "start": 68.758,
+      "end": 71.041,
+      "startFrame": 2063,
+      "endFrame": 2131,
+      "words": 8,
+      "text": "Your brain has a pain meter for paying."
+    },
+    {
+      "i": 22,
+      "start": 71.691,
+      "end": 75.488,
+      "startFrame": 2151,
+      "endFrame": 2265,
+      "words": 8,
+      "text": "In 1998, two researchers gave it a name."
+    },
+    {
+      "i": 23,
+      "start": 76.138,
+      "end": 79.189,
+      "startFrame": 2284,
+      "endFrame": 2376,
+      "words": 7,
+      "text": "Drazen Prelec and George Loewenstein called it"
+    },
+    {
+      "i": 24,
+      "start": 79.839,
+      "end": 81.311,
+      "startFrame": 2395,
+      "endFrame": 2439,
+      "words": 4,
+      "text": "the pain of paying."
+    },
+    {
+      "i": 25,
+      "start": 81.961,
+      "end": 84.905,
+      "startFrame": 2459,
+      "endFrame": 2547,
+      "words": 8,
+      "text": "Every time money leaves, it stings a little."
+    },
+    {
+      "i": 26,
+      "start": 85.555,
+      "end": 88.605,
+      "startFrame": 2567,
+      "endFrame": 2658,
+      "words": 9,
+      "text": "That sounds bad. But the sting has a job."
+    },
+    {
+      "i": 27,
+      "start": 89.255,
+      "end": 92.093,
+      "startFrame": 2678,
+      "endFrame": 2763,
+      "words": 7,
+      "text": "They argued it helps us regulate ourselves."
+    },
+    {
+      "i": 28,
+      "start": 92.743,
+      "end": 94.513,
+      "startFrame": 2782,
+      "endFrame": 2835,
+      "words": 6,
+      "text": "It's the brake on your spending."
+    },
+    {
+      "i": 29,
+      "start": 95.163,
+      "end": 97.681,
+      "startFrame": 2855,
+      "endFrame": 2930,
+      "words": 7,
+      "text": "Cash keeps buying and paying glued together."
+    },
+    {
+      "i": 30,
+      "start": 98.331,
+      "end": 101.232,
+      "startFrame": 2950,
+      "endFrame": 3037,
+      "words": 10,
+      "text": "You hand it over, and you feel it right then."
+    },
+    {
+      "i": 31,
+      "start": 101.882,
+      "end": 104.165,
+      "startFrame": 3056,
+      "endFrame": 3125,
+      "words": 8,
+      "text": "But some ways of paying loosen that glue."
+    },
+    {
+      "i": 32,
+      "start": 104.815,
+      "end": 106.799,
+      "startFrame": 3144,
+      "endFrame": 3204,
+      "words": 5,
+      "text": "Their example was credit cards."
+    },
+    {
+      "i": 33,
+      "start": 107.449,
+      "end": 109.305,
+      "startFrame": 3223,
+      "endFrame": 3279,
+      "words": 6,
+      "text": "Cards tend to weaken the link"
+    },
+    {
+      "i": 34,
+      "start": 109.955,
+      "end": 112.579,
+      "startFrame": 3299,
+      "endFrame": 3377,
+      "words": 9,
+      "text": "between what you get and the thought of paying."
+    },
+    {
+      "i": 35,
+      "start": 113.229,
+      "end": 116.237,
+      "startFrame": 3397,
+      "endFrame": 3487,
+      "words": 6,
+      "text": "Remember our cash versus UPI video?"
+    },
+    {
+      "i": 36,
+      "start": 116.887,
+      "end": 120.001,
+      "startFrame": 3507,
+      "endFrame": 3600,
+      "words": 8,
+      "text": "Same idea. Tap, and the sting goes quiet."
+    },
+    {
+      "i": 37,
+      "start": 120.651,
+      "end": 122.891,
+      "startFrame": 3620,
+      "endFrame": 3687,
+      "words": 7,
+      "text": "Pay in four goes one step further."
+    },
+    {
+      "i": 38,
+      "start": 123.541,
+      "end": 125.291,
+      "startFrame": 3706,
+      "endFrame": 3759,
+      "words": 6,
+      "text": "It doesn't just quiet the sting."
+    },
+    {
+      "i": 39,
+      "start": 125.941,
+      "end": 127.711,
+      "startFrame": 3778,
+      "endFrame": 3831,
+      "words": 5,
+      "text": "It slices it into pieces."
+    },
+    {
+      "i": 40,
+      "start": 128.711,
+      "end": 130.525,
+      "startFrame": 3861,
+      "endFrame": 3916,
+      "words": 5,
+      "text": "Here's where it gets sneaky."
+    },
+    {
+      "i": 41,
+      "start": 131.175,
+      "end": 133.799,
+      "startFrame": 3935,
+      "endFrame": 4014,
+      "words": 9,
+      "text": "Your brain judges the number in front of it."
+    },
+    {
+      "i": 42,
+      "start": 134.449,
+      "end": 137.307,
+      "startFrame": 4033,
+      "endFrame": 4119,
+      "words": 7,
+      "text": "Four thousand feels like a big decision."
+    },
+    {
+      "i": 43,
+      "start": 137.957,
+      "end": 140.347,
+      "startFrame": 4139,
+      "endFrame": 4210,
+      "words": 7,
+      "text": "One thousand feels like a small one."
+    },
+    {
+      "i": 44,
+      "start": 140.997,
+      "end": 143.941,
+      "startFrame": 4230,
+      "endFrame": 4318,
+      "words": 6,
+      "text": "Same headphones. Same total. Different feeling."
+    },
+    {
+      "i": 45,
+      "start": 144.591,
+      "end": 146.255,
+      "startFrame": 4338,
+      "endFrame": 4388,
+      "words": 5,
+      "text": "And the next three payments?"
+    },
+    {
+      "i": 46,
+      "start": 146.905,
+      "end": 149.273,
+      "startFrame": 4407,
+      "endFrame": 4478,
+      "words": 7,
+      "text": "They arrive later, one at a time,"
+    },
+    {
+      "i": 47,
+      "start": 149.923,
+      "end": 152.227,
+      "startFrame": 4498,
+      "endFrame": 4567,
+      "words": 7,
+      "text": "long after the excitement has worn off."
+    },
+    {
+      "i": 48,
+      "start": 152.877,
+      "end": 155.181,
+      "startFrame": 4586,
+      "endFrame": 4655,
+      "words": 7,
+      "text": "So the price gets cut into slices,"
+    },
+    {
+      "i": 49,
+      "start": 155.831,
+      "end": 157.985,
+      "startFrame": 4675,
+      "endFrame": 4740,
+      "words": 7,
+      "text": "and you only taste the first slice."
+    },
+    {
+      "i": 50,
+      "start": 158.635,
+      "end": 161.601,
+      "startFrame": 4759,
+      "endFrame": 4848,
+      "words": 7,
+      "text": "That's the illusion. Not smaller. Just sliced."
+    },
+    {
+      "i": 51,
+      "start": 162.251,
+      "end": 165.109,
+      "startFrame": 4868,
+      "endFrame": 4953,
+      "words": 8,
+      "text": "Now watch what happens when everyone does it."
+    },
+    {
+      "i": 52,
+      "start": 166.109,
+      "end": 170.44,
+      "startFrame": 4983,
+      "endFrame": 5113,
+      "words": 9,
+      "text": "In the US, the consumer finance watchdog, the CFPB,"
+    },
+    {
+      "i": 53,
+      "start": 171.09,
+      "end": 173.65,
+      "startFrame": 5133,
+      "endFrame": 5210,
+      "words": 6,
+      "text": "studied lender data from twenty twenty-two."
+    },
+    {
+      "i": 54,
+      "start": 174.3,
+      "end": 177.18,
+      "startFrame": 5229,
+      "endFrame": 5315,
+      "words": 9,
+      "text": "About one in five people with a credit record"
+    },
+    {
+      "i": 55,
+      "start": 177.83,
+      "end": 180.049,
+      "startFrame": 5335,
+      "endFrame": 5401,
+      "words": 8,
+      "text": "took out a buy now, pay later loan."
+    },
+    {
+      "i": 56,
+      "start": 180.699,
+      "end": 182.832,
+      "startFrame": 5421,
+      "endFrame": 5485,
+      "words": 7,
+      "text": "Then came the number that stopped me."
+    },
+    {
+      "i": 57,
+      "start": 183.482,
+      "end": 186.149,
+      "startFrame": 5504,
+      "endFrame": 5584,
+      "words": 6,
+      "text": "About sixty-three percent of those borrowers"
+    },
+    {
+      "i": 58,
+      "start": 186.799,
+      "end": 189.764,
+      "startFrame": 5604,
+      "endFrame": 5693,
+      "words": 10,
+      "text": "had more than one loan open at the same time."
+    },
+    {
+      "i": 59,
+      "start": 190.414,
+      "end": 192.675,
+      "startFrame": 5712,
+      "endFrame": 5780,
+      "words": 8,
+      "text": "And a third used more than one lender."
+    },
+    {
+      "i": 60,
+      "start": 193.325,
+      "end": 195.821,
+      "startFrame": 5800,
+      "endFrame": 5875,
+      "words": 7,
+      "text": "Picture it. One plan for the headphones."
+    },
+    {
+      "i": 61,
+      "start": 196.471,
+      "end": 199.074,
+      "startFrame": 5894,
+      "endFrame": 5972,
+      "words": 8,
+      "text": "One for shoes. One for a phone case."
+    },
+    {
+      "i": 62,
+      "start": 199.724,
+      "end": 201.985,
+      "startFrame": 5992,
+      "endFrame": 6060,
+      "words": 7,
+      "text": "Each one feels small on its own."
+    },
+    {
+      "i": 63,
+      "start": 202.635,
+      "end": 203.809,
+      "startFrame": 6079,
+      "endFrame": 6114,
+      "words": 3,
+      "text": "But they stack."
+    },
+    {
+      "i": 64,
+      "start": 204.459,
+      "end": 207.36,
+      "startFrame": 6134,
+      "endFrame": 6221,
+      "words": 9,
+      "text": "And no single slice shows you the whole tower."
+    },
+    {
+      "i": 65,
+      "start": 208.01,
+      "end": 209.994,
+      "startFrame": 6240,
+      "endFrame": 6300,
+      "words": 6,
+      "text": "So who is watching the tower?"
+    },
+    {
+      "i": 66,
+      "start": 210.994,
+      "end": 213.917,
+      "startFrame": 6330,
+      "endFrame": 6417,
+      "words": 8,
+      "text": "In Britain, these plans sat outside the rules."
+    },
+    {
+      "i": 67,
+      "start": 214.567,
+      "end": 218.321,
+      "startFrame": 6437,
+      "endFrame": 6550,
+      "words": 7,
+      "text": "Since fifteenth July twenty twenty-six, they're regulated."
+    },
+    {
+      "i": 68,
+      "start": 218.971,
+      "end": 221.702,
+      "startFrame": 6569,
+      "endFrame": 6651,
+      "words": 8,
+      "text": "The goals are clear information about the risks,"
+    },
+    {
+      "i": 69,
+      "start": 222.352,
+      "end": 224.891,
+      "startFrame": 6671,
+      "endFrame": 6747,
+      "words": 6,
+      "text": "borrowing that people can actually afford,"
+    },
+    {
+      "i": 70,
+      "start": 225.541,
+      "end": 228.186,
+      "startFrame": 6766,
+      "endFrame": 6846,
+      "words": 7,
+      "text": "and support for anyone who falls behind."
+    },
+    {
+      "i": 71,
+      "start": 228.836,
+      "end": 231.503,
+      "startFrame": 6865,
+      "endFrame": 6945,
+      "words": 7,
+      "text": "Rules can watch the tower from outside."
+    },
+    {
+      "i": 72,
+      "start": 232.153,
+      "end": 234.094,
+      "startFrame": 6965,
+      "endFrame": 7023,
+      "words": 7,
+      "text": "But only you can see your own."
+    },
+    {
+      "i": 73,
+      "start": 235.094,
+      "end": 237.142,
+      "startFrame": 7053,
+      "endFrame": 7114,
+      "words": 5,
+      "text": "So here's your ten-second check."
+    },
+    {
+      "i": 74,
+      "start": 237.792,
+      "end": 240.672,
+      "startFrame": 7134,
+      "endFrame": 7220,
+      "words": 7,
+      "text": "Before you split, ask yourself two questions."
+    },
+    {
+      "i": 75,
+      "start": 241.322,
+      "end": 244.159,
+      "startFrame": 7240,
+      "endFrame": 7325,
+      "words": 11,
+      "text": "One. Would I buy this if I paid it all today?"
+    },
+    {
+      "i": 76,
+      "start": 244.809,
+      "end": 247.625,
+      "startFrame": 7344,
+      "endFrame": 7429,
+      "words": 9,
+      "text": "Two. How many plans do I already have open?"
+    },
+    {
+      "i": 77,
+      "start": 248.275,
+      "end": 251.689,
+      "startFrame": 7448,
+      "endFrame": 7551,
+      "words": 11,
+      "text": "If the first answer is no, the plan didn't help you."
+    },
+    {
+      "i": 78,
+      "start": 252.339,
+      "end": 254.323,
+      "startFrame": 7570,
+      "endFrame": 7630,
+      "words": 7,
+      "text": "It just helped you not feel it."
+    },
+    {
+      "i": 79,
+      "start": 254.973,
+      "end": 256.978,
+      "startFrame": 7649,
+      "endFrame": 7709,
+      "words": 6,
+      "text": "Splitting the bill splits the pain,"
+    },
+    {
+      "i": 80,
+      "start": 257.628,
+      "end": 258.823,
+      "startFrame": 7729,
+      "endFrame": 7765,
+      "words": 3,
+      "text": "not the price."
+    },
+    {
+      "i": 81,
+      "start": 259.473,
+      "end": 263.334,
+      "startFrame": 7784,
+      "endFrame": 7900,
+      "words": 8,
+      "text": "I'm Spark. This is education, not financial advice."
+    },
+    {
+      "i": 82,
+      "start": 263.984,
+      "end": 266.288,
+      "startFrame": 7920,
+      "endFrame": 7989,
+      "words": 7,
+      "text": "See you in the next hidden mechanism."
+    }
+  ],
+  "chapters": []
+}

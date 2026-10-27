@@ -89,22 +89,54 @@ const ArtTokens: React.FC = () => (
 );
 
 const ArtSlices: React.FC = () => (
+  // matches L003's world (2026-10-26 render): night-market string lights, a neon ₹4,000 tag sliced by a giant pizza
+  // cutter into four ₹1,000 slices; mint + coral on charcoal
   <g>
+    <path d="M 470 40 Q 860 150 1280 60" stroke="#555a66" strokeWidth={4} fill="none" />
+    {Array.from({ length: 9 }, (_, i) => {
+      const x = 500 + i * 90;
+      const y = 50 + Math.sin(((x - 470) / 810) * Math.PI) * 60 + 8;
+      const c = ["#ffc94a", "#5ff2c3", "#ff6b5b", "#ff4fa3"][i % 4];
+      return (
+        <g key={i}>
+          <circle cx={x} cy={y} r={20} fill={c} opacity={0.25} />
+          <circle cx={x} cy={y} r={9} fill={c} />
+        </g>
+      );
+    })}
+    <rect x={560} y={330} width={690} height={330} rx={40} fill="#5ff2c3" opacity={0.18} />
     {[0, 1, 2, 3].map((i) => (
-      <g key={i} transform={`translate(${600 + i * 160} ${400 + (i % 2) * 18}) rotate(${-6 + i * 4})`}>
-        <rect x={0} y={0} width={138} height={250} rx={16} fill="#ffe0d6" {...K} />
-        <text x={69} y={150} textAnchor="middle" fontFamily={FONT.title} fontWeight={900} fontSize={50} fill={COL.ink}>
+      <g key={i} transform={`translate(${640 + i * 160} ${420 + (i % 2) * 40}) rotate(${-8 + i * 5})`}>
+        <path d="M -40 0 L 0 -80 L 120 -80 L 120 80 L 0 80 Z" fill={i === 0 ? "#5ff2c3" : "#fff6ea"} {...K} strokeWidth={7} />
+        <circle cx={-8} cy={0} r={11} fill="#23262b" />
+        <text x={62} y={18} textAnchor="middle" fontFamily={FONT.title} fontWeight={900} fontSize={42} fill={COL.ink}>
           ₹1,000
         </text>
-        <circle cx={69} cy={34} r={14} fill="#fff" stroke={COL.ink} strokeWidth={5} />
       </g>
     ))}
-    {/* pizza cutter */}
-    <g transform="translate(1190 360) rotate(35)">
-      <rect x={-12} y={20} width={24} height={150} rx={10} fill="#ff6b6b" {...K} strokeWidth={6} />
-      <circle r={52} fill="#d9dde8" {...K} strokeWidth={7} />
-      <circle r={10} fill={COL.ink} />
+    {/* giant pizza cutter */}
+    <g transform="translate(1130 640) rotate(-35)">
+      <rect x={-16} y={-260} width={32} height={180} rx={16} fill="#ff6b5b" {...K} strokeWidth={6} />
+      <circle r={88} fill="#e9edf2" {...K} strokeWidth={7} />
+      <circle r={18} fill="#5ff2c3" {...K} strokeWidth={5} />
     </g>
+  </g>
+);
+
+const ArtTower: React.FC = () => (
+  // L003 alternate: the 63% tower of stacked payment plans in the dark skyline
+  <g>
+    {Array.from({ length: 6 }, (_, i) => (
+      <rect key={`b${i}`} x={560 + i * 120} y={520 - ((i * 97) % 160)} width={100} height={300} fill="#262a3a" />
+    ))}
+    {["HEADPHONES", "SHOES", "PHONE CASE", "JACKET", "TRIP", "GAME"].map((l, i) => (
+      <g key={l} transform={`translate(${960 + (i % 2) * 14} ${660 - i * 66}) rotate(${(i % 3) - 1 * 2})`}>
+        <rect x={-150} y={-30} width={300} height={60} rx={12} fill={["#5ff2c3", "#ff6b5b", "#ffc94a", "#ff4fa3"][i % 4]} {...K} strokeWidth={5} />
+        <text x={-130} y={12} fontFamily={FONT.title} fontWeight={900} fontSize={28} fill={COL.ink}>
+          {l}
+        </text>
+      </g>
+    ))}
   </g>
 );
 
@@ -308,7 +340,9 @@ export const LONG_THUMBS: Cfg[] = [
   { id: "L002", bg: ["#fff4e0", "#e8dcff"], l1: "IT'S", l2: "GUESSING", hot: 2, accent: "#7b2ff7", mood: "curious", gesture: "leanIn", art: ArtTokens },
   { id: "L002b", bg: ["#f6efe0", "#ece0c6"], l1: "ONE WORD", l2: "AT A TIME", hot: 2, accent: "#7b2ff7", mood: "mindblown", gesture: "mindBlown", bulb: true, art: ArtTokens },
   { id: "L002c", bg: ["#efe6ff", "#d9c8ff"], l1: "IT DOESN'T", l2: "KNOW YET", hot: 2, accent: "#ff5a4e", mood: "skeptical", gesture: "armsCrossed", art: ArtTokens },
-  { id: "L003", bg: ["#c8f7e6", "#ffd2c2"], l1: "SAME PRICE.", l2: "LESS PAIN?", hot: 2, accent: "#ff5a5f", mood: "skeptical", gesture: "armsCrossed", art: ArtSlices },
+  { id: "L003", bg: ["#23262b", "#3a2a2e"], l1: "SAME PRICE.", l2: "LESS PAIN?", hot: 2, accent: "#ff6b5b", mood: "skeptical", gesture: "armsCrossed", art: ArtSlices },
+  { id: "L003b", bg: ["#1d2027", "#1f3a33"], l1: "0% INTEREST", l2: "≠ FREE", hot: 2, accent: "#5ff2c3", mood: "shock", gesture: "recoil", art: ArtSlices },
+  { id: "L003c", bg: ["#1a1d2b", "#0b0d16"], l1: "THEY", l2: "STACK.", hot: 2, accent: "#ffc94a", mood: "worried", gesture: "pointSide", art: ArtTower },
   { id: "L004", bg: ["#e9f9d8", "#ffd8b8"], l1: "21 DAYS?", l2: "NOPE.", hot: 2, accent: "#e5322d", mood: "wink", gesture: "handsHips", art: ArtCalendar },
   { id: "L005", bg: ["#1f1235", "#4a1d6e"], l1: "6 CASES.", l2: "0 REAL.", hot: 2, accent: "#ffd23f", mood: "shock", gesture: "recoil", art: ArtFake },
   { id: "L006", bg: ["#1d2321", "#2f3b2a"], l1: "ONE TAP IN.", l2: "MAZE OUT.", hot: 2, accent: "#b8f35a", mood: "determined", gesture: "pointSide", art: ArtMaze },
