@@ -2,6 +2,7 @@ import { LONG_THUMBS, LongThumb } from "./thumbs/LongThumbs";
 import { SparkSheet } from "./shared/SparkSheet";
 import { CameraDemo } from "./shared/CameraDemo";
 import { PowerUpDemo, POWERUP_DEMO_FRAMES } from "./shared/PowerUpDemo";
+import { ShotsDemo, SHOTS_DEMO_FRAMES } from "./shared/ShotsDemo";
 import "./index.css";
 import React from "react";
 import { Composition } from "remotion";
@@ -366,6 +367,7 @@ export const RemotionRoot: React.FC = () => {
           <Composition id="SparkSheet" component={SparkSheet} durationInFrames={60} fps={30} width={1920} height={1080} />
           <Composition id="CameraDemo" component={CameraDemo} durationInFrames={200} fps={30} width={1920} height={1080} />
           <Composition id="PowerUpDemo" component={PowerUpDemo} durationInFrames={POWERUP_DEMO_FRAMES} fps={30} width={1080} height={1920} />
+          <Composition id="ShotsDemo" component={ShotsDemo} durationInFrames={SHOTS_DEMO_FRAMES} fps={30} width={1080} height={1920} />
           {LONG_THUMBS.map((c) => (
         <Composition key={c.id} id={`Thumb${c.id}`} component={() => <LongThumb cfg={c} />} durationInFrames={1} fps={30} width={1280} height={720} />
       ))}

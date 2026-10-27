@@ -20,8 +20,7 @@ import { COL } from "../stickman/fx";
 //   <SparkHost x={sp.x} s={sp.s} y={sp.y} ... />
 // ---------------------------------------------------------------------------------------------------------
 
-const W = 1920;
-const H = 1080;
+const W = 1920; // long-form defaults; Shorts pass size={VERTICAL} / camAt(f, shots, VERTICAL)
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const EASE = {
   snap: { dur: 7, e: Easing.bezier(0.2, 0.9, 0.25, 1.08) },
@@ -38,7 +37,10 @@ export type Shot = {
 };
 
 // Camera for <Stage cam>. Interpolates between shots, keeps the frame edges inside the stage.
-export const camAt = (f: number, shots: Shot[]): { x: number; y: number; z: number } => {
+// `size` = the stage: [1920, 1080] for long-form (default) or VERTICAL ([1080, 1920]) for Shorts.
+export const VERTICAL: [number, number] = [1080, 1920];
+export const camAt = (f: number, shots: Shot[], size: [number, number] = [1920, 1080]): { x: number; y: number; z: number } => {
+  const [W, H] = size;
   const val = (s: Shot) => {
     const z = s.z ?? 1;
     const [px, py] = s.at ?? [W / 2, H / 2];
@@ -73,14 +75,17 @@ export const drift = (f: number, from = 0, amt = 0.03, period = 360) => 1 + amt 
 // ---------------------------------------------------------------------------------------------------------
 export type TransitionKind = "slice" | "whip" | "iris" | "flash" | "shutter";
 
-export const Transition: React.FC<{ f: number; at: number; kind: TransitionKind; colors?: string[]; irisAt?: [number, number]; dur?: number }> = ({
+export const Transition: React.FC<{ f: number; at: number; kind: TransitionKind; colors?: string[]; irisAt?: [number, number]; dur?: number; size?: [number, number] }> = ({
   f,
   at,
   kind,
   colors = ["#ff2d55", "#3fe0ff", "#ffd23f"],
-  irisAt = [W / 2, H / 2],
+  irisAt,
   dur = 14,
+  size = [1920, 1080],
 }) => {
+  const [W, H] = size;
+  irisAt = irisAt ?? [W / 2, H / 2];
   const h = dur / 2;
   if (f < at - h || f > at + h) return null;
   const t = (f - (at - h)) / dur; // 0..1, covered at 0.5
@@ -92,7 +97,7 @@ export const Transition: React.FC<{ f: number; at: number; kind: TransitionKind;
           return (
             <div
               key={i}
-              style={{ position: "absolute", left: -600, top: -200 + i * 0, width: 3200, height: 1600, background: c, transform: `translateX(${k * 2200}px) skewX(-24deg)`, clipPath: `inset(${i * 33}% 0 ${(2 - i) * 33}% 0)` }}
+              style={{ position: "absolute", left: -600, top: -200, width: 3200, height: H + 800, background: c, transform: `translateX(${k * 2200}px) skewX(-24deg)`, clipPath: `inset(${i * 33}% 0 ${(2 - i) * 33}% 0)` }}
             />
           );
         })}
@@ -105,7 +110,7 @@ export const Transition: React.FC<{ f: number; at: number; kind: TransitionKind;
       <AbsoluteFill style={{ pointerEvents: "none" }}>
         <div style={{ position: "absolute", left: x - 400, top: 0, width: 2720, height: H, background: `linear-gradient(90deg, transparent, ${colors[1]} 18%, #0b1030 40%, #0b1030 60%, ${colors[0]} 82%, transparent)`, filter: "blur(18px)" }} />
         {Array.from({ length: 10 }, (_, i) => (
-          <div key={i} style={{ position: "absolute", left: x + ((i * 397) % 1600) - 800, top: 40 + i * 104, width: 900, height: 8, background: "#fff", opacity: 0.5, filter: "blur(2px)" }} />
+          <div key={i} style={{ position: "absolute", left: x + ((i * 397) % 1600) - 800, top: 40 + i * (H / 10.4), width: 900, height: 8, background: "#fff", opacity: 0.5, filter: "blur(2px)" }} />
         ))}
       </AbsoluteFill>
     );

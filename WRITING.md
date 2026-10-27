@@ -126,6 +126,28 @@ test. The owner's read: clarity dropped, and the first 10 s decide everything.
     in-jokes and AI trivia. Short length did not help. Every Short still stopped at ~1.1–1.3K views (one-day
     spike), so stayed-to-watch must climb well above these numbers before YouTube widens a test.
 
+## I. Storytelling, animation and editing (owner, 2026-10-27)
+The audit of our renders: one locked wide shot per Short, Spark always the same size at the side, scenes fade in place,
+half the frames are charts, and Spark lectures instead of living the moment. Fixes, each with its source:
+42. **A story, not a list.** Spark (or a YOU figure) hits a problem → BUT → SO → payoff, with a new mini-conflict
+    each beat. Jenny Hoyos's structure: set up conflict, resolve it, set up new conflict, linked by "but" and "so";
+    pacing fast (hook) → medium → fast (peak) → medium → fast (end) ([vidIQ](https://vidiq.com/blog/post/how-jenny-hoyos-gets-10m-views-per-youtube-short/)).
+43. **Spark lives it first, explains second.** He falls for the trap on screen (buys the "only 2 left", walks
+    through the door and forgets), then the reveal. Story through expressions, actions and environments, not
+    dialogue ([Subscribr](https://subscribr.ai/youtube-strategy/advanced-youtube-shorts-editing-storytelling)).
+44. **Shots, not one frame.** WIDE to set the scene, CU on Spark's face for every emotion beat, INSERT on the
+    object, cut on the spoken word. Vary shot length irregularly: editing rhythms closer to natural attention
+    patterns (1/f) became the norm in films after 1980 ([Cutting et al. 2010, ScienceDaily](https://www.sciencedaily.com/releases/2010/02/100223121435.htm)).
+45. **One visual metaphor per scene, chosen on purpose** (Kurzgesagt sketches metaphors per scene before animating:
+    [kurzgesagt.org](https://kurzgesagt.org/youtube/)). Numbers become objects; one chart at most.
+46. **Animate with weight** (the 12 principles, Thomas & Johnston, [Wikipedia](https://en.wikipedia.org/wiki/Twelve_basic_principles_of_animation)):
+    staging (one thing to look at), anticipation before every big move, overshoot + settle, squash on landings,
+    arcs, follow-through on loose parts (bulb, tags, signs), exaggerated reactions. Helpers: `shared/motion.ts`.
+47. **Sound tells the cut.** A whoosh on every camera move, a hit on every landing, a half-second music drop
+    right before the reveal, then the hit. Keep the voice on top.
+48. **Peak, then end fast.** People remember the peak and the end (vidIQ on Hoyos): payoff, one action line,
+    cut back into frame 0.
+
 ## Myths we never repeat
 - "Humans have an 8-second attention span, less than a goldfish": no underlying study exists (BBC, 2017; WSJ, 2017).
 - "Open loops work because of the Zeigarnik effect": it failed a 2025 meta-analysis; resumption (Ovsiankina) holds.

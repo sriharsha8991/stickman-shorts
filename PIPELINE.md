@@ -146,7 +146,9 @@ Skills to read before writing (all in `$SKILLS`):
 2. Three hook layers at 0:00: first frame that works muted, text overlay, caption line.
 3. Script the narration (it becomes `voice.txt` in step 5b): short spoken lines following the format
    below; total length from the row (±5 s). Keep the plan's mechanism, metaphor, twist and payoff unless the facts changed them.
-4. Write `studio/src/<slug>/storyboard.md`: motion language (one personality: Playful/Energetic/
+4. Write `studio/src/<slug>/storyboard.md` as a **shot list** (owner, 2026-10-27; WRITING.md §I): one row per
+   spoken line with shot size (WIDE / MED / CU = Spark's face / INSERT = the object), camera move (cut, snap
+   push, slow push, whip), Spark's emotion + action, the object, and the SFX. Then the motion language (one personality: Playful/Energetic/
    Premium/Corporate), where Spark is and what he does in each scene, scenes anchored to spoken lines, beats, interrupts every 2–4 s
    (uneven), one "wow" moment, loop/bookend.
 5. **Retention v2 (owner, 2026-10-23).** If the ID has a row in `plan/retention_v2.csv`, that row wins over
@@ -236,6 +238,14 @@ rm studio/src/<slug>/S01Example.tsx
 - Vertical rules: centre x = 540, safe zone x 90–990 / y 250–1500, ground ≈ y 1290, title zone
   y 260–620, action y 650–1290, captions ≈ y 1420. Characters scale 1.5–1.7. One hero per frame.
 - Scene starts and big hits land on spoken words (cue/word frames from voice.ts); the music is a bed underneath.
+- **Shot grammar + motion (owner, 2026-10-27; WRITING.md §I).** Use `camAt(f, shots, VERTICAL)` from
+  `shared/camera.tsx` on the Stage (`cam={camAt(...)}`) and `<Transition … size={VERTICAL} />`; reference
+  composition `ShotsDemo`. Rules: a cut or camera change every 1.5–3 s on average, irregular (some 0.7 s, a
+  few 4 s), never a locked wide shot longer than 4 s; at least 3 close-ups of Spark's face (hook reaction,
+  twist, payoff); an INSERT close-up on the object whenever it changes; one transition (whip/slice/iris/shutter)
+  per Short at the turn, not more. Props move with `shared/motion.ts` (popIn wind-up + overshoot, squash on
+  landings, arcs for throws, wobble follow-through); no plain linear slides. Max ONE chart per Short; numbers
+  become objects (coins, cookies, a ticket) wherever possible.
 - `cd studio && npx tsc --noEmit` must pass.
 
 ## 7. Visual check (gate)
