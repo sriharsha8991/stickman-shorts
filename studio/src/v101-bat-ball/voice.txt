@@ -1,0 +1,11 @@
+Your bat and ball cost a hundred and ten.
+The bat costs a hundred more.
+What did your ball cost?
+[pause 0.4]
+Ten? I said ten too.
+But then the bat's one-ten.
+That's one-twenty.
+The ball is five.
+More than half of top students said ten.
+Your fast brain answered. It never checked.
+Did you say ten?

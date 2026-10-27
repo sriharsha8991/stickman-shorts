@@ -42,6 +42,7 @@ import { Video as H28CyclicSigh, DURATION as H28CyclicSigh_DURATION } from "./h2
 import { Video as L003PayInFour, DURATION as L003PayInFour_DURATION } from "./l003-pay-in-four/Video";
 import { Video as V017CrossedPrice, DURATION as V017CrossedPrice_DURATION } from "./v017-crossed-price/Video";
 import { Video as H15FreshStart, DURATION as H15FreshStart_DURATION } from "./h15-fresh-start/Video";
+import { Video as V101BatBall, DURATION as V101BatBall_DURATION } from "./v101-bat-ball/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -362,6 +363,15 @@ export const RemotionRoot: React.FC = () => {
         width={1080}
         height={1920}
         defaultProps={{ music: 0.35, sfx: 0.8, voice: "", captions: false }}
+      />
+      <Composition
+        id="V101BatBall"
+        component={V101BatBall}
+        durationInFrames={V101BatBall_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
       />
       {/* stickman-video:compositions */}
           <Composition id="SparkSheet" component={SparkSheet} durationInFrames={60} fps={30} width={1920} height={1080} />
