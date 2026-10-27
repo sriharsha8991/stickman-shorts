@@ -1,0 +1,89 @@
+{
+  "fps": 30,
+  "durationInFrames": 772,
+  "seconds": 25.73,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 4.019,
+      "startFrame": 6,
+      "endFrame": 121,
+      "words": 10,
+      "text": "You start fresh on Monday? Gym visits jump thirty-three percent."
+    },
+    {
+      "i": 1,
+      "start": 4.179,
+      "end": 6.845,
+      "startFrame": 125,
+      "endFrame": 205,
+      "words": 9,
+      "text": "But one day beats Monday by a mile. Which?"
+    },
+    {
+      "i": 2,
+      "start": 7.005,
+      "end": 9.971,
+      "startFrame": 210,
+      "endFrame": 299,
+      "words": 8,
+      "text": "They tracked almost twelve thousand students' gym swipes."
+    },
+    {
+      "i": 3,
+      "start": 10.131,
+      "end": 13.032,
+      "startFrame": 304,
+      "endFrame": 391,
+      "words": 8,
+      "text": "New month? Plus fourteen. New year? Plus twelve."
+    },
+    {
+      "i": 4,
+      "start": 13.192,
+      "end": 15.517,
+      "startFrame": 396,
+      "endFrame": 466,
+      "words": 4,
+      "text": "New semester? Forty-seven percent."
+    },
+    {
+      "i": 5,
+      "start": 15.677,
+      "end": 17.747,
+      "startFrame": 470,
+      "endFrame": 532,
+      "words": 7,
+      "text": "Fresh dates feel like a clean slate."
+    },
+    {
+      "i": 6,
+      "start": 17.907,
+      "end": 20.637,
+      "startFrame": 537,
+      "endFrame": 619,
+      "words": 9,
+      "text": "Catch: it's when people start, not if they last."
+    },
+    {
+      "i": 7,
+      "start": 20.797,
+      "end": 23.464,
+      "startFrame": 624,
+      "endFrame": 704,
+      "words": 9,
+      "text": "So pick a landmark. Then plan for the dip."
+    },
+    {
+      "i": 8,
+      "start": 23.624,
+      "end": 24.968,
+      "startFrame": 709,
+      "endFrame": 749,
+      "words": 3,
+      "text": "Next door glows—"
+    }
+  ],
+  "chapters": []
+}
