@@ -39,6 +39,8 @@ import { Video as V016TwoWeeks, DURATION as V016TwoWeeks_DURATION } from "./v016
 import { Video as H04WalkVsStand, DURATION as H04WalkVsStand_DURATION } from "./h04-walk-vs-stand/Video";
 import { Video as H28CyclicSigh, DURATION as H28CyclicSigh_DURATION } from "./h28-cyclic-sigh/Video";
 import { Video as L003PayInFour, DURATION as L003PayInFour_DURATION } from "./l003-pay-in-four/Video";
+import { Video as V017CrossedPrice, DURATION as V017CrossedPrice_DURATION } from "./v017-crossed-price/Video";
+import { Video as H15FreshStart, DURATION as H15FreshStart_DURATION } from "./h15-fresh-start/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -341,6 +343,24 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         defaultProps={{ music: 0.24, sfx: 0.6, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="V017CrossedPrice"
+        component={V017CrossedPrice}
+        durationInFrames={V017CrossedPrice_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.35, sfx: 0.8, voice: "", captions: false }}
+      />
+      <Composition
+        id="H15FreshStart"
+        component={H15FreshStart}
+        durationInFrames={H15FreshStart_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.35, sfx: 0.8, voice: "", captions: false }}
       />
       {/* stickman-video:compositions */}
           <Composition id="SparkSheet" component={SparkSheet} durationInFrames={60} fps={30} width={1920} height={1080} />
