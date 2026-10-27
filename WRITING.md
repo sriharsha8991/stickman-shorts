@@ -119,6 +119,12 @@ test. The owner's read: clarity dropped, and the first 10 s decide everything.
     twist so the gap lands as a pause; end real questions with "?"; write numbers the way you'd say them to a
     friend ("a third", "almost half") when the exact figure isn't the point.
 40. **Fewer, better.** One Short per run. Never two Shorts in a row with the same world, opening or music.
+41. **What the data says works (Studio, Shorts, 28 days to 25 Oct).** Best stayed-to-watch: "Why the next
+    episode starts by itself" 58.1% (36 s), "Nobody buys the medium popcorn" 51.5% (37 s), "red notification
+    dot" 42.5% (35 s): an everyday object the viewer already owns + "why does this happen to you". Worst:
+    "POV: the demo worked 5 minutes ago" 29.6% (19 s) and "AI couldn't count the r's in strawberry" 30.2% (23 s):
+    in-jokes and AI trivia. Short length did not help. Every Short still stopped at ~1.1–1.3K views (one-day
+    spike), so stayed-to-watch must climb well above these numbers before YouTube widens a test.
 
 ## Myths we never repeat
 - "Humans have an 8-second attention span, less than a goldfish": no underlying study exists (BBC, 2017; WSJ, 2017).
