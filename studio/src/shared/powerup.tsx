@@ -349,7 +349,8 @@ export const PowerUp: React.FC<{
   color?: string;
   rival?: string; // clash: the other side's colour
   gauge?: { label?: string; value: number };
-}> = ({ kind, f, at, x, y, h = 360, tx = 540, ty = 700, dir = 1, layer = "back", color = SPARK_COLOR, rival = COL.red, gauge }) => {
+  flash?: boolean; // full-screen impact flash; off by default since 2026-10-27 (it hid the hook in the first second)
+}> = ({ kind, f, at, x, y, h = 360, tx = 540, ty = 700, dir = 1, layer = "back", color = SPARK_COLOR, rival = COL.red, gauge, flash = false }) => {
   const d = f - at;
   if (d < -2 || d > 75) return null;
   const peak = POWER_PEAK[kind];
@@ -366,7 +367,7 @@ export const PowerUp: React.FC<{
       ) : (
         <g>
           <Shockwave f={f} at={at + peak} x={x} ground={y} />
-          <ImpactFrame f={f} at={at + peak} x={x} y={y - h * 0.5} />
+          {flash && <ImpactFrame f={f} at={at + peak} x={x} y={y - h * 0.5} />}
         </g>
       );
     }
@@ -376,7 +377,7 @@ export const PowerUp: React.FC<{
       ) : (
         <g>
           <Shockwave f={f} at={at + peak} x={tx} ground={ty + 120} size={0.8} />
-          <ImpactFrame f={f} at={at + peak} x={tx} y={ty} />
+          {flash && <ImpactFrame f={f} at={at + peak} x={tx} y={ty} />}
         </g>
       );
     case "beam": {
@@ -386,7 +387,7 @@ export const PowerUp: React.FC<{
       ) : (
         <g>
           <Beam f={f} at={at + peak - 8} x1={x + dir * h * 0.32} y1={y - h * 0.62} x2={tx} y2={ty} color={color} />
-          <ImpactFrame f={f} at={at + peak} x={tx} y={ty} />
+          {flash && <ImpactFrame f={f} at={at + peak} x={tx} y={ty} />}
         </g>
       );
     }
@@ -411,7 +412,7 @@ export const PowerUp: React.FC<{
       );
     }
     case "meter": {
-      if (!back) return <ImpactFrame f={f} at={at + peak} x={tx} y={ty} />;
+      if (!back) return flash ? <ImpactFrame f={f} at={at + peak} x={tx} y={ty} /> : null;
       const v = gauge?.value ?? interpolate(d, [0, peak - 6, peak], [0, 1, 1.15], clamp);
       return (
         <g>

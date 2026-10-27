@@ -103,6 +103,23 @@ test), 96.5% of views from the Shorts feed, audience 74% male and ~60% aged 25�
 32. **Talk to a working professional**: office, deadlines, salary, code review, the commute. That's who watches.
 33. **Series tag** "Hidden Mechanism #NN" small in a corner, and Spark's same sign-off pose on the last frame.
 
+## H. First 10 seconds + clarity (owner, 2026-10-27)
+Analytics for the 28 days to 25 Oct: 16.1K views and 36.9 watch hours, so the average view lasted **about 8 s**.
+Views peaked around 22 Oct and collapsed by 25 Oct. Older Shorts get ~0 views because they failed their seed
+test. The owner's read: clarity dropped, and the first 10 s decide everything.
+34. **0–2 s = one plain sentence, ≤ 8 words, one object on screen.** No spoken long numbers, no jargon, no
+    setup. Muted viewers must get it from Spark's face + one object + ≤ 4 overlay words. No full-screen flash.
+35. **2–5 s = why it matters to you.** Name the viewer's own stake (money, time, sleep, work).
+36. **5–10 s = the first payoff.** Give the surprising fact or answer here, not at 15 s. The re-hook at ~14 s
+    adds a twist on top of it.
+37. **One idea, max two numbers.** If a stat needs a second sentence to make sense, cut it. Clear > complete.
+38. **One text layer at a time.** Captions plus at most one slam word. Sources and the series tag come after
+    10 s, small, at the bottom.
+39. **Craft the voice (af_heart, 1.0×).** Short lines (4–9 words), one thought each; a line break before the
+    twist so the gap lands as a pause; end real questions with "?"; write numbers the way you'd say them to a
+    friend ("a third", "almost half") when the exact figure isn't the point.
+40. **Fewer, better.** One Short per run. Never two Shorts in a row with the same world, opening or music.
+
 ## Myths we never repeat
 - "Humans have an 8-second attention span, less than a goldfish": no underlying study exists (BBC, 2017; WSJ, 2017).
 - "Open loops work because of the Zeigarnik effect": it failed a 2025 meta-analysis; resumption (Ovsiankina) holds.

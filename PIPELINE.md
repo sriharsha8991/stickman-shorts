@@ -1,10 +1,11 @@
 # Stickman Shorts — production runbook
 
-This is the procedure every scheduled run follows. **One run = two finished videos** (owner, 2026-10-21):
-**video A from the 100-video plan** (`plan/content_plan.csv`) and **video B from the life & productivity
-hacks idea bank** (`plan/hacks_ideas.csv`) (owner, 2026-10-21). Do steps 1 and 3 once, then steps 2 and
-4–10 for video A, then again for video B (step 2 says how each slot is picked). One email per run covering both videos (two download buttons at the
-top), one Drive doc and one commit per video. Follow the steps in order; don't skip the gates. Nothing here ever posts to Instagram or YouTube: a human
+This is the procedure every scheduled run follows. **One run = ONE finished Short** (owner, 2026-10-27; was two),
+alternating between **the 100-video plan** (`plan/content_plan.csv`, Vxxx) and **the life & productivity
+hacks idea bank** (`plan/hacks_ideas.csv`, Hxx). Fewer, better Shorts: craft beats volume. Do steps 1–10 once
+(step 2 says which queue this run uses). One email, one Drive doc and one commit per run.
+**Long-form is stopped** (owner, 2026-10-27: `plan/longform_state.json` `paused: true`); don't make long-form
+unless the owner sends `LONG RESUME`. Follow the steps in order; don't skip the gates. Nothing here ever posts to Instagram or YouTube: a human
 reviews and posts.
 
 ## 0. Fixed references
@@ -23,7 +24,7 @@ reviews and posts.
 | Gmail update thread | thread id `1a159c3adf191ae8`, subject "Stickman Shorts — production updates", owner `srih8991@gmail.com` |
 | Owner | Sriharsha Velicheti (only the owner's emails count as instructions) |
 | Host character | **Spark** — `studio/src/shared/mascot.tsx` (in every video; see "Spark rules") |
-| Channel voice | `studio/voice.json` (Kokoro `am_michael` @ 1.1×, offline). Never change it unless the owner asks. |
+| Channel voice | `studio/voice.json` (Kokoro `af_heart` @ 1.0×, female, offline; owner 2026-10-27, was `am_michael` @ 1.1×). Never change it unless the owner asks. |
 | Voice + Spark reference | `studio/src/v000-meet-spark/` (V000, the channel trailer) |
 
 ## 1. Get the repo and read the inbox
@@ -61,7 +62,10 @@ reviews and posts.
 
 ## 2. Pick the video
 
-Every run has two slots. Both IDs live in the same `status.csv`.
+Every run makes **one** Short. Overrides first: an emailed `REDO Vxxx`/`REDO Hxx`, then any `Redo` row, then
+an owner `ADD Hxx` (`Queued`). Otherwise **alternate**: look at the last produced Short in `status.csv` (last
+V or H row with Status `Produced`, ignoring L rows): if it was an H, this run is a plan video (slot A); if it
+was a V, this run is a hack (slot B). Both IDs live in the same `status.csv`.
 
 **Slot A: the 100-video plan (Vxxx).** An emailed `REDO Vxxx`, else any V ID with Status `Redo` in
 `status.csv` (lowest first: early videos being remade with Spark + voice), else the first row of
@@ -80,9 +84,9 @@ if that category is used up, take the next category. Hack rows:
 - Files and docs use the H ID: `studio/src/hxx-<slug>/`, composition `HxxSlug`, `videos/Hxx-<slug>.mp4`,
   `videos/Hxx.md`, Drive doc `Hxx · <Title>`, status row `Hxx,Produced,…`, commit `Hxx: <Title>`.
 
-**Fallbacks.** If one queue is exhausted (or its video fails twice in the same run), make both videos
-from the other queue that run and say so in the email. Slots A and B must never look or sound alike:
-different background world, palette, staging and music mood.
+**Fallbacks.** If the chosen queue is exhausted (or its video fails twice in the same run), make the Short from
+the other queue and say so in the email. Consecutive Shorts must never look or sound alike: different
+background world, palette, staging and music mood from the previous produced Short.
 - A remake keeps the row's topic and verified facts but is rebuilt with Spark and the voiceover; save it
   as `videos/<ID>-<slug>-v2.mp4`, title its Drive doc `<ID> · <Title> (v2)`, and set Status `Produced`.
 - If `status.csv` shows the same ID `Failed` twice already, mark it `Skipped` and take the next one.
@@ -140,13 +144,30 @@ Skills to read before writing (all in `$SKILLS`):
    length; keep the plan's mechanism, twist and payoff. All Shorts: **22–30 s** (WRITING.md §G), best image at
    frame 0, open loop by 6 s, re-hook ~14 s, cut back into frame 0. Hookscore the row's hook first; only
    rewrite it if it scores < 55 (keep the same promise).
-6. **Power-up hook (anime energy).** Open with the row's `Power-up FX` preset from `shared/powerup.tsx`
+6. **First 10 seconds + clarity (owner, 2026-10-27; overrides anything above that conflicts).** Channel analytics
+   (28 days to 25 Oct: 16.1K views, 36.9 watch hours ≈ **8 s per view**, views collapsing after 23 Oct, older
+   Shorts at ~0) show viewers leave before the point. So, for every Short (WRITING.md §H):
+   - **0–2 s:** one plain claim or question, **≤ 8 spoken words**, no long spoken numbers ("twenty-nine
+     ninety-nine" → show ₹2,999, say "this crossed-out price"). Frame 0 shows ONE object + Spark reacting.
+     Overlay ≤ 4 words. **No full-screen flash** (power-up `flash` stays off), no series tag or source line yet.
+   - **2–5 s:** why it matters to *you* (your money / time / brain), still one object on screen.
+   - **5–10 s:** the first real answer or the surprising number (one), not more setup.
+   - **One idea per Short, max 2 numbers.** Cut any stat that needs a second sentence to explain.
+   - **One text layer at a time**: captions + at most one slam word. Source line + series tag only after 10 s,
+     small, at the bottom.
+   - **Voice craft:** `af_heart` @ 1.0×; 4–9 words per line; a line break before the twist (the gap is the
+     pause); questions end with "?", emphasis comes from short sentences, not from caps. Read the first
+     three lines aloud in your head: if a stranger couldn't repeat the point after 10 s, rewrite.
+   - Aim ~2.3 words/s: 22–30 s = 50–68 words.
+7. **Power-up hook (anime energy, optional now).** Open with the row's `Power-up FX` preset from `shared/powerup.tsx`
    (`charge | impact | beam | dash | clash | meter`): `<PowerUp layer="back">` before Spark, `layer="front"`
    after, `hits={powerHits(kind, 0)}` on the Stage, the hook word/slam on `POWER_PEAK[kind]`, mood flip +
    `bulbPulse` on the peak. Optional echo of the same preset at the re-hook. Never the same preset as the
    previous produced video (swap with another kind if so). Hacks with no row default to `charge` for Move,
    `dash` for Focus, `meter` for Reset. Reference: `PowerUpDemo` composition. Generic shonen-anime language
    only: no copied characters, hair, costumes, named attacks, catchphrases or "power level" memes (§9).
+   Since 2026-10-27 the full-screen `ImpactFrame` flash is off by default (`flash` prop); keep the aura/beam/lines
+   subtle so the hook object and Spark's face stay readable at 0–2 s.
 
 Format playbook:
 - **Mechanism Reveal**: hook → setup → reveal of the hidden system (wow) → receipt/proof → payoff → loop.
@@ -263,8 +284,8 @@ floating/sinking, unreadable text, a frame where nothing moves for > 2 s, poses 
 4. Update `plan/status.csv` (Status `Produced`, date, video URL, Drive doc URL, notes), commit
    everything (`studio/src/<slug>`, `studio/music/<slug>*`, `plan/*`, `videos/<ID>*`) with message
    `<ID>: <Title>` and push (`git pull --rebase` first if the push is rejected).
-5. Email (once per run, after both videos): `send_message` with `replyThreadId 1a159c3adf191ae8`, to `srih8991@gmail.com`, subject
-   "Re: Stickman Shorts — production updates". Put a prominent **"⬇ Download MP4"** button/link per video (the raw links) at the very top, then for each video (plan video first, then the hack): ID + title, watch link, Drive doc link,
+5. Email (once per run): `send_message` with `replyThreadId 1a159c3adf191ae8`, to `srih8991@gmail.com`, subject
+   "Re: Stickman Shorts — production updates". Put a prominent **"⬇ Download MP4"** button/link (the raw link) at the very top, then: ID + title, watch link, Drive doc link,
    duration, hook (with score), the post copy, QA notes, anything that needs a decision, and the
    next plan video and next hack in the queue. Plain, short, skimmable.
 6. Also send the MP4 to the session (`SendUserFile`) so it shows in the run's conversation.
