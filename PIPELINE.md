@@ -69,7 +69,9 @@ was a V, this run is a hack (slot B). Both IDs live in the same `status.csv`.
 
 **Slot A: the 100-video plan (Vxxx).** An emailed `REDO Vxxx`, else any V ID with Status `Redo` in
 `status.csv` (lowest first: early videos being remade with Spark + voice), else the first row of
-`content_plan.csv` whose ID is not `Produced` or `Skipped`.
+`content_plan.csv` whose ID is not `Produced`, `Skipped` or `Deferred`. **Everyday topics first** (owner,
+2026-10-27): rows marked `Deferred` in `status.csv` (dev/AI in-joke POV memes, which held viewers worst) are
+taken only when no other plan row is left, and then rewritten as an everyday "why does this happen to you" Short.
 
 **Slot B: life & productivity hacks (Hxx, from `plan/hacks_ideas.csv`).** An emailed `REDO Hxx`, else
 any H ID with Status `Redo`, else any H ID with Status `Queued` (owner's `ADD Hxx`, oldest first), else
