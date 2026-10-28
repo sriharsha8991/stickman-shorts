@@ -26,7 +26,9 @@
     "1a17ab472c3baa9b",
     "1a17b5d4eaf6eb9b",
     "1a17d0e2c23941b3",
-    "1a17ec21416f5713"
+    "1a17ec21416f5713",
+    "1a1807bf652c4e61"
   ],
-  "paused": false
+  "paused": false,
+  "note": "2026-10-28: Gmail read failed (quota); last_message_id kept at the last processed message so owner replies since then are read next run."
 }
