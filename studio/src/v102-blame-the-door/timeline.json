@@ -1,0 +1,125 @@
+{
+  "fps": 30,
+  "durationInFrames": 872,
+  "seconds": 29.04,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 2.547,
+      "startFrame": 6,
+      "endFrame": 76,
+      "words": 7,
+      "text": "Walked in. Forgot why? Blame the door."
+    },
+    {
+      "i": 1,
+      "start": 2.707,
+      "end": 4.157,
+      "startFrame": 81,
+      "endFrame": 125,
+      "words": 5,
+      "text": "You didn't lose your memory."
+    },
+    {
+      "i": 2,
+      "start": 4.317,
+      "end": 6.515,
+      "startFrame": 130,
+      "endFrame": 195,
+      "words": 7,
+      "text": "Why? Your brain saves life in scenes."
+    },
+    {
+      "i": 3,
+      "start": 6.675,
+      "end": 8.147,
+      "startFrame": 200,
+      "endFrame": 244,
+      "words": 5,
+      "text": "A doorway ends the scene."
+    },
+    {
+      "i": 4,
+      "start": 8.307,
+      "end": 10.056,
+      "startFrame": 249,
+      "endFrame": 302,
+      "words": 6,
+      "text": "The last room gets filed away."
+    },
+    {
+      "i": 5,
+      "start": 10.216,
+      "end": 13.224,
+      "startFrame": 306,
+      "endFrame": 397,
+      "words": 8,
+      "text": "In lab tests, people carried objects through rooms."
+    },
+    {
+      "i": 6,
+      "start": 13.384,
+      "end": 15.453,
+      "startFrame": 402,
+      "endFrame": 464,
+      "words": 7,
+      "text": "Right after a door, they forgot more."
+    },
+    {
+      "i": 7,
+      "start": 15.613,
+      "end": 17.875,
+      "startFrame": 468,
+      "endFrame": 536,
+      "words": 6,
+      "text": "Same walk, no door? Fewer mistakes."
+    },
+    {
+      "i": 8,
+      "start": 18.275,
+      "end": 19.96,
+      "startFrame": 548,
+      "endFrame": 599,
+      "words": 7,
+      "text": "But a newer test found a catch."
+    },
+    {
+      "i": 9,
+      "start": 20.12,
+      "end": 22.168,
+      "startFrame": 604,
+      "endFrame": 665,
+      "words": 8,
+      "text": "It only showed up when minds were busy."
+    },
+    {
+      "i": 10,
+      "start": 22.328,
+      "end": 24.291,
+      "startFrame": 670,
+      "endFrame": 729,
+      "words": 5,
+      "text": "Like yours, juggling three things."
+    },
+    {
+      "i": 11,
+      "start": 24.451,
+      "end": 26.2,
+      "startFrame": 734,
+      "endFrame": 786,
+      "words": 6,
+      "text": "So carry one thought, not three."
+    },
+    {
+      "i": 12,
+      "start": 26.36,
+      "end": 28.28,
+      "startFrame": 791,
+      "endFrame": 848,
+      "words": 8,
+      "text": "What did you forget walking into a room?"
+    }
+  ],
+  "chapters": []
+}
