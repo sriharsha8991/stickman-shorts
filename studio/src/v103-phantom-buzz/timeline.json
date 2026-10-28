@@ -1,0 +1,89 @@
+{
+  "fps": 30,
+  "durationInFrames": 600,
+  "seconds": 19.97,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 2.333,
+      "startFrame": 6,
+      "endFrame": 70,
+      "words": 6,
+      "text": "Your pocket buzzed. Your phone didn't."
+    },
+    {
+      "i": 1,
+      "start": 2.493,
+      "end": 4.584,
+      "startFrame": 75,
+      "endFrame": 138,
+      "words": 6,
+      "text": "Stop checking. It's not your phone."
+    },
+    {
+      "i": 2,
+      "start": 4.744,
+      "end": 6.92,
+      "startFrame": 142,
+      "endFrame": 208,
+      "words": 8,
+      "text": "Two in three hospital staff felt it too."
+    },
+    {
+      "i": 3,
+      "start": 7.08,
+      "end": 8.851,
+      "startFrame": 212,
+      "endFrame": 266,
+      "words": 7,
+      "text": "Your brain is waiting for a buzz."
+    },
+    {
+      "i": 4,
+      "start": 9.251,
+      "end": 11.021,
+      "startFrame": 278,
+      "endFrame": 331,
+      "words": 7,
+      "text": "So a shirt rub becomes a call."
+    },
+    {
+      "i": 5,
+      "start": 11.181,
+      "end": 12.696,
+      "startFrame": 335,
+      "endFrame": 381,
+      "words": 5,
+      "text": "A twitch becomes a text."
+    },
+    {
+      "i": 6,
+      "start": 12.856,
+      "end": 14.627,
+      "startFrame": 386,
+      "endFrame": 439,
+      "words": 5,
+      "text": "That's the researchers' best guess."
+    },
+    {
+      "i": 7,
+      "start": 14.787,
+      "end": 17.219,
+      "startFrame": 444,
+      "endFrame": 517,
+      "words": 8,
+      "text": "Off vibrate stopped it for most who tried."
+    },
+    {
+      "i": 8,
+      "start": 17.379,
+      "end": 19.213,
+      "startFrame": 521,
+      "endFrame": 576,
+      "words": 8,
+      "text": "When did your pocket last lie to you?"
+    }
+  ],
+  "chapters": []
+}

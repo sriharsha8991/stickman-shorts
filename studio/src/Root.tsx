@@ -46,6 +46,7 @@ import { Video as V101BatBall, DURATION as V101BatBall_DURATION } from "./v101-b
 import { Video as V025PaidToStay, DURATION as V025PaidToStay_DURATION } from "./v025-paid-to-stay/Video";
 import { Video as V102BlameTheDoor, DURATION as V102BlameTheDoor_DURATION } from "./v102-blame-the-door/Video";
 import { Video as V026OnlyTwoLeft, DURATION as V026OnlyTwoLeft_DURATION } from "./v026-only-two-left/Video";
+import { Video as V103PhantomBuzz, DURATION as V103PhantomBuzz_DURATION } from "./v103-phantom-buzz/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -398,6 +399,15 @@ export const RemotionRoot: React.FC = () => {
         id="V026OnlyTwoLeft"
         component={V026OnlyTwoLeft}
         durationInFrames={V026OnlyTwoLeft_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="V103PhantomBuzz"
+        component={V103PhantomBuzz}
+        durationInFrames={V103PhantomBuzz_DURATION}
         fps={30}
         width={1080}
         height={1920}
