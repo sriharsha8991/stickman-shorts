@@ -115,7 +115,7 @@ test. The owner's read: clarity dropped, and the first 10 s decide everything.
 37. **One idea, max two numbers.** If a stat needs a second sentence to make sense, cut it. Clear > complete.
 38. **One text layer at a time.** Captions plus at most one slam word. Sources and the series tag come after
     10 s, small, at the bottom.
-39. **Craft the voice (af_heart, 1.0×).** Short lines (4–9 words), one thought each; a line break before the
+39. **(Updated 2026-10-29, see §J.) Craft the voice (af_heart, 1.0×).** Short lines (4–9 words), one thought each; a line break before the
     twist so the gap lands as a pause; end real questions with "?"; write numbers the way you'd say them to a
     friend ("a third", "almost half") when the exact figure isn't the point.
 40. **Fewer, better.** One Short per run. Never two Shorts in a row with the same world, opening or music.
@@ -147,6 +147,26 @@ half the frames are charts, and Spark lectures instead of living the moment. Fix
     right before the reveal, then the hit. Keep the voice on top.
 48. **Peak, then end fast.** People remember the peak and the end (vidIQ on Hoyos): payoff, one action line,
     cut back into frame 0.
+
+## J. Clean, slow, easy storytelling (owner, 2026-10-29, from viewer feedback; overrides §G, §H and §I where they conflict)
+Viewers told the owner the Shorts are fast and hard to understand, so they don't make the effort, and the abstract
+scene breaks don't make sense. Clarity now beats speed.
+49. **Basic English.** Everyday words a viewer with basic English knows. Short, complete sentences with a subject
+    and a verb. No idioms, puns or clever phrasing. Explain any needed term in plain words straight after it.
+50. **No fragments.** "Same box." → "It was the same box." "Stop two steps early?" → "What if people stopped two
+    steps before the end?"
+51. **Tell it as a story, in order.** Who → where → what happened → what scientists found → why → what you can do →
+    question. Every sentence leads to the next ("So…", "But…", "That's because…"). Nothing happens on screen that
+    the narration has not set up.
+52. **No abstract jumps.** Max two places. Announce every change of place in the narration. Use metaphors only
+    if they are obvious at a glance, and say them out loud ("Think of it like a price tag for your effort.").
+53. **Slow down and breathe.** Voice 0.85×, 0.45 s between lines, a 0.6–0.9 s pause after the stakes, before the
+    twist and before the takeaway. About 2.2 words per second overall (we were near 3). Stories 30–45 s; tests 20–30 s.
+54. **Calm pictures.** One main action per sentence, shots held 2.5–5 s, slow camera moves. Keep the thing being
+    explained on screen and still while it is explained.
+55. **Example rewrite.** Too fast: "Builders bid 63% more. Same box. Their effort was the price tag." Clear: "The
+    people who built the box offered sixty-three percent more for it. [pause] It was the same box. The only
+    difference was their own work."
 
 ## Myths we never repeat
 - "Humans have an 8-second attention span, less than a goldfish": no underlying study exists (BBC, 2017; WSJ, 2017).

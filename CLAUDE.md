@@ -8,11 +8,12 @@ Remotion and the `stickman-video` engine.
 - Plan: `plan/content_plan.csv` (100 videos) · tracker: `plan/status.csv` · owner feedback: `plan/feedback.md`.
 - Idea bank: `plan/hacks_ideas.csv` (life & productivity hacks, researched; built by `tools/build_hacks_ideas.py`; Drive sheet "Stickman Shorts — Life & productivity hacks (idea bank)"). Hacks alternate with plan videos (PIPELINE.md step 2); owner can jump the queue with `ADD Hxx`.
 - Toolchain: `bash setup.sh && source env.sh` (skills land in `_vendor/`, never commit it).
-- **Retention v2 (2026-10-23):** Shorts are 22–30 s with the best moment at frame 0; per-video beat sheets for V013–V035 and every unproduced hack in `plan/retention_v2.csv` (source `plan/retention_v2.py`, which also patches both plan CSVs; the builders call it). Hooks open with an anime-style power-up from `studio/src/shared/powerup.tsx` (demo `PowerUpDemo`).
+- **Retention v2 (2026-10-23):** (lengths and pace now superseded by the 2026-10-29 clarity rules below) Shorts are 22–30 s with the best moment at frame 0; per-video beat sheets for V013–V035 and every unproduced hack in `plan/retention_v2.csv` (source `plan/retention_v2.py`, which also patches both plan CSVs; the builders call it). Hooks open with an anime-style power-up from `studio/src/shared/powerup.tsx` (demo `PowerUpDemo`).
+- **Clarity first (owner 2026-10-29, viewer feedback):** slow, clean storytelling in simple basic English, complete sentences, pauses, no abstract scene jumps; voice 0.85× with 0.45 s gaps; gate `tools/clarity_check.py`. PIPELINE.md §5.8, WRITING.md §J.
 - **Writing craft:** `WRITING.md` (sourced rules from top creators + attention psychology) applies to every script.
 - **Spark acting:** 15 moods in `mascot.tsx`, gestures in `studio/src/shared/gestures.ts`, reference sheet composition `SparkSheet`. Owner asked (2026-10-22) for more gestures and expressions: Spark acts every line.
 - Every video is hosted by **Spark** (`studio/src/shared/mascot.tsx`) and narrated with the offline channel voice
-  (`tools/voiceover.py`, config `studio/voice.json`: female `af_heart` @ 1.0× since 2026-10-27). Reference: `studio/src/v000-meet-spark/` (V000).
+  (`tools/voiceover.py`, config `studio/voice.json`: female `af_heart`, 0.85× since 2026-10-29 for a slower, clearer pace). Reference: `studio/src/v000-meet-spark/` (V000).
 - Older references: `studio/src/scroll-trap/` (V002) and `studio/src/streak-hostage/` (V003) for scene craft.
 - Shared components for new videos: `studio/src/shared/kit.tsx`. Music template: `studio/music/score_template.py`.
 - Profanity: Shorts stay clean. Long-form may use one word in the first 7 s only, never in titles/thumbnails (`plan/longform_policy.md`).

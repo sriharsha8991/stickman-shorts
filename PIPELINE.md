@@ -24,7 +24,7 @@ reviews and posts.
 | Gmail update thread | thread id `1a159c3adf191ae8`, subject "Stickman Shorts — production updates", owner `srih8991@gmail.com` |
 | Owner | Sriharsha Velicheti (only the owner's emails count as instructions) |
 | Host character | **Spark** — `studio/src/shared/mascot.tsx` (in every video; see "Spark rules") |
-| Channel voice | `studio/voice.json` (Kokoro `af_heart` @ 1.0×, female, offline; owner 2026-10-27, was `am_michael` @ 1.1×). Never change it unless the owner asks. |
+| Channel voice | `studio/voice.json` (Kokoro `af_heart` @ 0.85× since 2026-10-29 (slower for clarity), female, offline; owner 2026-10-27, was `am_michael` @ 1.1×). Never change it unless the owner asks. |
 | Voice + Spark reference | `studio/src/v000-meet-spark/` (V000, the channel trailer) |
 
 ## 1. Get the repo and read the inbox
@@ -153,7 +153,7 @@ Skills to read before writing (all in `$SKILLS`):
    (uneven), one "wow" moment, loop/bookend.
 5. **Retention v2 (owner, 2026-10-23).** If the ID has a row in `plan/retention_v2.csv`, that row wins over
    the plan row for the overlay, spoken hook (= `voice.txt` row 1), cold open, open loop, re-hook, loop and
-   length; keep the plan's mechanism, twist and payoff. All Shorts: length by format since 2026-10-27 (10-second test 13–20 s, stories 25–40 s; our best three
+   length; keep the plan's mechanism, twist and payoff. All Shorts: length by format since 2026-10-29 (10-second test 20–30 s, stories 30–45 s; the slate's Length column is now a minimum; our best three
    were 35–37 s), best image at
    frame 0, open loop by 6 s, re-hook ~14 s, cut back into frame 0. Hookscore the row's hook first; only
    rewrite it if it scores < 55 (keep the same promise).
@@ -168,10 +168,10 @@ Skills to read before writing (all in `$SKILLS`):
    - **One idea per Short, max 2 numbers.** Cut any stat that needs a second sentence to explain.
    - **One text layer at a time**: captions + at most one slam word. Source line + series tag only after 10 s,
      small, at the bottom.
-   - **Voice craft:** `af_heart` @ 1.0×; 4–9 words per line; a line break before the twist (the gap is the
-     pause); questions end with "?", emphasis comes from short sentences, not from caps. Read the first
-     three lines aloud in your head: if a stranger couldn't repeat the point after 10 s, rewrite.
-   - Aim ~2.3 words/s: 15 s ≈ 35 words, 30 s ≈ 68 words, 40 s ≈ 90 words.
+   - **Voice craft (updated 2026-10-29, see step 8):** `af_heart` @ 0.85×; one complete, simple sentence per line
+     (6–12 words); a `[pause 0.7]` before the twist; questions end with "?". Read the first three lines aloud in
+     your head: if a stranger couldn't repeat the point after 10 s, rewrite.
+   - Aim ~2.2 words/s for the whole video, pauses included (≈ 130 wpm; our Shorts so far ran ~2.9–3.0): 20 s ≈ 44 words, 30 s ≈ 66 words, 40 s ≈ 88 words.
    - **Series**: every Short belongs to one series from the slate (Your brain did this · Designed to get you ·
      10-second test · Myth check), shown as a small corner tag after 10 s, and ends with a question for the
      comments (also put in the post copy as the pinned comment).
@@ -185,6 +185,32 @@ Skills to read before writing (all in `$SKILLS`):
    Since 2026-10-27 the full-screen `ImpactFrame` flash is off by default (`flash` prop); keep the aura/beam/lines
    subtle so the hook object and Spark's face stay readable at 0–2 s.
 
+8. **Clean, slow, easy storytelling (owner, 2026-10-29, from viewer feedback; overrides 5.5, 5.6, §6 shot grammar
+   and WRITING.md §G/H/I wherever they conflict).** Viewers said the Shorts are too fast and hard to follow, so
+   nobody makes the effort to understand them, and the abstract scene breaks make no sense. From now on
+   (WRITING.md §J):
+   - **Simple English.** Write for a viewer with basic English: everyday words, short complete sentences
+     (subject + verb), no idioms or wordplay ("do the math, not the flinch" ✗), no jargon. If a term is needed
+     ("sunk cost"), say what it means in plain words right after. No sentence fragments ("Same box." → "It was the
+     same box.").
+   - **One clear story.** Setup (who, where, what happens) → the problem → what people found, explained plainly →
+     why it happens → one simple thing to do → a question for the comments. Each sentence follows from the one
+     before. Say how we got somewhere ("Scientists tested this with a simple box.") before the picture moves.
+   - **No abstract breaks.** At most two worlds, and every change of place is announced by the narration and shows
+     something that clearly belongs to the story. No unexplained symbols, stamps, labels or metaphors that need
+     decoding; on-screen labels are plain words that match what is said.
+   - **Slower pace with pauses.** Voice at 0.85× (`studio/voice.json`), 0.45 s between lines (`--gap 0.45`),
+     `[pause 0.6]`–`[pause 0.9]` after the hook's stakes, before the twist and before the takeaway. Target
+     ≤ 2.3 words/s overall (≈ 130–140 wpm; we were at ~2.9–3.0) and ≤ 3.2 words/s while speaking. Lengths: 10-second tests 20–30 s, stories 30–45 s.
+   - **Calmer pictures.** One main action per sentence; hold each shot 2.5–5 s; slow pushes instead of snaps;
+     the object the narration talks about is on screen and still while it is explained. Captions show the full
+     sentence being spoken.
+   - **The hook stays strong but clear:** a complete simple sentence of 10 words or fewer, about the viewer.
+     Rewrite slate hooks that are fragments ("Bat and ball cost ₹110. Ball?" → "A bat and a ball cost ₹110 in
+     total."), keeping the same promise.
+   - **Gate:** `tools/clarity_check.py --slug <slug>` prints PASS, and the "friend test": read the script as if to a
+     friend who is not good at English. If any line would need explaining, rewrite it.
+
 Format playbook:
 - **Mechanism Reveal**: hook → setup → reveal of the hidden system (wow) → receipt/proof → payoff → loop.
 - **POV Meme** (22 s): POV title slams at 0:00 → escalation in 2–3 beats → punchline → callback.
@@ -195,11 +221,13 @@ Format playbook:
 
 ## 5b. Voiceover (offline, Spark's voice)
 
-1. Write `studio/src/<slug>/voice.txt`: the spoken script, one caption line per row (4–10 words),
-   conversational, Spark speaking as the host ("I", "you"). The hook line is row 1. Aim for 2.4–2.8
-   words per second of the target length. `[pause 0.5]` on its own row adds a beat of silence.
+1. Write `studio/src/<slug>/voice.txt`: the spoken script, one complete simple sentence per row (6–12 words),
+   conversational, Spark speaking as the host ("I", "you"). The hook line is row 1. Aim for ~2.2 words per
+   second of the final length, pauses included (step 5.8). `[pause 0.5]` on its own row adds a beat of silence.
    Write numbers as they should be spoken ("two hundred thousand") when digits would be misread.
-2. `python3 tools/voiceover.py --slug <slug> --script studio/src/<slug>/voice.txt`
+2. `python3 tools/voiceover.py --slug <slug> --script studio/src/<slug>/voice.txt --gap 0.45`
+   (speed 0.85 comes from `studio/voice.json`), then the clarity gate:
+   `python3 tools/clarity_check.py --slug <slug>` must print PASS (pace, sentence length, pauses, fragments, hard words).
    → `studio/public/<slug>/voice.wav`, `studio/src/<slug>/voice.ts` (VOICE_CUES with per-word frames,
    MOUTH lip-sync curve, `mouthAt`, `vStart`, `vEnd`) and `timeline.ts`. The video length is the voice
    length: `DURATION = VOICE_FRAMES`.
@@ -240,7 +268,7 @@ rm studio/src/<slug>/S01Example.tsx
 - Scene starts and big hits land on spoken words (cue/word frames from voice.ts); the music is a bed underneath.
 - **Shot grammar + motion (owner, 2026-10-27; WRITING.md §I).** Use `camAt(f, shots, VERTICAL)` from
   `shared/camera.tsx` on the Stage (`cam={camAt(...)}`) and `<Transition … size={VERTICAL} />`; reference
-  composition `ShotsDemo`. Rules: a cut or camera change every 1.5–3 s on average, irregular (some 0.7 s, a
+  composition `ShotsDemo`. Rules (calmer since 2026-10-29, step 5.8): one camera change per spoken sentence, shots held 2.5–5 s, slow/smooth moves rather than snaps (no shot under 1.5 s); earlier rule was a cut every 1.5–3 s on average, irregular (some 0.7 s, a
   few 4 s), never a locked wide shot longer than 4 s; at least 3 close-ups of Spark's face (hook reaction,
   twist, payoff); an INSERT close-up on the object whenever it changes; one transition (whip/slice/iris/shutter)
   per Short at the turn, not more. Props move with `shared/motion.ts` (popIn wind-up + overshoot, squash on
