@@ -48,6 +48,7 @@ import { Video as V102BlameTheDoor, DURATION as V102BlameTheDoor_DURATION } from
 import { Video as V026OnlyTwoLeft, DURATION as V026OnlyTwoLeft_DURATION } from "./v026-only-two-left/Video";
 import { Video as V103PhantomBuzz, DURATION as V103PhantomBuzz_DURATION } from "./v103-phantom-buzz/Video";
 import { Video as V021LossTwice, DURATION as V021LossTwice_DURATION } from "./v021-loss-twice/Video";
+import { Launch15, LAUNCH15_FRAMES } from "./launch-15/Launch15";
 import { Video as V104WobblyShelf, DURATION as V104WobblyShelf_DURATION } from "./v104-wobbly-shelf/Video";
 // stickman-video:imports
 
@@ -433,6 +434,7 @@ export const RemotionRoot: React.FC = () => {
         height={1920}
         defaultProps={{ music: 0.24, sfx: 0.7, voice: "voice.wav", captions: false }}
       />
+      <Composition id="Launch15" component={Launch15} durationInFrames={LAUNCH15_FRAMES} fps={30} width={1080} height={1920} defaultProps={{ music: 0.9, sfx: 0.7 }} />
       {/* stickman-video:compositions */}
           <Composition id="SparkSheet" component={SparkSheet} durationInFrames={60} fps={30} width={1920} height={1080} />
           <Composition id="CameraDemo" component={CameraDemo} durationInFrames={200} fps={30} width={1920} height={1080} />
