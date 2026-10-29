@@ -1,0 +1,125 @@
+{
+  "fps": 30,
+  "durationInFrames": 816,
+  "seconds": 27.18,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 2.035,
+      "startFrame": 6,
+      "endFrame": 61,
+      "words": 7,
+      "text": "You'd pay more for your wobbly shelf."
+    },
+    {
+      "i": 1,
+      "start": 2.195,
+      "end": 3.859,
+      "startFrame": 66,
+      "endFrame": 116,
+      "words": 6,
+      "text": "Even if the store one's better."
+    },
+    {
+      "i": 2,
+      "start": 4.019,
+      "end": 6.387,
+      "startFrame": 121,
+      "endFrame": 192,
+      "words": 6,
+      "text": "Scientists gave people a flat-pack box."
+    },
+    {
+      "i": 3,
+      "start": 6.547,
+      "end": 8.765,
+      "startFrame": 196,
+      "endFrame": 263,
+      "words": 7,
+      "text": "Half built it. Half got it ready-made."
+    },
+    {
+      "i": 4,
+      "start": 8.925,
+      "end": 11.229,
+      "startFrame": 268,
+      "endFrame": 337,
+      "words": 6,
+      "text": "The builders bid sixty-three percent more."
+    },
+    {
+      "i": 5,
+      "start": 11.389,
+      "end": 13.971,
+      "startFrame": 342,
+      "endFrame": 419,
+      "words": 8,
+      "text": "Same box. Their effort was the price tag."
+    },
+    {
+      "i": 6,
+      "start": 14.371,
+      "end": 15.565,
+      "startFrame": 431,
+      "endFrame": 467,
+      "words": 4,
+      "text": "But here's the catch."
+    },
+    {
+      "i": 7,
+      "start": 15.725,
+      "end": 17.155,
+      "startFrame": 472,
+      "endFrame": 515,
+      "words": 4,
+      "text": "Stop two steps early?"
+    },
+    {
+      "i": 8,
+      "start": 17.315,
+      "end": 18.893,
+      "startFrame": 519,
+      "endFrame": 567,
+      "words": 6,
+      "text": "Bids dropped to less than half."
+    },
+    {
+      "i": 9,
+      "start": 19.053,
+      "end": 20.824,
+      "startFrame": 572,
+      "endFrame": 625,
+      "words": 7,
+      "text": "You love the finish, not the shelf."
+    },
+    {
+      "i": 10,
+      "start": 20.984,
+      "end": 22.392,
+      "startFrame": 630,
+      "endFrame": 672,
+      "words": 4,
+      "text": "Selling something you made?"
+    },
+    {
+      "i": 11,
+      "start": 22.552,
+      "end": 24.28,
+      "startFrame": 677,
+      "endFrame": 728,
+      "words": 6,
+      "text": "Price it like a stranger would."
+    },
+    {
+      "i": 12,
+      "start": 24.44,
+      "end": 26.424,
+      "startFrame": 733,
+      "endFrame": 793,
+      "words": 7,
+      "text": "What's the wobbliest thing you still love?"
+    }
+  ],
+  "chapters": []
+}

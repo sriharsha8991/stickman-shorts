@@ -48,6 +48,7 @@ import { Video as V102BlameTheDoor, DURATION as V102BlameTheDoor_DURATION } from
 import { Video as V026OnlyTwoLeft, DURATION as V026OnlyTwoLeft_DURATION } from "./v026-only-two-left/Video";
 import { Video as V103PhantomBuzz, DURATION as V103PhantomBuzz_DURATION } from "./v103-phantom-buzz/Video";
 import { Video as V021LossTwice, DURATION as V021LossTwice_DURATION } from "./v021-loss-twice/Video";
+import { Video as V104WobblyShelf, DURATION as V104WobblyShelf_DURATION } from "./v104-wobbly-shelf/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -418,6 +419,15 @@ export const RemotionRoot: React.FC = () => {
         id="V021LossTwice"
         component={V021LossTwice}
         durationInFrames={V021LossTwice_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.24, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="V104WobblyShelf"
+        component={V104WobblyShelf}
+        durationInFrames={V104WobblyShelf_DURATION}
         fps={30}
         width={1080}
         height={1920}
