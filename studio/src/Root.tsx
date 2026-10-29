@@ -51,6 +51,7 @@ import { Video as V021LossTwice, DURATION as V021LossTwice_DURATION } from "./v0
 import { Launch15, LAUNCH15_FRAMES } from "./launch-15/Launch15";
 import { LaunchKeynote, KEYNOTE_FRAMES } from "./launch-15/LaunchKeynote";
 import { Video as V104WobblyShelf, DURATION as V104WobblyShelf_DURATION } from "./v104-wobbly-shelf/Video";
+import { Video as V018TypingDots, DURATION as V018TypingDots_DURATION } from "./v018-typing-dots/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -430,6 +431,15 @@ export const RemotionRoot: React.FC = () => {
         id="V104WobblyShelf"
         component={V104WobblyShelf}
         durationInFrames={V104WobblyShelf_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.24, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="V018TypingDots"
+        component={V018TypingDots}
+        durationInFrames={V018TypingDots_DURATION}
         fps={30}
         width={1080}
         height={1920}

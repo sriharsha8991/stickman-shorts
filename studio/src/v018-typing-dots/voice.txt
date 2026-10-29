@@ -1,0 +1,23 @@
+Why do you feel nervous when the typing dots stop?
+[pause 0.7]
+Your friend was typing a message to you.
+[pause 0.7]
+Then the dots stopped, and nothing arrived.
+[pause 0.9]
+Scientists tested this feeling with a computer game.
+[pause 0.6]
+A snake under a rock meant an electric shock.
+[pause 0.8]
+Some rocks had a fifty-fifty chance of a snake.
+[pause 0.9]
+Those fifty-fifty rocks caused the most stress.
+[pause 0.7]
+Knowing a shock was coming was less stressful.
+[pause 0.8]
+Now, back to your phone.
+[pause 0.6]
+The stopped dots also leave you guessing.
+[pause 0.9]
+So, put your phone away, and wait.
+[pause 0.7]
+How long have you waited for a reply?
