@@ -1,0 +1,107 @@
+{
+  "fps": 30,
+  "durationInFrames": 1297,
+  "seconds": 43.21,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 2.739,
+      "startFrame": 6,
+      "endFrame": 82,
+      "words": 9,
+      "text": "Is your phone making you less smart right now?"
+    },
+    {
+      "i": 1,
+      "start": 3.539,
+      "end": 7.656,
+      "startFrame": 106,
+      "endFrame": 230,
+      "words": 12,
+      "text": "Most people say yes, but you might lose focus for another reason."
+    },
+    {
+      "i": 2,
+      "start": 8.456,
+      "end": 12.893,
+      "startFrame": 254,
+      "endFrame": 387,
+      "words": 8,
+      "text": "In 2017, scientists gave people a memory test."
+    },
+    {
+      "i": 3,
+      "start": 13.693,
+      "end": 16.637,
+      "startFrame": 411,
+      "endFrame": 499,
+      "words": 9,
+      "text": "People with their phone in another room did better."
+    },
+    {
+      "i": 4,
+      "start": 17.437,
+      "end": 19.997,
+      "startFrame": 523,
+      "endFrame": 600,
+      "words": 8,
+      "text": "So people said phones make us less smart."
+    },
+    {
+      "i": 5,
+      "start": 20.897,
+      "end": 24.289,
+      "startFrame": 627,
+      "endFrame": 729,
+      "words": 10,
+      "text": "But others repeated the test, and the difference was gone."
+    },
+    {
+      "i": 6,
+      "start": 25.089,
+      "end": 28.097,
+      "startFrame": 753,
+      "endFrame": 843,
+      "words": 8,
+      "text": "Then a review looked at fifty-six studies together."
+    },
+    {
+      "i": 7,
+      "start": 28.897,
+      "end": 32.076,
+      "startFrame": 867,
+      "endFrame": 962,
+      "words": 9,
+      "text": "It found only a small drop in short-term memory."
+    },
+    {
+      "i": 8,
+      "start": 32.876,
+      "end": 35.393,
+      "startFrame": 986,
+      "endFrame": 1062,
+      "words": 10,
+      "text": "So there may be an effect, but it is small."
+    },
+    {
+      "i": 9,
+      "start": 36.293,
+      "end": 39.003,
+      "startFrame": 1089,
+      "endFrame": 1170,
+      "words": 10,
+      "text": "Back at your desk, put your phone in another room."
+    },
+    {
+      "i": 10,
+      "start": 39.703,
+      "end": 41.409,
+      "startFrame": 1191,
+      "endFrame": 1242,
+      "words": 6,
+      "text": "Where is your phone right now?"
+    }
+  ],
+  "chapters": []
+}
