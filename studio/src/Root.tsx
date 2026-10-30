@@ -52,6 +52,7 @@ import { Launch15, LAUNCH15_FRAMES } from "./launch-15/Launch15";
 import { LaunchKeynote, KEYNOTE_FRAMES } from "./launch-15/LaunchKeynote";
 import { Video as V104WobblyShelf, DURATION as V104WobblyShelf_DURATION } from "./v104-wobbly-shelf/Video";
 import { Video as V018TypingDots, DURATION as V018TypingDots_DURATION } from "./v018-typing-dots/Video";
+import { Video as V105TickleYourself, DURATION as V105TickleYourself_DURATION } from "./v105-tickle-yourself/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -447,6 +448,15 @@ export const RemotionRoot: React.FC = () => {
       />
       <Composition id="Launch15" component={Launch15} durationInFrames={LAUNCH15_FRAMES} fps={30} width={1080} height={1920} defaultProps={{ music: 0.9, sfx: 0.7 }} />
       <Composition id="LaunchKeynote" component={LaunchKeynote} durationInFrames={KEYNOTE_FRAMES} fps={30} width={1080} height={1920} defaultProps={{ music: 0.95 }} />
+      <Composition
+        id="V105TickleYourself"
+        component={V105TickleYourself}
+        durationInFrames={V105TickleYourself_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.2, sfx: 0.6, voice: "voice.wav", captions: false }}
+      />
       {/* stickman-video:compositions */}
           <Composition id="SparkSheet" component={SparkSheet} durationInFrames={60} fps={30} width={1920} height={1080} />
           <Composition id="CameraDemo" component={CameraDemo} durationInFrames={200} fps={30} width={1920} height={1080} />

@@ -1,0 +1,80 @@
+{
+  "fps": 30,
+  "durationInFrames": 837,
+  "seconds": 27.9,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 2.291,
+      "startFrame": 6,
+      "endFrame": 69,
+      "words": 6,
+      "text": "Try to tickle yourself, right now."
+    },
+    {
+      "i": 1,
+      "start": 3.191,
+      "end": 6.156,
+      "startFrame": 96,
+      "endFrame": 185,
+      "words": 9,
+      "text": "Stop trying, because your brain blocks most of it."
+    },
+    {
+      "i": 2,
+      "start": 7.056,
+      "end": 9.296,
+      "startFrame": 212,
+      "endFrame": 279,
+      "words": 8,
+      "text": "Your brain knows what your hand will do."
+    },
+    {
+      "i": 3,
+      "start": 10.096,
+      "end": 12.08,
+      "startFrame": 303,
+      "endFrame": 362,
+      "words": 6,
+      "text": "So, your own touch feels weaker."
+    },
+    {
+      "i": 4,
+      "start": 12.98,
+      "end": 16.031,
+      "startFrame": 389,
+      "endFrame": 481,
+      "words": 9,
+      "text": "In a lab, people tickled themselves with a robot."
+    },
+    {
+      "i": 5,
+      "start": 16.831,
+      "end": 20.18,
+      "startFrame": 505,
+      "endFrame": 605,
+      "words": 11,
+      "text": "When the robot waited a fifth of a second, it tickled."
+    },
+    {
+      "i": 6,
+      "start": 20.98,
+      "end": 23.711,
+      "startFrame": 629,
+      "endFrame": 711,
+      "words": 9,
+      "text": "The touch came late, so the brain's guess missed."
+    },
+    {
+      "i": 7,
+      "start": 24.611,
+      "end": 26.296,
+      "startFrame": 738,
+      "endFrame": 789,
+      "words": 6,
+      "text": "Who can tickle you the most?"
+    }
+  ],
+  "chapters": []
+}

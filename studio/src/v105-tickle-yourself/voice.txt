@@ -1,0 +1,16 @@
+Try to tickle yourself, right now.
+[pause 0.9]
+Stop trying, because your brain blocks most of it.
+[pause 0.9]
+Your brain knows what your hand will do.
+[pause 0.8]
+So, your own touch feels weaker.
+[pause 0.9]
+In a lab, people tickled themselves with a robot.
+[pause 0.8]
+When the robot waited a fifth of a second, it tickled.
+[pause 0.8]
+The touch came late, so the brain's guess missed.
+[pause 0.9]
+Who can tickle you the most?
+[pause 1.0]
