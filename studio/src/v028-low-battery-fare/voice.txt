@@ -1,0 +1,20 @@
+Does your cab cost more when your battery is low?
+[pause 0.6]
+You might pay extra without knowing why.
+[pause 0.9]
+In 2016, a cab company checked its own data.
+[pause 0.7]
+People with almost empty phones accepted high prices more often.
+[pause 0.9]
+But the company says battery does not change prices.
+[pause 0.8]
+Prices go up when many people want a car.
+[pause 0.9]
+Back on the street, your battery does not raise prices.
+[pause 0.8]
+But it can make you rush and say yes.
+[pause 0.9]
+Charge your phone early, so you can compare calmly.
+[pause 0.7]
+Have you ever paid more with a dying phone?
+[pause 1.2]

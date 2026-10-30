@@ -1,0 +1,98 @@
+{
+  "fps": 30,
+  "durationInFrames": 1188,
+  "seconds": 39.6,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 2.931,
+      "startFrame": 6,
+      "endFrame": 88,
+      "words": 10,
+      "text": "Does your cab cost more when your battery is low?"
+    },
+    {
+      "i": 1,
+      "start": 3.531,
+      "end": 5.813,
+      "startFrame": 106,
+      "endFrame": 174,
+      "words": 7,
+      "text": "You might pay extra without knowing why."
+    },
+    {
+      "i": 2,
+      "start": 6.713,
+      "end": 10.724,
+      "startFrame": 201,
+      "endFrame": 322,
+      "words": 9,
+      "text": "In 2016, a cab company checked its own data."
+    },
+    {
+      "i": 3,
+      "start": 11.424,
+      "end": 15.968,
+      "startFrame": 343,
+      "endFrame": 479,
+      "words": 10,
+      "text": "People with almost empty phones accepted high prices more often."
+    },
+    {
+      "i": 4,
+      "start": 16.868,
+      "end": 20.068,
+      "startFrame": 506,
+      "endFrame": 602,
+      "words": 9,
+      "text": "But the company says battery does not change prices."
+    },
+    {
+      "i": 5,
+      "start": 20.868,
+      "end": 23.556,
+      "startFrame": 626,
+      "endFrame": 707,
+      "words": 9,
+      "text": "Prices go up when many people want a car."
+    },
+    {
+      "i": 6,
+      "start": 24.456,
+      "end": 27.741,
+      "startFrame": 734,
+      "endFrame": 832,
+      "words": 10,
+      "text": "Back on the street, your battery does not raise prices."
+    },
+    {
+      "i": 7,
+      "start": 28.541,
+      "end": 30.696,
+      "startFrame": 856,
+      "endFrame": 921,
+      "words": 9,
+      "text": "But it can make you rush and say yes."
+    },
+    {
+      "i": 8,
+      "start": 31.596,
+      "end": 34.689,
+      "startFrame": 948,
+      "endFrame": 1041,
+      "words": 9,
+      "text": "Charge your phone early, so you can compare calmly."
+    },
+    {
+      "i": 9,
+      "start": 35.389,
+      "end": 37.8,
+      "startFrame": 1062,
+      "endFrame": 1134,
+      "words": 9,
+      "text": "Have you ever paid more with a dying phone?"
+    }
+  ],
+  "chapters": []
+}

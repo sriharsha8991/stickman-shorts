@@ -53,6 +53,7 @@ import { LaunchKeynote, KEYNOTE_FRAMES } from "./launch-15/LaunchKeynote";
 import { Video as V104WobblyShelf, DURATION as V104WobblyShelf_DURATION } from "./v104-wobbly-shelf/Video";
 import { Video as V018TypingDots, DURATION as V018TypingDots_DURATION } from "./v018-typing-dots/Video";
 import { Video as V105TickleYourself, DURATION as V105TickleYourself_DURATION } from "./v105-tickle-yourself/Video";
+import { Video as V028LowBatteryFare, DURATION as V028LowBatteryFare_DURATION } from "./v028-low-battery-fare/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -452,6 +453,15 @@ export const RemotionRoot: React.FC = () => {
         id="V105TickleYourself"
         component={V105TickleYourself}
         durationInFrames={V105TickleYourself_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.2, sfx: 0.6, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="V028LowBatteryFare"
+        component={V028LowBatteryFare}
+        durationInFrames={V028LowBatteryFare_DURATION}
         fps={30}
         width={1080}
         height={1920}
