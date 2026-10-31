@@ -1,0 +1,23 @@
+Why do you hear your name in a noisy room?
+[pause 0.8]
+You never chose to listen, but your brain never stopped.
+[pause 0.9]
+At a loud party, you listen to one friend.
+[pause 0.6]
+Then someone far away says your name.
+[pause 0.7]
+Scientists tested this with headphones.
+[pause 0.6]
+Each ear heard a different voice.
+[pause 0.6]
+People repeated one voice and ignored the other.
+Then the ignored voice said their own name.
+[pause 1.0]
+About one in three people noticed it.
+[pause 1.0]
+That's because your brain still checks ignored sounds.
+[pause 0.9]
+So, back at the party, call your friend by name.
+[pause 0.7]
+What word always grabs your attention?
+[pause 1.5]
