@@ -1,0 +1,12 @@
+# V020 · facts (checked 2026-10-31)
+
+| Claim (as said / shown) | Verdict | Source |
+|---|---|---|
+| A pop-up "no" button worded so that saying no insults you ("No thanks, I hate saving money") is a known trick called confirm shaming (confirmshaming). | Confirmed. Mathur et al. 2019 define it as "using language and emotion (shame) to steer users away from making a certain choice" and found 169 instances on 164 of ~11K shopping sites. Button text in the video is an illustration, not a real site. | https://webtransparency.cs.princeton.edu/dark-patterns (Mathur et al., CSCW 2019, arXiv 1907.07032) |
+| "It means making you feel guilty for saying no." | Confirmed (plain-words version). India's guidelines: "using a phrase, video, audio or any other means to create a sense of fear or shame or ridicule or guilt in the mind of the user, so as to nudge the user to act in a certain way". | CCPA draft guidelines Annexure 1 (iii): https://consumeraffairs.nic.in/sites/default/files/file-uploads/latestnews/Draft%20Guidelines%20for%20Prevention%20and%20Regulation%20of%20Dark%20Patterns%202023.pdf ; final list incl. confirm shaming confirmed by PIB 3 Jun 2026 |
+| "In India, the rules don't allow this trick." | Confirmed. Guidelines for Prevention and Regulation of Dark Patterns, 2023 (notified 30 Nov 2023) list 13 dark patterns incl. confirm shaming; no platform/seller may use them (unfair trade practice). Policy-check 2026-10-31: still in force; the E-Commerce (Amendment) Rules 2026 (from 1 Jan 2027) add yearly self-audits on top. | https://www.scconline.com/blog/post/2023/12/04/ccpa-notifies-guidelines-for-prevention-and-regulation-of-dark-patterns-2023-legal-news/ ; https://www.medianama.com/2026/09/223-consumer-protection-ecommerce-amendment-rules-2026/ |
+| "This year, two companies were fined for tricks like this." | Confirmed. PIB release 3 Jun 2026: CCPA fined two companies (₹5 lakh and ₹1 lakh) for dark patterns that included confirm shaming (with basket sneaking, forced action etc.). Companies not named in the video. | https://www.pib.gov.in/PressReleasePage.aspx?PRID=2268302 |
+| "The shop wrote those words, not you." | Framing (plan payoff: guilt in a button label is a sales tactic, not a fact). | — |
+| Dropped | 11K-site / 164-site numbers (one idea, max two numbers); fine amounts; company names. | — |
+
+Risk flag: Policy-check (done above). On screen: "Education, not legal advice".
