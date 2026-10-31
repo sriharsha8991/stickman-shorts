@@ -1,0 +1,22 @@
+You stopped scrolling for two seconds, and your app noticed.
+[pause 0.8]
+Most people think only likes count.
+[pause 0.8]
+But you may waste hours on posts you never liked.
+[pause 0.8]
+Imagine a helper inside the app with a stopwatch.
+[pause 0.8]
+It counts how long you look at each post.
+[pause 0.9]
+In 2015, Facebook said it counts this time.
+[pause 0.8]
+Then you may see more posts like it.
+[pause 0.8]
+TikTok and Instagram say finishing a video counts too.
+[pause 0.9]
+So your pauses help choose your next posts.
+[pause 0.9]
+Back on the balcony, tap Not Interested to see less.
+[pause 0.9]
+What did you pause on today?
+[pause 1.2]

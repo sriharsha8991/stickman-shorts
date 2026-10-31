@@ -55,6 +55,7 @@ import { Video as V018TypingDots, DURATION as V018TypingDots_DURATION } from "./
 import { Video as V105TickleYourself, DURATION as V105TickleYourself_DURATION } from "./v105-tickle-yourself/Video";
 import { Video as H20PhoneBrainDrain, DURATION as H20PhoneBrainDrain_DURATION } from "./h20-phone-brain-drain/Video";
 import { Video as V028LowBatteryFare, DURATION as V028LowBatteryFare_DURATION } from "./v028-low-battery-fare/Video";
+import { Video as V024PauseNoticed, DURATION as V024PauseNoticed_DURATION } from "./v024-pause-noticed/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -472,6 +473,15 @@ export const RemotionRoot: React.FC = () => {
         id="H20PhoneBrainDrain"
         component={H20PhoneBrainDrain}
         durationInFrames={H20PhoneBrainDrain_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.2, sfx: 0.6, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="V024PauseNoticed"
+        component={V024PauseNoticed}
+        durationInFrames={V024PauseNoticed_DURATION}
         fps={30}
         width={1080}
         height={1920}
