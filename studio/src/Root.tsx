@@ -59,6 +59,7 @@ import { Video as V024PauseNoticed, DURATION as V024PauseNoticed_DURATION } from
 import { Video as V020ShameButton, DURATION as V020ShameButton_DURATION } from "./v020-shame-button/Video";
 import { Video as V106YourName, DURATION as V106YourName_DURATION } from "./v106-your-name/Video";
 import { Video as H29MorningLight, DURATION as H29MorningLight_DURATION } from "./h29-morning-light/Video";
+import { Video as V019SureButWrong, DURATION as V019SureButWrong_DURATION } from "./v019-sure-but-wrong/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -512,6 +513,15 @@ export const RemotionRoot: React.FC = () => {
         id="H29MorningLight"
         component={H29MorningLight}
         durationInFrames={H29MorningLight_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.2, sfx: 0.6, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="V019SureButWrong"
+        component={V019SureButWrong}
+        durationInFrames={V019SureButWrong_DURATION}
         fps={30}
         width={1080}
         height={1920}

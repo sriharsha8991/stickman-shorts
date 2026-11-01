@@ -1,0 +1,17 @@
+Your chatbot almost never says, "I don't know."
+At the end, you will see why it guesses.
+[pause 0.9]
+I asked it when my friend was born.
+It gave a wrong date and sounded sure.
+[pause 1.0]
+Think of a school test with four choices.
+A blank answer gets zero points.
+[pause 0.6]
+But a guess can sometimes be right.
+[pause 1.0]
+Chatbots are scored the same way.
+So they learned to guess, like a student.
+[pause 0.9]
+Check one important answer yourself.
+Has a chatbot ever fooled you?
+[pause 1.5]
