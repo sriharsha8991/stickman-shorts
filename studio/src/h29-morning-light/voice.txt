@@ -1,0 +1,21 @@
+Your alarm is not what sets your body clock.
+You probably never noticed what does.
+[pause 1.0]
+A clock inside your head tells you when to wake.
+[pause 1.0]
+But it runs a little slow, so it needs a reset.
+[pause 0.9]
+Your alarm cannot reset it, but light can.
+[pause 1.0]
+Scientists sent people camping for a week without lamps.
+[pause 1.0]
+Their body clocks moved about two hours earlier.
+[pause 0.9]
+Now they were ready to wake at sunrise.
+[pause 1.0]
+It was a small study, but lab tests agree.
+[pause 1.0]
+So, back in your bedroom, open the curtains.
+[pause 0.8]
+Do you see the sun or your phone first?
+[pause 1.5]

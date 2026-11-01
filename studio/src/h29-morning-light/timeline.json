@@ -1,0 +1,107 @@
+{
+  "fps": 30,
+  "durationInFrames": 1249,
+  "seconds": 41.6,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.037,
+      "startFrame": 6,
+      "endFrame": 91,
+      "words": 9,
+      "text": "Your alarm is not what sets your body clock."
+    },
+    {
+      "i": 1,
+      "start": 3.487,
+      "end": 5.77,
+      "startFrame": 105,
+      "endFrame": 173,
+      "words": 6,
+      "text": "You probably never noticed what does."
+    },
+    {
+      "i": 2,
+      "start": 6.77,
+      "end": 9.757,
+      "startFrame": 203,
+      "endFrame": 293,
+      "words": 10,
+      "text": "A clock inside your head tells you when to wake."
+    },
+    {
+      "i": 3,
+      "start": 10.757,
+      "end": 13.615,
+      "startFrame": 323,
+      "endFrame": 408,
+      "words": 11,
+      "text": "But it runs a little slow, so it needs a reset."
+    },
+    {
+      "i": 4,
+      "start": 14.515,
+      "end": 17.331,
+      "startFrame": 435,
+      "endFrame": 520,
+      "words": 8,
+      "text": "Your alarm cannot reset it, but light can."
+    },
+    {
+      "i": 5,
+      "start": 18.331,
+      "end": 21.723,
+      "startFrame": 550,
+      "endFrame": 652,
+      "words": 9,
+      "text": "Scientists sent people camping for a week without lamps."
+    },
+    {
+      "i": 6,
+      "start": 22.723,
+      "end": 25.497,
+      "startFrame": 682,
+      "endFrame": 765,
+      "words": 8,
+      "text": "Their body clocks moved about two hours earlier."
+    },
+    {
+      "i": 7,
+      "start": 26.397,
+      "end": 28.701,
+      "startFrame": 792,
+      "endFrame": 861,
+      "words": 8,
+      "text": "Now they were ready to wake at sunrise."
+    },
+    {
+      "i": 8,
+      "start": 29.701,
+      "end": 32.538,
+      "startFrame": 891,
+      "endFrame": 976,
+      "words": 9,
+      "text": "It was a small study, but lab tests agree."
+    },
+    {
+      "i": 9,
+      "start": 33.538,
+      "end": 36.354,
+      "startFrame": 1006,
+      "endFrame": 1091,
+      "words": 8,
+      "text": "So, back in your bedroom, open the curtains."
+    },
+    {
+      "i": 10,
+      "start": 37.154,
+      "end": 39.501,
+      "startFrame": 1115,
+      "endFrame": 1185,
+      "words": 9,
+      "text": "Do you see the sun or your phone first?"
+    }
+  ],
+  "chapters": []
+}
