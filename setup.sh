@@ -30,6 +30,12 @@ fetch yaxeen/storytelling-skills          24ef3c1e3d7fde66cc5f1c5953cd6c1d7afc0b
 fetch iart-ai/tiktok-video-skills         2a775336b5a638cbf8a61dbd785f9a1b649be016 tiktok-video-skills
 fetch iart-ai/motion-design-skills        3c129f769d90a1328c209c386492333c9ac62312 motion-design-skills
 fetch sirruf/music-gen-skill              a025267abd8b669035695f60ff22b54fc71c1362 music-gen-skill
+# added 2026-11-01 (owner: better storytelling + animation): motion principles, camera rig + critic gate,
+# visual explanation (CLEAR), Shorts packaging/loop/drop-off risk. Read-only references, see PIPELINE.md §3.
+fetch LottieFiles/motion-design-skill     f9a8a041b85185ee4881b3471d3415e939aac772 lottie-motion-design
+fetch Liamrjohnston/remotion-motion-graphics-skill b860c7921f2220b9e2a84e815ba0ae7b10858f08 remotion-motion-graphics
+fetch rohitg00/manim-video-generator      9c41982e620bf9dbaac6553197eb2dfafbef90f2 manim-visual-storyteller
+fetch AgriciDaniel/claude-youtube         84c3fa6805200632fadb4fe2795ef265511271c7 claude-youtube
 
 echo "== Offline voice (Kokoro TTS, runs locally)"
 $PIP --break-system-packages kokoro-onnx 2>/dev/null || $PIP kokoro-onnx

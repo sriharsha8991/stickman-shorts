@@ -117,13 +117,30 @@ Read **`WRITING.md`** (the channel's sourced craft guide) before writing any scr
 Spark now has 15 moods (`mascot.tsx`) and a gesture library (`shared/gestures.ts`). Use at least 5 different
 moods and a gesture change on every spoken line.
 
-Skills to read before writing (all in `$SKILLS`):
+Skills to read before writing (all in `$SKILLS`; the last four were added 2026-11-01, owner: better storytelling +
+animation, see §5.9 and WRITING.md §K):
 - `stickman-video/SKILL.md`, `references/engine-api.md`, `references/animation-style.md`, `references/pitfalls.md`
 - `storytelling-skills/skills/storytelling-hooks/SKILL.md` (+ `patterns.md`)
 - `youtube-agent-skill/skills/yt-script/SKILL.md` (+ `hooks.json`, `hookscore.py`)
 - `tiktok-video-skills/skills/short-form-video/SKILL.md`, `caption-animation/SKILL.md`
 - `motion-design-skills/skills/animation-principles/SKILL.md`, `motion-art-direction/SKILL.md`, `shot-composition/SKILL.md`
 - `music-gen-skill/SKILL.md`
+- **Story:** `manim-visual-storyteller/skills/visual-storyteller/SKILL.md` + `rules/progressive-revelation.md`,
+  `rules/pacing-for-understanding.md`, `rules/narrative-principles.md` (CLEAR: Context → Layers → Examples → Analogies →
+  Reinforce; never show everything at once; hold a key insight 3 s on screen). Ignore its Manim code and its "glow" emphasis.
+- **Shorts packaging:** `claude-youtube/skills/claude-youtube/sub-skills/shorts.md`, `sub-skills/hook.md`,
+  `references/shorts-playbook.md` (hook in 1–3 s, a visual change at least every ~3 s, loop set-up in the last 1–2 s,
+  "Viewed vs swiped away" as the first metric). Its benchmark numbers (70% completion, the "30–45 s dead zone") are
+  unsourced creator claims: never quote them as facts; our length rule is §5.9.
+- **Animation:** `lottie-motion-design/skills/motion-design/director/disney-principles.md`, `director/choreography.md`,
+  `director/narrative-structure.md`, `reference/quality-checklist.md` (UI-scaled timings: multiply by ~2–3 for a
+  1080×1920 Short; the rules carry over: ease-out entrances, ease-in exits, exits 65–75% of the entrance, never linear
+  for movement, anticipation → action → reaction → settle, max 1/3 of the elements moving at once, follow-through
+  50–150 ms behind the parent).
+- **Camera + critic:** `remotion-motion-graphics/skills/cinematic-camera/SKILL.md` (one world bigger than the screen,
+  one shared camera rig: hold → move 14–24 frames → hold; camera moves to the next action, the action completes during
+  the hold) and `skills/motion-graphics/references/visual-critic.md` (independent scored critic, used in §7). Skip its
+  intake questions, logo/brand rules, Instagram formats and its "never restate the voiceover" rule (we keep captions).
 
 ## 4. Verify the facts (gate)
 
@@ -151,10 +168,11 @@ Skills to read before writing (all in `$SKILLS`):
    push, slow push, whip), Spark's emotion + action, the object, and the SFX. Then the motion language (one personality: Playful/Energetic/
    Premium/Corporate), where Spark is and what he does in each scene, scenes anchored to spoken lines, beats, interrupts every 2–4 s
    (uneven), one "wow" moment, loop/bookend.
+   Since 2026-11-01 the storyboard starts with a **beat map** (§5.9): promise line (s), build layers (s), reveal (s),
+   action + question (s), and the camera keys of the one-world rig.
 5. **Retention v2 (owner, 2026-10-23).** If the ID has a row in `plan/retention_v2.csv`, that row wins over
    the plan row for the overlay, spoken hook (= `voice.txt` row 1), cold open, open loop, re-hook, loop and
-   length; keep the plan's mechanism, twist and payoff. All Shorts: length by format since 2026-10-29 (10-second test 20–30 s, stories 30–45 s; the slate's Length column is now a minimum; our best three
-   were 35–37 s), best image at
+   length; keep the plan's mechanism, twist and payoff. All Shorts: ~30 s, cap 40 s since 2026-11-01 (§5.9; older: tests 20–30 s, stories 30–45 s), best image at
    frame 0, open loop by 6 s, re-hook ~14 s, cut back into frame 0. Hookscore the row's hook first; only
    rewrite it if it scores < 55 (keep the same promise).
 6. **First 10 seconds + clarity (owner, 2026-10-27; overrides anything above that conflicts).** Channel analytics
@@ -164,14 +182,14 @@ Skills to read before writing (all in `$SKILLS`):
      ninety-nine" → show ₹2,999, say "this crossed-out price"). Frame 0 shows ONE object + Spark reacting.
      Overlay ≤ 4 words. **No full-screen flash** (power-up `flash` stays off), no series tag or source line yet.
    - **2–5 s:** why it matters to *you* (your money / time / brain), still one object on screen.
-   - **5–10 s:** the first real answer or the surprising number (one), not more setup.
+   - **5–10 s:** (since 2026-11-01, §5.9) the context and a first clue, NOT the answer: the big answer is the reveal at the end, which the opening promised.
    - **One idea per Short, max 2 numbers.** Cut any stat that needs a second sentence to explain.
    - **One text layer at a time**: captions + at most one slam word. Source line + series tag only after 10 s,
      small, at the bottom.
    - **Voice craft (updated 2026-10-29, see step 8):** `af_heart` @ 0.85×; one complete, simple sentence per line
      (6–12 words); a `[pause 0.7]` before the twist; questions end with "?". Read the first three lines aloud in
      your head: if a stranger couldn't repeat the point after 10 s, rewrite.
-   - Aim ~2.2 words/s for the whole video, pauses included (≈ 130 wpm; our Shorts so far ran ~2.9–3.0): 20 s ≈ 44 words, 30 s ≈ 66 words, 40 s ≈ 88 words.
+   - Aim ~2.2 words/s for the whole video, pauses included (≈ 130 wpm): 30 s ≈ 60–66 words (sweet spot), 40 s ≈ 88 words (cap).
    - **Series**: every Short belongs to one series from the slate (Your brain did this · Designed to get you ·
      10-second test · Myth check), shown as a small corner tag after 10 s, and ends with a question for the
      comments (also put in the post copy as the pinned comment).
@@ -201,7 +219,7 @@ Skills to read before writing (all in `$SKILLS`):
      decoding; on-screen labels are plain words that match what is said.
    - **Slower pace with pauses.** Voice at 0.85× (`studio/voice.json`), 0.45 s between lines (`--gap 0.45`),
      `[pause 0.6]`–`[pause 0.9]` after the hook's stakes, before the twist and before the takeaway. Target
-     ≤ 2.3 words/s overall (≈ 130–140 wpm; we were at ~2.9–3.0) and ≤ 3.2 words/s while speaking. Lengths: 10-second tests 20–30 s, stories 30–45 s.
+     ≤ 2.3 words/s overall (≈ 130–140 wpm; we were at ~2.9–3.0) and ≤ 3.2 words/s while speaking. Lengths: see 5.9 (~30 s, cap 40 s).
    - **Calmer pictures.** One main action per sentence; hold each shot 2.5–5 s; slow pushes instead of snaps;
      the object the narration talks about is on screen and still while it is explained. Captions show the full
      sentence being spoken.
@@ -210,6 +228,22 @@ Skills to read before writing (all in `$SKILLS`):
      total."), keeping the same promise.
    - **Gate:** `tools/clarity_check.py --slug <slug>` prints PASS, and the "friend test": read the script as if to a
      friend who is not good at English. If any line would need explaining, rewrite it.
+
+9. **Promise → build → reveal, ~30 s (owner, 2026-11-01; overrides every older length and "first answer by
+   ~12 s" rule).** The viewer is told at the start that something is waiting at the end, so they stay to see it
+   (WRITING.md §K):
+   - **Length:** ~30 s is the sweet spot (≈ 60–68 words at 2.2 words/s), 40 s is the cap, 45 s the absolute
+     threshold (only with `--allow-long` after two honest rewrites, explained in the email). Cut words, never pauses.
+   - **0–3 s, hook + promise:** the hook sentence (≤ 10 words, about the viewer) and, within the first three
+     spoken lines, a promise of the ending in plain words ("Wait for the last part." / "At the end, you will see
+     why." / "Stay until the end. It is the best part."). The promise must be true: the ending pays it off.
+   - **3–20 s, build the context (CLEAR):** who/where → the problem → one concrete example → one obvious
+     comparison said out loud. Show one new layer per sentence (progressive revelation); give a small clue, never
+     the answer. One short re-promise around the middle is allowed ("The best part is coming.").
+   - **20–27 s, the reveal:** the strongest picture of the Short, set up by a 0.8–1.0 s pause + half-second music
+     drop, then the hit; Spark's biggest reaction (mindblown/bulb). Hold it 3 s still (key insight).
+   - **27–30 s, one simple action + the comment question,** flowing back into frame 0 (loop).
+   - Gate: `tools/clarity_check.py` now FAILS above 40 s and when no promise line is in the first three lines.
 
 Format playbook:
 - **Mechanism Reveal**: hook → setup → reveal of the hidden system (wow) → receipt/proof → payoff → loop.
@@ -266,6 +300,12 @@ rm studio/src/<slug>/S01Example.tsx
 - Vertical rules: centre x = 540, safe zone x 90–990 / y 250–1500, ground ≈ y 1290, title zone
   y 260–620, action y 650–1290, captions ≈ y 1420. Characters scale 1.5–1.7. One hero per frame.
 - Scene starts and big hits land on spoken words (cue/word frames from voice.ts); the music is a bed underneath.
+- **Camera rig + animation craft (owner, 2026-11-01; WRITING.md §K).** Prefer ONE world bigger than the screen with
+  the camera travelling between its places (hold → move 14–24 frames with ease-in-out → hold) over hard cuts; the camera
+  arrives first, the action completes during the hold, nothing important happens while the camera moves. Props:
+  ease-out in, ease-in out (exits ~70% of the entrance), anticipation before every big move, overshoot + settle,
+  follow-through on loose parts; never linear movement (linear only for clock hands, progress bars, timers); at most a
+  third of the moving things move at the same time.
 - **Shot grammar + motion (owner, 2026-10-27; WRITING.md §I).** Use `camAt(f, shots, VERTICAL)` from
   `shared/camera.tsx` on the Stage (`cam={camAt(...)}`) and `<Transition … size={VERTICAL} />`; reference
   composition `ShotsDemo`. Rules (calmer since 2026-10-29, step 5.8): one camera change per spoken sentence, shots held 2.5–5 s, slow/smooth moves rather than snaps (no shot under 1.5 s); earlier rule was a cut every 1.5–3 s on average, irregular (some 0.7 s, a
@@ -283,6 +323,15 @@ cd ~/stickman/studio
 node stickman-sheet.mjs <Comp> out/sheet-a.png <8-10 frames across the first half>
 node stickman-sheet.mjs <Comp> out/sheet-b.png <8-10 frames across the second half>
 ```
+
+Then run the **critic pass** (adapted from `remotion-motion-graphics/.../visual-critic.md`): look at both sheets as
+if you did not build the Short and score 0–10: `story_clarity` (a stranger follows it muted + with captions),
+`hook_frame` (one object + Spark's face readable at phone size), `promise_payoff` (the end delivers what the start
+promised), `reveal_strength` (the reveal is the best image of the Short), `motion_causality` (every move shows
+cause → effect, no decoration), `mobile_readability`, `composition`, `spark_acting` (a new mood + gesture every
+line, anticipation before big moves). Fix and re-check until every score ≥ 8 and the average ≥ 8.5; put the scores in
+the email QA notes. Hard fails: text over a face, an unexplained symbol, a scene jump the narration did not announce,
+a reveal hidden during camera travel.
 
 Open both PNGs (Read tool) and fix: text over characters, anything outside the safe zone, props
 floating/sinking, unreadable text, a frame where nothing moves for > 2 s, poses that never snap
@@ -338,7 +387,7 @@ floating/sinking, unreadable text, a frame where nothing moves for > 2 s, poses 
    `<ID>: <Title>` and push (`git pull --rebase` first if the push is rejected).
 5. Email (once per run): `send_message` with `replyThreadId 1a159c3adf191ae8`, to `srih8991@gmail.com`, subject
    "Re: Stickman Shorts — production updates". Put a prominent **"⬇ Download MP4"** button/link (the raw link) at the very top, then: ID + title, watch link, Drive doc link,
-   duration, hook (with score), the post copy, QA notes, anything that needs a decision, and the
+   duration, hook (with score), the promise line + where the reveal lands (s), the critic scores (§7), the post copy, QA notes, anything that needs a decision, and the
    next plan video and next hack in the queue. Plain, short, skimmable.
 6. Also send the MP4 to the session (`SendUserFile`) so it shows in the run's conversation.
 

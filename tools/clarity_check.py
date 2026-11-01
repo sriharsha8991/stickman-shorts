@@ -8,6 +8,10 @@ Reads studio/src/<slug>/voice.txt and voice.ts and checks:
   - at least two [pause] rows of 0.5 s or more (stakes / twist / takeaway)
   - gaps between lines average >= 0.35 s
   - no idioms / jargon from the blocklist, few long words (13+ letters)
+  - length (owner, 2026-11-01): ~30 s is the sweet spot, 40 s is the cap, 45 s the absolute threshold.
+    > 40 s FAILS unless --allow-long (only after two honest rewrites; still FAILS above 45 s).
+  - promise-to-the-end (owner, 2026-11-01): one of the first three spoken lines tells the viewer there is
+    something at the end ("Wait for the last part.", "At the end, you will see…", "Stay until the end.").
 Prints PASS or FAIL with the reasons. Usage: python3 tools/clarity_check.py --slug v104-wobbly-shelf
 """
 import argparse
@@ -28,6 +32,7 @@ EXPLAINED_OK = re.compile(r"(means|that is|in other words|in simple words|called
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--slug", required=True)
+    ap.add_argument("--allow-long", action="store_true", help="accept 40-45 s (explain why in the email)")
     a = ap.parse_args()
     d = ROOT / "studio" / "src" / a.slug
     rows = [r.strip() for r in (d / "voice.txt").read_text().splitlines() if r.strip()]
@@ -55,6 +60,12 @@ def main():
         problems.append("fewer than two [pause 0.5+] rows (add pauses after the stakes, before the twist and the takeaway)")
     if avg_gap < 0.35:
         problems.append(f"average gap between lines {avg_gap:.2f} s < 0.35 (run voiceover.py with --gap 0.45)")
+    cap = 45.0 if a.allow_long else 40.0
+    if total_s > cap:
+        problems.append(f"length {total_s:.1f} s > {cap:.0f} s (aim ~30 s; cut words, not pauses)")
+    PROMISE = re.compile(r"\b(end|last|wait|stay|until|finish|final)\b", re.I)
+    if not any(PROMISE.search(l) for l in lines[:3]):
+        problems.append("no promise-to-the-end in the first three lines (e.g. 'Wait for the last part.')")
     for l in lines:
         n = len(l.split())
         if n < 5:
@@ -73,6 +84,8 @@ def main():
 
     print(f"{a.slug}: {words} words · {total_s:.1f} s · overall {pace:.2f} w/s · speaking {speak:.2f} w/s · "
           f"avg gap {avg_gap:.2f} s · pauses {pauses}")
+    if total_s > 34:
+        print(f"note: {total_s:.1f} s is over the ~30 s sweet spot (cap 40 s)")
     if problems:
         print("FAIL")
         for p in problems:

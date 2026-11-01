@@ -161,12 +161,43 @@ scene breaks don't make sense. Clarity now beats speed.
 52. **No abstract jumps.** Max two places. Announce every change of place in the narration. Use metaphors only
     if they are obvious at a glance, and say them out loud ("Think of it like a price tag for your effort.").
 53. **Slow down and breathe.** Voice 0.85×, 0.45 s between lines, a 0.6–0.9 s pause after the stakes, before the
-    twist and before the takeaway. About 2.2 words per second overall (we were near 3). Stories 30–45 s; tests 20–30 s.
+    twist and before the takeaway. About 2.2 words per second overall (we were near 3). Length: see §K (~30 s, cap 40 s).
 54. **Calm pictures.** One main action per sentence, shots held 2.5–5 s, slow camera moves. Keep the thing being
     explained on screen and still while it is explained.
 55. **Example rewrite.** Too fast: "Builders bid 63% more. Same box. Their effort was the price tag." Clear: "The
     people who built the box offered sixty-three percent more for it. [pause] It was the same box. The only
     difference was their own work."
+
+## K. Promise → build → reveal, ~30 s (owner, 2026-11-01; overrides §G, §H rule 36 and §J's lengths where they conflict)
+The owner's design for every Short: open with a hook that tells the viewer something is waiting at the end, build the
+context slowly and clearly in the middle, and finish on an ending that looks amazing. ~30 s is the sweet spot, 40 s the
+cap, 45 s the absolute threshold. Slow and clear still beats fast (§J). Sources: the skills added on 2026-11-01
+(PIPELINE §3) and the research notes below.
+56. **Promise the ending, honestly.** In the first three spoken lines, say in plain words that the best part is at the
+    end ("Wait for the last part." / "At the end, you will see why."). Curiosity about a known gap keeps people
+    watching (Loewenstein 1994, §B rule 7); a broken promise makes them feel lied to (MrBeast guide, §A rule 2). Never
+    promise what the facts can't show.
+57. **Build with CLEAR, one layer per sentence.** Context → Layers → Examples → Analogies → Reinforce
+    (manim-visual-storyteller). Never show everything at once: one new thing per sentence, the rest stays still. Give
+    clues, not the answer.
+58. **The reveal is the best picture.** Plan the ending first (vidIQ on loops; YouTube 2021 Shorts report via vidIQ),
+    then write backwards. Set it up with a 0.8–1.0 s pause and a half-second music drop, land it on a hit, hold it 3 s
+    (a key insight needs 3–4 s to sink in: visual-storyteller pacing rules). Spark's biggest reaction goes here.
+59. **One world, one camera.** Build one world bigger than the screen and move the camera between its places (hold →
+    move 14–24 frames → hold) instead of cutting between unrelated scenes (cinematic-camera skill). The camera arrives
+    first; the action happens in the hold.
+60. **Animate with the 12 principles, scaled for video** (LottieFiles motion-design skill): anticipation before big
+    moves, ease-out entrances / ease-in exits (exits ~70% of the entrance), overshoot + settle, follow-through 50–150 ms
+    behind the parent, arcs on moving props, never linear for movement, max a third of the moving things at once, and a
+    breath of stillness after each settle.
+61. **Judge it like a stranger.** Score the contact sheets 0–10 on story clarity, hook frame, promise/payoff, reveal
+    strength, motion causality, mobile readability, composition and Spark's acting; every score ≥ 8, average ≥ 8.5
+    (adapted from the visual-critic gate). Fix what scores low before rendering.
+62. **What to measure.** Since 31 March 2025 a Shorts "view" counts every start or replay; the old count is now
+    "engaged views" (YouTube Analytics, Advanced mode) and is what monetization uses (TechCrunch, 26 Mar 2025). Watch
+    *Viewed vs swiped away* (the hook) and *average % viewed* (the promise holding them to the end). Loops add views
+    but not engaged views (vidIQ). Creator benchmarks such as "70% completion = promotion" are unverified: compare
+    against our own Shorts instead.
 
 ## Myths we never repeat
 - "Humans have an 8-second attention span, less than a goldfish": no underlying study exists (BBC, 2017; WSJ, 2017).
