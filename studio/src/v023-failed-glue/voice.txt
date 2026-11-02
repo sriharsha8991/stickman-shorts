@@ -1,0 +1,17 @@
+Your sticky notes use a glue that failed.
+[pause 0.5]
+Wait until the end, before you throw away an idea.
+[pause 1.0]
+A scientist tried to make a strong glue.
+[pause 0.8]
+But it was weak, full of tiny sticky balls.
+[pause 0.9]
+Years later, his co-worker sang in a church choir.
+His bookmarks kept falling out of his book.
+[pause 1.1]
+Then he put the weak glue on them.
+That became the sticky note you use today.
+[pause 1.1]
+So keep your failed ideas.
+Which one could you use again?
+[pause 2.0]

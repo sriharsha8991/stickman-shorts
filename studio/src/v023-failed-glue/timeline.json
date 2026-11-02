@@ -1,0 +1,98 @@
+{
+  "fps": 30,
+  "durationInFrames": 1031,
+  "seconds": 34.34,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 2.845,
+      "startFrame": 6,
+      "endFrame": 85,
+      "words": 8,
+      "text": "Your sticky notes use a glue that failed."
+    },
+    {
+      "i": 1,
+      "start": 3.345,
+      "end": 6.673,
+      "startFrame": 100,
+      "endFrame": 200,
+      "words": 10,
+      "text": "Wait until the end, before you throw away an idea."
+    },
+    {
+      "i": 2,
+      "start": 7.673,
+      "end": 10.233,
+      "startFrame": 230,
+      "endFrame": 307,
+      "words": 8,
+      "text": "A scientist tried to make a strong glue."
+    },
+    {
+      "i": 3,
+      "start": 11.033,
+      "end": 13.892,
+      "startFrame": 331,
+      "endFrame": 417,
+      "words": 9,
+      "text": "But it was weak, full of tiny sticky balls."
+    },
+    {
+      "i": 4,
+      "start": 14.792,
+      "end": 18.056,
+      "startFrame": 444,
+      "endFrame": 542,
+      "words": 9,
+      "text": "Years later, his co-worker sang in a church choir."
+    },
+    {
+      "i": 5,
+      "start": 18.506,
+      "end": 20.853,
+      "startFrame": 555,
+      "endFrame": 626,
+      "words": 8,
+      "text": "His bookmarks kept falling out of his book."
+    },
+    {
+      "i": 6,
+      "start": 21.953,
+      "end": 23.83,
+      "startFrame": 659,
+      "endFrame": 715,
+      "words": 8,
+      "text": "Then he put the weak glue on them."
+    },
+    {
+      "i": 7,
+      "start": 24.28,
+      "end": 26.648,
+      "startFrame": 728,
+      "endFrame": 799,
+      "words": 8,
+      "text": "That became the sticky note you use today."
+    },
+    {
+      "i": 8,
+      "start": 27.748,
+      "end": 29.561,
+      "startFrame": 832,
+      "endFrame": 887,
+      "words": 5,
+      "text": "So keep your failed ideas."
+    },
+    {
+      "i": 9,
+      "start": 30.011,
+      "end": 31.739,
+      "startFrame": 900,
+      "endFrame": 952,
+      "words": 6,
+      "text": "Which one could you use again?"
+    }
+  ],
+  "chapters": []
+}
