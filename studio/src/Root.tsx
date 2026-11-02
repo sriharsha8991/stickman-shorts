@@ -62,6 +62,7 @@ import { Video as H29MorningLight, DURATION as H29MorningLight_DURATION } from "
 import { Video as V019SureButWrong, DURATION as V019SureButWrong_DURATION } from "./v019-sure-but-wrong/Video";
 import { Video as H05StandingStill, DURATION as H05StandingStill_DURATION } from "./h05-standing-still/Video";
 import { Video as V023FailedGlue, DURATION as V023FailedGlue_DURATION } from "./v023-failed-glue/Video";
+import { Video as H16PingCost, DURATION as H16PingCost_DURATION } from "./h16-ping-cost/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -542,6 +543,15 @@ export const RemotionRoot: React.FC = () => {
         id="V023FailedGlue"
         component={V023FailedGlue}
         durationInFrames={V023FailedGlue_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.2, sfx: 0.6, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="H16PingCost"
+        component={H16PingCost}
+        durationInFrames={H16PingCost_DURATION}
         fps={30}
         width={1080}
         height={1920}

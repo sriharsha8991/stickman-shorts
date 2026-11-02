@@ -1,0 +1,16 @@
+Your phone pings. Did you just lose 23 minutes?
+Wait for the end to see the real cost.
+[pause 0.8]
+That number means something else.
+After a ping, people often do two other jobs.
+Then they return, about 23 minutes later.
+[pause 0.8]
+In a test, two groups did the same email job.
+Only one group got interrupted.
+[pause 1.0]
+The interrupted group finished faster.
+Their work was just as good.
+But they felt more stress.
+[pause 2.0]
+At your desk, try one hour with no pings.
+Did a ping stress you today?
