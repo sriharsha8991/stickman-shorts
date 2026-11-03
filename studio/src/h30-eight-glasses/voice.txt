@@ -1,0 +1,18 @@
+Stop. Who told you that you need eight glasses?
+Wait for the line that people missed.
+[pause 0.8]
+A doctor found no study behind this rule.
+[pause 0.8]
+But an old report gave a big number.
+[pause 0.8]
+People may have missed the line below.
+[pause 1.2]
+It said most of this is in your food.
+[pause 1.3]
+Experts now say food gives about a fifth.
+Your drinks give the rest, even tea.
+[pause 1.8]
+Most healthy people can follow their thirst.
+Drink more in heat or during exercise.
+Did you count your tea today?
+[pause 1.0]

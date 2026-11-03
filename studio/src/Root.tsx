@@ -64,6 +64,7 @@ import { Video as H05StandingStill, DURATION as H05StandingStill_DURATION } from
 import { Video as V023FailedGlue, DURATION as V023FailedGlue_DURATION } from "./v023-failed-glue/Video";
 import { Video as H16PingCost, DURATION as H16PingCost_DURATION } from "./h16-ping-cost/Video";
 import { Video as V029PickedForYou, DURATION as V029PickedForYou_DURATION } from "./v029-picked-for-you/Video";
+import { Video as H30EightGlasses, DURATION as H30EightGlasses_DURATION } from "./h30-eight-glasses/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -562,6 +563,15 @@ export const RemotionRoot: React.FC = () => {
         id="V029PickedForYou"
         component={V029PickedForYou}
         durationInFrames={V029PickedForYou_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.2, sfx: 0.6, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="H30EightGlasses"
+        component={H30EightGlasses}
+        durationInFrames={H30EightGlasses_DURATION}
         fps={30}
         width={1080}
         height={1920}
