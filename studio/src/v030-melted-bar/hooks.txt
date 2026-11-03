@@ -1,0 +1,14 @@
+Your microwave started with one melted chocolate bar.
+Why did chocolate in a pocket create your microwave?
+You use a machine born from melted chocolate.
+Stop. Your microwave started with a melted chocolate bar.
+Your microwave exists because chocolate melted in a pocket.
+Stop. Did a ruined chocolate bar give you your microwave?
+Stop. Did melted chocolate give you your microwave?
+Stop. Did your microwave begin with a ruined chocolate bar?
+Stop. Your microwave began with a ruined chocolate bar?
+Stop. Your microwave began with melted chocolate. Really? Why?
+Stop. Did your microwave begin with melted chocolate? Why?
+Stop. Did you get your microwave from melted chocolate?
+Stop. Did your microwave begin with a melted chocolate bar? Why?
+# hookscore: "Stop. Did you get your microwave from melted chocolate?" = 55 WORKABLE, round 2 (the 58-scoring "Your microwave began with..." states a legend as fact, so not used)
