@@ -1,0 +1,13 @@
+Stop. Are you losing 50 steps a day to the lift?
+Wait for the last part. It shows why fifty matters.
+[pause 0.9]
+Scientists asked many adults about home stairs, then followed them for years.
+Let's climb with five blocks of heart risk.
+Up to fifty steps a day, nothing clearly changed.
+[pause 1.1]
+But above fifty steps, heart risk was about one fifth lower!
+[pause 2.2]
+Healthier people may climb more, so this is not proof.
+Still, try one floor of stairs today.
+How many steps did you climb today?
+[pause 1.0]

@@ -1,0 +1,15 @@
+Do you take the lift for just one floor?
+How many stairs does your heart actually notice?
+You are one small number away from a healthier heart.
+Why do fifty steps a day matter so much?
+Stop taking the lift until you see this number.
+
+Round 2:
+Stop. Are you losing 50 steps a day to your lift?
+Are you losing 50 easy steps to your lift?
+You are losing 50 steps a day to your lift.
+Stop. Are you losing 50 easy steps to your lift?
+Your lift may be costing you 50 steps every day.
+
+Chosen (60, WORKABLE; round 3): Stop. Are you losing 50 steps a day to the lift?
+Note: "your lift" changed to "the lift" (plainer, same score shape); earlier round-1 hooks scored 37-49.

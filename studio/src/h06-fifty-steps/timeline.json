@@ -1,0 +1,89 @@
+{
+  "fps": 30,
+  "durationInFrames": 1114,
+  "seconds": 37.11,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.293,
+      "startFrame": 6,
+      "endFrame": 99,
+      "words": 11,
+      "text": "Stop. Are you losing 50 steps a day to the lift?"
+    },
+    {
+      "i": 1,
+      "start": 3.743,
+      "end": 7.114,
+      "startFrame": 112,
+      "endFrame": 213,
+      "words": 10,
+      "text": "Wait for the last part. It shows why fifty matters."
+    },
+    {
+      "i": 2,
+      "start": 8.014,
+      "end": 12.921,
+      "startFrame": 240,
+      "endFrame": 388,
+      "words": 12,
+      "text": "Scientists asked many adults about home stairs, then followed them for years."
+    },
+    {
+      "i": 3,
+      "start": 13.371,
+      "end": 15.973,
+      "startFrame": 401,
+      "endFrame": 479,
+      "words": 8,
+      "text": "Let's climb with five blocks of heart risk."
+    },
+    {
+      "i": 4,
+      "start": 16.423,
+      "end": 19.602,
+      "startFrame": 493,
+      "endFrame": 588,
+      "words": 9,
+      "text": "Up to fifty steps a day, nothing clearly changed."
+    },
+    {
+      "i": 5,
+      "start": 20.702,
+      "end": 24.627,
+      "startFrame": 621,
+      "endFrame": 739,
+      "words": 11,
+      "text": "But above fifty steps, heart risk was about one fifth lower!"
+    },
+    {
+      "i": 6,
+      "start": 26.827,
+      "end": 30.155,
+      "startFrame": 805,
+      "endFrame": 905,
+      "words": 10,
+      "text": "Healthier people may climb more, so this is not proof."
+    },
+    {
+      "i": 7,
+      "start": 30.605,
+      "end": 33.016,
+      "startFrame": 918,
+      "endFrame": 990,
+      "words": 7,
+      "text": "Still, try one floor of stairs today."
+    },
+    {
+      "i": 8,
+      "start": 33.466,
+      "end": 35.514,
+      "startFrame": 1004,
+      "endFrame": 1065,
+      "words": 7,
+      "text": "How many steps did you climb today?"
+    }
+  ],
+  "chapters": []
+}
