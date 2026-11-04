@@ -67,6 +67,7 @@ import { Video as V029PickedForYou, DURATION as V029PickedForYou_DURATION } from
 import { Video as H30EightGlasses, DURATION as H30EightGlasses_DURATION } from "./h30-eight-glasses/Video";
 import { Video as V030MeltedBar, DURATION as V030MeltedBar_DURATION } from "./v030-melted-bar/Video";
 import { Video as H06FiftySteps, DURATION as H06FiftySteps_DURATION } from "./h06-fifty-steps/Video";
+import { DoodleDemo } from "./doodle-demo/DoodleDemo";
 import { Video as V032FirstNumber, DURATION as V032FirstNumber_DURATION } from "./v032-first-number/Video";
 import { Video as H17StillTied, DURATION as H17StillTied_DURATION } from "./h17-still-tied/Video";
 // stickman-video:imports
@@ -617,6 +618,7 @@ export const RemotionRoot: React.FC = () => {
         height={1920}
         defaultProps={{ music: 0.22, sfx: 0.65, voice: "voice.wav", captions: false }}
       />
+      <Composition id="DoodleDemo" component={DoodleDemo} durationInFrames={60} fps={30} width={1080} height={1920} />
       {/* stickman-video:compositions */}
           <Composition id="SparkSheet" component={SparkSheet} durationInFrames={60} fps={30} width={1920} height={1080} />
           <Composition id="CameraDemo" component={CameraDemo} durationInFrames={200} fps={30} width={1920} height={1080} />

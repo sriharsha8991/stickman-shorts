@@ -273,18 +273,26 @@ Added 2026-11-04 (owner approved; both apply to every Txx Short):
     - **Timing (updated 2026-11-04 from the 7-day export):** engaged viewers watch about 19–24 s almost whatever the length, and 40+ s
       Shorts get only about 50–57% viewed. So 24–32 s (mean about 29 s), stare and read tests up to 40 s. Hook + promise 0–5 s. The answer line
       (first `!`) lands by about 14–20 s; only tests with a long pause land later. Never add length back. Keep the row's promise line.
+    - **Relatable first (owner, 2026-11-04):** every Short starts in a moment from a normal day: office, commute, phone, home, family,
+      food, sleep. Audience (Studio, 28 days): 25–44 is 59% of views, 13–24 is 26%, 63% male, 37% female; India 18%, Philippines 11%, US 10%,
+      Indonesia 6%, UK 3%, 75% of watch time on phones. So write for working adults and parents, keep situations universal, show men and women,
+      young and old, no rupee or dollar unless the study needs it, no stereotypes, nothing aimed at under-18s.
+    - **Pencil look (owner, 2026-11-04):** use `studio/src/shared/doodle.tsx` for every Txx Short, reference composition `DoodleDemo`. Graphite world on
+      `Paper`, everything wrapped in `filter="url(#pencil)"`, `Doodle` people (mix hair, ages, glasses), `Hatch` for shading, `CaptionBand` under the
+      floor line (ground y 1440, band y 1500) so captions read. Spark stays in his normal full colour, drawn outside the pencil filter, so he is the
+      one thing that pops. Mr. Trick is a graphite doodle too. Each Short gets one accent colour on the object that matters and its own setting. During
+      stare and read tests use `<PencilDefs still />` so the lines do not move.
     - **Spark is fooled first.** He is overconfident, falls for it out loud, then works it out with the viewer. He never lectures.
       His bulb flickers while he is wrong and lights only when he is right.
-    - **Mr. Trick:** a small original rival who sets the trap (the first Txx run builds `studio/src/shared/mrtrick.tsx`: a small plum-coloured
-      stick figure with a tall hat and a cane, all later Shorts reuse it; no known character). He never speaks. Skip him where
-      the row says nobody meant to trick anyone (T13).
+    - **Mr. Trick:** a small original rival who sets the trap (the first Txx run builds `studio/src/shared/mrtrick.tsx`: a small graphite
+      doodle with a tall hat and a cane, all later Shorts reuse it; no known character). He never speaks. Skip him where a row does not need him.
     - **Times fooled:** a small TIMES FOOLED: n badge (n = the row's Order) next to the series tag SPARK GOT TRICKED after 10 s.
     - **Bigger on screen:** Spark scale ≥ 2.3 in holds and a real face close-up at frame 0 for every row with him in frame 0;
       ground around y 1440 with captions on the floor below it, so empty floor is under 25% of the frame. His design in
       `mascot.tsx` does not change unless the owner approves it.
     - **Tests must actually work:** the picture is fully still during every stare or read test, with no camera move; Spark stays
-      out of the test area. Never fake the viewer's result. Rows flagged "owner tests" (T02, T03, T24, T28) go in the email as
-      **test on a phone before posting**. T28: slow, low contrast, 5 bands or fewer, no flash, no reversal, no saturated red.
+      out of the test area. Never fake the viewer's result. Rows flagged "owner tests" (T02, T03, T24) go in the email as
+      **test on a phone before posting**.
     - **Originality:** the opening idea repeats, and each story, world, palette and music bed stays different.
     - **Reserve rows** (facts checked 2026-11-04, scripts not written): Shepard tone (sound that seems to rise forever; muted viewers
       lose it), your nose is always in view (one expert in journalism only), illusory truth (a modest effect).
