@@ -1,0 +1,17 @@
+Stop switching tasks until you see what one minute does.
+Wait for the last part.
+[pause 1.1]
+You stop an email because your boss needs you.
+You leave, but your mind stays, like on a rope.
+[pause 0.6]
+In tests, people did the new task worse.
+[pause 0.7]
+Then students tried one small thing before leaving.
+[pause 0.7]
+They wrote a one-minute note about where to start again.
+[pause 1.0]
+The rope let go, and the new task went better!
+[pause 2.8]
+Write that note before you switch.
+[pause 1.0]
+What task is still in your head?

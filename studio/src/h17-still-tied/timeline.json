@@ -1,0 +1,98 @@
+{
+  "fps": 30,
+  "durationInFrames": 1085,
+  "seconds": 36.14,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.805,
+      "startFrame": 6,
+      "endFrame": 114,
+      "words": 10,
+      "text": "Stop switching tasks until you see what one minute does."
+    },
+    {
+      "i": 1,
+      "start": 4.255,
+      "end": 5.77,
+      "startFrame": 128,
+      "endFrame": 173,
+      "words": 5,
+      "text": "Wait for the last part."
+    },
+    {
+      "i": 2,
+      "start": 6.87,
+      "end": 9.686,
+      "startFrame": 206,
+      "endFrame": 291,
+      "words": 9,
+      "text": "You stop an email because your boss needs you."
+    },
+    {
+      "i": 3,
+      "start": 10.136,
+      "end": 13.101,
+      "startFrame": 304,
+      "endFrame": 393,
+      "words": 10,
+      "text": "You leave, but your mind stays, like on a rope."
+    },
+    {
+      "i": 4,
+      "start": 13.701,
+      "end": 16.368,
+      "startFrame": 411,
+      "endFrame": 491,
+      "words": 8,
+      "text": "In tests, people did the new task worse."
+    },
+    {
+      "i": 5,
+      "start": 17.068,
+      "end": 19.905,
+      "startFrame": 512,
+      "endFrame": 597,
+      "words": 8,
+      "text": "Then students tried one small thing before leaving."
+    },
+    {
+      "i": 6,
+      "start": 20.605,
+      "end": 23.656,
+      "startFrame": 618,
+      "endFrame": 710,
+      "words": 10,
+      "text": "They wrote a one-minute note about where to start again."
+    },
+    {
+      "i": 7,
+      "start": 24.656,
+      "end": 27.579,
+      "startFrame": 740,
+      "endFrame": 827,
+      "words": 10,
+      "text": "The rope let go, and the new task went better!"
+    },
+    {
+      "i": 8,
+      "start": 30.379,
+      "end": 32.341,
+      "startFrame": 911,
+      "endFrame": 970,
+      "words": 6,
+      "text": "Write that note before you switch."
+    },
+    {
+      "i": 9,
+      "start": 33.341,
+      "end": 35.091,
+      "startFrame": 1000,
+      "endFrame": 1053,
+      "words": 7,
+      "text": "What task is still in your head?"
+    }
+  ],
+  "chapters": []
+}
