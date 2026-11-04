@@ -257,9 +257,9 @@ animation, see §5.9 and WRITING.md §K):
     for the channel: "Your brain got tricked. Spark shows you how." Viewers are not told about a trick, they fall for it:
     - **Formats:** PLAY (the viewer does the test), ILLUSION (their eyes fail on screen), STORY (a real experiment, told as a
       trap), PUZZLE, MYTH. Never two of one format in a row where the slate avoids it.
-    - **Timing:** hook + promise 0–7 s. PLAY and PUZZLE: the test starts by ~7 s, and the viewer gets their first answer by
-      ~15 s. ILLUSION and STORY: a funny or surprising picture by ~10 s (Spark falling for it), the answer line (first `!` in the
-      script) at about 14–21 s. Hold the best picture ~2–3 s, then one line of why, then the comment question. Length: 30–36 s;
+    - **Timing:** hook + promise 0–7 s. PLAY and PUZZLE: the test starts by ~7 s and the viewer is doing something from then on;
+      the answer line (first `!` in the script) lands at about 17–23 s, later after a long stare (T03, T06, T28: about 26–29 s).
+      ILLUSION, STORY and MYTH: a funny or surprising picture by ~10 s (Spark falling for it), the answer line at about 16–24 s. Hold the best picture ~2–3 s, then one line of why, then the comment question. Length: 30–36 s;
       stare tests up to 40 s. Keep the row's promise line; `clarity_check` still applies.
     - **Spark is fooled first.** He is overconfident, falls for it out loud, then works it out with the viewer. He never lectures.
       His bulb flickers while he is wrong and lights only when he is right.
