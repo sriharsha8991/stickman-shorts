@@ -271,7 +271,7 @@ Added 2026-11-04 (owner approved; both apply to every Txx Short):
     - **Formats:** PLAY (the viewer does the test), ILLUSION (their eyes fail on screen), STORY (a real experiment, told as a
       trap), PUZZLE, MYTH. Never two of one format in a row where the slate avoids it.
     - **Timing (updated 2026-11-04 from the 7-day export):** engaged viewers watch about 19–24 s almost whatever the length, and 40+ s
-      Shorts get only about 50–57% viewed. So 24–32 s (mean about 29 s), stare and read tests up to 40 s. Hook + promise 0–5 s. The answer line
+      Shorts get only about 50–57% viewed. So 24–32 s, stare and read tests up to 40 s. Hook + promise 0–5 s. The answer line
       (first `!`) lands by about 14–20 s; only tests with a long pause land later. Never add length back. Keep the row's promise line.
     - **Relatable first (owner, 2026-11-04):** every Short starts in a moment from a normal day: office, commute, phone, home, family,
       food, sleep. Audience (Studio, 28 days): 25–44 is 59% of views, 13–24 is 26%, 63% male, 37% female; India 18%, Philippines 11%, US 10%,
@@ -282,6 +282,9 @@ Added 2026-11-04 (owner approved; both apply to every Txx Short):
       floor line (ground y 1440, band y 1500) so captions read. Spark stays in his normal full colour, drawn outside the pencil filter, so he is the
       one thing that pops. Mr. Trick is a graphite doodle too. Each Short gets one accent colour on the object that matters and its own setting. During
       stare and read tests use `<PencilDefs still />` so the lines do not move.
+    - **The scripts are close drafts.** Tested with the real voice on 2026-11-04: most run about 23–27 s and fail `clarity_check` on pace (it needs ≤ 2.3 words/s
+      overall and ≤ 3.2 speaking). Fix each one before the voice is final: add or lengthen pauses first (hook, before and after the reveal), add a natural comma,
+      then cut 3–6 words. Keep the facts, the promise line and the reveal line; do not go past 34 s (stare and read tests 40 s). Very short words push the speaking pace up, so fewer words alone may not pass; re-run the gate after each change. T31, T37 and T36 were tried and still fail.
     - **Spark is fooled first.** He is overconfident, falls for it out loud, then works it out with the viewer. He never lectures.
       His bulb flickers while he is wrong and lights only when he is right.
     - **Mr. Trick:** a small original rival who sets the trap (the first Txx run builds `studio/src/shared/mrtrick.tsx`: a small graphite
