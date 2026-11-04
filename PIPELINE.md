@@ -270,16 +270,15 @@ Added 2026-11-04 (owner approved; both apply to every Txx Short):
     for the channel: "Your brain got tricked. Spark shows you how." Viewers are not told about a trick, they fall for it:
     - **Formats:** PLAY (the viewer does the test), ILLUSION (their eyes fail on screen), STORY (a real experiment, told as a
       trap), PUZZLE, MYTH. Never two of one format in a row where the slate avoids it.
-    - **Timing:** hook + promise 0–7 s. PLAY and PUZZLE: the test starts by ~7 s and the viewer is doing something from then on;
-      the answer line (first `!` in the script) lands at about 17–23 s, later after a long stare (T03, T06, T28: about 26–29 s).
-      ILLUSION, STORY and MYTH: a funny or surprising picture by ~10 s (Spark falling for it), the answer line at about 16–24 s. Hold the best picture ~2–3 s, then one line of why, then the comment question. Length: 30–36 s;
-      stare tests up to 40 s. Keep the row's promise line; `clarity_check` still applies.
+    - **Timing (updated 2026-11-04 from the 7-day export):** engaged viewers watch about 19–24 s almost whatever the length, and 40+ s
+      Shorts get only about 50–57% viewed. So 24–32 s (mean about 29 s), stare and read tests up to 40 s. Hook + promise 0–5 s. The answer line
+      (first `!`) lands by about 14–20 s; only tests with a long pause land later. Never add length back. Keep the row's promise line.
     - **Spark is fooled first.** He is overconfident, falls for it out loud, then works it out with the viewer. He never lectures.
       His bulb flickers while he is wrong and lights only when he is right.
-    - **Mr. Trick:** a small original rival who sets the trap (T01 builds `studio/src/shared/mrtrick.tsx`: a small plum-coloured
+    - **Mr. Trick:** a small original rival who sets the trap (the first Txx run builds `studio/src/shared/mrtrick.tsx`: a small plum-coloured
       stick figure with a tall hat and a cane, all later Shorts reuse it; no known character). He never speaks. Skip him where
       the row says nobody meant to trick anyone (T13).
-    - **Times fooled:** a small TIMES FOOLED: n badge (n = order in the slate) next to the series tag SPARK GOT TRICKED after 10 s.
+    - **Times fooled:** a small TIMES FOOLED: n badge (n = the row's Order) next to the series tag SPARK GOT TRICKED after 10 s.
     - **Bigger on screen:** Spark scale ≥ 2.3 in holds and a real face close-up at frame 0 for every row with him in frame 0;
       ground around y 1440 with captions on the floor below it, so empty floor is under 25% of the frame. His design in
       `mascot.tsx` does not change unless the owner approves it.
@@ -292,7 +291,7 @@ Added 2026-11-04 (owner approved; both apply to every Txx Short):
     - **Dropped after checking, do not use:** decoy/Economist subscription (later studies often found nothing), pricier placebo and
       zero-price chocolate (author integrity concerns elsewhere; no direct finding on those papers), frequency illusion
       (no controlled experiment found), mere exposure (weak as a story).
-    - **After T10:** ask the owner in the email for the per-Short table (stayed to watch, average % viewed). Compare formats. Move
+    - **After 10 Txx Shorts:** ask the owner in the email for the per-Short table (stayed to watch, average % viewed). Compare formats. Move
       the winning format earlier in the remaining rows and say what changed.
 
 Format playbook:
