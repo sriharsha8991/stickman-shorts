@@ -150,6 +150,19 @@ animation, see §5.9 and WRITING.md §K):
   the hold) and `skills/motion-graphics/references/visual-critic.md` (independent scored critic, used in §7). Skip its
   intake questions, logo/brand rules, Instagram formats and its "never restate the voiceover" rule (we keep captions).
 
+Added 2026-11-04 (owner approved; both apply to every Txx Short):
+- **Look + self-checks:** `what-if-animation/references/look.md`, `references/traps.md`, and the writing rules in `references/formula.md`.
+  Reference only: never run its scripts and never use its ElevenLabs voice (the channel voice stays af_heart). Use: light from a
+  visible source, the face as the brightest thing in its area, a mix of shot sizes, a full world, contact shadows, the 11-point storyboard
+  check and the motion check, every line reads as a picture. Do not use: its cut pace (27 a minute) or "nothing still over 3 s", because
+  §5.8 and the still test pictures in §5.10 win; its no-captions rule (we keep captions); its What If formula or dusk palette on every
+  Short (each Short has its own world). Its view counts and channel measurements are the author's own and unverified, so never quote them.
+- **Editing:** `motion-design-skills/skills/beat-sync-editing/SKILL.md` for landing cuts and hits on the music and voice.
+- **Data reviews:** `storytelling-skills/skills/retention-audit/SKILL.md` and `channel-formula/SKILL.md` when the owner sends retention
+  graphs or the per-Short table (after T10 and later). "No graph, no audit": never estimate retention numbers.
+- **TubeAlfred** (only if its tools are available in the session): use it for rival Shorts, transcripts and comments when ideas are
+  reviewed. Learn techniques; never copy a story, character or script.
+
 ## 4. Verify the facts (gate)
 
 - Web-search every claim in the row's **Facts to verify** and every number you intend to show.

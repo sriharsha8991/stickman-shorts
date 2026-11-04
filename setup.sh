@@ -36,6 +36,9 @@ fetch LottieFiles/motion-design-skill     f9a8a041b85185ee4881b3471d3415e939aac7
 fetch Liamrjohnston/remotion-motion-graphics-skill b860c7921f2220b9e2a84e815ba0ae7b10858f08 remotion-motion-graphics
 fetch rohitg00/manim-video-generator      9c41982e620bf9dbaac6553197eb2dfafbef90f2 manim-visual-storyteller
 fetch AgriciDaniel/claude-youtube         84c3fa6805200632fadb4fe2795ef265511271c7 claude-youtube
+# added 2026-11-04 (owner): lighting, shot vocabulary, storyboard + motion self-checks for code-drawn stick figures.
+# Read-only reference: never run its scripts, never use its ElevenLabs voice. See PIPELINE.md §3.
+fetch kelano86/what-if-animation          8092fb5e825e55456d1d47fec0ebf595cb93cc0d what-if-animation
 
 echo "== Offline voice (Kokoro TTS, runs locally)"
 $PIP --break-system-packages kokoro-onnx 2>/dev/null || $PIP kokoro-onnx
