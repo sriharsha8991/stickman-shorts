@@ -62,6 +62,14 @@ reviews and posts.
 
 ## 2. Pick the video
 
+**Slate v4 FIRST (owner, 2026-11-04): the next 30 Shorts are one niche, one series, "Spark Got Tricked".** While
+`plan/slate_v4.csv` has a row whose ID is not `Produced`/`Skipped` in `status.csv`, the run makes the lowest-`Order` such row
+(owner REDO/Redo still go first). No alternation, no hacks and no plan videos until it is finished. Read §5.10. The row's voice
+script, hook, overlay, world and reveal win over everything else; the plan's source is `plan/slate_v4.py` (edit there, then
+re-run it). IDs are `Txx`: `studio/src/txx-<slug>/`, composition `TxxSlug`, `videos/Txx-<slug>.mp4`, `videos/Txx.md`, Drive doc
+`Txx · <Title>`. Re-verify on the day every fact the row flags as secondhand. A row that fails verification or a real-phone
+doubt: use a row from the reserve list in §5.10 and say so in the email.
+
 **Sprint slate v3 first (owner, 2026-10-27, strategy doc "Stickman Shorts — Growth strategy to 100K views").**
 While `plan/slate_v3.csv` has a row whose ID is not `Produced`/`Skipped` in `status.csv`, the run makes the
 lowest-`Order` such row (V or H), ignoring the alternation below (owner REDO/Redo still go first). Its spoken
@@ -244,6 +252,35 @@ animation, see §5.9 and WRITING.md §K):
      drop, then the hit; Spark's biggest reaction (mindblown/bulb). Hold it 3 s still (key insight).
    - **27–30 s, one simple action + the comment question,** flowing back into frame 0 (loop).
    - Gate: `tools/clarity_check.py` now FAILS above 40 s and when no promise line is in the first three lines.
+
+10. **Spark Got Tricked, slate v4 (owner, 2026-11-04; overrides §5.9's timing and older series rules for Txx rows).** One promise
+    for the channel: "Your brain got tricked. Spark shows you how." Viewers are not told about a trick, they fall for it:
+    - **Formats:** PLAY (the viewer does the test), ILLUSION (their eyes fail on screen), STORY (a real experiment, told as a
+      trap), PUZZLE, MYTH. Never two of one format in a row where the slate avoids it.
+    - **Timing:** hook + promise 0–7 s. PLAY and PUZZLE: the test starts by ~7 s, and the viewer gets their first answer by
+      ~15 s. ILLUSION and STORY: a funny or surprising picture by ~10 s (Spark falling for it), the answer line (first `!` in the
+      script) at about 14–21 s. Hold the best picture ~2–3 s, then one line of why, then the comment question. Length: 30–36 s;
+      stare tests up to 40 s. Keep the row's promise line; `clarity_check` still applies.
+    - **Spark is fooled first.** He is overconfident, falls for it out loud, then works it out with the viewer. He never lectures.
+      His bulb flickers while he is wrong and lights only when he is right.
+    - **Mr. Trick:** a small original rival who sets the trap (T01 builds `studio/src/shared/mrtrick.tsx`: a small plum-coloured
+      stick figure with a tall hat and a cane, all later Shorts reuse it; no known character). He never speaks. Skip him where
+      the row says nobody meant to trick anyone (T13).
+    - **Times fooled:** a small TIMES FOOLED: n badge (n = order in the slate) next to the series tag SPARK GOT TRICKED after 10 s.
+    - **Bigger on screen:** Spark scale ≥ 2.3 in holds and a real face close-up at frame 0 for every row with him in frame 0;
+      ground around y 1440 with captions on the floor below it, so empty floor is under 25% of the frame. His design in
+      `mascot.tsx` does not change unless the owner approves it.
+    - **Tests must actually work:** the picture is fully still during every stare or read test, with no camera move; Spark stays
+      out of the test area. Never fake the viewer's result. Rows flagged "owner tests" (T02, T03, T24, T28) go in the email as
+      **test on a phone before posting**. T28: slow, low contrast, 5 bands or fewer, no flash, no reversal, no saturated red.
+    - **Originality:** the opening idea repeats, and each story, world, palette and music bed stays different.
+    - **Reserve rows** (facts checked 2026-11-04, scripts not written): Shepard tone (sound that seems to rise forever; muted viewers
+      lose it), your nose is always in view (one expert in journalism only), illusory truth (a modest effect).
+    - **Dropped after checking, do not use:** decoy/Economist subscription (later studies often found nothing), pricier placebo and
+      zero-price chocolate (author integrity concerns elsewhere; no direct finding on those papers), frequency illusion
+      (no controlled experiment found), mere exposure (weak as a story).
+    - **After T10:** ask the owner in the email for the per-Short table (stayed to watch, average % viewed). Compare formats. Move
+      the winning format earlier in the remaining rows and say what changed.
 
 Format playbook:
 - **Mechanism Reveal**: hook → setup → reveal of the hidden system (wow) → receipt/proof → payoff → loop.

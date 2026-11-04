@@ -3,6 +3,7 @@
 Automated vertical (9:16) stick-figure shorts for Instagram Reels and YouTube Shorts, built with
 Remotion and the `stickman-video` engine.
 
+- **Slate v4 (owner 2026-11-04): the next 30 Shorts are one niche, series "Spark Got Tricked"** (`plan/slate_v4.csv`, IDs Txx, source `plan/slate_v4.py`). Made first, before any plan video or hack. Rules: PIPELINE.md §2 + §5.10.
 - **Producing a video?** Follow `PIPELINE.md` step by step. One run = ONE Short (owner 2026-10-27), alternating plan video (Vxxx) and life/productivity hack (Hxx). First 10 seconds + clarity rules: PIPELINE.md §5.6, WRITING.md §H.
 - **Long-form: STOPPED** (owner 2026-10-27, `longform_state.paused`). Only if the owner sends LONG RESUME: follow `LONGFORM.md` (3–6 min, 16:9, 130–135 wpm, 0.5–1 s pauses, a change every 3–5 s, a screen transition every 5–7 s, Spark changes size/side every chapter via `shared/camera.tsx`, one video every 40 h; plan `plan/longform_plan.csv`, IDs Lxxx, state `plan/longform_state.json`).
 - Plan: `plan/content_plan.csv` (100 videos) · tracker: `plan/status.csv` · owner feedback: `plan/feedback.md`.
