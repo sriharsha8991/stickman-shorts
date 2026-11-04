@@ -16,7 +16,7 @@ add("T01","t01-never-saw","PLAY","Did you really see this word?","WATCH THESE WO
 "The list rolls back, word by word. There is no SLEEP. The word falls off Spark's memory wall and smashes.",
 "Night-blue bedroom with one long wall",
 "Did you see sleep on the list?",
-["Why will you remember 1 word you never saw?","Wait for the last part. I will prove it.",P(0.6),"Read these words once, and try to remember them.",P(6.5),"Was the word sleep on the list?",P(1.0),"Look again, because it was never there!",P(1.2),"Your brain saw bed and dream, and added sleep.","In one test, people recalled it about half the time.","Did you see sleep on the list?"],
+["Why might you remember 1 word you never saw?","Wait for the last part. I will prove it.",P(0.6),"Read these words once, and try to remember them.",P(6.5),"Was the word sleep on the list?",P(1.0),"Look again, because it was never there!",P(1.2),"Your brain saw bed and dream, and added sleep.","In one test, people recalled it about half the time.","Did you see sleep on the list?"],
 "Lists of related words make people recall a word that was never shown. Exp 2, 15-word lists: false recall 55%, a rate across lists. Show the 15-word sleep list on screen.",
 "One lab test with students; 55% is a rate across lists.",
 "https://personality-project.org/revelle/syllabi/classreadings/rm95/rm95.html",
@@ -29,7 +29,7 @@ add("T02","t02-eye-hole","PLAY","Is there a hole in your eye?","YOUR EYE'S HOLE"
 "The eye opens in cross-section: the gap where no vision happens, and the brain paints over it.",
 "Optician's room, eye chart on the wall",
 "Did the dot disappear for you?",
-["Why can your eye never see this 1 spot?","Wait for the last part. One dot will disappear.",P(0.6),"Close your left eye, and look at the left dot.","Now move your phone slowly towards your face.",P(3.5),"Did the right dot disappear for you?",P(0.8),"That dot landed on your blind spot.","Each eye has one small place that cannot see.","Your brain fills the gap, so you never notice.","Did the dot disappear for you?"],
+["Why can your eye never see this 1 spot?","Wait for the last part. One dot will disappear.",P(0.6),"Close your left eye, and look at the left dot.","Now move your phone slowly towards your face.",P(3.5),"Did the right dot disappear for you?",P(0.8),"That dot landed on your blind spot!","Each eye has one small place that cannot see.","Your brain fills the gap, so you never notice.","Did the dot disappear for you?"],
 "Each eye has a blind spot about 15 degrees from centre, about 5 degrees wide; the brain fills it in.",
 "Tell viewers to move slowly, because the distance differs. Phones only.",
 "https://www.uni-muenster.de/imperia/md/content/psyifp/ae_lappe/meermeier_2023.pdf; https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2014.00534/full",
@@ -68,7 +68,7 @@ add("T05","t05-door-swap","STORY","Would you notice if the person talking to you
 "Replay from above: door passes, man A walks off, man B keeps talking, Spark still chatting.",
 "Sunny university path",
 "Would you have noticed?",
-["Why would you never notice 1 stranger being swapped?","Wait for the last part. A door does the trick.",P(0.5),"A man asked strangers on a campus for directions.","Then two men carried a door between them.","Behind the door, a different man took his place.",P(1.0),"About half the people did not notice him change!",P(1.0),"It was a small test, with only fifteen people.","Your brain keeps less detail than it feels.","Would you have noticed the new man?"],
+["Would you notice 1 stranger being swapped with another?","Wait for the last part. A door does the trick.",P(0.5),"A man asked strangers on a campus for directions.","Then two men carried a door between them.","Behind the door, a different man took his place.",P(1.0),"About half the people did not notice him change!",P(1.0),"It was a small test, with only fifteen people.","Your brain keeps less detail than it feels.","Would you have noticed the new man?"],
 "Exp 1: 7 of 15 noticed, 8 did not. Noticers were students aged about 20-30.",
 "Very small test. Say about half, never most.",
 "https://gwern.net/doc/psychology/cognitive-bias/illusion-of-depth/1998-simons.pdf",
@@ -81,7 +81,7 @@ add("T06","t06-say-colour","PLAY","Can you pass this simple colour test?","SAY T
 "Spark's mouth jams on the word, and a giant word falls on him.",
 "Game show set",
 "Which word stopped you?",
-["You fail this 1 colour test. Can you stop reading?","Wait for the last part. It gets much harder.",P(0.5),"Say each colour out loud, and do not read.",P(3.0),"Now try these words, and say only the colour.",P(4.5),"Did your mouth get stuck on the word?",P(0.8),"Your brain reads the word before you can stop it.","In the old test, people became much slower.","Which word stopped you just now?"],
+["You fail this 1 colour test. Can you stop reading?","Wait for the last part. It gets much harder.",P(0.5),"Say each colour out loud, and do not read.",P(3.0),"Now try these words, and say only the colour.",P(4.5),"Did your mouth get stuck on the word?",P(0.8),"Your brain reads the word before you can stop it!","In the old test, people became much slower.","Which word stopped you just now?"],
 "Stroop Exp 2: 100 students, 63.3 s for squares vs 110.3 s for conflicting words per 100 responses (74% longer).",
 "74% is the 1935 card test.",
 "https://eclass.uoa.gr/modules/document/file.php/PHS244/Stroop%2C%20JEP%20%281935%29.pdf",
@@ -146,7 +146,7 @@ add("T11","t11-crossed-fingers","PLAY","Can one thing feel like two?","CROSS YOU
 "Skin map: those two outer sides never normally touch one thing, so the brain says TWO.",
 "Toy shop with a shelf of balls",
 "Did you feel two?",
-["Why do your 2 fingers feel what is never there?","Wait for the last part. You can try it now.",P(0.5),"Cross two fingers on one hand, just like this.","Now touch a small round thing with both tips.",P(3.5),"Does that one thing feel like two now?",P(0.8),"Those two sides of your fingers never normally meet.","So your brain decides there must be two things.","Did you feel two things or one?"],
+["Why do your 2 fingers feel what is never there?","Wait for the last part. You can try it now.",P(0.5),"Cross two fingers on one hand, just like this.","Now touch a small round thing with both tips.",P(3.5),"Does that one thing feel like two now?",P(0.8),"Those two sides of your fingers never normally meet!","So your brain decides there must be two things.","Did you feel two things or one?"],
 "Crossed fingers: about 93% 'two' vs 16.7% with parallel fingers (blindfolded).",
 "Small clinical sample, so no number on screen. Do not state the explanation as settled.",
 "https://core.ac.uk/download/217535047.pdf; https://www.illusionsindex.org/i/80-aristotle",
@@ -159,7 +159,7 @@ add("T12","t12-the-the","PLAY","Did you just miss a word?","READ THIS ONCE",
 "Spark looks back at everything he has read, every sign now with an extra THE.",
 "Train station, departure board",
 "Did you see the extra word?",
-["How did you never see this 1 extra word?","Wait for the last part. It is right in front of you.",P(0.5),"Read the sign once, and tell me what it says.",P(3.0),"Now look closely, because the word the is there twice.",P(1.0),"In one lab test, readers noticed less than half the time!",P(1.0),"Scientists are still working out why this happens.","Did you see the extra word?"],
+["How will you miss this 1 extra word?","Wait for the last part. It is right in front of you.",P(0.5),"Read the sign once, and tell me what it says.",P(3.0),"Now look closely, because the word the is there twice.",P(1.0),"In one lab test, readers noticed less than half the time!",P(1.0),"Scientists are still working out why this happens.","Did you see the extra word?"],
 "Staub et al.: 51 people, 36 items: repeated 'the' noticed 45.8%, repeated noun 90.2%.",
 "Lab sentences. Do not call it repetition blindness.",
 "https://par.nsf.gov/servlets/purl/10094230; https://propel.umass.edu/sites/default/files/publications/2025-03/HuangStaubLLC2021.pdf",
@@ -198,7 +198,7 @@ add("T15","t15-birthday","PUZZLE","How many people does it take to share a birth
 "Lines draw between every pair of guests until the room is a dense web of 253 lines.",
 "Party room with balloons",
 "What number did you guess?",
-["Why do you never guess this 1 birthday number?","Wait for the last part. The answer is small.",P(0.5),"How many people must stand in one room?","We want a fair chance that two share a birthday.","It sounds like you need a very big crowd.",P(1.0),"You only need twenty-three people!",P(1.0),"That is because every pair of people counts.","That makes two hundred fifty-three possible pairs.","What number did you guess?"],
+["Why do you guess this 1 birthday number wrong?","Wait for the last part. The answer is small.",P(0.5),"How many people must stand in one room?","We want a fair chance that two share a birthday.","It sounds like you need a very big crowd.",P(1.0),"You only need twenty-three people!",P(1.0),"That is because every pair of people counts.","That makes two hundred fifty-three possible pairs.","What number did you guess?"],
 "23 people: 50.73% (assumes 365 equal days). Pairs: 253. Both computed and checked.",
 "Two people share with each other, not with you.",
 "https://en.wikipedia.org/wiki/Birthday_problem; https://www.chiefscientist.gov.au/2011/05/the-birthday-problem",
@@ -211,7 +211,7 @@ add("T16","t16-fake-hand","STORY","Can your brain adopt a fake hand?","THIS HAND
 "The wall lifts: his real hand was there all along, and Spark looks shocked at it.",
 "Science fair table",
 "Would you try this at home?",
-["Why would your brain never doubt 1 fake hand?","Wait for the last part. It takes only a paintbrush.",P(0.5),"Hide one real hand behind a small wall.","Then place a fake hand right in front of you.","A friend brushes both hands at the same moment.",P(1.0),"The touch can feel like it is on the fake hand!",P(1.0),"Your brain joins what you see with what you feel.","It does not work on everyone.","Would you try this at home?"],
+["How can your brain believe 1 fake hand is yours?","Wait for the last part. It takes only a paintbrush.",P(0.5),"Hide one real hand behind a small wall.","Then place a fake hand right in front of you.","A friend brushes both hands at the same moment.",P(1.0),"The touch can feel like it is on the fake hand!",P(1.0),"Your brain joins what you see with what you feel.","It does not work on everyone.","Would you try this at home?"],
 "Botvinick & Cohen 1998: 10 subjects; 8 of 10 reported it (secondhand).",
 "Not everyone feels it. No number on screen unless the primary is opened.",
 "https://www.sciencedaily.com/releases/1998/02/980225074435.htm; https://pmc.ncbi.nlm.nih.gov/articles/PMC7519080",
@@ -302,7 +302,7 @@ add("T23","t23-fake-coins","PLAY","Can you spot the fake coin flips?","WHICH IS 
 "Row A is stamped HUMAN; Row B's long streak glows, and a hundred flips scroll past with streaks everywhere.",
 "Old casino table without chips, coins only",
 "Which row did you pick?",
-["Why will you fail to spot 1 fake coin row?","Wait for the last part. The answer looks wrong.",P(0.5),"Row A keeps switching between heads and tails.","Row B has five heads all in a row.","Which row did a human make up?",P(1.5),"Row A is the fake row!",P(1.0),"People switch too often when they fake coin flips.","In a hundred real flips, that long streak is very likely.","Which row did you pick?"],
+["Can you spot the 1 fake row of coins?","Wait for the last part. The answer looks wrong.",P(0.5),"Row A keeps switching between heads and tails.","Row B has five heads all in a row.","Which row did a human make up?",P(1.5),"Row A is the fake row!",P(1.0),"People switch too often when they fake coin flips.","In a hundred real flips, that long streak is very likely.","Which row did you pick?"],
 "Run of 5+ either side in 100 fair flips: 97.2% (computed and checked). Fakes alternate too often (qualitative).",
 "Rows are our own example.",
 "https://cris.huji.ac.il/en/publications/the-perception-of-randomness/; https://scispace.com/pdf/belief-in-the-law-of-small-numbers-3wihxjnjvv.pdf",
@@ -451,12 +451,14 @@ for n, r in enumerate(R, 1):
         if row.endswith("!") and rev_s == "":
             rev_s = round(t, 1)
         t += len(row.split()) / 2.95 + 0.45
+    if rev_s == "":
+        probs.append(f"{i} no reveal line ending in !")
     rows.append([n, i, slug, fmt, title, lines[0], SCORE(lines[0]), ov, lines[1], " | ".join(script), f0, trap, pay, rev, world, q, claim, cav, src, flags, round(est, 1), rev_s])
 with OUT.open("w", newline="") as f:
     w = csv.writer(f)
     w.writerow(HEAD)
     w.writerows(rows)
-print(len(rows), "rows; est length", min(r[-1] for r in rows), "-", max(r[-1] for r in rows))
+print(len(rows), "rows; est length", min(r[-2] for r in rows), "-", max(r[-2] for r in rows))
 for p in probs:
     print(" -", p)
 sys.exit(1 if probs else 0)
