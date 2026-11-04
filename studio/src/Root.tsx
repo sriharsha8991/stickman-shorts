@@ -70,6 +70,7 @@ import { Video as H06FiftySteps, DURATION as H06FiftySteps_DURATION } from "./h0
 import { DoodleDemo } from "./doodle-demo/DoodleDemo";
 import { Video as V032FirstNumber, DURATION as V032FirstNumber_DURATION } from "./v032-first-number/Video";
 import { Video as H17StillTied, DURATION as H17StillTied_DURATION } from "./h17-still-tied/Video";
+import { Video as T31VoiceNote, DURATION as T31VoiceNote_DURATION } from "./t31-voice-note/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -619,6 +620,15 @@ export const RemotionRoot: React.FC = () => {
         defaultProps={{ music: 0.22, sfx: 0.65, voice: "voice.wav", captions: false }}
       />
       <Composition id="DoodleDemo" component={DoodleDemo} durationInFrames={60} fps={30} width={1080} height={1920} />
+      <Composition
+        id="T31VoiceNote"
+        component={T31VoiceNote}
+        durationInFrames={T31VoiceNote_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
       {/* stickman-video:compositions */}
           <Composition id="SparkSheet" component={SparkSheet} durationInFrames={60} fps={30} width={1920} height={1080} />
           <Composition id="CameraDemo" component={CameraDemo} durationInFrames={200} fps={30} width={1920} height={1080} />
