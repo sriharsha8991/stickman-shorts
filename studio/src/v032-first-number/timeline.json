@@ -1,0 +1,98 @@
+{
+  "fps": 30,
+  "durationInFrames": 1147,
+  "seconds": 38.21,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.123,
+      "startFrame": 6,
+      "endFrame": 94,
+      "words": 9,
+      "text": "Stop buying until you see what one number does."
+    },
+    {
+      "i": 1,
+      "start": 3.573,
+      "end": 7.114,
+      "startFrame": 107,
+      "endFrame": 213,
+      "words": 11,
+      "text": "Wait for the last part. One small coin moves a crowd."
+    },
+    {
+      "i": 2,
+      "start": 7.914,
+      "end": 10.41,
+      "startFrame": 237,
+      "endFrame": 312,
+      "words": 8,
+      "text": "Your brain looks hardest at the first number."
+    },
+    {
+      "i": 3,
+      "start": 10.86,
+      "end": 14.337,
+      "startFrame": 326,
+      "endFrame": 430,
+      "words": 9,
+      "text": "So one ninety-nine feels much cheaper than two hundred."
+    },
+    {
+      "i": 4,
+      "start": 14.787,
+      "end": 18.542,
+      "startFrame": 444,
+      "endFrame": 556,
+      "words": 11,
+      "text": "Scientists tested this with a cheap pen and a costly pen."
+    },
+    {
+      "i": 5,
+      "start": 18.992,
+      "end": 22.789,
+      "startFrame": 570,
+      "endFrame": 684,
+      "words": 9,
+      "text": "Forty-four people in every hundred chose the costly pen."
+    },
+    {
+      "i": 6,
+      "start": 23.239,
+      "end": 26.077,
+      "startFrame": 697,
+      "endFrame": 782,
+      "words": 8,
+      "text": "Then both prices moved by just one cent."
+    },
+    {
+      "i": 7,
+      "start": 27.077,
+      "end": 29.957,
+      "startFrame": 812,
+      "endFrame": 899,
+      "words": 8,
+      "text": "Now only eighteen in every hundred chose it!"
+    },
+    {
+      "i": 8,
+      "start": 31.957,
+      "end": 34.197,
+      "startFrame": 959,
+      "endFrame": 1026,
+      "words": 8,
+      "text": "So read the whole price before you pick."
+    },
+    {
+      "i": 9,
+      "start": 34.647,
+      "end": 36.609,
+      "startFrame": 1039,
+      "endFrame": 1098,
+      "words": 6,
+      "text": "Which price fooled you last time?"
+    }
+  ],
+  "chapters": []
+}

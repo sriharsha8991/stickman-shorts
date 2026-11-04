@@ -1,0 +1,14 @@
+Stop buying until you see what one number does.
+Wait for the last part. One small coin moves a crowd.
+[pause 0.8]
+Your brain looks hardest at the first number.
+So one ninety-nine feels much cheaper than two hundred.
+Scientists tested this with a cheap pen and a costly pen.
+Forty-four people in every hundred chose the costly pen.
+Then both prices moved by just one cent.
+[pause 1.0]
+Now only eighteen in every hundred chose it!
+[pause 2.0]
+So read the whole price before you pick.
+Which price fooled you last time?
+[pause 1.0]
