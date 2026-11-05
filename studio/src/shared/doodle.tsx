@@ -82,7 +82,7 @@ export type Hair = "short" | "long" | "bun" | "curly" | "bald" | "cap";
 export type DoodleFace = "plain" | "happy" | "shock" | "bored" | "angry";
 
 /** A doodle person: thin graphite limbs, a paper-white head, a simple shirt, one hair style. Mix people freely: every age, every look. */
-export const Doodle: React.FC<{ pose?: Partial<Pose>; scale?: number; facing?: number; hair?: Hair; face?: DoodleFace; glasses?: boolean; shirt?: boolean; x?: number; ground?: number }> = ({
+export const Doodle: React.FC<{ pose?: Partial<Pose>; scale?: number; facing?: number; hair?: Hair; face?: DoodleFace; glasses?: boolean; shirt?: boolean; x?: number; ground?: number; yawn?: number; yawnColor?: string }> = ({
   pose = {},
   scale = 1.6,
   facing = 1,
@@ -92,6 +92,8 @@ export const Doodle: React.FC<{ pose?: Partial<Pose>; scale?: number; facing?: n
   shirt = true,
   x = 0,
   ground = 0,
+  yawn = 0,
+  yawnColor = GRAPHITE,
 }) => {
   const p: Pose = { ...STAND, ...pose, x, y: ground - 92.5 * scale };
   const j = solve(p, scale, facing);
@@ -127,18 +129,26 @@ export const Doodle: React.FC<{ pose?: Partial<Pose>; scale?: number; facing?: n
       {hair === "curly" &&
         [-1, -0.55, -0.1, 0.35, 0.8, 1.1].map((a, i) => <circle key={i} cx={hx + a * R} cy={hy - R * (1 - Math.abs(a) * 0.45) - 3} r={R * 0.3} fill={GRAPHITE} />)}
       {hair === "cap" && <path d={`M ${hx - R} ${hy - 6} Q ${hx} ${hy - R - 12} ${hx + R} ${hy - 6} L ${hx + facing * (R + 16)} ${hy - 4} L ${hx - facing * R} ${hy - 6} Z`} fill={GRAPHITE} />}
-      {/* eyes + mouth */}
-      <g fill={GRAPHITE}>
-        <circle cx={hx + ex - 5 * scale} cy={hy - 1 * scale} r={2.1 * scale} />
-        <circle cx={hx + ex + 6 * scale} cy={hy - 1 * scale} r={2.1 * scale} />
-      </g>
+      {/* eyes + mouth (a yawn above 0.35 shuts the eyes and opens the mouth, added for T37) */}
+      {yawn > 0.35 ? (
+        <g fill="none" stroke={GRAPHITE} strokeWidth={2.2 * scale} strokeLinecap="round">
+          <path d={`M ${hx + ex - 9 * scale} ${hy - 1 * scale} q ${4 * scale} ${3 * scale} ${8 * scale} 0`} />
+          <path d={`M ${hx + ex + 2 * scale} ${hy - 1 * scale} q ${4 * scale} ${3 * scale} ${8 * scale} 0`} />
+        </g>
+      ) : (
+        <g fill={GRAPHITE}>
+          <circle cx={hx + ex - 5 * scale} cy={hy - 1 * scale} r={2.1 * scale} />
+          <circle cx={hx + ex + 6 * scale} cy={hy - 1 * scale} r={2.1 * scale} />
+        </g>
+      )}
       {glasses && (
         <g fill="none" stroke={GRAPHITE} strokeWidth={1.8 * scale}>
           <circle cx={hx + ex - 5 * scale} cy={hy - 1 * scale} r={5.2 * scale} />
           <circle cx={hx + ex + 6 * scale} cy={hy - 1 * scale} r={5.2 * scale} />
         </g>
       )}
-      <g fill="none" stroke={GRAPHITE} strokeWidth={2 * scale} strokeLinecap="round">
+      {yawn > 0.02 && <ellipse cx={hx + ex + 0.5 * scale} cy={hy + (6 + 5 * yawn) * scale} rx={(3 + 5 * yawn) * scale} ry={(1.5 + 7.5 * yawn) * scale} fill={yawnColor} stroke={GRAPHITE} strokeWidth={2 * scale} />}
+      <g fill="none" stroke={GRAPHITE} strokeWidth={2 * scale} strokeLinecap="round" opacity={yawn > 0.02 ? 0 : 1}>
         {face === "plain" && <line x1={hx + ex - 3 * scale} y1={hy + 10 * scale} x2={hx + ex + 5 * scale} y2={hy + 10 * scale} />}
         {face === "happy" && <path d={`M ${hx + ex - 5 * scale} ${hy + 8 * scale} Q ${hx + ex} ${hy + 14 * scale} ${hx + ex + 6 * scale} ${hy + 8 * scale}`} />}
         {face === "shock" && <ellipse cx={hx + ex} cy={hy + 11 * scale} rx={3 * scale} ry={4.5 * scale} />}

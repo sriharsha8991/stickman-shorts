@@ -17,8 +17,10 @@ export const MrTrick: React.FC<{
   pose?: Partial<Pose>;
   mood?: TrickMood;
   cane?: "down" | "none";
+  yawn?: number;
+  yawnColor?: string;
   children?: (j: Joints) => React.ReactNode;
-}> = ({ x = 0, ground = 0, scale = 1.05, facing = 1, pose = {}, mood = "sly", cane = "down", children }) => {
+}> = ({ x = 0, ground = 0, scale = 1.05, facing = 1, pose = {}, mood = "sly", cane = "down", yawn = 0, yawnColor = GRAPHITE, children }) => {
   const p: Pose = { ...STAND, ...pose, x, y: ground - 92.5 * scale };
   const j = solve(p, scale, facing);
   const [hx, hy] = j.headC;
@@ -61,9 +63,10 @@ export const MrTrick: React.FC<{
       <g fill="none" stroke={GRAPHITE} strokeWidth={1.9 * scale} strokeLinecap="round">
         <path d={`M ${hx + ex - 9 * scale} ${hy - 3 * scale} L ${hx + ex - 1 * scale} ${hy - (mood === "surprised" ? 6 : 2) * scale}`} />
         <path d={`M ${hx + ex + 2 * scale} ${hy - (mood === "surprised" ? 7 : 3) * scale} Q ${hx + ex + 6 * scale} ${hy - 9 * scale} ${hx + ex + 10 * scale} ${hy - (mood === "surprised" ? 6 : 5) * scale}`} />
-        {mood === "sly" && <path d={`M ${hx + ex - 5 * scale} ${hy + 10 * scale} Q ${hx + ex + 2 * scale} ${hy + 11 * scale} ${hx + ex + 8 * scale} ${hy + 6 * scale}`} />}
-        {mood === "smug" && <path d={`M ${hx + ex - 6 * scale} ${hy + 8 * scale} Q ${hx + ex + 1 * scale} ${hy + 15 * scale} ${hx + ex + 9 * scale} ${hy + 6 * scale}`} />}
-        {mood === "surprised" && <ellipse cx={hx + ex + 1 * scale} cy={hy + 10 * scale} rx={2.5 * scale} ry={3.5 * scale} />}
+        {yawn > 0.02 && <ellipse cx={hx + ex + 1 * scale} cy={hy + (7 + 4 * yawn) * scale} rx={(2.5 + 4.5 * yawn) * scale} ry={(1.5 + 7 * yawn) * scale} fill={yawnColor} />}
+        {yawn <= 0.02 && mood === "sly" && <path d={`M ${hx + ex - 5 * scale} ${hy + 10 * scale} Q ${hx + ex + 2 * scale} ${hy + 11 * scale} ${hx + ex + 8 * scale} ${hy + 6 * scale}`} />}
+        {yawn <= 0.02 && mood === "smug" && <path d={`M ${hx + ex - 6 * scale} ${hy + 8 * scale} Q ${hx + ex + 1 * scale} ${hy + 15 * scale} ${hx + ex + 9 * scale} ${hy + 6 * scale}`} />}
+        {yawn <= 0.02 && mood === "surprised" && <ellipse cx={hx + ex + 1 * scale} cy={hy + 10 * scale} rx={2.5 * scale} ry={3.5 * scale} />}
       </g>
       <Hatch x={j.hip[0] - 7 * scale} y={j.neck[1]} w={14 * scale} h={j.hip[1] - j.neck[1]} gap={5 * scale} o={0.5} width={1.6} />
       {children?.(j)}

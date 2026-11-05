@@ -1,0 +1,12 @@
+Stop. Can you stop this yawn from reaching your mouth?
+Wait for the last part.
+[pause 0.8]
+Watch Spark yawn. Try hard not to yawn.
+[pause 3.2]
+Did you feel a yawn coming?
+[pause 0.8]
+In one big study, about two people in three yawned!
+[pause 1.5]
+Many people say it shows you care. But the proof is weak.
+[pause 0.6]
+Did you yawn while watching this video?
