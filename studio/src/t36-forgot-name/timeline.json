@@ -1,0 +1,80 @@
+{
+  "fps": 30,
+  "durationInFrames": 881,
+  "seconds": 29.36,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.08,
+      "startFrame": 6,
+      "endFrame": 92,
+      "words": 10,
+      "text": "Why do you lose 1 name right after hearing it?"
+    },
+    {
+      "i": 1,
+      "start": 3.53,
+      "end": 5.045,
+      "startFrame": 106,
+      "endFrame": 151,
+      "words": 5,
+      "text": "Wait for the last part."
+    },
+    {
+      "i": 2,
+      "start": 5.745,
+      "end": 8.411,
+      "startFrame": 172,
+      "endFrame": 252,
+      "words": 8,
+      "text": "Everyone says their name in a new meeting."
+    },
+    {
+      "i": 3,
+      "start": 8.861,
+      "end": 11.293,
+      "startFrame": 266,
+      "endFrame": 339,
+      "words": 8,
+      "text": "You are busy, planning what you will say."
+    },
+    {
+      "i": 4,
+      "start": 12.293,
+      "end": 15.899,
+      "startFrame": 369,
+      "endFrame": 477,
+      "words": 9,
+      "text": "Scientists tested this with people reading words in turn."
+    },
+    {
+      "i": 5,
+      "start": 17.099,
+      "end": 20.299,
+      "startFrame": 513,
+      "endFrame": 609,
+      "words": 10,
+      "text": "They often forgot the words from just before their turn!"
+    },
+    {
+      "i": 6,
+      "start": 22.299,
+      "end": 25.499,
+      "startFrame": 669,
+      "endFrame": 765,
+      "words": 9,
+      "text": "That test used words, but it may explain names."
+    },
+    {
+      "i": 7,
+      "start": 26.199,
+      "end": 28.311,
+      "startFrame": 786,
+      "endFrame": 849,
+      "words": 6,
+      "text": "Whose name did you forget today?"
+    }
+  ],
+  "chapters": []
+}

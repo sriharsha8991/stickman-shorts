@@ -1,0 +1,13 @@
+Why do you lose 1 name right after hearing it?
+Wait for the last part.
+[pause 0.7]
+Everyone says their name in a new meeting.
+You are busy, planning what you will say.
+[pause 1.0]
+Scientists tested this with people reading words in turn.
+[pause 1.2]
+They often forgot the words from just before their turn!
+[pause 2.0]
+That test used words, but it may explain names.
+[pause 0.7]
+Whose name did you forget today?

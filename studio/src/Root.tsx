@@ -72,6 +72,7 @@ import { Video as V032FirstNumber, DURATION as V032FirstNumber_DURATION } from "
 import { Video as H17StillTied, DURATION as H17StillTied_DURATION } from "./h17-still-tied/Video";
 import { Video as T31VoiceNote, DURATION as T31VoiceNote_DURATION } from "./t31-voice-note/Video";
 import { Video as T37YawnTest, DURATION as T37YawnTest_DURATION } from "./t37-yawn-test/Video";
+import { Video as T36ForgotName, DURATION as T36ForgotName_DURATION } from "./t36-forgot-name/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -634,6 +635,15 @@ export const RemotionRoot: React.FC = () => {
         id="T37YawnTest"
         component={T37YawnTest}
         durationInFrames={T37YawnTest_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.3, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="T36ForgotName"
+        component={T36ForgotName}
+        durationInFrames={T36ForgotName_DURATION}
         fps={30}
         width={1080}
         height={1920}
