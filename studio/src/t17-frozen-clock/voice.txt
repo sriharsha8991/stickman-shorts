@@ -1,0 +1,12 @@
+Why do you see 1 clock stop, when you look?
+Wait for the last part.
+[pause 0.6]
+Look away from this clock. Then quickly look back.
+[pause 2.9]
+The first second can feel too long. But the clock never stopped.
+[pause 1.0]
+In a lab, under one second felt like one full second!
+[pause 1.9]
+Your eyes jump. Your brain may then fill that moment.
+[pause 0.7]
+Have you seen this happen?
