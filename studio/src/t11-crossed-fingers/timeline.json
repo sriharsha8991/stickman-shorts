@@ -1,0 +1,80 @@
+{
+  "fps": 30,
+  "durationInFrames": 927,
+  "seconds": 30.88,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.016,
+      "startFrame": 6,
+      "endFrame": 90,
+      "words": 10,
+      "text": "Why do your 2 fingers feel what is never there?"
+    },
+    {
+      "i": 1,
+      "start": 3.616,
+      "end": 5.131,
+      "startFrame": 108,
+      "endFrame": 154,
+      "words": 5,
+      "text": "Wait for the last part."
+    },
+    {
+      "i": 2,
+      "start": 5.581,
+      "end": 8.525,
+      "startFrame": 167,
+      "endFrame": 256,
+      "words": 9,
+      "text": "Cross two fingers on one hand, just like this."
+    },
+    {
+      "i": 3,
+      "start": 8.975,
+      "end": 12.153,
+      "startFrame": 269,
+      "endFrame": 365,
+      "words": 10,
+      "text": "Now, touch a pea, or your nose, with both tips."
+    },
+    {
+      "i": 4,
+      "start": 15.153,
+      "end": 17.159,
+      "startFrame": 455,
+      "endFrame": 515,
+      "words": 7,
+      "text": "Does that one thing feel like two?"
+    },
+    {
+      "i": 5,
+      "start": 18.359,
+      "end": 22.177,
+      "startFrame": 551,
+      "endFrame": 665,
+      "words": 11,
+      "text": "Normally, those two sides of your fingers touch two different things!"
+    },
+    {
+      "i": 6,
+      "start": 22.977,
+      "end": 26.049,
+      "startFrame": 689,
+      "endFrame": 781,
+      "words": 10,
+      "text": "So, your brain seems to decide there are two things."
+    },
+    {
+      "i": 7,
+      "start": 27.949,
+      "end": 29.827,
+      "startFrame": 838,
+      "endFrame": 895,
+      "words": 6,
+      "text": "Did you feel two, or one?"
+    }
+  ],
+  "chapters": []
+}

@@ -75,6 +75,7 @@ import { Video as T37YawnTest, DURATION as T37YawnTest_DURATION } from "./t37-ya
 import { Video as T36ForgotName, DURATION as T36ForgotName_DURATION } from "./t36-forgot-name/Video";
 import { Video as T17FrozenClock, DURATION as T17FrozenClock_DURATION } from "./t17-frozen-clock/Video";
 import { Video as T26NobodyLooked, DURATION as T26NobodyLooked_DURATION } from "./t26-nobody-looked/Video";
+import { Video as T11CrossedFingers, DURATION as T11CrossedFingers_DURATION } from "./t11-crossed-fingers/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -664,6 +665,15 @@ export const RemotionRoot: React.FC = () => {
         id="T26NobodyLooked"
         component={T26NobodyLooked}
         durationInFrames={T26NobodyLooked_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.3, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="T11CrossedFingers"
+        component={T11CrossedFingers}
+        durationInFrames={T11CrossedFingers_DURATION}
         fps={30}
         width={1080}
         height={1920}
