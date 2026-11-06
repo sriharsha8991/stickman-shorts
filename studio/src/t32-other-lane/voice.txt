@@ -1,0 +1,14 @@
+Why does your lane lose the race to lane 2?
+[pause 1.0]
+Wait for the last part.
+[pause 0.5]
+You change lanes, and then, your old lane moves.
+[pause 0.7]
+Scientists tested this, with two lanes on a computer.
+Both lanes had the same average speed.
+[pause 1.5]
+But other cars passed you for longer than you passed them!
+[pause 1.2]
+The cars that you pass are gone quickly.
+[pause 1.2]
+Do you change lanes too often?
