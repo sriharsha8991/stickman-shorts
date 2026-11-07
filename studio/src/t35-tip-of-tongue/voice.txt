@@ -1,0 +1,15 @@
+Why does your memory hide one word you know?
+[pause 1.2]
+Wait for the last part.
+[pause 0.8]
+You know the word, but somehow, you cannot say it.
+[pause 0.7]
+Most adults feel this, about once every week.
+[pause 0.7]
+Later, the same word tends to hide again.
+[pause 1.0]
+But when people found it themselves, it hid less often!
+[pause 1.5]
+So ask for the first letter, then find the word.
+[pause 1.0]
+Which word hides from you most?

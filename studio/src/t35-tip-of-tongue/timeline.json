@@ -1,0 +1,80 @@
+{
+  "fps": 30,
+  "durationInFrames": 867,
+  "seconds": 28.89,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 2.824,
+      "startFrame": 6,
+      "endFrame": 85,
+      "words": 9,
+      "text": "Why does your memory hide one word you know?"
+    },
+    {
+      "i": 1,
+      "start": 4.024,
+      "end": 5.539,
+      "startFrame": 121,
+      "endFrame": 166,
+      "words": 5,
+      "text": "Wait for the last part."
+    },
+    {
+      "i": 2,
+      "start": 6.339,
+      "end": 9.176,
+      "startFrame": 190,
+      "endFrame": 275,
+      "words": 10,
+      "text": "You know the word, but somehow, you cannot say it."
+    },
+    {
+      "i": 3,
+      "start": 9.876,
+      "end": 12.735,
+      "startFrame": 296,
+      "endFrame": 382,
+      "words": 8,
+      "text": "Most adults feel this, about once every week."
+    },
+    {
+      "i": 4,
+      "start": 13.435,
+      "end": 16.037,
+      "startFrame": 403,
+      "endFrame": 481,
+      "words": 8,
+      "text": "Later, the same word tends to hide again."
+    },
+    {
+      "i": 5,
+      "start": 17.037,
+      "end": 20.493,
+      "startFrame": 511,
+      "endFrame": 615,
+      "words": 10,
+      "text": "But when people found it themselves, it hid less often!"
+    },
+    {
+      "i": 6,
+      "start": 21.993,
+      "end": 25.023,
+      "startFrame": 660,
+      "endFrame": 751,
+      "words": 10,
+      "text": "So ask for the first letter, then find the word."
+    },
+    {
+      "i": 7,
+      "start": 26.023,
+      "end": 27.836,
+      "startFrame": 781,
+      "endFrame": 835,
+      "words": 6,
+      "text": "Which word hides from you most?"
+    }
+  ],
+  "chapters": []
+}
