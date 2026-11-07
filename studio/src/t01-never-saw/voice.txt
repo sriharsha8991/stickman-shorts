@@ -1,0 +1,16 @@
+Why might you remember one word you never saw?
+[pause 0.8]
+Wait for the last part.
+[pause 0.5]
+Read these words, and try to remember them.
+[pause 7.0]
+Was the word sleep on the list?
+[pause 1.0]
+Look again, because it was never there!
+[pause 1.2]
+Your brain saw bed and dream, and it added sleep.
+[pause 0.6]
+In one test, people heard lists like this.
+About half the time, they still remembered sleep.
+[pause 0.8]
+Did you see sleep on the list?

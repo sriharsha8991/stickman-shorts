@@ -77,6 +77,7 @@ import { Video as T17FrozenClock, DURATION as T17FrozenClock_DURATION } from "./
 import { Video as T26NobodyLooked, DURATION as T26NobodyLooked_DURATION } from "./t26-nobody-looked/Video";
 import { Video as T11CrossedFingers, DURATION as T11CrossedFingers_DURATION } from "./t11-crossed-fingers/Video";
 import { Video as T32OtherLane, DURATION as T32OtherLane_DURATION } from "./t32-other-lane/Video";
+import { Video as T01NeverSaw, DURATION as T01NeverSaw_DURATION } from "./t01-never-saw/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -684,6 +685,15 @@ export const RemotionRoot: React.FC = () => {
         id="T32OtherLane"
         component={T32OtherLane}
         durationInFrames={T32OtherLane_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.3, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="T01NeverSaw"
+        component={T01NeverSaw}
+        durationInFrames={T01NeverSaw_DURATION}
         fps={30}
         width={1080}
         height={1920}
