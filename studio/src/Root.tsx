@@ -79,6 +79,7 @@ import { Video as T11CrossedFingers, DURATION as T11CrossedFingers_DURATION } fr
 import { Video as T32OtherLane, DURATION as T32OtherLane_DURATION } from "./t32-other-lane/Video";
 import { Video as T01NeverSaw, DURATION as T01NeverSaw_DURATION } from "./t01-never-saw/Video";
 import { Video as T35TipOfTongue, DURATION as T35TipOfTongue_DURATION } from "./t35-tip-of-tongue/Video";
+import { Video as T38FallingJerk, DURATION as T38FallingJerk_DURATION } from "./t38-falling-jerk/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -704,6 +705,15 @@ export const RemotionRoot: React.FC = () => {
         id="T35TipOfTongue"
         component={T35TipOfTongue}
         durationInFrames={T35TipOfTongue_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.3, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="T38FallingJerk"
+        component={T38FallingJerk}
+        durationInFrames={T38FallingJerk_DURATION}
         fps={30}
         width={1080}
         height={1920}

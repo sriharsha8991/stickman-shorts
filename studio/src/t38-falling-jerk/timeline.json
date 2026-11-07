@@ -1,0 +1,80 @@
+{
+  "fps": 30,
+  "durationInFrames": 833,
+  "seconds": 27.74,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.421,
+      "startFrame": 6,
+      "endFrame": 103,
+      "words": 10,
+      "text": "Why does your body jump, right before you fall asleep?"
+    },
+    {
+      "i": 1,
+      "start": 4.621,
+      "end": 6.136,
+      "startFrame": 139,
+      "endFrame": 184,
+      "words": 5,
+      "text": "Wait for the last part."
+    },
+    {
+      "i": 2,
+      "start": 7.036,
+      "end": 10.108,
+      "startFrame": 211,
+      "endFrame": 303,
+      "words": 9,
+      "text": "You are almost asleep, and you feel yourself fall."
+    },
+    {
+      "i": 3,
+      "start": 10.558,
+      "end": 13.118,
+      "startFrame": 317,
+      "endFrame": 394,
+      "words": 8,
+      "text": "Your whole body jumps, and you are awake."
+    },
+    {
+      "i": 4,
+      "start": 13.918,
+      "end": 15.966,
+      "startFrame": 418,
+      "endFrame": 479,
+      "words": 7,
+      "text": "But look, your bed did not move."
+    },
+    {
+      "i": 5,
+      "start": 16.966,
+      "end": 19.569,
+      "startFrame": 509,
+      "endFrame": 587,
+      "words": 8,
+      "text": "Most people feel this, and it is normal!"
+    },
+    {
+      "i": 6,
+      "start": 20.969,
+      "end": 23.763,
+      "startFrame": 629,
+      "endFrame": 713,
+      "words": 9,
+      "text": "Too much coffee, and stress, can make it worse."
+    },
+    {
+      "i": 7,
+      "start": 24.663,
+      "end": 26.69,
+      "startFrame": 740,
+      "endFrame": 801,
+      "words": 7,
+      "text": "Did this happen to you, last night?"
+    }
+  ],
+  "chapters": []
+}
