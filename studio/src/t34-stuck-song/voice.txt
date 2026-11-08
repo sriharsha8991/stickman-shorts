@@ -1,0 +1,15 @@
+Can you stop that one song, stuck inside your head?
+[pause 1.4]
+Wait until the last part.
+[pause 1.1]
+You hear a song, on your morning bus.
+[pause 0.5]
+At the office, the music is still playing.
+[pause 0.9]
+In a big survey, most people had this, every week.
+[pause 1.2]
+In lab tests, chewing gum made the music come back less!
+[pause 1.5]
+But those tests were small, and quick.
+[pause 1.1]
+Which song is stuck inside your head?

@@ -1,0 +1,80 @@
+{
+  "fps": 30,
+  "durationInFrames": 889,
+  "seconds": 29.62,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.251,
+      "startFrame": 6,
+      "endFrame": 98,
+      "words": 10,
+      "text": "Can you stop that one song, stuck inside your head?"
+    },
+    {
+      "i": 1,
+      "start": 4.651,
+      "end": 6.464,
+      "startFrame": 140,
+      "endFrame": 194,
+      "words": 5,
+      "text": "Wait until the last part."
+    },
+    {
+      "i": 2,
+      "start": 7.564,
+      "end": 9.825,
+      "startFrame": 227,
+      "endFrame": 295,
+      "words": 8,
+      "text": "You hear a song, on your morning bus."
+    },
+    {
+      "i": 3,
+      "start": 10.325,
+      "end": 12.843,
+      "startFrame": 310,
+      "endFrame": 385,
+      "words": 8,
+      "text": "At the office, the music is still playing."
+    },
+    {
+      "i": 4,
+      "start": 13.743,
+      "end": 16.857,
+      "startFrame": 412,
+      "endFrame": 506,
+      "words": 10,
+      "text": "In a big survey, most people had this, every week."
+    },
+    {
+      "i": 5,
+      "start": 18.057,
+      "end": 21.62,
+      "startFrame": 542,
+      "endFrame": 649,
+      "words": 11,
+      "text": "In lab tests, chewing gum made the music come back less!"
+    },
+    {
+      "i": 6,
+      "start": 23.12,
+      "end": 25.339,
+      "startFrame": 694,
+      "endFrame": 760,
+      "words": 7,
+      "text": "But those tests were small, and quick."
+    },
+    {
+      "i": 7,
+      "start": 26.439,
+      "end": 28.572,
+      "startFrame": 793,
+      "endFrame": 857,
+      "words": 7,
+      "text": "Which song is stuck inside your head?"
+    }
+  ],
+  "chapters": []
+}
