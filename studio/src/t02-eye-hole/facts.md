@@ -1,0 +1,11 @@
+# T02 facts (checked 2026-11-08)
+
+| Claim on screen or in the voice | Verdict | Source |
+|---|---|---|
+| Each eye has a blind spot: the place where the optic nerve leaves the eye, with no light cells (photoreceptors) | Confirmed. "it corresponds to the region on the retina at which the optic nerve leaves the eye and no photoreceptors exist." | Meermeier, Lappe, Li, Rifai, Wahl & Rucci (2023), "Fine-scale measurement of the blind spot borders", Vision Research 211:108208, read today: https://www.uni-muenster.de/imperia/md/content/psyifp/ae_lappe/meermeier_2023.pdf |
+| Where it is and how big (used to place the dots; not said on screen) | Confirmed: "approximately 15 to 20 degrees in the temporal periphery"; "5° to 7° on the horizontal meridian and from 7.5° to 10° on the vertical meridian". | same paper |
+| "Your brain fills that gap, so you never notice." | Confirmed at the level said: people are normally unaware of it, which "appears to be mediated by filling-in mechanisms": "the visual system infers spatial continuity based on information acquired in the surrounding regions." | same paper |
+| The test works: right eye open, look at the left dot, the right dot vanishes at some distance | Geometry: on the right eye the blind spot is on the right side of the view (temporal), so the right dot falls into it. Dots are 840 px apart (about 5.3–5.5 cm on a typical phone shown full screen); at 15° that is about 20 cm from the eye (my calculation). Dot 68 px (~0.45 cm, ~1.3° at 20 cm), well inside a 5–7° spot. Dots at 34% of the screen height to stay clear of the Shorts/Reels buttons. Checked in code: the test frames are pixel-identical (frames 320 vs 590). | calculation; owner to test on a real phone (row flag) |
+
+Row source https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2014.00534/full could not be opened in this run (permission timeout); nothing from it is used.
+Caveats kept: "move slowly" (spoken), "Phones only. Keep looking at the left dot. The distance is different on every phone." (small line during the test); "Drawing not to scale. With both eyes open, each eye covers the other's gap." (small line at the reveal). The eye drawing is a simple top view, not to scale. Mr. Trick, the sofa and Spark's phone are story, not data.

@@ -1,0 +1,89 @@
+{
+  "fps": 30,
+  "durationInFrames": 984,
+  "seconds": 32.78,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 2.76,
+      "startFrame": 6,
+      "endFrame": 83,
+      "words": 9,
+      "text": "Why can your eye never see this one spot?"
+    },
+    {
+      "i": 1,
+      "start": 3.26,
+      "end": 6.46,
+      "startFrame": 98,
+      "endFrame": 194,
+      "words": 9,
+      "text": "One dot will disappear, and the end shows why."
+    },
+    {
+      "i": 2,
+      "start": 6.91,
+      "end": 9.086,
+      "startFrame": 207,
+      "endFrame": 273,
+      "words": 6,
+      "text": "Spark says his eyes see everything."
+    },
+    {
+      "i": 3,
+      "start": 9.536,
+      "end": 12.181,
+      "startFrame": 286,
+      "endFrame": 365,
+      "words": 10,
+      "text": "Close your left eye, and look at the left dot."
+    },
+    {
+      "i": 4,
+      "start": 12.631,
+      "end": 15.383,
+      "startFrame": 379,
+      "endFrame": 462,
+      "words": 8,
+      "text": "Now, move your phone slowly towards your face."
+    },
+    {
+      "i": 5,
+      "start": 19.883,
+      "end": 22.102,
+      "startFrame": 596,
+      "endFrame": 663,
+      "words": 8,
+      "text": "The right dot fell on your blind spot!"
+    },
+    {
+      "i": 6,
+      "start": 23.002,
+      "end": 25.946,
+      "startFrame": 690,
+      "endFrame": 778,
+      "words": 9,
+      "text": "Inside your eye, one spot has no light cells."
+    },
+    {
+      "i": 7,
+      "start": 26.546,
+      "end": 29.469,
+      "startFrame": 796,
+      "endFrame": 884,
+      "words": 9,
+      "text": "Your brain fills that gap, so you never notice."
+    },
+    {
+      "i": 8,
+      "start": 29.919,
+      "end": 31.732,
+      "startFrame": 898,
+      "endFrame": 952,
+      "words": 6,
+      "text": "Did the dot disappear for you?"
+    }
+  ],
+  "chapters": []
+}
