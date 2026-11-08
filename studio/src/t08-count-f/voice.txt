@@ -1,0 +1,13 @@
+How many letters will you miss before your boss does?
+[pause 0.6]
+Wait for the last part.
+[pause 0.4]
+Count every letter F in this report.
+[pause 6.5]
+Spark counted three, and he was sure.
+But his boss found six!
+[pause 1.0]
+The small word of is there three times.
+[pause 1.0]
+Readers often miss letters in small, common words.
+How many Fs did you count?

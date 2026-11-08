@@ -1,0 +1,80 @@
+{
+  "fps": 30,
+  "durationInFrames": 904,
+  "seconds": 30.1,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.229,
+      "startFrame": 6,
+      "endFrame": 97,
+      "words": 10,
+      "text": "How many letters will you miss before your boss does?"
+    },
+    {
+      "i": 1,
+      "start": 3.829,
+      "end": 5.344,
+      "startFrame": 115,
+      "endFrame": 160,
+      "words": 5,
+      "text": "Wait for the last part."
+    },
+    {
+      "i": 2,
+      "start": 5.744,
+      "end": 8.133,
+      "startFrame": 172,
+      "endFrame": 244,
+      "words": 7,
+      "text": "Count every letter F in this report."
+    },
+    {
+      "i": 3,
+      "start": 14.633,
+      "end": 17.023,
+      "startFrame": 439,
+      "endFrame": 511,
+      "words": 7,
+      "text": "Spark counted three, and he was sure."
+    },
+    {
+      "i": 4,
+      "start": 17.473,
+      "end": 19.158,
+      "startFrame": 524,
+      "endFrame": 575,
+      "words": 5,
+      "text": "But his boss found six!"
+    },
+    {
+      "i": 5,
+      "start": 20.158,
+      "end": 22.441,
+      "startFrame": 605,
+      "endFrame": 673,
+      "words": 8,
+      "text": "The small word of is there three times."
+    },
+    {
+      "i": 6,
+      "start": 23.441,
+      "end": 26.726,
+      "startFrame": 703,
+      "endFrame": 802,
+      "words": 8,
+      "text": "Readers often miss letters in small, common words."
+    },
+    {
+      "i": 7,
+      "start": 27.176,
+      "end": 29.053,
+      "startFrame": 815,
+      "endFrame": 872,
+      "words": 6,
+      "text": "How many Fs did you count?"
+    }
+  ],
+  "chapters": []
+}

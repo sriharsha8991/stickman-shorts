@@ -1,0 +1,12 @@
+# round 1 (row hook first)
+How many letters will you miss in this 1 sentence?   54
+How many letter Fs can you find in this sentence?   44
+You will miss at least 1 letter F in this sentence.   45
+Can you count 6 letters in 1 short sentence?   54
+Your eyes will skip letters in this 1 sentence.   45
+# round 2 (stakes: the boss, the report)
+Why do you miss letters your boss finds in 1 second?   56
+How many letters will you miss before your boss does?   56   <- chosen (10 words, matches the story)
+Why does your brain hide 3 letters from you here?   56
+How many letters will your brain hide in 1 sentence?   54
+How many letters will you miss in this 1 work report?   54

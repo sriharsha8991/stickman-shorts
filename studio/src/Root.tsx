@@ -81,6 +81,7 @@ import { Video as T01NeverSaw, DURATION as T01NeverSaw_DURATION } from "./t01-ne
 import { Video as T35TipOfTongue, DURATION as T35TipOfTongue_DURATION } from "./t35-tip-of-tongue/Video";
 import { Video as T38FallingJerk, DURATION as T38FallingJerk_DURATION } from "./t38-falling-jerk/Video";
 import { Video as T34StuckSong, DURATION as T34StuckSong_DURATION } from "./t34-stuck-song/Video";
+import { Video as T08CountF, DURATION as T08CountF_DURATION } from "./t08-count-f/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -724,6 +725,15 @@ export const RemotionRoot: React.FC = () => {
         id="T34StuckSong"
         component={T34StuckSong}
         durationInFrames={T34StuckSong_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.3, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="T08CountF"
+        component={T08CountF}
+        durationInFrames={T08CountF_DURATION}
         fps={30}
         width={1080}
         height={1920}
