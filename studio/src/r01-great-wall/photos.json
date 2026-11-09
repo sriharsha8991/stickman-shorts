@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Great Wall of China",
+    "author": "Keith Roper",
+    "licence": "CC BY 2.0",
+    "page": "https://www.flickr.com/photos/13612135@N05/8139631138",
+    "url": "https://live.staticflickr.com/8054/8139631138_a96a3b89cc_b.jpg",
+    "source": "Openverse / flickr",
+    "file": "wall.jpg",
+    "credit": "Keith Roper / CC BY 2.0 / Openverse / flickr",
+    "query": "Great Wall of China mountains",
+    "drive_doc": "1W6JIjBucvmPg3Bh6iBPl0ECnOHRyL4YzTi9OtEK1jcw"
+  },
+  {
+    "title": "Great Wall of China",
+    "author": "matt512",
+    "licence": "CC BY 2.0",
+    "page": "https://www.flickr.com/photos/29091377@N02/4065629211",
+    "url": "https://live.staticflickr.com/2585/4065629211_721f9612b7_b.jpg",
+    "source": "Openverse / flickr",
+    "file": "dusk.jpg",
+    "credit": "matt512 / CC BY 2.0 / Openverse / flickr",
+    "query": "Great Wall of China mountains",
+    "drive_doc": "1W6JIjBucvmPg3Bh6iBPl0ECnOHRyL4YzTi9OtEK1jcw"
+  },
+  {
+    "title": "Earth Observations taken by the Expedition 10 crew",
+    "author": "JSC",
+    "licence": "Public domain (NASA)",
+    "page": "https://images.nasa.gov/details/iss010e08497",
+    "url": "https://images-assets.nasa.gov/image/iss010e08497/iss010e08497~medium.jpg",
+    "source": "NASA",
+    "note": "ISS010-E-08497 (24 November 2004) --- This picture, apparently the first verifiable photo showing the Great Wall of China from low earth  orbit,  was taken by International Space Station Commander Ler",
+    "file": "chiao.jpg",
+    "credit": "JSC / Public domain (NASA) / NASA",
+    "query": "Great Wall of China from space station",
+    "drive_doc": "1W6JIjBucvmPg3Bh6iBPl0ECnOHRyL4YzTi9OtEK1jcw"
+  },
+  {
+    "title": "iss068e045017",
+    "author": "JSC",
+    "licence": "Public domain (NASA)",
+    "page": "https://images.nasa.gov/details/iss068e045017",
+    "url": "https://images-assets.nasa.gov/image/iss068e045017/iss068e045017~medium.jpg",
+    "source": "NASA",
+    "note": "iss068e045017 (Feb. 2, 2023) -- The waxing gibbous Moon is pictured above Earth's horizon from the International Space Station as it orbited 260 miles above eastern China near the Yellow Sea coast.",
+    "file": "limb.jpg",
+    "credit": "JSC / Public domain (NASA) / NASA",
+    "query": "Earth from International Space Station China",
+    "drive_doc": "1W6JIjBucvmPg3Bh6iBPl0ECnOHRyL4YzTi9OtEK1jcw"
+  }
+]

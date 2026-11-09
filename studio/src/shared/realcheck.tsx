@@ -226,7 +226,7 @@ export const RealCheck: React.FC<{ spec: RealSpec; cues: Cue[]; frames: number; 
           <div style={{ position: "absolute", left: 30, top: -34, padding: "4px 16px", borderRadius: 10, background: INK, color: "#fff", fontFamily: FONT.title, fontWeight: 900, fontSize: 30, letterSpacing: 2 }}>
             REAL CHECK #{spec.n}
           </div>
-          {tag && f < VERDICT - 26 && (
+          {tag && (f < VERDICT - 26 || tagAt > VERDICT) && (
             <div
               style={{
                 position: "absolute",

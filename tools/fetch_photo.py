@@ -12,12 +12,10 @@ subject, logos or brands. The run must LOOK at every downloaded photo (Read tool
   python3 tools/fetch_photo.py --slug r01-great-wall --query "Great Wall Mutianyu" --source commons --list
   python3 tools/fetch_photo.py --slug r01-great-wall --query "Great Wall Mutianyu" --source commons --pick 2 --name wall
 
-Downloads to studio/public/<slug>/photos/<name>.jpg (max 1600 px wide) and records title, author, licence, source page
-and the credit line in studio/src/<slug>/photos.json. Put the credit lines in the post copy (videos/<ID>.md) too.
-
-The cloud sandbox must be allowed to reach: commons.wikimedia.org, upload.wikimedia.org, images-api.nasa.gov,
-images-assets.nasa.gov, api.openverse.org (claude.ai Settings > Capabilities). If they are blocked, use the Drive
-"Photo inbox" route in PIPELINE_V5.md §3.
+--pick downloads a candidate to studio/public/<slug>/photos/<name>.jpg (max 1600 px wide) so you can LOOK at it, and records
+title, author, licence, source page, direct image URL and credit in studio/src/<slug>/photos.json.
+This tool only FINDS photos. The chosen ones are stored in the Drive Photo library and the render uses the copies pulled
+back from Drive with tools/drive_photos.py (PIPELINE_V5.md §3).
 """
 import argparse
 import html
@@ -25,23 +23,35 @@ import json
 import re
 import sys
 import urllib.parse
+import urllib.error
 import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-UA = "StickmanShorts/1.0 (educational Shorts; photo licence check)"
+UA = "StickmanShortsBot/1.0 (https://github.com/sriharsha8991/stickman-shorts; educational Shorts, licence-checked photos) python-urllib"
 OK_LICENCES = re.compile(r"^(public domain|pd|cc0|cc[ -]?by(?:[ -]?sa)?(?:[ -]?\d\.\d)?)", re.I)
 
 
 def get(url, binary=False):
+    import time
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    try:
-        with urllib.request.urlopen(req, timeout=30) as r:
-            data = r.read()
-    except Exception as e:  # noqa: BLE001
-        host = urllib.parse.urlparse(url).netloc
-        sys.exit(f"BLOCKED or failed: {host} ({e}). Allow this domain in claude.ai Settings > Capabilities, or use the Drive photo inbox.")
-    return data if binary else json.loads(data)
+    last = None
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(req, timeout=40) as r:
+                data = r.read()
+            return data if binary else json.loads(data)
+        except urllib.error.HTTPError as e:
+            last = e
+            if e.code in (429, 503):  # rate limited: wait and retry
+                time.sleep(4 * (attempt + 1))
+                continue
+            break
+        except Exception as e:  # noqa: BLE001
+            last = e
+            break
+    host = urllib.parse.urlparse(url).netloc
+    sys.exit(f"BLOCKED or failed: {host} ({last}). Allow this domain in claude.ai Settings > Capabilities, or use the Drive photo library.")
 
 
 def strip(s):
@@ -77,7 +87,7 @@ def nasa(q, n):
 
 def openverse(q, n):
     d = get("https://api.openverse.org/v1/images/?" + urllib.parse.urlencode({"q": q, "page_size": n, "license": "by,by-sa,cc0,pdm"}))
-    return [{"title": r.get("title"), "author": r.get("creator") or "unknown", "licence": f"{r.get('license','').upper()} {r.get('license_version') or ''}".strip(),
+    return [{"title": r.get("title"), "author": r.get("creator") or "unknown", "licence": ("Public domain" if r.get('license') in ('pdm',) else "CC0" if r.get('license') == 'cc0' else f"CC {r.get('license','').upper()} {r.get('license_version') or ''}".strip()),
              "page": r.get("foreign_landing_url"), "url": r.get("url"), "source": f"Openverse / {r.get('provider')}"} for r in d.get("results", [])]
 
 

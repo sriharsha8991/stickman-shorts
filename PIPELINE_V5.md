@@ -11,7 +11,7 @@ real photos as evidence, Spark as a small reactor, one Short a day, and a two-we
 
 ## 1. Inbox (unchanged)
 Follow `PIPELINE.md` §1 (thread 1a159c3adf191ae8, PAUSE/RESUME/REDO/SKIP/ADD/VOICE/feedback, `plan/inbox_state.json`).
-New owner command: `PHOTOS Rxx` = the owner dropped photos for Rxx into the Drive photo inbox (§3 route B).
+New owner command: `PHOTOS Rxx` = the owner added photos for Rxx to the Drive Photo library (§3).
 
 ## 2. Pick the Short
 1. Owner REDO first. Then the lowest `Day` row of `plan/slate_v5.csv` with Arm A or B whose ID is not `Produced`/`Skipped`
@@ -25,17 +25,26 @@ New owner command: `PHOTOS Rxx` = the owner dropped photos for Rxx into the Driv
 - Verify every claim in the row on the day from primary sources (papers, NASA, national weather/health agencies). Write
   `studio/src/<slug>/facts.md` (claim → verdict → source). The verdict must be true; caveats said in plain words.
   Health topics: "Education, not medical advice" in the description and pinned comment.
-- **Photos, route A (preferred):** `python3 tools/fetch_photo.py --slug <slug> --query "<subject>" --source commons|nasa|openverse --list`,
-  then `--pick N --name <file>`. It keeps only public domain, CC0, CC BY and CC BY-SA, and logs title, author, licence,
-  page and credit in `studio/src/<slug>/photos.json`. **Open every downloaded photo with the Read tool** and confirm it shows
-  what the line claims. Needs these domains allowed for the session: commons.wikimedia.org, upload.wikimedia.org,
-  images-api.nasa.gov, images-assets.nasa.gov, api.openverse.org.
-- **Route B (if route A is blocked):** the owner's Drive folder "Stickman Shorts / Photo inbox / <ID>" (search Drive for
-  it). Download with the Drive tools, save to `studio/public/<slug>/photos/`, and write `photos.json` from the licence
-  note the owner left with the photos. No licence note → do not use the photo.
-- **Neither route works:** finish the script, voice, facts and spec with placeholder photos, set the row's status to
-  `Waiting for photos` in `plan/status.csv`, and ask in the email: allow the domains above, or drop the listed photos into
-  the Drive inbox. Do not render. Make the next A/B row if it can get photos; otherwise stop after the email.
+- **Photos live in Drive, always (owner, 2026-11-09).** The library is the Drive folder "Stickman Shorts / Photo library"
+  (id `14pOfC1HSmKun60-zaF9ztKsKKnDfJXSe`): one Google Doc per Short, "<ID> · <topic> — photos". Renders only ever use
+  photos pulled from that doc. Steps:
+  1. **Find:** `python3 tools/fetch_photo.py --slug <slug> --query "<subject>" --source openverse|nasa|commons --list`
+     (licences kept: public domain, CC0, CC BY, CC BY-SA). Commons often answers 429 to this sandbox; Openverse also
+     covers Commons and Flickr. To look at a candidate, `--pick N --name candN` downloads it locally; open it with Read.
+     Hosts that refuse downloads (e.g. live.staticflickr.com) are fine: Google fetches them in step 2.
+  2. **Store:** Drive `create_file` with `contentMimeType: text/markdown`, parent `14pOfC1HSmKun60-zaF9ztKsKKnDfJXSe`,
+     title "<ID> · <topic> — photos", text = per photo `## <file>.jpg — <which line>`, `![<file>.jpg](<direct image URL>)`,
+     then `<title> · <author> · <licence> · <source page>` (copy R01's doc, id `1W6JIjBucvmPg3Bh6iBPl0ECnOHRyL4YzTi9OtEK1jcw`).
+     Google copies each image into the doc at full size, so no image bytes go through the model.
+  3. **Use:** Drive `download_file_content(fileId=<doc id>, exportMimeType="text/html")`; the large result is saved to a
+     file whose path the tool prints; then `python3 tools/drive_photos.py --slug <slug> --export <that path>` writes
+     `studio/public/<slug>/photos/*.jpg` and fails if any heading has no image (fix the URL in the doc, or swap the photo).
+  4. **Log:** `studio/src/<slug>/photos.json` (from fetch_photo.py, plus `"drive_doc": "<doc id>"`) and the credits in
+     `facts.md`, `videos/<ID>.md` and the spec's `credit` fields. Open every final photo with Read before building.
+  Owner photos: the owner can add a doc to the Photo library the same way (or paste photos into one) with a licence line
+  under each; `PHOTOS Rxx` in the thread points the run to it. No licence line → do not use the photo.
+- **No licensed photos at all:** finish the script, voice, facts and spec with placeholder photos, set the row to
+  `Waiting for photos` in `plan/status.csv`, do not render, and say in the email what is missing.
 - Never: Google Images, news or agency photos, an identifiable real person as the subject (names go on a text card),
   logos or brands, AI-generated images presented as real photos, a photo that only decorates (swap test: if a random
   photo would do, cut it).
