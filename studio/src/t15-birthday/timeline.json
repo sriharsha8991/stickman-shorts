@@ -1,0 +1,89 @@
+{
+  "fps": 30,
+  "durationInFrames": 883,
+  "seconds": 29.43,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.08,
+      "startFrame": 6,
+      "endFrame": 92,
+      "words": 9,
+      "text": "Can you guess this birthday number before Spark does?"
+    },
+    {
+      "i": 1,
+      "start": 3.58,
+      "end": 5.095,
+      "startFrame": 107,
+      "endFrame": 153,
+      "words": 5,
+      "text": "Wait for the last part."
+    },
+    {
+      "i": 2,
+      "start": 5.695,
+      "end": 8.489,
+      "startFrame": 171,
+      "endFrame": 255,
+      "words": 9,
+      "text": "Two people in your office might share a birthday."
+    },
+    {
+      "i": 3,
+      "start": 8.939,
+      "end": 11.947,
+      "startFrame": 268,
+      "endFrame": 358,
+      "words": 10,
+      "text": "How many people do you need for a fifty-fifty chance?"
+    },
+    {
+      "i": 4,
+      "start": 12.547,
+      "end": 14.787,
+      "startFrame": 376,
+      "endFrame": 444,
+      "words": 7,
+      "text": "Spark says it takes hundreds of people."
+    },
+    {
+      "i": 5,
+      "start": 15.787,
+      "end": 18.07,
+      "startFrame": 474,
+      "endFrame": 542,
+      "words": 6,
+      "text": "But you only need twenty-three people!"
+    },
+    {
+      "i": 6,
+      "start": 18.87,
+      "end": 21.323,
+      "startFrame": 566,
+      "endFrame": 640,
+      "words": 9,
+      "text": "It can be any two people, not just you."
+    },
+    {
+      "i": 7,
+      "start": 22.223,
+      "end": 25.423,
+      "startFrame": 667,
+      "endFrame": 763,
+      "words": 7,
+      "text": "Twenty-three people make two hundred fifty-three pairs!"
+    },
+    {
+      "i": 8,
+      "start": 26.823,
+      "end": 28.381,
+      "startFrame": 805,
+      "endFrame": 851,
+      "words": 5,
+      "text": "What number did you guess?"
+    }
+  ],
+  "chapters": []
+}

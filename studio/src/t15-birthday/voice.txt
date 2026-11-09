@@ -1,0 +1,16 @@
+Can you guess this birthday number before Spark does?
+[pause 0.5]
+Wait for the last part.
+[pause 0.6]
+Two people in your office might share a birthday.
+How many people do you need for a fifty-fifty chance?
+[pause 0.6]
+Spark says it takes hundreds of people.
+[pause 1.0]
+But you only need twenty-three people!
+[pause 0.8]
+It can be any two people, not just you.
+[pause 0.9]
+Twenty-three people make two hundred fifty-three pairs!
+[pause 1.4]
+What number did you guess?

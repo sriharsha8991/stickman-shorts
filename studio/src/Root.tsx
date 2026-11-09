@@ -84,6 +84,7 @@ import { Video as T34StuckSong, DURATION as T34StuckSong_DURATION } from "./t34-
 import { Video as T08CountF, DURATION as T08CountF_DURATION } from "./t08-count-f/Video";
 import { Video as T02EyeHole, DURATION as T02EyeHole_DURATION } from "./t02-eye-hole/Video";
 import { Video as T33WayHome, DURATION as T33WayHome_DURATION } from "./t33-way-home/Video";
+import { Video as T15Birthday, DURATION as T15Birthday_DURATION } from "./t15-birthday/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -754,6 +755,15 @@ export const RemotionRoot: React.FC = () => {
         id="T33WayHome"
         component={T33WayHome}
         durationInFrames={T33WayHome_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
+      />
+      <Composition
+        id="T15Birthday"
+        component={T15Birthday}
+        durationInFrames={T15Birthday_DURATION}
         fps={30}
         width={1080}
         height={1920}
