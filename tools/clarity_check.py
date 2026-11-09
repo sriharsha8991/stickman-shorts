@@ -33,6 +33,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--slug", required=True)
     ap.add_argument("--allow-long", action="store_true", help="accept 40-45 s (explain why in the email)")
+    ap.add_argument("--realcheck", action="store_true", help="Plan v5 Real Check Short: the verdict stamp is the open loop, no spoken promise line needed")
     a = ap.parse_args()
     d = ROOT / "studio" / "src" / a.slug
     rows = [r.strip() for r in (d / "voice.txt").read_text().splitlines() if r.strip()]
@@ -64,7 +65,7 @@ def main():
     if total_s > cap:
         problems.append(f"length {total_s:.1f} s > {cap:.0f} s (aim ~30 s; cut words, not pauses)")
     PROMISE = re.compile(r"\b(end|last|wait|stay|until|finish|final)\b", re.I)
-    if not any(PROMISE.search(l) for l in lines[:3]):
+    if not a.realcheck and not any(PROMISE.search(l) for l in lines[:3]):
         problems.append("no promise-to-the-end in the first three lines (e.g. 'Wait for the last part.')")
     for l in lines:
         n = len(l.split())

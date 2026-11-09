@@ -1,4 +1,8 @@
-# Stickman Shorts — production runbook
+# Stickman Shorts — production runbook (ARCHIVE since 2026-11-09)
+
+> **Plan v5 (owner, 2026-11-09): production now follows `PIPELINE_V5.md`.** This file stays as the reference for the inbox
+> commands (§1), the toolchain (§3), render + mastering (§8) and delivery (§10). Slate v4 (§2, §5.10) is paused until the
+> two-week test in `plan/slate_v5.csv` is decided.
 
 This is the procedure every scheduled run follows. **One run = ONE finished Short** (owner, 2026-10-27; was two),
 alternating between **the 100-video plan** (`plan/content_plan.csv`, Vxxx) and **the life & productivity

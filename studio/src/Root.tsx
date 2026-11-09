@@ -85,6 +85,7 @@ import { Video as T08CountF, DURATION as T08CountF_DURATION } from "./t08-count-
 import { Video as T02EyeHole, DURATION as T02EyeHole_DURATION } from "./t02-eye-hole/Video";
 import { Video as T33WayHome, DURATION as T33WayHome_DURATION } from "./t33-way-home/Video";
 import { Video as T15Birthday, DURATION as T15Birthday_DURATION } from "./t15-birthday/Video";
+import { Video as R01GreatWall, DURATION as R01GreatWall_DURATION } from "./r01-great-wall/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -769,6 +770,7 @@ export const RemotionRoot: React.FC = () => {
         height={1920}
         defaultProps={{ music: 0.32, sfx: 0.7, voice: "voice.wav", captions: false }}
       />
+      <Composition id="R01GreatWall" component={R01GreatWall} durationInFrames={R01GreatWall_DURATION} fps={30} width={1080} height={1920} />
       {/* stickman-video:compositions */}
           <Composition id="SparkSheet" component={SparkSheet} durationInFrames={60} fps={30} width={1920} height={1080} />
           <Composition id="CameraDemo" component={CameraDemo} durationInFrames={200} fps={30} width={1920} height={1080} />
