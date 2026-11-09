@@ -95,7 +95,7 @@ const SplitView: React.FC<{ spec: RealSpec; sides: [SplitSide, SplitSide]; t: nu
       return (
         <div key={i} style={{ position: "relative", flex: 1, borderLeft: i ? `8px solid ${INK}` : undefined, overflow: "hidden", opacity: inP, transform: `translateY(${(1 - inP) * 40}px)` }}>
           {s.photo !== undefined && spec.photos[s.photo] ? <PhotoView slug={spec.slug} p={spec.photos[s.photo]} t={t} /> : <CardView text={s.text ?? ""} accent={spec.accent} />}
-          <div style={{ position: "absolute", top: 16, left: 0, right: 0, textAlign: "center" }}>
+          <div style={{ position: "absolute", bottom: 18, left: 0, right: 0, textAlign: "center" }}>
             <span style={{ display: "inline-block", padding: "6px 16px", borderRadius: 10, background: i ? spec.accent : INK, color: "#fff", fontFamily: FONT.title, fontWeight: 900, fontSize: 40 }}>{s.label}</span>
           </div>
         </div>
