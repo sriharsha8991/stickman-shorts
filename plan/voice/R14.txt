@@ -1,0 +1,7 @@
+Does closing your apps really save battery?
+A customer once emailed Apple to ask exactly this.
+Apple's software chief replied with a clear no.
+The head of Android said it can even make things worse.
+Apps in the background are mostly paused. So, a myth!
+Close an app only when it is frozen or stuck.
+How many apps are open on your phone right now?

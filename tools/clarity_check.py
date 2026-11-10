@@ -33,7 +33,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--slug", required=True)
     ap.add_argument("--allow-long", action="store_true", help="accept 40-45 s (explain why in the email)")
-    ap.add_argument("--realcheck", action="store_true", help="Plan v5 Real Check Short: the verdict stamp is the open loop, no spoken promise line needed")
+    ap.add_argument("--realcheck", action="store_true", help="Plan v5 Real Check Short: the verdict stamp is the open loop, no spoken promise line needed; v5.1 length cap 28 s")
+    ap.add_argument("--owner-voice", action="store_true", help="v5.1: narration is the owner's recording (tools/owner_voice.py): skip the TTS pace, gap and [pause] checks, allow up to 3.4 words/s speaking")
     a = ap.parse_args()
     d = ROOT / "studio" / "src" / a.slug
     rows = [r.strip() for r in (d / "voice.txt").read_text().splitlines() if r.strip()]
@@ -53,17 +54,20 @@ def main():
     gaps = [(cues[i + 1]["startFrame"] - cues[i]["endFrame"]) / fps for i in range(len(cues) - 1)]
     avg_gap = sum(gaps) / max(len(gaps), 1)
 
-    if pace > 2.3:
+    if a.owner_voice:
+        if speak > 3.4:
+            problems.append(f"owner speaking pace {speak:.2f} words/s > 3.4 (ask the owner to re-record a little slower)")
+    elif pace > 2.3:
         problems.append(f"overall pace {pace:.2f} words/s > 2.3 (slow down: fewer words, longer pauses)")
-    if speak > 3.2:
+    if not a.owner_voice and speak > 3.2:
         problems.append(f"speaking pace {speak:.2f} words/s > 3.2 (voice speed 0.85 from voice.json, fewer and simpler words)")
-    if len([p for p in pauses if p >= 0.5]) < 2:
+    if not a.owner_voice and len([p for p in pauses if p >= 0.5]) < 2:
         problems.append("fewer than two [pause 0.5+] rows (add pauses after the stakes, before the twist and the takeaway)")
-    if avg_gap < 0.35:
+    if not a.owner_voice and avg_gap < 0.35:
         problems.append(f"average gap between lines {avg_gap:.2f} s < 0.35 (run voiceover.py with --gap 0.45)")
-    cap = 45.0 if a.allow_long else 40.0
+    cap = 45.0 if a.allow_long else (28.0 if a.realcheck else 40.0)
     if total_s > cap:
-        problems.append(f"length {total_s:.1f} s > {cap:.0f} s (aim ~30 s; cut words, not pauses)")
+        problems.append(f"length {total_s:.1f} s > {cap:.0f} s (Real Check v5.1: 20-26 s, hard cap 28 s; otherwise aim ~30 s; cut words, not pauses)")
     PROMISE = re.compile(r"\b(end|last|wait|stay|until|finish|final)\b", re.I)
     if not a.realcheck and not any(PROMISE.search(l) for l in lines[:3]):
         problems.append("no promise-to-the-end in the first three lines (e.g. 'Wait for the last part.')")

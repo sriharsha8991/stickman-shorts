@@ -1,4 +1,4 @@
-# Stickman Shorts — Plan v5 runbook (owner, 2026-11-09)
+# Stickman Shorts — Plan v5 runbook (owner, 2026-11-09; v5.1 update 2026-11-10 in §0)
 
 **This file is the production runbook from 2026-11-09.** `PIPELINE.md` is the archive: use it only where this file points to
 it (inbox commands §1, toolchain §3, render + mastering §8, delivery §10). Where the two disagree, this file wins.
@@ -8,6 +8,66 @@ Why it changed: 58 Shorts (12 Oct–9 Nov) earned 35.7K views and none passed Yo
 reset of 29 Oct lifted "stayed to watch" from 35% to about 52%; the pencil series Spark Got Tricked fell back to 38% (4 posted).
 The best holders were everyday beliefs and body feelings asked as the viewer's own question. So: one format (Real Check),
 real photos as evidence, Spark as a small reactor, one Short a day, and a two-week test that changes one thing at a time.
+
+## 0. Plan v5.1 (owner, 2026-11-10): tighter Real Check now, the owner's voice from Sunday 15 Nov
+**This section wins over §2–§9 below wherever they disagree.** Same format, same template, same photo rules.
+Why: the owner asked to keep v5 but make it much better, and will record the narration himself from Sun 15 Nov.
+A real voice is the biggest fix for both "stayed to watch" and YouTube's mass-produced-content reviews.
+
+**0.1 Tighter Real Check (every Short from 2026-11-11, TTS or owner voice)**
+- Length **20–26 s**, hard cap 28 s (`clarity_check.py --realcheck` now fails above 28 s). 50–65 words, **7 lines**.
+  The owner's export showed engaged viewers give about 19–24 s whatever the length, so 30+ s only loses completion.
+- Line 1 = the viewer's question (≤ 10 words), spoken from 0.2 s, over the strongest evidence photo, overlay on frame 0.
+- **No "who says it" line and no filler** ("Quiz books say yes", "so it sounds believable"). Line 2 is already evidence:
+  a number, a named test, or what was measured. One clue per line, lines 2–4.
+- Line 5 = the verdict, ends with "!", stamp on the verdict word, landing at **11–16 s** (was 18–22 s).
+- Line 6 = the one caveat or the "why it sticks", in plain words. Line 7 = the comment question (≥ 5 words).
+- TTS pauses: `[pause 0.5]`–`[pause 0.6]` between lines, one `[pause 0.8]` before the verdict line, nothing longer
+  (R01 had 1.0–1.4 s of dead air three times). Pace gates stay: ≤ 2.3 words/s overall, ≤ 3.2 speaking, af_heart 0.85×.
+- Topics after R06: beliefs the viewer acts on every day (phone, money, apps, body, food), where the answer changes what
+  they do tomorrow. Not the worn school-quiz myths (plan/slate_v5_reserve.csv R09–R12 are now last resort only).
+- The A/B/C arm labels stay on the rows (A: `spark: true`, B: `spark: false`) but §9's day-15 rules are replaced by 0.4.
+
+**0.2 Owner voice (every Short from Sun 2026-11-15; IDs R07, R08, R13 onwards)**
+- The script is **fixed**: `plan/voice/<ID>.txt` (7 lines, already fact-checked on the date in the slate row). Copy it to
+  `studio/src/<slug>/voice.txt` unchanged: the owner has recorded exactly these words. Still re-verify the claim on the
+  day (§3); if a fact no longer holds, do NOT build: mark the row `Waiting for voice`, write the corrected line(s) in the
+  email and ask the owner to re-record that one file.
+- The recording is in the Drive folder **"Stickman Shorts / Voice"** (id `1RuViZLgd-ub0_5wUeqKu9CbAY8Zqat1H`), one audio
+  file per Short named with the ID (`R07.m4a`, `R13.mp3`, …; any extension). Find it with Drive `search_files`
+  (`parentId = '1RuViZLgd-ub0_5wUeqKu9CbAY8Zqat1H' and title contains '<ID>'`; newest wins), then
+  `download_file_content(fileId)`; the large result is saved to a file whose path the tool prints.
+- Build the voice from it (instead of `tools/voiceover.py`):
+  `python3 tools/owner_voice.py --slug <slug> --script studio/src/<slug>/voice.txt --audio <saved result path or media file>`
+  It splits the recording on the owner's pauses, writes `voice.wav`, `voice.ts`, `timeline.ts/.json` exactly like
+  voiceover.py, and prints the real timings. If it reports fewer chunks than lines, retry with `--min-silence 0.15`;
+  if that fails too, do not guess: `Waiting for voice` + ask for a re-record with one-second pauses.
+  Listen-check by numbers: the printed line durations must look sane (about 2–5 s each, total 18–28 s).
+- Gate: `python3 tools/clarity_check.py --slug <slug> --realcheck --owner-voice` (length ≤ 28 s, line lengths; the TTS
+  pace, gap and pause-row checks are skipped; speaking above 3.4 words/s fails: ask for a slower take).
+- `videos/<ID>.md`, the status row and the email say **Voice: owner**. Never mix TTS and the owner's voice in one Short.
+- **No recording for today's row:** take the next row that has one. None at all: make nothing new, set the row to
+  `Waiting for voice`, and send the one email saying which IDs are missing (and which finished Shorts are still unposted).
+  Never fall back to TTS for an owner-voice row.
+- First owner-voice run (R07): this path has only been tested on a synthetic recording. If the Drive download or the
+  split fails for a reason not covered here, fix the tool for every Short, push the fix, and say what changed.
+
+**0.3 Next week's scripts (so the owner can record once a week)**
+- When two or fewer owner-voice rows are left unproduced in `plan/slate_v5.csv`, this run ALSO writes the next seven:
+  pick topics by 0.1, verify every claim from primary sources, write 7-line scripts (5–14 words a line), save them as
+  `plan/voice/<ID>.txt`, append the rows (next IDs, alternating Arm A/B, state `Owner voice: script fixed in …`), put
+  them in a Drive doc "Voiceover scripts — week of <date>" in the Stickman Shorts folder, and add them to the email
+  under **Record these by Saturday**, with the recording notes below. Do not pause the day's Short for this.
+- Recording notes for the owner (repeat in that email): one file per Short named with the ID; quiet room, phone 15–20 cm
+  away; read line by line with a clear one-second pause between lines; normal talking speed, the verdict word with
+  punch; a wrong take is fine, just upload the best one to Drive › Stickman Shorts › Voice.
+
+**0.4 Reading the results (replaces §9's day-15 rules)**
+- The owner drops the Studio Shorts export in the Stickman Shorts Drive folder each Sunday (or sends it in the thread).
+  Log it in `plan/test_v5.csv` with one more note per row: `voice: tts` or `voice: owner`. Never estimate numbers.
+- The question for the week of 15 Nov is one thing only: owner voice vs TTS on the same format. Pass mark for a Short:
+  stayed to watch ≥ 60% at 48 h, or more than 3,000 views. Report the median of each group and the best three topics;
+  next week's topics (0.3) lean to whatever those three have in common.
 
 ## 1. Inbox (unchanged)
 Follow `PIPELINE.md` §1 (thread 1a159c3adf191ae8, PAUSE/RESUME/REDO/SKIP/ADD/VOICE/feedback, `plan/inbox_state.json`).
