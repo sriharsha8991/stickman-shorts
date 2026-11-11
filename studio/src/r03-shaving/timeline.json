@@ -1,0 +1,71 @@
+{
+  "fps": 30,
+  "durationInFrames": 693,
+  "seconds": 23.07,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.677,
+      "startFrame": 6,
+      "endFrame": 110,
+      "words": 10,
+      "text": "Before you shave again, does hair grow back thicker? Why?"
+    },
+    {
+      "i": 1,
+      "start": 4.277,
+      "end": 7.797,
+      "startFrame": 128,
+      "endFrame": 234,
+      "words": 9,
+      "text": "Researchers shaved one leg of five men, every week."
+    },
+    {
+      "i": 2,
+      "start": 8.397,
+      "end": 10.36,
+      "startFrame": 252,
+      "endFrame": 311,
+      "words": 6,
+      "text": "The other leg was never shaved."
+    },
+    {
+      "i": 3,
+      "start": 10.96,
+      "end": 13.157,
+      "startFrame": 329,
+      "endFrame": 395,
+      "words": 7,
+      "text": "Both legs grew hair just as thin."
+    },
+    {
+      "i": 4,
+      "start": 13.957,
+      "end": 15.621,
+      "startFrame": 419,
+      "endFrame": 469,
+      "words": 6,
+      "text": "So thicker hair is a myth!"
+    },
+    {
+      "i": 5,
+      "start": 16.221,
+      "end": 19.549,
+      "startFrame": 487,
+      "endFrame": 586,
+      "words": 10,
+      "text": "A razor leaves a blunt tip, so stubble feels rough."
+    },
+    {
+      "i": 6,
+      "start": 20.149,
+      "end": 21.621,
+      "startFrame": 604,
+      "endFrame": 649,
+      "words": 5,
+      "text": "Who told you this one?"
+    }
+  ],
+  "chapters": []
+}

@@ -87,6 +87,7 @@ import { Video as T33WayHome, DURATION as T33WayHome_DURATION } from "./t33-way-
 import { Video as T15Birthday, DURATION as T15Birthday_DURATION } from "./t15-birthday/Video";
 import { Video as R01GreatWall, DURATION as R01GreatWall_DURATION } from "./r01-great-wall/Video";
 import { Video as R02Goldfish, DURATION as R02Goldfish_DURATION } from "./r02-goldfish/Video";
+import { Video as R03Shaving, DURATION as R03Shaving_DURATION } from "./r03-shaving/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -773,6 +774,7 @@ export const RemotionRoot: React.FC = () => {
       />
       <Composition id="R01GreatWall" component={R01GreatWall} durationInFrames={R01GreatWall_DURATION} fps={30} width={1080} height={1920} />
       <Composition id="R02Goldfish" component={R02Goldfish} durationInFrames={R02Goldfish_DURATION} fps={30} width={1080} height={1920} />
+      <Composition id="R03Shaving" component={R03Shaving} durationInFrames={R03Shaving_DURATION} fps={30} width={1080} height={1920} />
       {/* stickman-video:compositions */}
           <Composition id="SparkSheet" component={SparkSheet} durationInFrames={60} fps={30} width={1920} height={1080} />
           <Composition id="CameraDemo" component={CameraDemo} durationInFrames={200} fps={30} width={1920} height={1080} />
