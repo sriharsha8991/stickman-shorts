@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Birthday Cake Candles",
+    "author": "nick.amoscato",
+    "licence": "CC BY 2.0",
+    "page": "https://www.flickr.com/photos/91374488@N07/41322038020",
+    "url": "https://live.staticflickr.com/1786/41322038020_22c33b3ed9_b.jpg",
+    "source": "Openverse / flickr",
+    "file": "cake.jpg",
+    "credit": "nick.amoscato / CC BY 2.0 / Openverse / flickr",
+    "query": "birthday cake candles",
+    "use": "hook, verdict, loop",
+    "drive_doc": "1IC8kepWuWILfwDa2C-wbn9Uc_N2AqKJPRzAcEW7O5wU"
+  },
+  {
+    "title": "Sugar Cubes",
+    "author": "rockindave1",
+    "licence": "CC BY 2.0",
+    "page": "https://www.flickr.com/photos/63723146@N08/7164573186",
+    "url": "https://live.staticflickr.com/7229/7164573186_638fc97c37_b.jpg",
+    "source": "Openverse / flickr",
+    "file": "cubes.jpg",
+    "credit": "rockindave1 / CC BY 2.0 / Openverse / flickr",
+    "query": "sugar cubes",
+    "use": "line 2, line 3 split (sugar)",
+    "drive_doc": "1IC8kepWuWILfwDa2C-wbn9Uc_N2AqKJPRzAcEW7O5wU"
+  },
+  {
+    "title": "Artificial sweetener in tablets",
+    "author": "Centhum",
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/w/index.php?curid=125959852",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Artificial_sweetener_in_tablets.jpg",
+    "source": "Openverse / wikimedia",
+    "file": "tabs.jpg",
+    "credit": "Centhum / CC BY-SA 3.0 / Openverse / wikimedia",
+    "query": "sweetener tablets",
+    "use": "line 3 split (sweetener)",
+    "drive_doc": "1IC8kepWuWILfwDa2C-wbn9Uc_N2AqKJPRzAcEW7O5wU"
+  }
+]

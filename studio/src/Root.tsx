@@ -89,6 +89,7 @@ import { Video as R01GreatWall, DURATION as R01GreatWall_DURATION } from "./r01-
 import { Video as R02Goldfish, DURATION as R02Goldfish_DURATION } from "./r02-goldfish/Video";
 import { Video as R03Shaving, DURATION as R03Shaving_DURATION } from "./r03-shaving/Video";
 import { Video as R04Lightning, DURATION as R04Lightning_DURATION } from "./r04-lightning/Video";
+import { Video as R05SugarHyper, DURATION as R05SugarHyper_DURATION } from "./r05-sugar-hyper/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -777,6 +778,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="R02Goldfish" component={R02Goldfish} durationInFrames={R02Goldfish_DURATION} fps={30} width={1080} height={1920} />
       <Composition id="R03Shaving" component={R03Shaving} durationInFrames={R03Shaving_DURATION} fps={30} width={1080} height={1920} />
       <Composition id="R04Lightning" component={R04Lightning} durationInFrames={R04Lightning_DURATION} fps={30} width={1080} height={1920} />
+      <Composition id="R05SugarHyper" component={R05SugarHyper} durationInFrames={R05SugarHyper_DURATION} fps={30} width={1080} height={1920} />
       {/* stickman-video:compositions */}
           <Composition id="SparkSheet" component={SparkSheet} durationInFrames={60} fps={30} width={1920} height={1080} />
           <Composition id="CameraDemo" component={CameraDemo} durationInFrames={200} fps={30} width={1920} height={1080} />
