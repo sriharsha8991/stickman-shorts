@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Lightning strikes the TV Tower",
+    "author": "Matt Biddulph",
+    "licence": "CC BY-SA 2.0",
+    "page": "https://www.flickr.com/photos/51035707449@N01/6078045546",
+    "url": "https://live.staticflickr.com/6079/6078045546_1469be6620_b.jpg",
+    "source": "Openverse / flickr",
+    "file": "tower.jpg",
+    "credit": "Matt Biddulph / CC BY-SA 2.0 / Openverse / flickr",
+    "use": "hook, verdict, loop",
+    "drive_doc": "1WKO2OtX-RCkpRdkKHraux87iJP4NrxjyGOUnoCLdhcc"
+  },
+  {
+    "title": "Lightning striking the Empire State Building, summer 1934 (wea00610)",
+    "author": "John P. Gaty / NOAA Photo Library",
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Wea00610_(9672651296).jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Wea00610_%289672651296%29.jpg",
+    "source": "Wikimedia Commons (NOAA NWS Collection)",
+    "file": "esb.jpg",
+    "credit": "John P. Gaty / NOAA Photo Library / Public domain / Wikimedia Commons (NOAA NWS Collection)",
+    "use": "line 2 (caption text cropped out)",
+    "drive_doc": "1WKO2OtX-RCkpRdkKHraux87iJP4NrxjyGOUnoCLdhcc"
+  },
+  {
+    "title": "CN Tower struck by lightning",
+    "author": "Raul Heinrich",
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/w/index.php?curid=7885046",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/CN_Tower_struck_by_lightning-Edit%28Taxi%29.jpg",
+    "source": "Openverse / wikimedia",
+    "file": "cn.jpg",
+    "credit": "Raul Heinrich / CC BY-SA 3.0 / Openverse / wikimedia",
+    "use": "line 3",
+    "drive_doc": "1WKO2OtX-RCkpRdkKHraux87iJP4NrxjyGOUnoCLdhcc"
+  },
+  {
+    "title": "Lightning struck live oak tree, Carrollton Riverbend, New Orleans April 2022 - Scar",
+    "author": "Infrogmation of New Orleans",
+    "licence": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/w/index.php?curid=116999254",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Lightning_struck_live_oak_tree%2C_Carrollton_Riverbend%2C_New_Orleans_April_2022_-_Scar.jpg",
+    "source": "Openverse / wikimedia",
+    "file": "tree.jpg",
+    "credit": "Infrogmation of New Orleans / CC BY-SA 4.0 / Openverse / wikimedia",
+    "use": "line 4",
+    "drive_doc": "1WKO2OtX-RCkpRdkKHraux87iJP4NrxjyGOUnoCLdhcc"
+  },
+  {
+    "title": "Lightning",
+    "author": "Tree Leaf Clover",
+    "licence": "CC BY 2.0",
+    "page": "https://www.flickr.com/photos/50744999@N02/8882728526",
+    "url": "https://live.staticflickr.com/7420/8882728526_b2459db4e2_b.jpg",
+    "source": "Openverse / flickr",
+    "file": "city.jpg",
+    "credit": "Tree Leaf Clover / CC BY 2.0 / Openverse / flickr",
+    "use": "line 6",
+    "drive_doc": "1WKO2OtX-RCkpRdkKHraux87iJP4NrxjyGOUnoCLdhcc"
+  }
+]

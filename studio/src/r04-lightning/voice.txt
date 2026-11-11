@@ -1,0 +1,13 @@
+Do you believe lightning never strikes one place twice? Why?
+[pause 0.5]
+The Empire State Building is hit about twenty-three times a year.
+[pause 0.5]
+Tall towers get hit again and again.
+[pause 0.5]
+Trees get struck many times a year.
+[pause 0.8]
+That saying is a myth!
+[pause 0.6]
+Hear thunder? Go indoors, not under a tree.
+[pause 0.6]
+Have you seen lightning up close?
