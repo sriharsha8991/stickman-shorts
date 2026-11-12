@@ -1,0 +1,7 @@
+Does incognito mode really hide what you browse?
+It only stops your own browser from saving history.
+The websites you visit can still see you.
+So can your office network and your internet provider.
+Chrome itself tells you this. So "hidden" is a myth!
+It hides your history from people who share your device.
+Did you think incognito made you invisible?
