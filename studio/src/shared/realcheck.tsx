@@ -84,7 +84,8 @@ const PhotoView: React.FC<{ slug: string; p: Photo; t: number }> = ({ slug, p, t
 const CardView: React.FC<{ text: string; sub?: string; accent: string }> = ({ text, sub, accent }) => (
   <AbsoluteFill style={{ background: PAPER, display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", padding: 60 }}>
     <div style={{ fontFamily: FONT.title, fontWeight: 900, fontSize: 92, lineHeight: 1.05, color: INK, textAlign: "center" }}>{text}</div>
-    {sub && <div style={{ marginTop: 26, fontFamily: FONT.body, fontWeight: 700, fontSize: 40, color: accent, textAlign: "center" }}>{sub}</div>}
+    {/* sub text uses the Short's bold background colour (light accents were unreadable on paper) */}
+    {sub && <div style={{ marginTop: 26, fontFamily: FONT.body, fontWeight: 800, fontSize: 44, color: accent, textAlign: "center" }}>{sub}</div>}
   </AbsoluteFill>
 );
 
@@ -96,7 +97,7 @@ const SplitView: React.FC<{ spec: RealSpec; sides: [SplitSide, SplitSide]; t: nu
         <div key={i} style={{ position: "relative", flex: 1, borderLeft: i ? `8px solid ${INK}` : undefined, overflow: "hidden", opacity: inP, transform: `translateY(${(1 - inP) * 40}px)` }}>
           {s.photo !== undefined && spec.photos[s.photo] ? <PhotoView slug={spec.slug} p={spec.photos[s.photo]} t={t} /> : <CardView text={s.text ?? ""} accent={spec.accent} />}
           <div style={{ position: "absolute", bottom: 18, left: 0, right: 0, textAlign: "center" }}>
-            <span style={{ display: "inline-block", padding: "6px 16px", borderRadius: 10, background: i ? spec.accent : INK, color: "#fff", fontFamily: FONT.title, fontWeight: 900, fontSize: 40 }}>{s.label}</span>
+            <span style={{ display: "inline-block", padding: "6px 16px", borderRadius: 10, background: i ? spec.bg : INK, color: "#fff", fontFamily: FONT.title, fontWeight: 900, fontSize: 40 }}>{s.label}</span>
           </div>
         </div>
       );
@@ -109,7 +110,7 @@ const Frame: React.FC<{ spec: RealSpec; show: Show; t: number }> = ({ spec, show
     const p = spec.photos[show.photo];
     return p ? <PhotoView slug={spec.slug} p={p} t={t} /> : <CardView text="PHOTO MISSING" accent={spec.accent} />;
   }
-  if ("card" in show) return <CardView text={show.card} sub={show.sub} accent={spec.accent} />;
+  if ("card" in show) return <CardView text={show.card} sub={show.sub} accent={spec.bg} />;
   return <SplitView spec={spec} sides={show.split} t={t} />;
 };
 
@@ -230,13 +231,13 @@ export const RealCheck: React.FC<{ spec: RealSpec; cues: Cue[]; frames: number; 
             <div
               style={{
                 position: "absolute",
-                right: -10,
-                top: 40,
+                right: 70, // keeps the sticker left of x 960 (YouTube's buttons sit in the right 120 px)
+                top: 62, // below the photo credit line
                 transform: `rotate(6deg) scale(${interpolate(f - tagAt, [0, 8], [0.3, 1], { ...clamp, easing: eoB })})`,
                 padding: "10px 22px",
                 borderRadius: 14,
                 background: spec.accent,
-                color: "#fff",
+                color: INK, // accents are light; dark text reads on all of them
                 fontFamily: FONT.title,
                 fontWeight: 900,
                 fontSize: 54,
