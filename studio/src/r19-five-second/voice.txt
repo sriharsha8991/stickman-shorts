@@ -1,0 +1,13 @@
+Dropped food? Before you eat it, is five seconds safe?
+[pause 0.5]
+Scientists ran over two thousand drop tests.
+[pause 0.6]
+Germs moved onto food in under one second.
+[pause 0.6]
+Wet watermelon got the most germs.
+[pause 0.8]
+The five-second rule? A myth!
+[pause 0.6]
+Carpet passed the fewest germs, but longer meant more.
+[pause 0.6]
+What food did you rescue from the floor?

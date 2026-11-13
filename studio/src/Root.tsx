@@ -92,6 +92,7 @@ import { Video as R04Lightning, DURATION as R04Lightning_DURATION } from "./r04-
 import { Video as R05SugarHyper, DURATION as R05SugarHyper_DURATION } from "./r05-sugar-hyper/Video";
 import { Video as R06HeadHeat, DURATION as R06HeadHeat_DURATION } from "./r06-head-heat/Video";
 import { Video as R18RicePhone, DURATION as R18RicePhone_DURATION } from "./r18-rice-phone/Video";
+import { Video as R19FiveSecond, DURATION as R19FiveSecond_DURATION } from "./r19-five-second/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -783,6 +784,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="R05SugarHyper" component={R05SugarHyper} durationInFrames={R05SugarHyper_DURATION} fps={30} width={1080} height={1920} />
       <Composition id="R06HeadHeat" component={R06HeadHeat} durationInFrames={R06HeadHeat_DURATION} fps={30} width={1080} height={1920} />
       <Composition id="R18RicePhone" component={R18RicePhone} durationInFrames={R18RicePhone_DURATION} fps={30} width={1080} height={1920} />
+      <Composition id="R19FiveSecond" component={R19FiveSecond} durationInFrames={R19FiveSecond_DURATION} fps={30} width={1080} height={1920} />
       {/* stickman-video:compositions */}
           <Composition id="SparkSheet" component={SparkSheet} durationInFrames={60} fps={30} width={1920} height={1080} />
           <Composition id="CameraDemo" component={CameraDemo} durationInFrames={200} fps={30} width={1920} height={1080} />
