@@ -1,0 +1,71 @@
+{
+  "fps": 30,
+  "durationInFrames": 753,
+  "seconds": 25.08,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.741,
+      "startFrame": 6,
+      "endFrame": 112,
+      "words": 9,
+      "text": "Blue-light glasses? Before you buy, do they work? Why?"
+    },
+    {
+      "i": 1,
+      "start": 4.241,
+      "end": 6.865,
+      "startFrame": 127,
+      "endFrame": 206,
+      "words": 5,
+      "text": "Seventeen trials tested these glasses."
+    },
+    {
+      "i": 2,
+      "start": 7.365,
+      "end": 9.563,
+      "startFrame": 221,
+      "endFrame": 287,
+      "words": 6,
+      "text": "They probably didn't help tired eyes."
+    },
+    {
+      "i": 3,
+      "start": 10.063,
+      "end": 12.793,
+      "startFrame": 302,
+      "endFrame": 384,
+      "words": 8,
+      "text": "Sunlight has far more blue light than screens."
+    },
+    {
+      "i": 4,
+      "start": 13.593,
+      "end": 15.684,
+      "startFrame": 408,
+      "endFrame": 471,
+      "words": 5,
+      "text": "Protecting your eyes? A myth!"
+    },
+    {
+      "i": 5,
+      "start": 16.284,
+      "end": 20.423,
+      "startFrame": 489,
+      "endFrame": 613,
+      "words": 11,
+      "text": "Screens tire your eyes because you blink less. Look away often."
+    },
+    {
+      "i": 6,
+      "start": 21.023,
+      "end": 23.327,
+      "startFrame": 631,
+      "endFrame": 700,
+      "words": 8,
+      "text": "Do you own a pair of blue-light glasses?"
+    }
+  ],
+  "chapters": []
+}
