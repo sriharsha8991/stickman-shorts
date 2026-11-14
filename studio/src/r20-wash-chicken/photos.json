@@ -1,0 +1,62 @@
+[
+ {
+  "file": "chicken.jpg",
+  "title": "Raw chicken",
+  "author": "trenttsd",
+  "licence": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/84335369@N00/4949362070",
+  "url": "https://live.staticflickr.com/4148/4949362070_6625959049_b.jpg",
+  "source": "Flickr",
+  "line": "line 1, 5, 7",
+  "credit": "trenttsd, CC BY 2.0 (Flickr)",
+  "drive_doc": "1FGmaenkCxhj4n_71lrq1XUlvCrWTk17WEyXr_LzSHQY"
+ },
+ {
+  "file": "sink.jpg",
+  "title": "Tap/Faucet in kitchen sink",
+  "author": "espensorvik",
+  "licence": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/28478778@N05/5729015292",
+  "url": "https://live.staticflickr.com/5107/5729015292_5041150021_b.jpg",
+  "source": "Flickr",
+  "line": "line 3",
+  "credit": "espensorvik, CC BY 2.0 (Flickr)",
+  "drive_doc": "1FGmaenkCxhj4n_71lrq1XUlvCrWTk17WEyXr_LzSHQY"
+ },
+ {
+  "file": "lemon.jpg",
+  "title": "Cut lemons",
+  "author": "Doug Beckers",
+  "licence": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/37103729@N02/3756148668",
+  "url": "https://live.staticflickr.com/2482/3756148668_596cb23dc7_b.jpg",
+  "source": "Flickr",
+  "line": "line 4",
+  "credit": "Doug Beckers, CC BY-SA 2.0 (Flickr)",
+  "drive_doc": "1FGmaenkCxhj4n_71lrq1XUlvCrWTk17WEyXr_LzSHQY"
+ },
+ {
+  "file": "cooked.jpg",
+  "title": "20120105-OC-AMW-0125 (thermometer in grilled chicken)",
+  "author": "USDA (USDAgov)",
+  "licence": "Public domain",
+  "page": "https://www.flickr.com/photos/41284017@N08/7042868463",
+  "url": "https://live.staticflickr.com/5115/7042868463_95f0ff0850_b.jpg",
+  "source": "Flickr",
+  "line": "line 6",
+  "credit": "USDA (USDAgov), Public domain (Flickr)",
+  "drive_doc": "1FGmaenkCxhj4n_71lrq1XUlvCrWTk17WEyXr_LzSHQY"
+ },
+ {
+  "file": "hands.jpg",
+  "title": "Washing hands with soap (4)",
+  "author": "Beat Ruest",
+  "licence": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/w/index.php?curid=88253038",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Washing_hands_with_soap_%284%29.jpg",
+  "source": "Wikimedia Commons",
+  "line": "line 6",
+  "credit": "Beat Ruest, CC BY-SA 4.0 (Wikimedia Commons)",
+  "drive_doc": "1FGmaenkCxhj4n_71lrq1XUlvCrWTk17WEyXr_LzSHQY"
+ }
+]
