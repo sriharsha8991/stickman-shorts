@@ -14,22 +14,24 @@ real photos as evidence, Spark as a small reactor, one Short a day, and a two-we
 Why: the owner asked to keep v5 but make it much better, and will record the narration himself from Sun 15 Nov.
 A real voice is the biggest fix for both "stayed to watch" and YouTube's mass-produced-content reviews.
 
-**0.0 Bridge until Sun 2026-11-15, 23:00 IST (owner, 2026-11-13) — this block wins over 0.2 until then**
-- Check the clock first: `date -u`. Before **2026-11-15T17:30Z** (= Sun 15 Nov, 23:00 IST) the run follows the old v5
+**0.0 TTS bridge, extended until Sun 2026-12-06, 23:00 IST (owner, 2026-11-13; extended 2026-11-14) — this block wins over 0.2 until then**
+- **Owner, 2026-11-14:** he is busy and will record NO audio for the next 2–3 weeks. Keep making TTS Real Check
+  Shorts on new `Bridge TTS` rows exactly as below. **Do not search or download from the Drive Voice folder**, do
+  not list missing recordings, and drop the "Record these by Saturday" section and recording notes from the email.
+  0.3 (next week's scripts) is suspended. The owner will say in the thread when he records again (e.g. `VOICE ON`).
+- Check the clock first: `date -u`. Before **2026-12-06T17:30Z** (= Sun 6 Dec, 23:00 IST) the run follows the old v5
   TTS plan: make ONE Real Check v5.1 Short per run (0.1 format), narrated with TTS (`tools/voiceover.py`, af_heart 0.85×,
   `--gap 0.45`, TTS pauses and gates of 0.1; hookscore ≥ 55 as spoken). Status row and email say **Voice: tts**.
 - **The owner's scripts stay reserved.** R07, R08, R13–R17 (and any later row whose state starts `Owner voice:`) are
-  NEVER made with TTS. They stay `Waiting for voice`, and a recording that arrives before the cut-off is still used
-  (owner-voice path of 0.2) if the owner drops one; otherwise they wait for Monday.
+  NEVER made with TTS. They stay `Waiting for voice` until the owner records again (no Voice-folder checks meanwhile).
 - **What to make instead:** the lowest-Day row of `plan/slate_v5.csv` whose State starts `Bridge TTS` and is not
   Produced/Skipped. If there is none, the run writes one new row first: next free ID (R18, R19, …), Day = highest Day
-  + 1, Arm alternating from the previous row (R18 = B, R19 = A, …), State `Bridge TTS (until 15 Nov 23:00 IST)`, a topic
+  + 1, Arm alternating from the previous row (R18 = B, R19 = A, …), State `Bridge TTS (until 6 Dec 23:00 IST)`, a topic
   picked by 0.1 (everyday phone, money, apps, body, food belief; not already on the slate or in the reserve; not a worn
   school-quiz myth), facts verified on the day. Then it makes that row end to end (§3–§8) the same run.
-- Inbox, photos in Drive, checks, render, delivery and the email are unchanged. The email still lists which owner
-  recordings are missing (R07, R08, R13–R17) under "Record these by Saturday", and says owner voice starts with the
-  first run after Sun 23:00 IST.
-- **From 2026-11-15T17:30Z:** this block no longer applies. Unproduced `Bridge TTS` rows are left as they are (state
+- Inbox, photos in Drive, checks, render, delivery and the email are unchanged, except: no "Record these by
+  Saturday" section, no list of missing recordings, no Voice-folder search (owner, 2026-11-14).
+- **From 2026-12-06T17:30Z** (or earlier if the owner says he is recording again): this block no longer applies. Unproduced `Bridge TTS` rows are left as they are (state
   `Bridge TTS: not made`), never voiced by TTS again; 0.2 applies to every new Short, starting from R07.
 
 **0.1 Tighter Real Check (every Short from 2026-11-11, TTS or owner voice)**
@@ -46,7 +48,7 @@ A real voice is the biggest fix for both "stayed to watch" and YouTube's mass-pr
   they do tomorrow. Not the worn school-quiz myths (plan/slate_v5_reserve.csv R09–R12 are now last resort only).
 - The A/B/C arm labels stay on the rows (A: `spark: true`, B: `spark: false`) but §9's day-15 rules are replaced by 0.4.
 
-**0.2 Owner voice (every Short from Sun 2026-11-15, 23:00 IST — before that see 0.0; IDs R07, R08, R13 onwards)**
+**0.2 Owner voice (ON HOLD until Sun 2026-12-06, 23:00 IST or the owner says he records again — see 0.0; IDs R07, R08, R13 onwards)**
 - The script is **fixed**: `plan/voice/<ID>.txt` (7 lines, already fact-checked on the date in the slate row). Copy it to
   `studio/src/<slug>/voice.txt` unchanged: the owner has recorded exactly these words. Still re-verify the claim on the
   day (§3); if a fact no longer holds, do NOT build: mark the row `Waiting for voice`, write the corrected line(s) in the
@@ -70,7 +72,7 @@ A real voice is the biggest fix for both "stayed to watch" and YouTube's mass-pr
 - First owner-voice run (R07): this path has only been tested on a synthetic recording. If the Drive download or the
   split fails for a reason not covered here, fix the tool for every Short, push the fix, and say what changed.
 
-**0.3 Next week's scripts (so the owner can record once a week)**
+**0.3 Next week's scripts (so the owner can record once a week) — SUSPENDED while 0.0 applies (owner, 2026-11-14)**
 - When two or fewer owner-voice rows are left unproduced in `plan/slate_v5.csv`, this run ALSO writes the next seven:
   pick topics by 0.1, verify every claim from primary sources, write 7-line scripts (5–14 words a line), save them as
   `plan/voice/<ID>.txt`, append the rows (next IDs, alternating Arm A/B, state `Owner voice: script fixed in …`), put
