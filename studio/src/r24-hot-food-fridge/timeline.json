@@ -1,0 +1,71 @@
+{
+  "fps": 30,
+  "durationInFrames": 699,
+  "seconds": 23.27,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.272,
+      "startFrame": 6,
+      "endFrame": 98,
+      "words": 10,
+      "text": "Your food is hot. Should it cool before the fridge?"
+    },
+    {
+      "i": 1,
+      "start": 3.872,
+      "end": 7.413,
+      "startFrame": 116,
+      "endFrame": 222,
+      "words": 9,
+      "text": "Bacteria in warm food can double in twenty minutes."
+    },
+    {
+      "i": 2,
+      "start": 8.013,
+      "end": 11.043,
+      "startFrame": 240,
+      "endFrame": 331,
+      "words": 8,
+      "text": "US food rules: chill it within two hours."
+    },
+    {
+      "i": 3,
+      "start": 11.643,
+      "end": 13.477,
+      "startFrame": 349,
+      "endFrame": 404,
+      "words": 6,
+      "text": "Hot food can go straight in."
+    },
+    {
+      "i": 4,
+      "start": 14.277,
+      "end": 16.197,
+      "startFrame": 428,
+      "endFrame": 486,
+      "words": 6,
+      "text": "Cool it first? That's a myth!"
+    },
+    {
+      "i": 5,
+      "start": 16.797,
+      "end": 19.763,
+      "startFrame": 504,
+      "endFrame": 593,
+      "words": 7,
+      "text": "Big pot? Divide it into shallow containers."
+    },
+    {
+      "i": 6,
+      "start": 20.363,
+      "end": 22.219,
+      "startFrame": 611,
+      "endFrame": 667,
+      "words": 7,
+      "text": "Do you leave dinner out to cool?"
+    }
+  ],
+  "chapters": []
+}

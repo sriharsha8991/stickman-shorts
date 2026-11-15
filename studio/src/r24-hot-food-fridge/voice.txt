@@ -1,0 +1,14 @@
+Your food is hot. Should it cool before the fridge?
+[pause 0.6]
+Bacteria in warm food can double in twenty minutes.
+[pause 0.6]
+US food rules: chill it within two hours.
+[pause 0.6]
+Hot food can go straight in.
+[pause 0.8]
+Cool it first? That's a myth!
+[pause 0.6]
+Big pot? Divide it into shallow containers.
+[pause 0.6]
+Do you leave dinner out to cool?
+

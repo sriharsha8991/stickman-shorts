@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Cooking chicken soup",
+    "author": "acnatta",
+    "licence": "CC BY 2.0",
+    "page": "https://www.flickr.com/photos/29218907@N00/4178766801",
+    "url": "https://live.staticflickr.com/2496/4178766801_c3f58bf447_b.jpg",
+    "source": "Flickr (via Openverse)",
+    "file": "soup.jpg",
+    "lines": "1, 5, 7",
+    "query": "pot of soup on stove",
+    "credit": "acnatta / CC BY 2.0 / Flickr (via Openverse)",
+    "drive_doc": "1cmwVIKIrQRjN2LarDewiioQUcFH8bnO22GnXMhnz6Og"
+  },
+  {
+    "title": "Colonies of Escherichia coli on agar plate",
+    "author": "Gaurav",
+    "licence": "CC BY 4.0",
+    "page": "https://commons.wikimedia.org/w/index.php?curid=46496876",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Colonies_of_Escherichia_coli_on_agar_plate.jpg",
+    "source": "Wikimedia Commons (via Openverse)",
+    "file": "bacteria.jpg",
+    "lines": "2",
+    "query": "Escherichia coli agar plate",
+    "credit": "Gaurav / CC BY 4.0 / Wikimedia Commons (via Openverse)",
+    "drive_doc": "1cmwVIKIrQRjN2LarDewiioQUcFH8bnO22GnXMhnz6Og"
+  },
+  {
+    "title": "Open refrigerator with food at night",
+    "author": "W.carter",
+    "licence": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/w/index.php?curid=52312628",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Open_refrigerator_with_food_at_night.jpg",
+    "source": "Wikimedia Commons (via Openverse)",
+    "file": "fridge.jpg",
+    "lines": "4",
+    "query": "open refrigerator food containers",
+    "credit": "W.carter / CC BY-SA 4.0 / Wikimedia Commons (via Openverse)",
+    "drive_doc": "1cmwVIKIrQRjN2LarDewiioQUcFH8bnO22GnXMhnz6Og"
+  },
+  {
+    "title": "20200605-FSIS-LSC-0096",
+    "author": "USDA (USDAgov)",
+    "licence": "Public domain",
+    "page": "https://www.flickr.com/photos/41284017@N08/49974746678",
+    "url": "https://live.staticflickr.com/65535/49974746678_41e83229e7_b.jpg",
+    "source": "Flickr (via Openverse)",
+    "file": "boxes.jpg",
+    "lines": "6",
+    "query": "USDA FSIS leftovers refrigerator",
+    "credit": "USDA (USDAgov) / Public domain / Flickr (via Openverse)",
+    "drive_doc": "1cmwVIKIrQRjN2LarDewiioQUcFH8bnO22GnXMhnz6Og"
+  }
+]

@@ -97,6 +97,7 @@ import { Video as R20WashChicken, DURATION as R20WashChicken_DURATION } from "./
 import { Video as R21TenThousandSteps, DURATION as R21TenThousandSteps_DURATION } from "./r21-ten-thousand-steps/Video";
 import { Video as R22BlueLightGlasses, DURATION as R22BlueLightGlasses_DURATION } from "./r22-blue-light-glasses/Video";
 import { Video as R23DarkMode, DURATION as R23DarkMode_DURATION } from "./r23-dark-mode/Video";
+import { Video as R24HotFoodFridge, DURATION as R24HotFoodFridge_DURATION } from "./r24-hot-food-fridge/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -793,6 +794,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="R21TenThousandSteps" component={R21TenThousandSteps} durationInFrames={R21TenThousandSteps_DURATION} fps={30} width={1080} height={1920} />
       <Composition id="R22BlueLightGlasses" component={R22BlueLightGlasses} durationInFrames={R22BlueLightGlasses_DURATION} fps={30} width={1080} height={1920} />
       <Composition id="R23DarkMode" component={R23DarkMode} durationInFrames={R23DarkMode_DURATION} fps={30} width={1080} height={1920} />
+      <Composition id="R24HotFoodFridge" component={R24HotFoodFridge} durationInFrames={R24HotFoodFridge_DURATION} fps={30} width={1080} height={1920} />
       {/* stickman-video:compositions */}
           <Composition id="SparkSheet" component={SparkSheet} durationInFrames={60} fps={30} width={1920} height={1080} />
           <Composition id="CameraDemo" component={CameraDemo} durationInFrames={200} fps={30} width={1920} height={1080} />
