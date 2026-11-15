@@ -1,0 +1,71 @@
+{
+  "fps": 30,
+  "durationInFrames": 743,
+  "seconds": 24.75,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.571,
+      "startFrame": 6,
+      "endFrame": 107,
+      "words": 10,
+      "text": "Does your AC cost you more fuel than open windows?"
+    },
+    {
+      "i": 1,
+      "start": 4.071,
+      "end": 7.399,
+      "startFrame": 122,
+      "endFrame": 222,
+      "words": 10,
+      "text": "In heat, AC can cut mileage by over a quarter."
+    },
+    {
+      "i": 2,
+      "start": 7.899,
+      "end": 10.885,
+      "startFrame": 237,
+      "endFrame": 327,
+      "words": 8,
+      "text": "Open windows cost about four to eight percent."
+    },
+    {
+      "i": 3,
+      "start": 11.385,
+      "end": 13.54,
+      "startFrame": 342,
+      "endFrame": 406,
+      "words": 6,
+      "text": "At highway speed, they add drag."
+    },
+    {
+      "i": 4,
+      "start": 14.34,
+      "end": 16.815,
+      "startFrame": 430,
+      "endFrame": 504,
+      "words": 6,
+      "text": "AC burns more fuel? Half true!"
+    },
+    {
+      "i": 5,
+      "start": 17.415,
+      "end": 20.849,
+      "startFrame": 522,
+      "endFrame": 625,
+      "words": 8,
+      "text": "In town, windows down. On highways, use AC."
+    },
+    {
+      "i": 6,
+      "start": 21.349,
+      "end": 23.696,
+      "startFrame": 640,
+      "endFrame": 711,
+      "words": 7,
+      "text": "Which do you pick, AC or windows?"
+    }
+  ],
+  "chapters": []
+}

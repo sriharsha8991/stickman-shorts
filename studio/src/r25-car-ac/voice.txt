@@ -1,0 +1,13 @@
+Does your AC cost you more fuel than open windows?
+[pause 0.5]
+In heat, AC can cut mileage by over a quarter.
+[pause 0.5]
+Open windows cost about four to eight percent.
+[pause 0.5]
+At highway speed, they add drag.
+[pause 0.8]
+AC burns more fuel? Half true!
+[pause 0.6]
+In town, windows down. On highways, use AC.
+[pause 0.5]
+Which do you pick, AC or windows?
