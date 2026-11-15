@@ -1,0 +1,13 @@
+Dark mode? Before you trust it, does it save battery?
+[pause 0.5]
+Purdue engineers tested four phones.
+[pause 0.5]
+At full brightness, it saved about forty percent.
+[pause 0.5]
+Indoors, it saved just three to nine percent.
+[pause 0.8]
+Battery saver? Only half true!
+[pause 0.6]
+It only works on screens whose black pixels switch off.
+[pause 0.6]
+Is your phone in dark mode right now?

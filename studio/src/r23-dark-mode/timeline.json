@@ -1,0 +1,71 @@
+{
+  "fps": 30,
+  "durationInFrames": 732,
+  "seconds": 24.4,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.485,
+      "startFrame": 6,
+      "endFrame": 105,
+      "words": 10,
+      "text": "Dark mode? Before you trust it, does it save battery?"
+    },
+    {
+      "i": 1,
+      "start": 3.985,
+      "end": 6.353,
+      "startFrame": 120,
+      "endFrame": 191,
+      "words": 5,
+      "text": "Purdue engineers tested four phones."
+    },
+    {
+      "i": 2,
+      "start": 6.853,
+      "end": 10.053,
+      "startFrame": 206,
+      "endFrame": 302,
+      "words": 8,
+      "text": "At full brightness, it saved about forty percent."
+    },
+    {
+      "i": 3,
+      "start": 10.553,
+      "end": 13.391,
+      "startFrame": 317,
+      "endFrame": 402,
+      "words": 8,
+      "text": "Indoors, it saved just three to nine percent."
+    },
+    {
+      "i": 4,
+      "start": 14.191,
+      "end": 16.367,
+      "startFrame": 426,
+      "endFrame": 491,
+      "words": 5,
+      "text": "Battery saver? Only half true!"
+    },
+    {
+      "i": 5,
+      "start": 16.967,
+      "end": 20.38,
+      "startFrame": 509,
+      "endFrame": 611,
+      "words": 10,
+      "text": "It only works on screens whose black pixels switch off."
+    },
+    {
+      "i": 6,
+      "start": 20.98,
+      "end": 23.348,
+      "startFrame": 629,
+      "endFrame": 700,
+      "words": 8,
+      "text": "Is your phone in dark mode right now?"
+    }
+  ],
+  "chapters": []
+}
