@@ -1,0 +1,71 @@
+{
+  "fps": 30,
+  "durationInFrames": 722,
+  "seconds": 24.06,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.272,
+      "startFrame": 6,
+      "endFrame": 98,
+      "words": 10,
+      "text": "Do dates make you waste your food before it's bad?"
+    },
+    {
+      "i": 1,
+      "start": 3.772,
+      "end": 7.207,
+      "startFrame": 113,
+      "endFrame": 216,
+      "words": 8,
+      "text": "US agencies say it's about quality, not safety."
+    },
+    {
+      "i": 2,
+      "start": 7.707,
+      "end": 10.267,
+      "startFrame": 231,
+      "endFrame": 308,
+      "words": 7,
+      "text": "Stored well, it's safe, just less fresh."
+    },
+    {
+      "i": 3,
+      "start": 10.767,
+      "end": 13.732,
+      "startFrame": 323,
+      "endFrame": 412,
+      "words": 9,
+      "text": "Mix-ups cause about a fifth of home food waste."
+    },
+    {
+      "i": 4,
+      "start": 14.532,
+      "end": 16.345,
+      "startFrame": 436,
+      "endFrame": 490,
+      "words": 5,
+      "text": "Bad the next day? Myth!"
+    },
+    {
+      "i": 5,
+      "start": 16.945,
+      "end": 20.273,
+      "startFrame": 508,
+      "endFrame": 608,
+      "words": 8,
+      "text": "Use-by dates are different. Never go past those."
+    },
+    {
+      "i": 6,
+      "start": 20.873,
+      "end": 23.007,
+      "startFrame": 626,
+      "endFrame": 690,
+      "words": 8,
+      "text": "What have you binned because of a date?"
+    }
+  ],
+  "chapters": []
+}
