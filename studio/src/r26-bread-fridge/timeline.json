@@ -1,0 +1,71 @@
+{
+  "fps": 30,
+  "durationInFrames": 737,
+  "seconds": 24.55,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 2.931,
+      "startFrame": 6,
+      "endFrame": 88,
+      "words": 10,
+      "text": "Does your fridge waste your bread before you eat it?"
+    },
+    {
+      "i": 1,
+      "start": 3.431,
+      "end": 6.631,
+      "startFrame": 103,
+      "endFrame": 199,
+      "words": 9,
+      "text": "A twenty eleven lab test kept bread three ways."
+    },
+    {
+      "i": 2,
+      "start": 7.131,
+      "end": 10.416,
+      "startFrame": 214,
+      "endFrame": 312,
+      "words": 9,
+      "text": "In the fridge, at four degrees, staling was fastest."
+    },
+    {
+      "i": 3,
+      "start": 10.916,
+      "end": 13.391,
+      "startFrame": 327,
+      "endFrame": 402,
+      "words": 6,
+      "text": "In the freezer, staling almost stopped."
+    },
+    {
+      "i": 4,
+      "start": 14.191,
+      "end": 16.495,
+      "startFrame": 426,
+      "endFrame": 495,
+      "words": 6,
+      "text": "Stale faster in the fridge? True!"
+    },
+    {
+      "i": 5,
+      "start": 17.095,
+      "end": 21.489,
+      "startFrame": 513,
+      "endFrame": 645,
+      "words": 10,
+      "text": "Cold slows spoilage, so it feels right. Freeze slices instead."
+    },
+    {
+      "i": 6,
+      "start": 21.989,
+      "end": 23.504,
+      "startFrame": 660,
+      "endFrame": 705,
+      "words": 6,
+      "text": "Where do you keep your bread?"
+    }
+  ],
+  "chapters": []
+}

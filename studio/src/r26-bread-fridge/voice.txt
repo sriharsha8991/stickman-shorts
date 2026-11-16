@@ -1,0 +1,13 @@
+Does your fridge waste your bread before you eat it?
+[pause 0.5]
+A twenty eleven lab test kept bread three ways.
+[pause 0.5]
+In the fridge, at four degrees, staling was fastest.
+[pause 0.5]
+In the freezer, staling almost stopped.
+[pause 0.8]
+Stale faster in the fridge? True!
+[pause 0.6]
+Cold slows spoilage, so it feels right. Freeze slices instead.
+[pause 0.5]
+Where do you keep your bread?
