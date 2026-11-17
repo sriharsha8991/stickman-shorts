@@ -104,6 +104,7 @@ import { Video as R27BestBefore, DURATION as R27BestBefore_DURATION } from "./r2
 import { Video as R28WaterGlasses, DURATION as R28WaterGlasses_DURATION } from "./r28-water-glasses/Video";
 import { Video as R29BrownSugar, DURATION as R29BrownSugar_DURATION } from "./r29-brown-sugar/Video";
 import { Video as R30FrozenVeg, DURATION as R30FrozenVeg_DURATION } from "./r30-frozen-veg/Video";
+import { Video as R31ReheatRice, DURATION as R31ReheatRice_DURATION } from "./r31-reheat-rice/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -807,6 +808,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="R28WaterGlasses" component={R28WaterGlasses} durationInFrames={R28WaterGlasses_DURATION} fps={30} width={1080} height={1920} />
       <Composition id="R29BrownSugar" component={R29BrownSugar} durationInFrames={R29BrownSugar_DURATION} fps={30} width={1080} height={1920} />
       <Composition id="R30FrozenVeg" component={R30FrozenVeg} durationInFrames={R30FrozenVeg_DURATION} fps={30} width={1080} height={1920} />
+      <Composition id="R31ReheatRice" component={R31ReheatRice} durationInFrames={R31ReheatRice_DURATION} fps={30} width={1080} height={1920} />
       {/* stickman-video:compositions */}
           <Composition id="SparkSheet" component={SparkSheet} durationInFrames={60} fps={30} width={1920} height={1080} />
           <Composition id="CameraDemo" component={CameraDemo} durationInFrames={200} fps={30} width={1920} height={1080} />
