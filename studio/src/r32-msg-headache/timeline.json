@@ -1,0 +1,71 @@
+{
+  "fps": 30,
+  "durationInFrames": 748,
+  "seconds": 24.93,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.784,
+      "startFrame": 6,
+      "endFrame": 114,
+      "words": 9,
+      "text": "Skipping MSG? Before you do, does it cause headaches?"
+    },
+    {
+      "i": 1,
+      "start": 4.284,
+      "end": 7.42,
+      "startFrame": 129,
+      "endFrame": 223,
+      "words": 8,
+      "text": "Blind tests with meals found no extra headaches."
+    },
+    {
+      "i": 2,
+      "start": 7.92,
+      "end": 10.587,
+      "startFrame": 238,
+      "endFrame": 318,
+      "words": 7,
+      "text": "Retests did not repeat the few reactions."
+    },
+    {
+      "i": 3,
+      "start": 11.087,
+      "end": 13.071,
+      "startFrame": 333,
+      "endFrame": 392,
+      "words": 6,
+      "text": "Tomatoes and cheese have it too."
+    },
+    {
+      "i": 4,
+      "start": 13.871,
+      "end": 16.388,
+      "startFrame": 416,
+      "endFrame": 492,
+      "words": 5,
+      "text": "MSG gives you headaches? Myth!"
+    },
+    {
+      "i": 5,
+      "start": 16.988,
+      "end": 20.508,
+      "startFrame": 510,
+      "endFrame": 615,
+      "words": 10,
+      "text": "Only big doses with no food bothered a few people."
+    },
+    {
+      "i": 6,
+      "start": 21.108,
+      "end": 23.881,
+      "startFrame": 633,
+      "endFrame": 716,
+      "words": 8,
+      "text": "Have you ever blamed MSG for a headache?"
+    }
+  ],
+  "chapters": []
+}
