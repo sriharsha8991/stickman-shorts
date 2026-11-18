@@ -1,0 +1,13 @@
+Empty charger? Before you unplug it, is it costing you?
+[pause 0.5]
+Rules cap idle chargers at a tenth of a watt.
+[pause 0.5]
+That is under one unit a year.
+[pause 0.5]
+An LED bulb uses that in four days.
+[pause 0.8]
+Is it costing you? Myth!
+[pause 0.6]
+Older chargers draw more; unplug warm ones.
+[pause 0.6]
+What do you unplug every night?
