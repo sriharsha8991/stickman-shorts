@@ -1,0 +1,71 @@
+{
+  "fps": 30,
+  "durationInFrames": 708,
+  "seconds": 23.59,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.101,
+      "startFrame": 6,
+      "endFrame": 93,
+      "words": 9,
+      "text": "Cold car? Before you drive, must it warm up?"
+    },
+    {
+      "i": 1,
+      "start": 3.601,
+      "end": 7.036,
+      "startFrame": 108,
+      "endFrame": 211,
+      "words": 8,
+      "text": "Most carmakers say thirty seconds, even in winter."
+    },
+    {
+      "i": 2,
+      "start": 7.536,
+      "end": 10.608,
+      "startFrame": 226,
+      "endFrame": 318,
+      "words": 7,
+      "text": "Driving warms the engine faster than idling."
+    },
+    {
+      "i": 3,
+      "start": 11.108,
+      "end": 13.689,
+      "startFrame": 333,
+      "endFrame": 411,
+      "words": 8,
+      "text": "Ten idle minutes can burn half a litre."
+    },
+    {
+      "i": 4,
+      "start": 14.489,
+      "end": 16.324,
+      "startFrame": 435,
+      "endFrame": 490,
+      "words": 5,
+      "text": "A long warm up? Myth!"
+    },
+    {
+      "i": 5,
+      "start": 16.924,
+      "end": 19.569,
+      "startFrame": 508,
+      "endFrame": 587,
+      "words": 8,
+      "text": "Just drive gently for the first few minutes."
+    },
+    {
+      "i": 6,
+      "start": 20.169,
+      "end": 22.537,
+      "startFrame": 605,
+      "endFrame": 676,
+      "words": 8,
+      "text": "How long does your car idle each morning?"
+    }
+  ],
+  "chapters": []
+}

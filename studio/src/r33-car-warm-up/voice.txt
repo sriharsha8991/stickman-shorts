@@ -1,0 +1,13 @@
+Cold car? Before you drive, must it warm up?
+[pause 0.5]
+Most carmakers say thirty seconds, even in winter.
+[pause 0.5]
+Driving warms the engine faster than idling.
+[pause 0.5]
+Ten idle minutes can burn half a litre.
+[pause 0.8]
+A long warm up? Myth!
+[pause 0.6]
+Just drive gently for the first few minutes.
+[pause 0.6]
+How long does your car idle each morning?

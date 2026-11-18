@@ -106,6 +106,7 @@ import { Video as R29BrownSugar, DURATION as R29BrownSugar_DURATION } from "./r2
 import { Video as R30FrozenVeg, DURATION as R30FrozenVeg_DURATION } from "./r30-frozen-veg/Video";
 import { Video as R31ReheatRice, DURATION as R31ReheatRice_DURATION } from "./r31-reheat-rice/Video";
 import { Video as R32MsgHeadache, DURATION as R32MsgHeadache_DURATION } from "./r32-msg-headache/Video";
+import { Video as R33CarWarmUp, DURATION as R33CarWarmUp_DURATION } from "./r33-car-warm-up/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -811,6 +812,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="R30FrozenVeg" component={R30FrozenVeg} durationInFrames={R30FrozenVeg_DURATION} fps={30} width={1080} height={1920} />
       <Composition id="R31ReheatRice" component={R31ReheatRice} durationInFrames={R31ReheatRice_DURATION} fps={30} width={1080} height={1920} />
       <Composition id="R32MsgHeadache" component={R32MsgHeadache} durationInFrames={R32MsgHeadache_DURATION} fps={30} width={1080} height={1920} />
+      <Composition id="R33CarWarmUp" component={R33CarWarmUp} durationInFrames={R33CarWarmUp_DURATION} fps={30} width={1080} height={1920} />
       {/* stickman-video:compositions */}
           <Composition id="SparkSheet" component={SparkSheet} durationInFrames={60} fps={30} width={1920} height={1080} />
           <Composition id="CameraDemo" component={CameraDemo} durationInFrames={200} fps={30} width={1920} height={1080} />
