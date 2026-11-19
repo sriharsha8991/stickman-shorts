@@ -108,6 +108,7 @@ import { Video as R31ReheatRice, DURATION as R31ReheatRice_DURATION } from "./r3
 import { Video as R32MsgHeadache, DURATION as R32MsgHeadache_DURATION } from "./r32-msg-headache/Video";
 import { Video as R33CarWarmUp, DURATION as R33CarWarmUp_DURATION } from "./r33-car-warm-up/Video";
 import { Video as R34IdleCharger, DURATION as R34IdleCharger_DURATION } from "./r34-idle-charger/Video";
+import { Video as R35WetHairCold, DURATION as R35WetHairCold_DURATION } from "./r35-wet-hair-cold/Video";
 // stickman-video:imports
 
 export const RemotionRoot: React.FC = () => {
@@ -815,6 +816,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="R32MsgHeadache" component={R32MsgHeadache} durationInFrames={R32MsgHeadache_DURATION} fps={30} width={1080} height={1920} />
       <Composition id="R33CarWarmUp" component={R33CarWarmUp} durationInFrames={R33CarWarmUp_DURATION} fps={30} width={1080} height={1920} />
       <Composition id="R34IdleCharger" component={R34IdleCharger} durationInFrames={R34IdleCharger_DURATION} fps={30} width={1080} height={1920} />
+      <Composition id="R35WetHairCold" component={R35WetHairCold} durationInFrames={R35WetHairCold_DURATION} fps={30} width={1080} height={1920} />
       {/* stickman-video:compositions */}
           <Composition id="SparkSheet" component={SparkSheet} durationInFrames={60} fps={30} width={1920} height={1080} />
           <Composition id="CameraDemo" component={CameraDemo} durationInFrames={200} fps={30} width={1920} height={1080} />

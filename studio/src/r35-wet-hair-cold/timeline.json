@@ -1,0 +1,71 @@
+{
+  "fps": 30,
+  "durationInFrames": 727,
+  "seconds": 24.21,
+  "cues": [
+    {
+      "i": 0,
+      "start": 0.2,
+      "end": 3.08,
+      "startFrame": 6,
+      "endFrame": 92,
+      "words": 10,
+      "text": "Wet hair? Before you step out, will you catch cold?"
+    },
+    {
+      "i": 1,
+      "start": 3.68,
+      "end": 7.115,
+      "startFrame": 110,
+      "endFrame": 213,
+      "words": 8,
+      "text": "Two hundred viruses cause colds, not cold air."
+    },
+    {
+      "i": 2,
+      "start": 7.715,
+      "end": 10.467,
+      "startFrame": 231,
+      "endFrame": 314,
+      "words": 7,
+      "text": "Chilling people given the virus changed nothing."
+    },
+    {
+      "i": 3,
+      "start": 11.067,
+      "end": 13.221,
+      "startFrame": 332,
+      "endFrame": 397,
+      "words": 6,
+      "text": "But chilled feet doubled the colds."
+    },
+    {
+      "i": 4,
+      "start": 14.021,
+      "end": 16.261,
+      "startFrame": 421,
+      "endFrame": 488,
+      "words": 6,
+      "text": "Wet hair, more colds? Half true!"
+    },
+    {
+      "i": 5,
+      "start": 16.861,
+      "end": 19.997,
+      "startFrame": 506,
+      "endFrame": 600,
+      "words": 10,
+      "text": "Cold makes no virus, but may wake one you carry."
+    },
+    {
+      "i": 6,
+      "start": 20.597,
+      "end": 23.157,
+      "startFrame": 618,
+      "endFrame": 695,
+      "words": 8,
+      "text": "What winter warning did your family give you?"
+    }
+  ],
+  "chapters": []
+}

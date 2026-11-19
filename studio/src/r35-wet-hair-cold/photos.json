@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Brushing Wet Hair",
+    "author": "geehairimages",
+    "licence": "CC BY 2.0",
+    "page": "https://www.flickr.com/photos/191956906@N04/51548089009",
+    "url": "https://live.staticflickr.com/65535/51548089009_ee4ba613db_b.jpg",
+    "source": "Openverse / flickr",
+    "file": "hair_brush.jpg",
+    "credit": "geehairimages / CC BY 2.0 / Openverse / flickr",
+    "query": "wet hair towel",
+    "drive_doc": "18ANjnq5jgR9lbNYkXUiOtXWvM7V0oQ60skDUe2z2lFw",
+    "used_for": "lines 1, 5, 7 (hook, verdict, loop)"
+  },
+  {
+    "title": "Rhinovirus isosurface",
+    "author": "Thomas Splettstoesser (www.scistyle.com)",
+    "licence": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/w/index.php?curid=92093641",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Rhinovirus_isosurface.png",
+    "source": "Openverse / wikimedia",
+    "file": "virus.jpg",
+    "credit": "Thomas Splettstoesser (www.scistyle.com) / CC BY-SA 4.0 / Wikimedia Commons",
+    "query": "rhinovirus",
+    "drive_doc": "18ANjnq5jgR9lbNYkXUiOtXWvM7V0oQ60skDUe2z2lFw",
+    "used_for": "lines 2, 6 (a 3D model of a common-cold virus built from structure data, not a photograph)"
+  },
+  {
+    "title": "Snowy Amsterdam",
+    "author": "Lauri Väin",
+    "licence": "CC BY 2.0",
+    "page": "https://www.flickr.com/photos/16903262@N02/5296203846",
+    "url": "https://live.staticflickr.com/5244/5296203846_10a6d612e0_b.jpg",
+    "source": "Openverse / flickr",
+    "file": "snow_amsterdam.jpg",
+    "credit": "Lauri Väin / CC BY 2.0 / Openverse / flickr",
+    "query": "snowy street winter",
+    "drive_doc": "18ANjnq5jgR9lbNYkXUiOtXWvM7V0oQ60skDUe2z2lFw",
+    "used_for": "line 3 (cold exposure)"
+  }
+]
